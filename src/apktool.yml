@@ -1,5 +1,5 @@
-version: 2.11.0
-apkFileName: KIK_Red_6.4.3_Release.apk
+version: 2.12.0
+apkFileName: KIK-Red.apk
 usesFramework:
   ids:
   - 1
