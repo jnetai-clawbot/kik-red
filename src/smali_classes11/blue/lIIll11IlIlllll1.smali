@@ -30,9 +30,21 @@
 .method static constructor <clinit>()V
     .locals 2
 
+    :try_start_0
     invoke-static {}, Lblue/I1I1I11IIIIII1l1;->I1l11lll11lIlI11()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catch_0
+    goto :goto_0
+    :catch_0
+    :goto_0
 
+    :try_start_1
     invoke-static {}, Lblue/lIIll11IlIlllll1;->lIIIlIII111llIll()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catch_1
+    goto :goto_1
+    :catch_1
+    :goto_1
 
     const/4 v0, 0x0
 

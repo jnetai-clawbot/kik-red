@@ -287,7 +287,7 @@
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.kik.navigation.ComposeNavigationActivity" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize"/>
         <activity android:label="OtherName" android:name="com.quantcast.measurement.service.AboutQuantcastScreen"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <provider android:authorities="kik.red.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <provider android:authorities="kik.red.firebaseperfprovider" android:exported="false" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
         <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
             <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.ktx.FirebaseInAppMessagingDisplayKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
@@ -315,23 +315,9 @@
             </intent-filter>
         </service>
         <provider android:authorities="kik.red.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
-            <meta-data android:name="sns.payments.google.recharge.GooglePurchaseFlowInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="sns.payments.offers.PaymentOfferComponentInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="sns.vip.SnsVipInitializer" android:value="@string/androidx_startup"/>
-            <meta-data android:name="sns.currency.host.HostCurrencyInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="io.wondrous.sns.startup.SnsLiveLocatorInitializer" android:value="@string/androidx_startup"/>
-            <meta-data android:name="sns.currency.ruby.RubyCurrencyInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="sns.payments.offers.PaymentOfferInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="io.wondrous.sns.recharge.startup.PaymentsRechargeInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="sns.currency.host.info.HostCurrencyInfoInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="sns.currency.ruby.info.RubyCurrencyInfoInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="sns.data.db.SnsDatabaseInitializer" android:value="@string/androidx_startup"/>
-            <meta-data android:name="sns.plugins.SnsPluginRegistryInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="io.wondrous.sns.overlays.OverlayServiceCoordinatorLocatorInitializer" android:value="androidx.startup"/>
             <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
             <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
             <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
         </provider>
         <activity android:label="@string/sns_purchase_currency_label" android:name="sns.payments.google.recharge.GooglePurchaseCurrencyActivity"/>
         <activity android:launchMode="singleTask" android:name="io.wondrous.sns.StartLiveBroadcastForUserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
@@ -377,7 +363,7 @@
         <activity android:autoRemoveFromRecents="true" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="io.wondrous.sns.push.tracking.SnsPushForwardingActivity" android:taskAffinity=""/>
         <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.meetme.broadcast.BroadcastService"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
-        <provider android:authorities="kik.red.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <provider android:authorities="kik.red.mobileadsinitprovider" android:exported="false" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
         <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
@@ -434,8 +420,8 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-        <provider android:authorities="kik.red.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
-        <provider android:authorities="kik.red.applovininitprovider" android:exported="false" android:initOrder="101" android:name="com.applovin.sdk.AppLovinInitProvider"/>
+        <provider android:authorities="kik.red.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="kik.red.applovininitprovider" android:exported="false" android:name="com.applovin.sdk.AppLovinInitProvider"/>
         <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenActivity" android:screenOrientation="behind"/>
         <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenThemedActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.sdk.AppLovinWebViewActivity"/>
