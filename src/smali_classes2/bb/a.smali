@@ -63,20 +63,21 @@
     return-object v0
 
     :cond_0
-    :try_start_0
-    iget-object v0, p0, Lbb/a;->a:Landroid/content/Context;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v0
+    const-string v1, "kikred"
 
-    const-string v1, "android_id"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v1}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
 
-    move-result-object v0
+    move-result-wide v1
 
-    invoke-static {}, Lblue/lIIII11IIllIIl1l;->ll1I1I1IIIlll1ll()Ljava/lang/String;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -87,12 +88,9 @@
     if-nez v1, :cond_1
 
     iput-object v0, p0, Lbb/a;->c:Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v0
 
-    :catchall_0
     :cond_1
     const/4 v0, 0x0
 

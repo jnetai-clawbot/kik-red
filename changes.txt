@@ -1,5 +1,5 @@
 === KIK-Red Modifications ===
-Build Date: 2026-06-09
+Build Date: 2026-06-09 (Updated)
 
 [PACKAGE RENAME]
 - Renamed package from kik.blue to kik.red across all smali, xml, resources
@@ -10,7 +10,16 @@ Build Date: 2026-06-09
 - Updated StaticConstants.smali: KIK_APP_NAME = "KIK-Red", KIK_PACKAGE_NAME = "kik.red"
 - Bulk replaced kik.blue, kik.android, kik/blue, Blue Kik, Blue_Kik references (5123 files)
 
-[UNKICKABLE]
+[CRASH FIX]
+- Removed duplicate R class files from smali_classes14/kik/android/ (R$id, R$color, R$string, R$style)
+  These were Compose UI inner classes conflicting with the real Kik R class, causing NoSuchFieldError at runtime
+- Fixed apktool.yml version from fake 2.12.0 to real 2.11.0
+
+[ISLAND/WORK PROFILE SUPPORT]
+- Added android:crossProfile="true" to application tag in AndroidManifest.xml
+- Added cross-profile package queries for parallel install on work + personal profiles
+
+[UNCROSSKABLE]
 - GuestContentStatus$ActiveBroadcastEnded.smali: d() method now always returns false (prevents kick detection)
 - LiveFeedViewModel.smali: A1() method - flipped if-eqz to goto to skip kick/block API calls
 - Host/bouncer kick initiation now always falls through to "not kicked" path
@@ -25,7 +34,25 @@ Build Date: 2026-06-09
 - LiveBroadcastActivityModel.smali: likesLimit changed from 0x1e (30) to 0x30d4 (12500)
 - LiveBroadcastActivityModel.smali: likesDelayMs changed from 0xbb8 (3000ms) to 0x64 (100ms) - near-instant batching
 - w3.smali: Removed p8(I) call in j8() method - hides like count display (overlay text hidden)
+- sendLikesClickedNoUI() now loops 5000 times (0x1388) - auto-sends 50000 likes in one tap
 - Like overlay status text no longer visible during likes
+
+[LIVE AUTO-ENABLE]
+- LiveViewModel$isLiveEnabled$2.smali: Replaced full method to always return TRUE observable
+- No remote config check, no age check, no token check - live always enabled for all users
+
+[FAKE DEVICE ID]
+- bb/a.smali getAndroidId(): Now generates fake ID using "kikred" prefix + nanoTime instead of reading real GSF Android ID
+- Prevents device-level bans on Kik network - each account gets unique fake device ID
+
+[AUTO DOB]
+- KikRegistrationFragmentAbstract.smali: Calendar G4 auto-initialized to 16/12/1982 (0x7be year, month 11, day 16)
+- No rate limiting on registration - unlimited accounts with no cooldown between creation
+
+[LOGO/ICONS RECOLORED]
+- All blue tones converted to red in: bluekik_icon, bluekik_icon_small, blue_splash, flat_kik_logo, img_navbar_logo, img_splash
+- All density variants (hdpi/xhdpi/xxhdpi/xxxhdpi) recolored
+- Launcher icons (mipmap-*/ic_launcher, ic_foreground, ic_background) recolored
 
 [ABOUT SECTION]
 - blue_prefs_update.xml: About summary changed to "Made by jnetai.com"
@@ -36,7 +63,8 @@ Build Date: 2026-06-09
 [GITHUB ACTIONS]
 - Created .github/workflows/build.yml
 - Auto-builds on push to main/master
-- Uses apktool 2.12.0 to rebuild APK from smali
-- Signs APK with keystore from GitHub Secrets
-- Creates GitHub Release automatically
-- Zipaligns APK before release
+- Installs Android SDK command-line tools and apktool 2.11.0
+- Signs APK with ciphervault keystore from GitHub Secrets
+- Creates GitHub Release automatically with zipaligned APK
+- Uses ubuntu-22.04 runner for aapt1 compatibility
+- Same keystore used on every build for seamless updates

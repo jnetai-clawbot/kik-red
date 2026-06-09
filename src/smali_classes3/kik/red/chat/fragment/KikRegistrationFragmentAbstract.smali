@@ -176,6 +176,14 @@
 
     move-result-object v1
 
+    const/16 v0, 0x7be
+
+    const/4 v2, 0xb
+
+    const/16 v3, 0x10
+
+    invoke-virtual {v1, v0, v2, v3}, Ljava/util/Calendar;->set(III)V
+
     iput-object v1, p0, Lkik/red/chat/fragment/KikRegistrationFragmentAbstract;->G4:Ljava/util/Calendar;
 
     invoke-static {}, Ljava/text/DateFormat;->getDateInstance()Ljava/text/DateFormat;
