@@ -18,24 +18,22 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Download apktool
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install apktool
         run: |
-          wget -q https://github.com/iBotPeaches/Apktool/releases/download/v2.12.0/apktool_2.12.0.jar -O apktool.jar
-          wget -q https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O apktool
-          chmod +x apktool
-          echo "APKTOOL=$(pwd)/apktool" >> $GITHUB_ENV
-          echo "APKTOOL_JAR=$(pwd)/apktool.jar" >> $GITHUB_ENV
+          sudo curl -L -o /usr/local/bin/apktool.jar https://github.com/iBotPeaches/Apktool/releases/download/v2.12.0/apktool_2.12.0.jar
+          mkdir -p /usr/local/share/apktool/framework
 
       - name: Build APK
         run: |
-          java -jar apktool.jar b src -o KIK-Red-unsigned.apk --use-aapt2
+          java -jar /usr/local/bin/apktool.jar b src -o KIK-Red-unsigned.apk --use-aapt2
         timeout-minutes: 15
 
       - name: Sign APK
-        id: sign
         run: |
           if [ -z "${{ secrets.KEYSTORE_BASE64 }}" ]; then
-            echo "No keystore secret, generating debug keystore"
             keytool -genkey -v -keystore debug.keystore -alias kikred -keyalg RSA -keysize 2048 -validity 10000 \
               -storepass android -keypass android \
               -dname "CN=KIK-Red, OU=Dev, O=jnetai.com, L=City, S=State, C=US"
@@ -55,7 +53,7 @@ jobs:
 
       - name: Zipalign
         run: |
-          $ANDROID_HOME/build-tools/34.0.0/zipalign -v 4 KIK-Red.apk KIK-Red-aligned.apk
+          ${ANDROID_SDK_ROOT}/build-tools/34.0.0/zipalign -v 4 KIK-Red.apk KIK-Red-aligned.apk
           mv KIK-Red-aligned.apk KIK-Red.apk
 
       - name: Generate version info
@@ -63,7 +61,6 @@ jobs:
         run: |
           VERSION=$(date +'%Y.%m.%d-%H%M')-${GITHUB_SHA::7}
           echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
@@ -78,7 +75,5 @@ jobs:
           name: KIK-Red v${{ steps.version.outputs.version }}
           files: KIK-Red.apk
           generate_release_notes: true
-          draft: false
-          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
