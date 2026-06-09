@@ -178,7 +178,7 @@
 
     const/16 v0, 0x7be
 
-    const/4 v2, 0xb
+    const/16 v2, 0xb
 
     const/16 v3, 0x10
 
