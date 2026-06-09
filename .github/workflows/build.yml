@@ -47,7 +47,7 @@ jobs:
           jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
             -keystore release.keystore -storepass "${{ secrets.KEYSTORE_PASSWORD }}" \
             -keypass "${{ secrets.KEY_PASSWORD }}" \
-            KIK-Red-unsigned.apk kikred
+            KIK-Red-unsigned.apk ciphervault
           mv KIK-Red-unsigned.apk KIK-Red.apk
         timeout-minutes: 10
 
