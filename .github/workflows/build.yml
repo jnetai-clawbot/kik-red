@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,6 +20,9 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          api-level: 34
+          build-tools: '34.0.0'
 
       - name: Install apktool
         run: |
@@ -28,7 +31,7 @@ jobs:
 
       - name: Build APK
         run: |
-          java -jar apktool.jar b src -o KIK-Red-unsigned.apk --use-aapt2 --frame-path /home/runner/.local/share/apktool/framework
+          java -jar apktool.jar b src -o KIK-Red-unsigned.apk --use-aapt1 --frame-path /home/runner/.local/share/apktool/framework
         timeout-minutes: 20
 
       - name: Sign APK
@@ -43,7 +46,7 @@ jobs:
 
       - name: Zipalign
         run: |
-          ZALIGN=$(find ${ANDROID_SDK_ROOT}/build-tools -name zipalign | head -1)
+          ZALIGN=$(find $ANDROID_SDK_ROOT/build-tools -name zipalign | head -1)
           $ZALIGN -v 4 KIK-Red.apk KIK-Red-aligned.apk
           mv KIK-Red-aligned.apk KIK-Red.apk
 
