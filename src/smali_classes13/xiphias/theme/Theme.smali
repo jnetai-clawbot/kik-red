@@ -176,7 +176,7 @@
 
     const/16 v20, 0x1
 
-    const-string v21, "Blue"
+    const-string v21, "Red"
 
     const-string v22, "#ff242f3a"
 

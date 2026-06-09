@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Blue">Blue</string>
+    <string name="Blue">Red</string>
     <string name="Gold">Gold</string>
     <string name="Green">Green</string>
     <string name="NSCameraUsageDescription">This lets you take photos and record videos inside of Kik.</string>
@@ -349,7 +349,7 @@ Shop"</string>
     <string name="chat_bubble_color_bright_brown">Brown</string>
     <string name="chat_bubble_color_bright_green">Forest</string>
     <string name="chat_bubble_color_bright_grey">Steel</string>
-    <string name="chat_bubble_color_bright_kik_blue">Blue</string>
+    <string name="chat_bubble_color_bright_kik_blue">Red</string>
     <string name="chat_bubble_color_bright_kik_green">Green</string>
     <string name="chat_bubble_color_bright_magenta">Violet</string>
     <string name="chat_bubble_color_bright_orange">Orange</string>
@@ -3031,7 +3031,7 @@ To skip a participant, click the \"next\" button."</string>
     <string name="sns_photo_source">Attach a photo</string>
     <string name="sns_places_hint_text">Search location</string>
     <string name="sns_poll_ended_message">We’re sorry. This poll has already ended.</string>
-    <string name="sns_polls_blue_wins_percentage">%s%% Blue!</string>
+    <string name="sns_polls_blue_wins_percentage">%s%% Red!</string>
     <string name="sns_polls_create_new_dialog_title">Create New Poll</string>
     <string name="sns_polls_credits_per_vote_selection">{amount} per Vote</string>
     <string name="sns_polls_diamonds">%d earned</string>

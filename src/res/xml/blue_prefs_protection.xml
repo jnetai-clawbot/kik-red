@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:title="Blue's Protection Tools" android:key=""
+<PreferenceScreen android:title="Red's Protection Tools" android:key=""
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
     <blue.lll1l11IIlllIIl1 android:title="Logger Suite" />
     <blue.lllIlI1l1llI11I1 android:title="Anti Loggers" android:key="blue.loggers" android:summary="Blocks all attempts to log your IP" android:defaultValue="true" kik:pref_divider="full_bottom" />

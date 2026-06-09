@@ -6489,13 +6489,27 @@
     :cond_0
     invoke-static {p0}, Lcom/safedk/android/internal/DexBridge;->appClassOnCreateBefore(Landroid/app/Application;)V
 
+    :try_start_0
     invoke-static {}, Lblue/IlI11Ill1IlII1Il;->Ill1I11l1lIl1l11()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catch_0
+    goto :goto_0
+    :catch_0
+    const-string v2, "onCreate() native init failed, continuing anyway"
 
+    :goto_0
     invoke-static {p0}, Lkik/red/app/chat/KikNewApplication;->safedk_KikNewApplication_onCreate_48db107a52ca402a2497028d29275934(Lkik/red/app/chat/KikNewApplication;)V
 
-    const-string v2, "onCreate() finished"
-
+    :try_start_1
     invoke-static {p0}, Lblue/ll11IlII11Il11ll;->lll1IIII1111l1Il(Lkik/red/app/chat/KikNewApplication;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catch_1
+    goto :goto_1
+    :catch_1
+    const-string v2, "onCreate() post-init native failed, continuing anyway"
+
+    :goto_1
+    const-string v2, "onCreate() finished"
 
     return-void
 .end method

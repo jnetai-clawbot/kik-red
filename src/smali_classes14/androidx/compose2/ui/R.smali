@@ -5,10 +5,6 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lkik/android/R$color;,
-        Lkik/android/R$id;,
-        Lkik/android/R$string;,
-        Lkik/android/R$style;
     }
 .end annotation
 

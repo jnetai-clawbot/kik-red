@@ -29,7 +29,7 @@
     <View android:background="?list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_marginLeft="68.0dip" />
     <LinearLayout android:id="@id/blue_root_prefs" style="@style/PreferencesRow.Container">
         <ImageView android:src="@drawable/ic_settings_blue" style="@style/PreferencesRow.Icon" />
-        <kik.red.widget.RobotoTextView android:text="Blue Mods" style="@style/PreferencesRow.Title" />
+        <kik.red.widget.RobotoTextView android:text="Red Mods" style="@style/PreferencesRow.Title" />
     </LinearLayout>
     <View android:background="?list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_marginLeft="68.0dip" />
     <LinearLayout android:id="@id/prefs_root_chat" style="@style/PreferencesRow.Container">

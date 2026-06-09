@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:title="Blue Mods" android:key="blue_mods_main_screen"
+<PreferenceScreen android:title="Red Mods" android:key="blue_mods_main_screen"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
     <blue.lIlIlIlIIIlIIl1I android:title="Update + Developer Info" kik:pref_divider="full_bottom" kik:pref_icon="@drawable/ic_settings_blue" kik:preference_screen="@xml/blue_prefs_update" kik:topbar_alt_layout="@layout/kik_back_button" />
     <blue.lIlIlIlIIIlIIl1I android:title="Chat" kik:pref_divider="full_bottom" kik:pref_icon="@drawable/tab_chat" kik:preference_screen="@xml/blue_prefs_chat" kik:topbar_alt_layout="@layout/kik_back_button" />

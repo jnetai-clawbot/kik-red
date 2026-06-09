@@ -7,7 +7,7 @@
     <blue.l1lIIl11IlI1Il1I android:title="Expose Attackers" android:key="true" android:summary="Choose how to be notified when an exploit is received" kik:pref_divider="full_bottom" />
     <blue.I1llI1III11l11I1 android:title="Remove Attackers" android:key="true" android:summary="Choose how to handle exploit detections in your group" kik:pref_divider="full_bottom" />
     <blue.lll1l11IIlllIIl1 android:title="Bot" />
-    <blue.l1I1IlI1I1llllIl android:title="How To Use" android:dialogTitle="How To Use" android:dialogMessage="To customize the bot from your own account type !bot or view the settings in Blue Mods -> Bot or the Per-Chat menu\n\nFrom another account:\n\nEnable &quot;Group Self Bot&quot; here in settings and say &quot;Commands&quot; in the same group from the other account." />
+    <blue.l1I1IlI1I1llllIl android:title="How To Use" android:dialogTitle="How To Use" android:dialogMessage="To customize the bot from your own account type !bot or view the settings in Red Mods -> Bot or the Per-Chat menu\n\nFrom another account:\n\nEnable &quot;Group Self Bot&quot; here in settings and say &quot;Commands&quot; in the same group from the other account." />
     <blue.lIIll11I1lI1111I android:title="Group Bot" android:key="blue.rage" android:summary="Allows others to modify settings in your built-in bot, and you will respond to group commands. (not recommended)" kik:pref_divider="full_bottom" />
     <blue.lIIll11I1lI1111I android:title="Bot Trigger Permission" android:key="blue.rageadmin" android:summary="If enabled, non-admins can add or delete triggers to the built in bot" kik:pref_divider="full_bottom" />
     <blue.lll1l11IIlllIIl1 android:title="Group Moderation" />
