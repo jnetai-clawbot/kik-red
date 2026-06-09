@@ -12,26 +12,34 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Java
+      - name: Setup Java 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          api-level: 34
-          build-tools: '34.0.0'
+      - name: Install Android SDK Build Tools
+        run: |
+          mkdir -p $HOME/android-sdk
+          cd $HOME/android-sdk
+          export ANDROID_HOME=$HOME/android-sdk
+          curl -L -o cmdline-tools.zip https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+          unzip -q cmdline-tools.zip
+          mkdir -p cmdline-tools/latest
+          mv cmdline-tools/* cmdline-tools/latest/ 2>/dev/null || mv NOTICE.txt source.properties lib cmdline-tools/latest/
+          yes | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager --sdk_root=$HOME/android-sdk "build-tools;34.0.0" "platforms;android-34"
+          echo "$HOME/android-sdk/build-tools/34.0.0" >> $GITHUB_PATH
 
       - name: Install apktool
         run: |
           curl -L -o apktool.jar https://github.com/iBotPeaches/Apktool/releases/download/v2.12.0/apktool_2.12.0.jar
-          mkdir -p /home/runner/.local/share/apktool/framework
 
       - name: Build APK
         run: |
-          java -jar apktool.jar b src -o KIK-Red-unsigned.apk --use-aapt1 --frame-path /home/runner/.local/share/apktool/framework
+          echo "PATH=$PATH"
+          which aapt2 || echo "aapt2 not found"
+          ls -la $HOME/android-sdk/build-tools/34.0.0/ 2>/dev/null || echo "build-tools dir missing"
+          java -jar apktool.jar b src -o KIK-Red-unsigned.apk
         timeout-minutes: 20
 
       - name: Sign APK
@@ -46,8 +54,7 @@ jobs:
 
       - name: Zipalign
         run: |
-          ZALIGN=$(find $ANDROID_SDK_ROOT/build-tools -name zipalign | head -1)
-          $ZALIGN -v 4 KIK-Red.apk KIK-Red-aligned.apk
+          $HOME/android-sdk/build-tools/34.0.0/zipalign -v 4 KIK-Red.apk KIK-Red-aligned.apk
           mv KIK-Red-aligned.apk KIK-Red.apk
 
       - name: Generate version info
