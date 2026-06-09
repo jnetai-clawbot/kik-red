@@ -23,37 +23,28 @@ jobs:
 
       - name: Install apktool
         run: |
-          sudo curl -L -o /usr/local/bin/apktool.jar https://github.com/iBotPeaches/Apktool/releases/download/v2.12.0/apktool_2.12.0.jar
-          mkdir -p /usr/local/share/apktool/framework
+          curl -L -o apktool.jar https://github.com/iBotPeaches/Apktool/releases/download/v2.12.0/apktool_2.12.0.jar
+          mkdir -p /home/runner/.local/share/apktool/framework
 
       - name: Build APK
         run: |
-          java -jar /usr/local/bin/apktool.jar b src -o KIK-Red-unsigned.apk --use-aapt2
-        timeout-minutes: 15
+          java -jar apktool.jar b src -o KIK-Red-unsigned.apk --use-aapt2 --frame-path /home/runner/.local/share/apktool/framework
+        timeout-minutes: 20
 
       - name: Sign APK
         run: |
-          if [ -z "${{ secrets.KEYSTORE_BASE64 }}" ]; then
-            keytool -genkey -v -keystore debug.keystore -alias kikred -keyalg RSA -keysize 2048 -validity 10000 \
-              -storepass android -keypass android \
-              -dname "CN=KIK-Red, OU=Dev, O=jnetai.com, L=City, S=State, C=US"
-            jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
-              -keystore debug.keystore -storepass android \
-              KIK-Red-unsigned.apk kikred
-            mv KIK-Red-unsigned.apk KIK-Red.apk
-          else
-            echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > release.keystore
-            jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
-              -keystore release.keystore -storepass "${{ secrets.KEYSTORE_PASSWORD }}" \
-              -keypass "${{ secrets.KEY_PASSWORD }}" \
-              KIK-Red-unsigned.apk kikred
-            mv KIK-Red-unsigned.apk KIK-Red.apk
-          fi
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > release.keystore
+          jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
+            -keystore release.keystore -storepass "${{ secrets.KEYSTORE_PASSWORD }}" \
+            -keypass "${{ secrets.KEY_PASSWORD }}" \
+            KIK-Red-unsigned.apk kikred
+          mv KIK-Red-unsigned.apk KIK-Red.apk
         timeout-minutes: 10
 
       - name: Zipalign
         run: |
-          ${ANDROID_SDK_ROOT}/build-tools/34.0.0/zipalign -v 4 KIK-Red.apk KIK-Red-aligned.apk
+          ZALIGN=$(find ${ANDROID_SDK_ROOT}/build-tools -name zipalign | head -1)
+          $ZALIGN -v 4 KIK-Red.apk KIK-Red-aligned.apk
           mv KIK-Red-aligned.apk KIK-Red.apk
 
       - name: Generate version info
