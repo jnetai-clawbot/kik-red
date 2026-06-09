@@ -35,12 +35,16 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    invoke-static {}, Lblue/I1I1I11IIIIII1l1;->I1l11lll11lIlI11()V
-
     const/4 v2, 0x7
 
+    :try_start_0
     invoke-static {}, Lblue/IlI11Ill1IlII1Il;->llIIlll1I1lIl11l()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catch_0
+    goto :goto_0
+    :catch_0
 
+    :goto_0
     const-class v0, Lblue/IlI11Ill1IlII1Il;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;

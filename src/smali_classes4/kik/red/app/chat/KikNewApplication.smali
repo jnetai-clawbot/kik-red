@@ -5909,8 +5909,6 @@
 
     invoke-static {p0}, Landroidx/multidex/MultiDex;->install(Landroid/content/Context;)V
 
-    invoke-static {p0}, Landroid/support/multidex/MultiDex;->install(Landroid/content/Context;)V
-
     return-void
 .end method
 
@@ -6487,30 +6485,25 @@
     return-void
 
     :cond_0
+    :try_dx
     invoke-static {p0}, Lcom/safedk/android/internal/DexBridge;->appClassOnCreateBefore(Landroid/app/Application;)V
+    :try_end_dx
+    .catchall {:try_dx .. :try_end_dx} :catch_dx
+    goto :goto_dx_ok
+    :catch_dx
+    const-string v2, "onCreate() DexBridge init failed, continuing anyway"
+    :goto_dx_ok
 
-    :try_start_0
-    invoke-static {}, Lblue/IlI11Ill1IlII1Il;->Ill1I11l1lIl1l11()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catch_0
-    goto :goto_0
-    :catch_0
-    const-string v2, "onCreate() native init failed, continuing anyway"
-
-    :goto_0
+    :try_safedk
     invoke-static {p0}, Lkik/red/app/chat/KikNewApplication;->safedk_KikNewApplication_onCreate_48db107a52ca402a2497028d29275934(Lkik/red/app/chat/KikNewApplication;)V
+    :try_end_safedk
+    .catchall {:try_safedk .. :try_end_safedk} :catch_safedk
+    goto :goto_safedk_ok
+    :catch_safedk
+    const-string v2, "onCreate() safedk init failed, continuing anyway"
+    :goto_safedk_ok
 
-    :try_start_1
-    invoke-static {p0}, Lblue/ll11IlII11Il11ll;->lll1IIII1111l1Il(Lkik/red/app/chat/KikNewApplication;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catch_1
-    goto :goto_1
-    :catch_1
-    const-string v2, "onCreate() post-init native failed, continuing anyway"
-
-    :goto_1
     const-string v2, "onCreate() finished"
-
     return-void
 .end method
 
