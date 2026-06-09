@@ -1,0 +1,24 @@
+.class final Lcom/kik/view/adapters/AbmContactListRecyclerAdapter$b;
+.super Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/kik/view/adapters/AbmContactListRecyclerAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "b"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Landroid/view/View;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
+
+    return-void
+.end method

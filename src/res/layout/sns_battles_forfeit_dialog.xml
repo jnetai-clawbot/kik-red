@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="64.0dip" android:layout_marginRight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/sns_half_grid_padding" android:paddingTop="@dimen/sns_half_grid_padding" android:paddingRight="@dimen/sns_half_grid_padding" android:paddingBottom="@dimen/sns_grid_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/sns_half_grid_padding" android:paddingEnd="@dimen/sns_half_grid_padding">
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_battles_forfeit_dialog_title" style="@style/Sns.Battles.Dialog.Title" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_battles_forfeit_dialog_message" style="@style/Sns.Battles.Dialog.Message" />
+        <Button android:id="@id/sns_forfeit_leave_battle_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_half_grid_padding" android:text="@string/sns_battles_forfeit_leave_battle_btn" style="@style/Sns.SkipBattle.SkipButtonStyle" />
+        <Button android:id="@id/sns_forfeit_end_stream_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sns_battles_forfeit_end_stream_btn" style="@style/Sns.SkipBattle.EndStreamButtonStyle" />
+        <Button android:id="@id/sns_forfeit_cancel_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sns_cancel" style="@style/Sns.SkipBattle.CancelButtonStyle" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

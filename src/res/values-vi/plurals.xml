@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Tua nhanh %d giây</item>
+        <item quantity="one">Tua nhanh %d giây</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Tua lại %d giây</item>
+        <item quantity="one">Tua lại %d giây</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d thông báo mới</item>
+        <item quantity="one">%d thông báo mới</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">Vui lòng kết nối với Internet, nếu không hoạt động phát của bạn sẽ kết thúc sau %1$d giây.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">Mua {link} để không bị quảng cáo làm phiền trong {days} ngày</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">Tin nhắn đã gửi tới %1$d người tặng quà!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">Còn %1$d ký tự.</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">Hết hạn sau %1$d ngày!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d ngày</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d giờ</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d giờ</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d phút</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d phút</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$d giây</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d giây</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">Người yêu thích hiện đang phát sóng!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d giờ</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d phút</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d Người bạn thích đang trực tiếp!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">Fan</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">Còn %1$d vị trí</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">Bạn chỉ có thể gửi vòng quay giới hạn này %1$s lần trước khi nó biến mất! Hãy gửi ngay một vòng quay cho Người phát mà bạn yêu thích!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">Điểm</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d phiếu bầu miễn phí cho mỗi người bỏ phiếu</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">Đã vượt quá số phiếu cho phép</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d Phiếu</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">Bạn có chắc muốn loại bỏ %1$d khỏi danh sách vệ sĩ</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">Xóa %1$d người phát khỏi danh sách vệ sĩ</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">Các chương trình chỉ có thể được lên lịch trước %1$d tuần.</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d Người tặng quà</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">Hiện có %1$d Loa phóng thanh</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d Chương trình đã lên lịch</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">Kim cương</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">Các Fan</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">Chiến thắng</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">Đã sử dụng %1$s trong %2$d phút!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">Bạn có chắc chắn muốn xóa %1$d khỏi danh mục yêu thích không?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">Xóa %1$d người phát khỏi danh sách yêu thích</item>
+    </plurals>
+</resources>

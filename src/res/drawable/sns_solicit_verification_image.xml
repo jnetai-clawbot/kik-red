@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="145.0dip" android:width="145.0dip" />
+            <gradient android:startColor="@color/colorPrimary" android:endColor="@color/colorPrimaryDark" android:angle="135.0" android:type="linear" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="28.0dip" android:right="28.0dip" android:bottom="28.0dip">
+        <bitmap android:src="@drawable/sns_solicit_verification_image_person" />
+    </item>
+</layer-list>

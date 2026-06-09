@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="@string/sns_streamer_settings" android:layout_marginStart="15.0dip" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/buttonsContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:listDivider" android:showDividers="middle">
+            <io.wondrous.sns.streamer.settings.SnsStreamerSettingsView android:id="@id/giftAudio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sns_bc_ic_gift_audio_gray" android:text="@string/sns_gift_audio" />
+            <io.wondrous.sns.streamer.settings.SnsStreamerSettingsView android:id="@id/muteButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sns_ic_bc_mute_gray" android:text="@string/sns_mute_stream" />
+            <io.wondrous.sns.streamer.settings.SnsStreamerSettingsView android:id="@id/heartsButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sns_ic_bc_hearts_gray" android:text="@string/sns_hearts" />
+            <io.wondrous.sns.streamer.settings.SnsStreamerSettingsView android:id="@id/mirrorButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sns_ic_bc_mirror" android:text="@string/sns_mirror" />
+            <io.wondrous.sns.streamer.settings.SnsStreamerSettingsView android:id="@id/mergeBattleChatButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sns_ic_merge_battle_chat" android:text="@string/sns_merge_battle_chat" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

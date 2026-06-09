@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:clickable="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_error_network" android:contentDescription="" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_title_network" />
+    <Button android:id="@id/tap_to_retry" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_retry" style="@style/Button.Retry" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sns_max_count_of_viewer_buttons">-1</integer>
+</resources>

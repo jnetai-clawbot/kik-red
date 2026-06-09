@@ -1,0 +1,326 @@
+.class public final Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;
+.super Landroidx/compose2/runtime/snapshots/Snapshot;
+.source "Snapshot.kt"
+
+
+# static fields
+.field public static final $stable:I
+
+
+# instance fields
+.field private final parent:Landroidx/compose2/runtime/snapshots/Snapshot;
+
+.field private final readObserver:Lkotlin2/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin2/jvm/functions/Function1<",
+            "Ljava/lang/Object;",
+            "Lkotlin2/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->$stable:I
+
+    return-void
+.end method
+
+.method public constructor <init>(ILandroidx/compose2/runtime/snapshots/SnapshotIdSet;Lkotlin2/jvm/functions/Function1;Landroidx/compose2/runtime/snapshots/Snapshot;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Landroidx/compose2/runtime/snapshots/SnapshotIdSet;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "Ljava/lang/Object;",
+            "Lkotlin2/Unit;",
+            ">;",
+            "Landroidx/compose2/runtime/snapshots/Snapshot;",
+            ")V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, p2, v0}, Landroidx/compose2/runtime/snapshots/Snapshot;-><init>(ILandroidx/compose2/runtime/snapshots/SnapshotIdSet;Lkotlin2/jvm/internal/DefaultConstructorMarker;)V
+
+    iput-object p3, p0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->readObserver:Lkotlin2/jvm/functions/Function1;
+
+    iput-object p4, p0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->parent:Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    iget-object v0, p0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->parent:Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    move-object v1, p0
+
+    check-cast v1, Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    invoke-virtual {v0, v1}, Landroidx/compose2/runtime/snapshots/Snapshot;->nestedActivated$runtime_release(Landroidx/compose2/runtime/snapshots/Snapshot;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public dispose()V
+    .locals 2
+
+    invoke-virtual {p0}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->getDisposed$runtime_release()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    invoke-virtual {p0}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->getId()I
+
+    move-result v0
+
+    iget-object v1, p0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->parent:Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    invoke-virtual {v1}, Landroidx/compose2/runtime/snapshots/Snapshot;->getId()I
+
+    move-result v1
+
+    if-eq v0, v1, :cond_0
+
+    invoke-virtual {p0}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->closeAndReleasePinning$runtime_release()V
+
+    :cond_0
+    iget-object v0, p0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->parent:Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    move-object v1, p0
+
+    check-cast v1, Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    invoke-virtual {v0, v1}, Landroidx/compose2/runtime/snapshots/Snapshot;->nestedDeactivated$runtime_release(Landroidx/compose2/runtime/snapshots/Snapshot;)V
+
+    invoke-super {p0}, Landroidx/compose2/runtime/snapshots/Snapshot;->dispose()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public getModified$runtime_release()Landroidx/collection2/MutableScatterSet;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/collection2/MutableScatterSet<",
+            "Landroidx/compose2/runtime/snapshots/StateObject;",
+            ">;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public final getParent()Landroidx/compose2/runtime/snapshots/Snapshot;
+    .locals 1
+
+    iget-object v0, p0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->parent:Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getReadObserver()Lkotlin2/jvm/functions/Function1;
+    .locals 1
+
+    invoke-virtual {p0}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->getReadObserver$runtime_release()Lkotlin2/jvm/functions/Function1;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getReadObserver$runtime_release()Lkotlin2/jvm/functions/Function1;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlin2/jvm/functions/Function1<",
+            "Ljava/lang/Object;",
+            "Lkotlin2/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->readObserver:Lkotlin2/jvm/functions/Function1;
+
+    return-object v0
+.end method
+
+.method public getReadOnly()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public getRoot()Landroidx/compose2/runtime/snapshots/Snapshot;
+    .locals 1
+
+    iget-object v0, p0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->parent:Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    invoke-virtual {v0}, Landroidx/compose2/runtime/snapshots/Snapshot;->getRoot()Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getWriteObserver$runtime_release()Lkotlin2/jvm/functions/Function1;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlin2/jvm/functions/Function1<",
+            "Ljava/lang/Object;",
+            "Lkotlin2/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public hasPendingChanges()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public nestedActivated$runtime_release(Landroidx/compose2/runtime/snapshots/Snapshot;)Ljava/lang/Void;
+    .locals 1
+
+    invoke-static {}, Landroidx/compose2/runtime/snapshots/SnapshotStateMapKt;->unsupported()Ljava/lang/Void;
+
+    new-instance v0, Lkotlin2/KotlinNothingValueException;
+
+    invoke-direct {v0}, Lkotlin2/KotlinNothingValueException;-><init>()V
+
+    throw v0
+.end method
+
+.method public bridge synthetic nestedActivated$runtime_release(Landroidx/compose2/runtime/snapshots/Snapshot;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->nestedActivated$runtime_release(Landroidx/compose2/runtime/snapshots/Snapshot;)Ljava/lang/Void;
+
+    return-void
+.end method
+
+.method public nestedDeactivated$runtime_release(Landroidx/compose2/runtime/snapshots/Snapshot;)Ljava/lang/Void;
+    .locals 1
+
+    invoke-static {}, Landroidx/compose2/runtime/snapshots/SnapshotStateMapKt;->unsupported()Ljava/lang/Void;
+
+    new-instance v0, Lkotlin2/KotlinNothingValueException;
+
+    invoke-direct {v0}, Lkotlin2/KotlinNothingValueException;-><init>()V
+
+    throw v0
+.end method
+
+.method public bridge synthetic nestedDeactivated$runtime_release(Landroidx/compose2/runtime/snapshots/Snapshot;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->nestedDeactivated$runtime_release(Landroidx/compose2/runtime/snapshots/Snapshot;)Ljava/lang/Void;
+
+    return-void
+.end method
+
+.method public notifyObjectsInitialized$runtime_release()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public recordModified$runtime_release(Landroidx/compose2/runtime/snapshots/StateObject;)Ljava/lang/Void;
+    .locals 1
+
+    invoke-static {}, Landroidx/compose2/runtime/snapshots/SnapshotKt;->access$reportReadonlySnapshotWrite()Ljava/lang/Void;
+
+    new-instance v0, Lkotlin2/KotlinNothingValueException;
+
+    invoke-direct {v0}, Lkotlin2/KotlinNothingValueException;-><init>()V
+
+    throw v0
+.end method
+
+.method public bridge synthetic recordModified$runtime_release(Landroidx/compose2/runtime/snapshots/StateObject;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->recordModified$runtime_release(Landroidx/compose2/runtime/snapshots/StateObject;)Ljava/lang/Void;
+
+    return-void
+.end method
+
+.method public takeNestedSnapshot(Lkotlin2/jvm/functions/Function1;)Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin2/jvm/functions/Function1<",
+            "Ljava/lang/Object;",
+            "Lkotlin2/Unit;",
+            ">;)",
+            "Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;"
+        }
+    .end annotation
+
+    new-instance v0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;
+
+    invoke-virtual {p0}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->getId()I
+
+    move-result v1
+
+    invoke-virtual {p0}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->getInvalid$runtime_release()Landroidx/compose2/runtime/snapshots/SnapshotIdSet;
+
+    move-result-object v2
+
+    invoke-virtual {p0}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->getReadObserver$runtime_release()Lkotlin2/jvm/functions/Function1;
+
+    move-result-object v3
+
+    const/4 v4, 0x4
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    invoke-static {p1, v3, v6, v4, v5}, Landroidx/compose2/runtime/snapshots/SnapshotKt;->mergedReadObserver$default(Lkotlin2/jvm/functions/Function1;Lkotlin2/jvm/functions/Function1;ZILjava/lang/Object;)Lkotlin2/jvm/functions/Function1;
+
+    move-result-object v3
+
+    iget-object v4, p0, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->parent:Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    invoke-direct {v0, v1, v2, v3, v4}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;-><init>(ILandroidx/compose2/runtime/snapshots/SnapshotIdSet;Lkotlin2/jvm/functions/Function1;Landroidx/compose2/runtime/snapshots/Snapshot;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic takeNestedSnapshot(Lkotlin2/jvm/functions/Function1;)Landroidx/compose2/runtime/snapshots/Snapshot;
+    .locals 1
+
+    invoke-virtual {p0, p1}, Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;->takeNestedSnapshot(Lkotlin2/jvm/functions/Function1;)Landroidx/compose2/runtime/snapshots/NestedReadonlySnapshot;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose2/runtime/snapshots/Snapshot;
+
+    return-object v0
+.end method

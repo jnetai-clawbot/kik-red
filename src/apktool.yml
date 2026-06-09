@@ -1,0 +1,27 @@
+version: 2.12.0
+apkFileName: KIK_Red_6.4.3_Release.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 34
+packageInfo:
+  forcedPackageId: 127
+versionInfo:
+  versionCode: 80000955
+  versionName: 17.8.3.33653
+doNotCompress:
+- arsc
+- mp3
+- png
+- wav
+- webp
+- META-INF/services/io.grpc.ManagedChannelProvider
+- META-INF/services/io.grpc.NameResolverProvider
+- assets/PLACEHOLDER
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- assets/nsfw.tflite
+- res/raw/keep.xml
+- res/raw/kik_icon.vbl

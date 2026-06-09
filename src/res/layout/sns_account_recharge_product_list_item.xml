@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip" style="?snsPaymentItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/sns_recharge_product_btn" android:paddingTop="22.0dip" android:paddingBottom="22.0dip" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_weight="0.0" android:layout_marginStart="17.0dip" android:layout_marginEnd="18.0dip" style="?snsPaymentRadioButtonStyle" />
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <TextView android:gravity="start" android:id="@id/sns_value_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?snsPaymentValueStyle" />
+        <TextView android:gravity="start" android:id="@id/sns_cost_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?snsPaymentCostStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end|center" android:layout_gravity="end|center" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/sns_upsell_textview" android:paddingLeft="16.0dip" android:paddingTop="4.0dip" android:paddingRight="16.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="21.0dip" style="?snsPaymentUpsellStyle" />
+        <TextView android:id="@id/sns_discount_textview" android:paddingTop="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="16.0dip" style="?snsPaymentDiscountStyle" />
+    </LinearLayout>
+</LinearLayout>

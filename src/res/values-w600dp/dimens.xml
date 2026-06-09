@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sns_announcements_marquee_item_height">160.0dip</dimen>
+    <dimen name="sns_date_night_dialog_disclaimer_margin">106.0dip</dimen>
+    <dimen name="sns_video_calling_invite_card_width">448.0dip</dimen>
+</resources>

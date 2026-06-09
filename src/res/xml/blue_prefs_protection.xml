@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Blue's Protection Tools" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lll1l11IIlllIIl1 android:title="Logger Suite" />
+    <blue.lllIlI1l1llI11I1 android:title="Anti Loggers" android:key="blue.loggers" android:summary="Blocks all attempts to log your IP" android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Anti Kik Browser" android:key="use.android.browser" android:summary="Uses your default system browser instead of the Kik browser.\nIf you want to use a Kik specific website, disable this" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Allow GIFs" android:key="blue.gifs" android:summary="Allows legitimate GIFs to play (if anti loggers is enabled)" android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="XMPP" />
+    <blue.l1I1ll111ll11Ill android:title="XMPP Logger" android:summary="Save XMPP packets to storage" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Exploit Detection" />
+    <blue.l1lIIl11IlI1Il1I android:title="Exploit Notifications" android:key="false" android:summary="Choose how to be notified when an exploit is received" kik:pref_divider="full_bottom" />
+    <blue.I1llI1III11l11I1 android:title="Exploit Removals" android:key="remove.attackers" android:summary="Choose what action to take if an exploit is detected in a group you are admin in" kik:pref_divider="full_bottom" />
+    <blue.IIl1IlI1II1l1ll1 android:title="Exploit Filter" android:key="false" android:summary="Choose to show or hide certain exploits\n(Anything not listed here is always blocked)" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Remove Lag Codes" android:key="block.lag.codes" android:summary="Replaces lag code messages with system messages to prevent freezing" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Privacy Controls" />
+    <blue.lllIlI1l1llI11I1 android:title="Do Not Disturb" android:key="vince.disturb" android:summary="Automatically leaves groups you are added to" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Do Not Message" android:key="blue.dmd" android:summary="Automatically disables DMs for public groups you join" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Do Not Add" android:key="blue.block.add.all" android:summary="Automatically stops KIK-Red from adding people to your friends list in private groups" kik:pref_divider="full_bottom" />
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

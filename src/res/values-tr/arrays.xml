@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Meydan okumalar, tamamladığında ödül kazandıran günlük ve haftalık görevlerdir.</item>
+        <item>Meydan okumayı tamamla ve ödülünü almak için Meydan Okumalar Menüsü’ne geri dön. Alınan ödüller Öğeler Menüsü’nde bulunabilir.</item>
+        <item>Bazı meydan okumalar kolay, bazıları zor olacaktır. Daha çok ödül kazanmak için hepsini tamamla!</item>
+    </string-array>
+</resources>

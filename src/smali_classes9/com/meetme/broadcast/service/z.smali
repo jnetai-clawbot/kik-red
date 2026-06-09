@@ -1,0 +1,56 @@
+.class public final synthetic Lcom/meetme/broadcast/service/z;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/functions/q;
+
+
+# instance fields
+.field public final synthetic a:I
+
+
+# direct methods
+.method public synthetic constructor <init>(I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lcom/meetme/broadcast/service/z;->a:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final test(Ljava/lang/Object;)Z
+    .locals 2
+
+    iget v0, p0, Lcom/meetme/broadcast/service/z;->a:I
+
+    check-cast p1, Lcom/meetme/broadcast/event/StreamerStatsEvent;
+
+    sget v1, Lcom/meetme/broadcast/service/StreamingViewModel;->r:I
+
+    const-string v1, "it"
+
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Lcom/meetme/broadcast/event/StreamerStatsEvent;->a()Lio/agora/rtc/IRtcEngineEventHandler$RemoteVideoStats;
+
+    move-result-object p1
+
+    iget p1, p1, Lio/agora/rtc/IRtcEngineEventHandler$RemoteVideoStats;->uid:I
+
+    if-ne p1, v0, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method

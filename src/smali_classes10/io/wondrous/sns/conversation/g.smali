@@ -1,0 +1,40 @@
+.class public final synthetic Lio/wondrous/sns/conversation/g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnTouchListener;
+
+
+# instance fields
+.field public final synthetic a:Lio/wondrous/sns/conversation/ConversationInputFragment;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lio/wondrous/sns/conversation/ConversationInputFragment;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/wondrous/sns/conversation/g;->a:Lio/wondrous/sns/conversation/ConversationInputFragment;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    iget-object p1, p0, Lio/wondrous/sns/conversation/g;->a:Lio/wondrous/sns/conversation/ConversationInputFragment;
+
+    sget p2, Lio/wondrous/sns/conversation/ConversationInputFragment;->X:I
+
+    const-string p2, "this$0"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    return p1
+.end method

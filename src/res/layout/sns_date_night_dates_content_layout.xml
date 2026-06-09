@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/sns_date_night_dates_confetti" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sns_dn_graph_confetti" android:scaleType="centerCrop" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sns_date_night_dates_recycler_view" android:paddingBottom="@dimen/sns_date_night_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <FrameLayout android:id="@id/sns_date_night_dates_loader" android:background="@color/black_35a" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

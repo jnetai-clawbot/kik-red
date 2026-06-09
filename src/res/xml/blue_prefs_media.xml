@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Media + Voice Options" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lll1l11IIlllIIl1 android:title="Media" />
+    <blue.I1Illl11II11II11 android:enabled="true" android:title="Card Builder" android:summary="Make and send your own custom Kik cards" kik:pref_divider="full_bottom" />
+    <blue.l1l1lI1III1I1l1I android:title="Fake Camera" android:key="false" android:summary="" kik:pref_divider="full_bottom" />
+    <blue.l1IIII1llll1l11l android:title="12 Hour Bypass" android:key="blue.bypass.12.hour" android:summary="Bypasses media restrictions for public groups and anonymous chats (This overrides fake camera)" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Camera" />
+    <blue.lllIlI1l1llI11I1 android:title="Auto Save On Camera Send" android:key="blue.save.on.cam.send" android:summary="Media sent from the Kik camera will be saved to your gallery" android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Hands Free Video Recording" android:key="blue.video.hands.free" android:summary="When enabled, the in app camera continues recording while not holding the record button" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Voice Messaging" />
+    <blue.lllIlI1l1llI11I1 android:title="Enable Voice Messages" android:key="blue.voice.enabled" android:summary="If enabled, you will be able to send voice messages.\nPress and hold the microphone to use. Voice messages are fully compatible with every other Kik version." android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Enable Voice Bubbles" android:key="blue.voice.bubbles.enabled" android:summary="If enabled, you and other KIK-Red users will see a voice bubble when sending and receiving audio. Disable this if mod detection is an issue." android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Enable Voice Typing" android:key="blue.voice.typing.enabled" android:summary="If enabled, KIK-Red sends &quot;is typing&quot; to the chat while you are recording audio.\nNOTE: KIK-Red users see &quot;is recording&quot; instead." android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Voice Loop Playback" android:key="blue.voice.loop" android:summary="Voice messages loop when played" android:defaultValue="false" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Media Options" />
+    <blue.I1IlI11I11III11l android:title="Please Note" android:summary="The options listed below won't work against you or other KIK-Red users" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="No Forward" android:key="blue.forward" android:summary="Media sent can't be forwarded" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="No Save" android:key="blue.save" android:summary="Media sent can't be saved" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Auto Play" android:key="blue.play" android:summary="Media sent auto plays" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Auto Mute" android:key="blue.mute" android:summary="Media sent is automatically muted" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Auto Loop" android:key="blue.loop" android:summary="Media sent plays on a loop" kik:pref_divider="full_bottom" />
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Kinukumpleto nang araw-araw at lingguhan ang Mga Challenge na magbibigay sa iyo ng mga premyo!</item>
+        <item>Kumpletuhin ang Challenge at bumalik sa Menu ng Challenges para kuhanin ang premyo mo. Ang nakuhang mga premyo ay matatagpuan sa Menu ng mga Item.</item>
+        <item>Ilang Challenges ang magiging madali at ilan ang mahirap. Kumpletuhin lahat ng ito para makarami ka ng mga gantimpala!</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meetme.util.android.ui.SnsSwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.meetme.util.android.ui.SnsTabEmptyStateView android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.meetme.util.android.ui.EmptyView android:id="@id/errorView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</com.meetme.util.android.ui.SnsSwipeRefreshLayout>

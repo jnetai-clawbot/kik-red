@@ -1,0 +1,90 @@
+.class public final Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection$DefaultImpls;
+.super Ljava/lang/Object;
+.source "NestedScrollModifier.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "DefaultImpls"
+.end annotation
+
+
+# direct methods
+.method public static onPostFling-RZ2iAVY(Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;JJLkotlin2/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;",
+            "JJ",
+            "Lkotlin2/coroutines/Continuation<",
+            "-",
+            "Landroidx/compose2/ui/unit/Velocity;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-static/range {p0 .. p5}, Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection$-CC;->access$onPostFling-RZ2iAVY$jd(Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;JJLkotlin2/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static onPostScroll-DzOQY0M(Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;JJI)J
+    .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-static/range {p0 .. p5}, Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection$-CC;->access$onPostScroll-DzOQY0M$jd(Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;JJI)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public static onPreFling-QWom1Mo(Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;JLkotlin2/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;",
+            "J",
+            "Lkotlin2/coroutines/Continuation<",
+            "-",
+            "Landroidx/compose2/ui/unit/Velocity;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection$-CC;->access$onPreFling-QWom1Mo$jd(Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;JLkotlin2/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static onPreScroll-OzD1aCk(Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;JI)J
+    .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection$-CC;->access$onPreScroll-OzD1aCk$jd(Landroidx/compose2/ui/input/nestedscroll/NestedScrollConnection;JI)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method

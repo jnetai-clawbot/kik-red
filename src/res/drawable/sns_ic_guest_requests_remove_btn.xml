@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="@dimen/grid_padding" />
+            <solid android:color="#ffe04544" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/sns_ic_menu_close" android:left="9.0dip" android:top="9.0dip" android:right="9.0dip" android:bottom="9.0dip" />
+</layer-list>

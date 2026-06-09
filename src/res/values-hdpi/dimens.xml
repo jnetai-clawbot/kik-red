@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="sns_shadow_1dp">1.5</item>
+    <item type="dimen" name="sns_shadow_2dp">3.0</item>
+    <item type="dimen" name="sns_shadow_3dp">4.5</item>
+    <item type="dimen" name="sns_shadow_6dp">9.0</item>
+</resources>

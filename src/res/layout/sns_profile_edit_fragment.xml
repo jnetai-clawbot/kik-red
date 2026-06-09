@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="12.0dip">
+        <TextView android:textAppearance="?textAppearanceHeadline5" android:textColor="?android:textColorPrimary" android:id="@id/sns_profile_header_value" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_profile_edit_title" android:maxLines="1" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/sns_profile_header_close_btn" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="?closeIcon" android:scaleType="centerInside" app:tint="?closeIconTint" />
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView android:orientation="vertical" android:paddingBottom="56.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/sns_profile_edit_modules_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

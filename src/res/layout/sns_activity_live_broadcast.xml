@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.wondrous.sns.ui.widgets.SnsBroadcastsViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/broadcastContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/sns_broadcast_overlay" />
+    <FrameLayout android:id="@id/containerBroadcastEnd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/sns_broadcast_video_ad_layout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

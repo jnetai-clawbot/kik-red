@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@android:id/icon" android:layout_width="@dimen/grid_padding_2x" android:layout_height="@dimen/grid_padding_2x" android:scaleType="centerInside" android:layout_marginStart="16.0dip" app:tint="?iconTint" />
+    <TextView android:textAppearance="?textAppearanceListItem" android:ellipsize="end" android:gravity="start|center" android:id="@android:id/text1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/grid_padding" android:maxLines="1" android:layout_weight="1.0" />
+    <io.wondrous.sns.views.SnsBadgeTextView android:textAppearance="?textAppearanceOverline" android:textColor="?colorOnSurface" android:id="@android:id/text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/grid_padding" style="?snsToolsMenuQuantityLabelStyle" />
+</LinearLayout>

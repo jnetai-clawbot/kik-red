@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.wondrous.sns.streamer.settings.SnsStreamerSettingsView android:id="@id/sns_effects_touch_up" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sns_ic_effects_touch_up_32dp" android:text="@string/sns_magic_menu_touch_up" app:iconTint="?colorControlNormal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

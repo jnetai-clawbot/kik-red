@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="?snsVerificationTermsStyle" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <WebView android:id="@id/sns_verification_terms_web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:layout_gravity="bottom" android:background="@drawable/sns_verification_terms_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/sns_verification_terms_web_view_bottom_shadow_height" />
+    </FrameLayout>
+    <View android:background="@color/sns_verification_terms_border" android:layout_width="fill_parent" android:layout_height="@dimen/sns_verification_terms_border_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_verification_terms_checkbox_margin_left_right" android:layout_marginTop="@dimen/sns_verification_terms_checkbox_terms_margin_top" android:layout_marginRight="@dimen/sns_verification_terms_checkbox_margin_left_right">
+        <CheckBox android:theme="?snsVerificationTermsCheckBoxStyle" android:id="@id/sns_verification_terms_check_box_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="?snsVerificationTermsCheckBoxTermsTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_verification_terms_checkbox_margin_left_right" android:layout_marginTop="@dimen/sns_verification_terms_checkbox_consents_margin_top" android:layout_marginRight="@dimen/sns_verification_terms_checkbox_margin_left_right">
+        <CheckBox android:theme="?snsVerificationTermsCheckBoxStyle" android:id="@id/sns_verification_terms_check_box_consents" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/sns_verification_terms_text_view_consents" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?snsVerificationTermsCheckBoxConsentsTextStyle" />
+    </LinearLayout>
+    <Button android:enabled="false" android:id="@id/sns_verification_terms_get_started_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_verification_terms_button_margin_left_right" android:layout_marginTop="@dimen/sns_verification_terms_button_margin_top" android:layout_marginRight="@dimen/sns_verification_terms_button_margin_left_right" android:layout_marginBottom="@dimen/sns_verification_terms_email_copy_margin_bottom" style="?snsVerificationTermsButtonStyle" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/sns_verification_consent_sent_to_email" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_verification_terms_email_copy_margin_left_right" android:layout_marginRight="@dimen/sns_verification_terms_email_copy_margin_left_right" android:layout_marginBottom="@dimen/sns_verification_terms_email_copy_margin_bottom" style="?snsVerificationTermsEmailCopyStyle" />
+</LinearLayout>

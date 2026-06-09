@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Spol %d sekunder frem</item>
+        <item quantity="one">Spol %d sekund frem</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Spol %d sekunder tilbage</item>
+        <item quantity="one">Spol %d sekund tilbage</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nye notifikationer</item>
+        <item quantity="one">%d ny notifikation</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">Opret forbindelse til internettet, eller din stream afsluttes om %1$d sekunder.</item>
+        <item quantity="one">Opret forbindelse til internettet, eller din stream afsluttes om %1$d sekund.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">Køb {link} og fjern reklamer i {days} dage</item>
+        <item quantity="one">Køb {link}, og fjern reklamer i en dag</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">Besked sendt til %1$d gavegivere!</item>
+        <item quantity="one">Besked sendt til %1$d gavegiver!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d tegn tilbage.</item>
+        <item quantity="one">%1$d tegn tilbage.</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">Udløber om %1$d dage!</item>
+        <item quantity="one">Udløber om %1$d dag!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d dage</item>
+        <item quantity="one">%1$d dag</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d t</item>
+        <item quantity="one">%1$d t</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d timer</item>
+        <item quantity="one">%1$d time</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d min</item>
+        <item quantity="one">%1$d min</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d minutter</item>
+        <item quantity="one">%1$d minut</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$ds</item>
+        <item quantity="one">%1$ds</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d sekunder</item>
+        <item quantity="one">%1$d sekund</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">Dine favoritter streamer nu!</item>
+        <item quantity="one">Din favorit streamer nu!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d timer</item>
+        <item quantity="one">%1$d time</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d minutter</item>
+        <item quantity="one">%1$d minut</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d Favoritter Live!</item>
+        <item quantity="one">%1$d Favorit Live!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">Fans</item>
+        <item quantity="one">Fan</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d placeringer tilbage</item>
+        <item quantity="one">%1$d placering tilbage</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">Dette begrænsede hjul kan kun sendes %1$s gange, før det forsvinder! Send et nu til din yndlingsstreamer!</item>
+        <item quantity="one">Dette begrænsede hjul kan kun sendes %1$s gang, før det forsvinder! Send et nu til din yndlingsstreamer!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">Point</item>
+        <item quantity="one">Point</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d gratis stemmer pr. deltager</item>
+        <item quantity="one">%1$d gratis stemme pr. deltager</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">Tilladt antal stemmer overskredet</item>
+        <item quantity="one">Tilladt antal stemmer overskredet</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d Stemmer</item>
+        <item quantity="one">%1$d Stemme</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">Er du sikker på, du vil fjerne %1$d fra udsmidere?</item>
+        <item quantity="one">Er du sikker på, du vil fjerne %1$d fra udsmidere?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">Fjern %1$d streamere fra udsmidere</item>
+        <item quantity="one">Fjern %1$d streamer fra udsmidere</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">Show kan kun planlægges %1$d uger i forvejen.</item>
+        <item quantity="one">Show kan kun planlægges %1$d uge i forvejen.</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d Gavegivere</item>
+        <item quantity="one">1 Gavegiver</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">%1$d Udråb tilgængelige</item>
+        <item quantity="one">%1$d Udråb tilgængelig</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d%2$d planlagte shows</item>
+        <item quantity="one">%1$d%2$d planlagt show</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">Diamanter</item>
+        <item quantity="one">Diamanter</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">Fans</item>
+        <item quantity="one">Fan</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">Vindere</item>
+        <item quantity="one">Vinder</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">Brugte en %1$s i %2$d minutter!</item>
+        <item quantity="one">Brugte en %1$s i %2$d minut!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">Er du sikker på, at du vil fjerne %1$d fra dine favoritter</item>
+        <item quantity="one">Er du sikker på, at du vil fjerne %1$d fra dine favoritter</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">Fjern %1$d streamere fra favoritter</item>
+        <item quantity="one">Fjern %1$d streamer fra favoritter</item>
+    </plurals>
+</resources>

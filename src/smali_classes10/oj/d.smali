@@ -1,0 +1,81 @@
+.class public final Loj/d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lzq/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lzq/d<",
+        "Landroidx/core/app/NotificationManagerCompat;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljavax/inject/Provider;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljavax/inject/Provider<",
+            "Landroid/content/Context;",
+            ">;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Loj/d;->a:Ljavax/inject/Provider;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 2
+
+    iget-object v0, p0, Loj/d;->a:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/Context;
+
+    sget-object v1, Lio/wondrous/sns/push/di/SnsNotificationModule;->a:Lio/wondrous/sns/push/di/SnsNotificationModule$Companion;
+
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v1, "context"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Landroidx/core/app/NotificationManagerCompat;->from(Landroid/content/Context;)Landroidx/core/app/NotificationManagerCompat;
+
+    move-result-object v0
+
+    const-string v1, "from(context)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/g;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object v0
+.end method

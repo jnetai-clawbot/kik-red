@@ -1,0 +1,84 @@
+name: Build and Release KIK-Red
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Download apktool
+        run: |
+          wget -q https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.12.0.jar -O apktool.jar
+          wget -q https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O apktool
+          chmod +x apktool
+          echo "APKTOOL=$(pwd)/apktool" >> $GITHUB_ENV
+          echo "APKTOOL_JAR=$(pwd)/apktool.jar" >> $GITHUB_ENV
+
+      - name: Build APK
+        run: |
+          java -jar apktool.jar b src -o KIK-Red-unsigned.apk --use-aapt2
+        timeout-minutes: 15
+
+      - name: Sign APK
+        id: sign
+        run: |
+          if [ -z "${{ secrets.KEYSTORE_BASE64 }}" ]; then
+            echo "No keystore secret, generating debug keystore"
+            keytool -genkey -v -keystore debug.keystore -alias kikred -keyalg RSA -keysize 2048 -validity 10000 \
+              -storepass android -keypass android \
+              -dname "CN=KIK-Red, OU=Dev, O=jnetai.com, L=City, S=State, C=US"
+            jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
+              -keystore debug.keystore -storepass android \
+              KIK-Red-unsigned.apk kikred
+            mv KIK-Red-unsigned.apk KIK-Red.apk
+          else
+            echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > release.keystore
+            jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
+              -keystore release.keystore -storepass "${{ secrets.KEYSTORE_PASSWORD }}" \
+              -keypass "${{ secrets.KEY_PASSWORD }}" \
+              KIK-Red-unsigned.apk kikred
+            mv KIK-Red-unsigned.apk KIK-Red.apk
+          fi
+        timeout-minutes: 10
+
+      - name: Zipalign
+        run: |
+          $ANDROID_HOME/build-tools/34.0.0/zipalign -v 4 KIK-Red.apk KIK-Red-aligned.apk
+          mv KIK-Red-aligned.apk KIK-Red.apk
+
+      - name: Generate version info
+        id: version
+        run: |
+          VERSION=$(date +'%Y.%m.%d-%H%M')-${GITHUB_SHA::7}
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: KIK-Red
+          path: KIK-Red.apk
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: KIK-Red v${{ steps.version.outputs.version }}
+          files: KIK-Red.apk
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sns_broadcast_chat_messages_height">260.0dip</dimen>
+    <dimen name="sns_poll_bottom_margin_streamer">308.0dip</dimen>
+    <dimen name="sns_poll_bottom_margin_viewer">326.0dip</dimen>
+</resources>

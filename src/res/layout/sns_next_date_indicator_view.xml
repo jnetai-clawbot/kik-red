@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sns_next_date_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left|bottom" android:id="@id/sns_next_date_left_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_next_date_frame_left" android:scaleType="centerInside" />
+    <ImageView android:layout_gravity="right|bottom" android:id="@id/sns_next_date_right_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_next_date_frame_right" android:scaleType="centerInside" />
+</FrameLayout>

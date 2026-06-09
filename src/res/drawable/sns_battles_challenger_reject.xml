@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:tint="@color/sns_reject_state_list" android:shape="oval" />
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="2.0dip" android:color="@color/sns_battles_reject_border" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/sns_ic_reject" android:left="@dimen/sns_battles_icon_padding" android:top="@dimen/sns_battles_icon_padding" android:right="@dimen/sns_battles_icon_padding" android:bottom="@dimen/sns_battles_icon_padding" />
+</layer-list>

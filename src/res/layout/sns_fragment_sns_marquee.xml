@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/marquee" android:paddingLeft="@dimen/sns_marquee_horizontal_padding" android:paddingTop="@dimen/feed_card_padding_half" android:paddingRight="@dimen/sns_marquee_horizontal_padding" android:paddingBottom="6.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/sns_marquee_tile_size" android:overScrollMode="never" app:elevation="0.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

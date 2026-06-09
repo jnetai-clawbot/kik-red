@@ -1,0 +1,64 @@
+.class public final synthetic Lan/q0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lic/v;
+
+
+# instance fields
+.field public final synthetic a:Lan/u0;
+
+.field public final synthetic b:Ljava/lang/String;
+
+.field public final synthetic c:Ljava/lang/String;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lan/u0;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lan/q0;->a:Lan/u0;
+
+    iput-object p2, p0, Lan/q0;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lan/q0;->c:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    iget-object v0, p0, Lan/q0;->a:Lan/u0;
+
+    iget-object v1, p0, Lan/q0;->b:Ljava/lang/String;
+
+    iget-object v2, p0, Lan/q0;->c:Ljava/lang/String;
+
+    check-cast p1, Lkik/core/net/outgoing/z0;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {p1}, Lkik/core/net/outgoing/z0;->y()Lkik/core/datatypes/UserProfileData;
+
+    move-result-object p1
+
+    iput-object v1, p1, Lkik/core/datatypes/UserProfileData;->firstName:Ljava/lang/String;
+
+    iput-object v2, p1, Lkik/core/datatypes/UserProfileData;->lastName:Ljava/lang/String;
+
+    const-string v1, "Display Name"
+
+    invoke-virtual {v0, p1, v1}, Lan/u0;->o(Lkik/core/datatypes/UserProfileData;Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Lan/u0;->d()Lkik/core/datatypes/UserProfileData;
+
+    move-result-object p1
+
+    return-object p1
+.end method

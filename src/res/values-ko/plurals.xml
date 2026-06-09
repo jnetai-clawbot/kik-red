@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d초 빨리 감기</item>
+        <item quantity="one">%d초 빨리 감기</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d초 되감기</item>
+        <item quantity="one">%d초 되감기</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">새 알림 %d개</item>
+        <item quantity="one">새 알림 %d개</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">인터넷에 연결하지 않으면 스트리밍이 %1$d초 이내에 종료됩니다.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">{link} 구매로 {days}일 동안 광고 없이 보기</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">%1$d명의 선물 제공자에게 메시지 전송됨!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d자 남음</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">%1$d일 후에 만료됩니다!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d일</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$dh</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d 시간</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$dm</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d 분</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$ds</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d초</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">즐겨찾는 사람이 지금 스트리밍 중입니다!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d 시간</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d 분</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d 개의 즐겨 찾는 라이브!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">팬들</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d 자리가 남았음</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">사라지기 전에 단 %1$s번만 보낼 수 있는 한정판 휠입니다! 지금 바로 좋아하는 스트리머에게 보내주세요!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">포인트</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">일인당 무료 투표 %1$d개</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">허용된 투표 수 초과</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d 투표</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">바운서에서 %1$d님을 제거하시겠습니까?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">바운서에서 %1$d 명의 스트리머 제거</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">쇼는 %1$d주 전에만 미리 예약을 할 수 있습니다.</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d명의 선물 제공자</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">샤우트 아웃 %1$d개 남음</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d 쇼 예약됨</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">다이아몬드</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">팬</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">승리</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">%2$d분 동안 %1$s 사용!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">즐겨찾기에서 %1$d 님을 제거하시겠습니까?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">즐겨찾기에서 %1$d 명의 스트리머 제거</item>
+    </plurals>
+</resources>

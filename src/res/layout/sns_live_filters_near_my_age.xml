@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sns_live_filters_near_my_age_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sns_live_filters_section_item_height" android:layout_marginTop="@dimen/sns_live_filters_section_margin_top" android:paddingStart="@dimen/sns_live_filters_screen_padding_left" android:paddingEnd="@dimen/sns_live_filters_near_my_age_padding_right">
+        <TextView android:paddingTop="@dimen/sns_live_filters_near_my_age_padding_top_bottom" android:paddingBottom="@dimen/sns_live_filters_near_my_age_padding_top_bottom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sns_live_filters_near_my_age" android:layout_weight="1.0" style="@style/Sns.LiveFilterSectionItem" />
+        <Switch android:id="@id/sns_live_filters_near_my_age_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Chat Mods" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lll1l11IIlllIIl1 android:title="Chat" />
+    <blue.l1l1lI1III1I1l1I android:title="Fake Camera" android:key="true" android:summary="Send gallery media as camera" kik:pref_divider="full_bottom" />
+    <blue.l1IIII1llll1l11l android:title="12 Hour Bypass" android:key="true" android:summary="Bypasses media restrictions for public groups and anonymous chats (This overrides fake camera)" kik:pref_divider="full_bottom" />
+    <blue.lIIll11I1lI1111I android:title="Disable Typing" android:key="blue.typing" android:summary="Others will not see you typing" kik:pref_divider="full_bottom" />
+    <blue.lIIIIll1l111l1ll android:title="Read Receipts" android:key="true" android:summary="How others perceive messages they sent you" kik:pref_divider="full_bottom" />
+    <blue.l1lIIl11IlI1Il1I android:title="Expose Hackers" android:key="true" android:summary="Exposes all that send hacks / bricks" kik:pref_divider="full_bottom" />
+    <blue.IIl1IlI1II1l1ll1 android:title="Allow / Block Hacks" android:key="true" android:summary="Allows you to allow or block exploits (bricks are always blocked)" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Theme" />
+    <blue.lIIll11I1lI1111I android:title="Enable Theme Mods" android:key="blue.theme.pc" android:summary="If enabled, the theme can be changed for the currently open chat" kik:pref_divider="full_bottom" />
+    <blue.lIIll11I1lI1111I android:title="Disable Kik Chat Theme" android:key="blue.theme" android:summary="Disables all of Kik's chat theme elements" kik:pref_divider="full_bottom" />
+    <blue.llIIIIIl11l1lIl1 android:title="Override Kik Chat Theme" android:key="true" android:summary="Override the theme that is shown in the chat\nNOTE: others cannot see the theme" kik:pref_divider="full_bottom" />
+</PreferenceScreen>

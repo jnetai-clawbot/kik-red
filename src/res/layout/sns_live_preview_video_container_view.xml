@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sns_live_preview_video_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sns_live_preview_waiting_loading_bg" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <TextView android:layout_gravity="center" android:id="@id/sns_next_date_end_of_line_text" android:background="@drawable/sns_guest_gradient_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sns_next_date_viewer_end_of_line" style="@style/Sns.NextDate.LivePreview.EndOfLineText" />
+    <View android:id="@id/sns_live_preview_dimmed_bg" android:background="@color/black_50a" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/sns_live_preview_video_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/sns_quarter_grid_padding" android:src="@drawable/sns_ic_nd_prompt_close" />
+    <ImageView android:layout_gravity="start|top" android:id="@id/sns_live_preview_video_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/sns_quarter_grid_padding" android:src="@drawable/sns_bc_ic_speaker_off_sml" />
+</FrameLayout>

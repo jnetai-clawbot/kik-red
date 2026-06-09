@@ -1,0 +1,202 @@
+.class public final Lcom/google/firebase/messaging/RemoteMessage$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/firebase/messaging/RemoteMessage;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+.field private final b:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/firebase/messaging/a0;)V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-string v0, "gcm.n.title"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage$a;->a:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    invoke-static {p1, v0}, Lcom/google/firebase/messaging/RemoteMessage$a;->b(Lcom/google/firebase/messaging/a0;Ljava/lang/String;)[Ljava/lang/String;
+
+    const-string v0, "gcm.n.body"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage$a;->b:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    invoke-static {p1, v0}, Lcom/google/firebase/messaging/RemoteMessage$a;->b(Lcom/google/firebase/messaging/a0;Ljava/lang/String;)[Ljava/lang/String;
+
+    const-string v0, "gcm.n.icon"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "gcm.n.sound2"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "gcm.n.sound"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    :cond_0
+    const-string v0, "gcm.n.tag"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "gcm.n.color"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "gcm.n.click_action"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "gcm.n.android_channel_id"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/a0;->e()Landroid/net/Uri;
+
+    const-string v0, "gcm.n.image"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "gcm.n.ticker"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "gcm.n.notification_priority"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->b(Ljava/lang/String;)Ljava/lang/Integer;
+
+    const-string v0, "gcm.n.visibility"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->b(Ljava/lang/String;)Ljava/lang/Integer;
+
+    const-string v0, "gcm.n.notification_count"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->b(Ljava/lang/String;)Ljava/lang/Integer;
+
+    const-string v0, "gcm.n.sticky"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->a(Ljava/lang/String;)Z
+
+    const-string v0, "gcm.n.local_only"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->a(Ljava/lang/String;)Z
+
+    const-string v0, "gcm.n.default_sound"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->a(Ljava/lang/String;)Z
+
+    const-string v0, "gcm.n.default_vibrate_timings"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->a(Ljava/lang/String;)Z
+
+    const-string v0, "gcm.n.default_light_settings"
+
+    invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/a0;->a(Ljava/lang/String;)Z
+
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/a0;->h()Ljava/lang/Long;
+
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/a0;->d()[I
+
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/a0;->k()[J
+
+    return-void
+.end method
+
+.method private static b(Lcom/google/firebase/messaging/a0;Ljava/lang/String;)[Ljava/lang/String;
+    .locals 2
+
+    invoke-virtual {p0, p1}, Lcom/google/firebase/messaging/a0;->f(Ljava/lang/String;)[Ljava/lang/Object;
+
+    move-result-object p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :cond_0
+    array-length p1, p0
+
+    new-array p1, p1, [Ljava/lang/String;
+
+    const/4 v0, 0x0
+
+    :goto_0
+    array-length v1, p0
+
+    if-ge v0, v1, :cond_1
+
+    aget-object v1, p0, v0
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, p1, v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return-object p1
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$a;->b:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final c()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$a;->a:Ljava/lang/String;
+
+    return-object v0
+.end method

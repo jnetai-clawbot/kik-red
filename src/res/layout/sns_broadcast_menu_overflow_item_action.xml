@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.wondrous.sns.views.SnsImageView android:id="@id/sns_menu_item_icon" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="center" />
+    <FrameLayout android:id="@id/sns_menu_item_custom" android:duplicateParentState="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+</merge>

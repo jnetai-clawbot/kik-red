@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/webview_modal_layout" android:paddingLeft="20.0dip" android:paddingTop="65.0dip" android:paddingRight="20.0dip" android:paddingBottom="65.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="20.0dip" android:paddingVertical="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="end|top" android:id="@id/dismiss_modal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_menu_close" android:contentDescription="@string/sns_dismiss" android:alpha="0.0" />
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="fill_parent" app:cardCornerRadius="10.0dip">
+        <WebView android:layout_gravity="center" android:id="@id/modal_webview" android:background="@color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/model_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

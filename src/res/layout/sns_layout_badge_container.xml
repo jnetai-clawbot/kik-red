@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/badgesContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_quarter_grid_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_vertical" android:id="@id/topStreamerBadge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/sns_live_broadcaster_header_badge_size" android:layout_marginEnd="@dimen/quarter_grid_padding" style="?snsBroadcastTopStreamerPillStyle" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/topGifterBadge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/sns_live_broadcaster_header_badge_size" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_marginEnd="@dimen/quarter_grid_padding" />
+</LinearLayout>

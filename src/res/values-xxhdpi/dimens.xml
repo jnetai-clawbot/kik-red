@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="badge_text_view_top_pad">1.0dip</dimen>
+    <dimen name="half_dp">2.0px</dimen>
+    <item type="dimen" name="sns_shadow_1dp">3.0</item>
+    <item type="dimen" name="sns_shadow_2dp">6.0</item>
+    <item type="dimen" name="sns_shadow_3dp">9.0</item>
+    <item type="dimen" name="sns_shadow_6dp">18.0</item>
+    <dimen name="tipping_seek_bar_margin">36.0dip</dimen>
+</resources>

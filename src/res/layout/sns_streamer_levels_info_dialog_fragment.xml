@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/sns_half_grid_padding" android:clipToPadding="false" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_streamer_levels_info_dialog_title" style="@style/Sns.Dialog.Text.Title" />
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/streamer_levels_list_layout" android:padding="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/sns_streamer_levels_info_dialog_message" style="@style/Sns.Dialog.Text.Message" />
+    <Button android:theme="?snsLevelsInfoDialogDismissButtonTheme" android:id="@id/sns_btn_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_half_grid_padding" android:layout_marginTop="@dimen/grid_padding" android:layout_marginRight="@dimen/sns_half_grid_padding" android:text="@string/sns_btn_okay" android:textAllCaps="true" style="@style/Sns.Button" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="sns_shadow_1dp">2.0</item>
+    <item type="dimen" name="sns_shadow_2dp">4.0</item>
+    <item type="dimen" name="sns_shadow_3dp">6.0</item>
+    <item type="dimen" name="sns_shadow_6dp">12.0</item>
+    <dimen name="tipping_seek_bar_margin">0.0dip</dimen>
+</resources>

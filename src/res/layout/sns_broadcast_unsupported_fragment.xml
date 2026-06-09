@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sns_unsupported_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@color/black_80a" android:scaleType="centerCrop" />
+    <ImageButton android:layout_gravity="end" android:id="@id/sns_unsupported_close_btn" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:src="@drawable/ic_bc_close" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_marginEnd="10.0dip" style="?android:borderlessButtonStyle" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/sns_unsupported_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Regular" android:textSize="20.0sp" android:textColor="@color/sns_invertable_white_text" android:gravity="center_horizontal" android:id="@id/sns_unsupported_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/grid_padding" android:paddingEnd="@dimen/grid_padding" />
+        <ImageView android:id="@id/sns_unsupported_profile_img" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginTop="25.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.Regular" android:textSize="14.0sp" android:textColor="@color/sns_invertable_white_text" android:gravity="center_horizontal" android:id="@id/sns_unsupported_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="53.0dip" android:paddingRight="53.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <Button android:id="@id/sns_unsupported_action" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sns_broadcast_follow" android:layout_weight="1.0" style="@style/Sns.Button.Yellow" />
+            <Button android:id="@id/sns_unsupported_update" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sns_unsupported_update_now" android:layout_weight="1.0" style="@style/Sns.Button.Blue" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/sns_unsupported_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppCompat.ProgressBar" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sns_date_night_safety_container" android:paddingBottom="@dimen/sns_date_night_snackbar_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sns_date_night_safety_view" />
+    <include android:layout_gravity="bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sns_date_night_ursafe_view" />
+</FrameLayout>

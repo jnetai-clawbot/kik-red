@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="?android:textColorPrimary" android:id="@id/sns_header_title" android:background="?snsBackgroundElevated" style="?snsBroadcastViewerHeaderTextStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

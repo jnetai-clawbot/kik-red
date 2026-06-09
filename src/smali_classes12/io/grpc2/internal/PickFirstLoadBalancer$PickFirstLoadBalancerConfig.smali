@@ -1,0 +1,62 @@
+.class public final Lio/grpc2/internal/PickFirstLoadBalancer$PickFirstLoadBalancerConfig;
+.super Ljava/lang/Object;
+.source "PickFirstLoadBalancer.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/grpc2/internal/PickFirstLoadBalancer;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "PickFirstLoadBalancerConfig"
+.end annotation
+
+
+# instance fields
+.field final randomSeed:Ljava/lang/Long;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public final shuffleAddressList:Ljava/lang/Boolean;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Boolean;)V
+    .locals 1
+    .param p1    # Ljava/lang/Boolean;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Lio/grpc2/internal/PickFirstLoadBalancer$PickFirstLoadBalancerConfig;-><init>(Ljava/lang/Boolean;Ljava/lang/Long;)V
+
+    return-void
+.end method
+
+.method constructor <init>(Ljava/lang/Boolean;Ljava/lang/Long;)V
+    .locals 0
+    .param p1    # Ljava/lang/Boolean;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Long;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/grpc2/internal/PickFirstLoadBalancer$PickFirstLoadBalancerConfig;->shuffleAddressList:Ljava/lang/Boolean;
+
+    iput-object p2, p0, Lio/grpc2/internal/PickFirstLoadBalancer$PickFirstLoadBalancerConfig;->randomSeed:Ljava/lang/Long;
+
+    return-void
+.end method

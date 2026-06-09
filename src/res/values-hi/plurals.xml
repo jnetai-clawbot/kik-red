@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+        <item quantity="one">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">वीडियो को %d सेकंड पीछे ले जाएं</item>
+        <item quantity="one">वीडियो को %d सेकंड पीछे ले जाएं</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d नई सूचनाएं</item>
+        <item quantity="one">%d नई सूचनाएं</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">कृपया इंटरनेट से कनेक्ट करें अन्यथा आपकी स्ट्रीम %1$d सेकंड में बंद हो जाएगी।</item>
+        <item quantity="one">कृपया इंटरनेट से कनेक्ट करें अन्यथा आपकी स्ट्रीम %1$d सेकंड में बंद हो जाएगी।</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">{link} खरीदें और {days} दिनों के लिए कमर्शियल फ्री हो जाएं</item>
+        <item quantity="one">{link} खरीदें और एक दिन के लिए कमर्शियल फ्री हो जाएं</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">%1$d गिफ्टर को संदेश भेजा!</item>
+        <item quantity="one">%1$d गिफ्टर को संदेश भेजा!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d वर्ण शेष हैं।</item>
+        <item quantity="one">%1$d वर्ण शेष हैं।</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">%1$d दिनों में समाप्त होता है!</item>
+        <item quantity="one">%1$d दिन में समाप्त होता है!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d दिन</item>
+        <item quantity="one">%1$d दिन</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$dघं</item>
+        <item quantity="one">%1$dघं</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d घंटे</item>
+        <item quantity="one">%1$d घंटा</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$dमि</item>
+        <item quantity="one">%1$dमि</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d मिनट</item>
+        <item quantity="one">%1$d मिनट</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$dसे</item>
+        <item quantity="one">%1$dसे</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d सेकंड</item>
+        <item quantity="one">%1$d सेकंड</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">पसंदीदा स्ट्रीमिंग अभी!</item>
+        <item quantity="one">पसंदीदा स्ट्रीमिंग अभी!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d घंटे</item>
+        <item quantity="one">%1$d घंटा</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d मिनट</item>
+        <item quantity="one">%1$d मिनट</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d फेवरेट लाइव!</item>
+        <item quantity="one">%1$d फेवरेट लाइव!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">प्रशंसकों</item>
+        <item quantity="one">प्रशंसक</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d धब्बे बचे</item>
+        <item quantity="one">%1$d धब्बे बचे</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">यह सीमित पहिया गायब होने से पहले केवल %1$s बार भेजा जा सकता है! अपने पसंदीदा स्ट्रीमर को अभी भेजें!</item>
+        <item quantity="one">यह सीमित पहिया गायब होने से पहले केवल %1$s बार ही भेजा जा सकता है! अपने पसंदीदा स्ट्रीमर को अभी भेजें!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">पॉइंट्स</item>
+        <item quantity="one">पॉइंट्स</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">हर वोटर को %1$d फ़्री वोट</item>
+        <item quantity="one">हर वोटर को %1$d फ़्री वोट</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">वोट देने की अनुमत सीमा ख़त्म हुई</item>
+        <item quantity="one">वोट देने की अनुमत सीमा ख़त्म हुई</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d वोट</item>
+        <item quantity="one">%1$d वोट</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">क्या आप वाकई बाउंसरों से %1$d हटाना चाहते हैं?</item>
+        <item quantity="one">क्या आप वाकई बाउंसरों से %1$d हटाना चाहते हैं?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">बाउंसर से %1$d स्ट्रीमर निकालें</item>
+        <item quantity="one">बाउंसर से %1$d स्ट्रीमर निकालें</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">शो को केवल %1$d हफ्ते पहले एडवांस में शेड्यूल किया जा सकता है।</item>
+        <item quantity="one">शो को केवल %1$d हफ्ते पहले एडवांस में शेड्यूल किया जा सकता है।</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d गिफ्टर</item>
+        <item quantity="one">1 गिफ्टर</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">%1$d शाउट आउट्स उपलब्ध हैं</item>
+        <item quantity="one">%1$d शाउट आउट उपलब्ध है</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d शो शेड्यूल किया गया</item>
+        <item quantity="one">%1$d / %2$d शो शेड्यूल किया गया</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">डायमंड्स</item>
+        <item quantity="one">डायमंड</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">प्रशंसक</item>
+        <item quantity="one">प्रशंसक</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">जीत</item>
+        <item quantity="one">जीत</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">%2$d मिनट के लिए %1$s का उपयोग किया!</item>
+        <item quantity="one">%2$d मिनट के लिए %1$s का उपयोग किया!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">क्या आप वाकई पसंदीदा से %1$d को निकालना चाहते हैं?</item>
+        <item quantity="one">क्या आप वाकई पसंदीदा से %1$d को निकालना चाहते हैं?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">पसंदीदा से %1$d स्ट्रीमर निकालें</item>
+        <item quantity="one">पसंदीदा से %1$d स्ट्रीमर निकालें</item>
+    </plurals>
+</resources>

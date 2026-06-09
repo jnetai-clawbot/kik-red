@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Wyzwania to codzienne i cotygodniowe zadania do wykonania, za które otrzymujesz nagrody!</item>
+        <item>Ukończ wyzwanie i wróć do menu Wyzwania, aby odebrać nagrodę. Odebrane nagrody można znaleźć w sekcji Przedmioty.</item>
+        <item>Niektóre wyzwania będą łatwe, a inne – trudniejsze. Ukończ je wszystkie, by otrzymać jak najwięcej nagród!</item>
+    </string-array>
+</resources>

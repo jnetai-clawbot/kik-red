@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:drawable="@drawable/sns_vip_purple_confetti" />
+    <item android:gravity="center" android:drawable="@drawable/sns_ic_live_vip_purple_48" android:top="3.0dip" />
+</layer-list>

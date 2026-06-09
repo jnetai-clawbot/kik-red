@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sns_recharge_product_list" android:background="@color/sns_invertable_white_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/sns_recharge_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.meetme.util.android.ui.EmptyView android:id="@id/sns_recharge_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ev_message="@string/sns_recharge_empty" />
+</FrameLayout>

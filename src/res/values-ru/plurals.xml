@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Перемотать на %d секунды вперед</item>
+        <item quantity="one">Перемотать на %d секунду вперед</item>
+        <item quantity="few">Перемотать на %d секунды вперед</item>
+        <item quantity="many">Перемотать на %d секунд вперед</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Перемотать на %d секунды назад</item>
+        <item quantity="one">Перемотать на %d секунду назад</item>
+        <item quantity="few">Перемотать на %d секунды назад</item>
+        <item quantity="many">Перемотать на %d секунд назад</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нового уведомления</item>
+        <item quantity="one">%d новое уведомление</item>
+        <item quantity="few">%d новых уведомления</item>
+        <item quantity="many">%d новых уведомлений</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">Подключитесь, пожалуйста к Интернету. В противном случае ваш стрим будет завершен через %1$d секунды.</item>
+        <item quantity="one">Подключитесь, пожалуйста к Интернету. В противном случае ваш стрим будет завершен через %1$d секунду.</item>
+        <item quantity="few">Подключитесь, пожалуйста к Интернету. В противном случае ваш стрим будет завершен через %1$d секунды.</item>
+        <item quantity="many">Подключитесь, пожалуйста к Интернету. В противном случае ваш стрим будет завершен через %1$d секунд.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">Купите {link} и забудьте про рекламу на {days} дня!</item>
+        <item quantity="one">Купите {link} и забудьте про рекламу на целый день!</item>
+        <item quantity="few">Купите {link} и забудьте про рекламу на {days} дня!</item>
+        <item quantity="many">Купите {link} и забудьте про рекламу на {days} дней!</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">Сообщение отправлено %1$d поклоннику!</item>
+        <item quantity="one">Сообщение отправлено %1$d поклоннику!</item>
+        <item quantity="few">Сообщение отправлено %1$d поклонникам!</item>
+        <item quantity="many">Сообщение отправлено %1$d поклонникам!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">Осталось %1$d символа</item>
+        <item quantity="one">Остался %1$d символ</item>
+        <item quantity="few">Осталось %1$d символа</item>
+        <item quantity="many">Осталось %1$d символов</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">Истекает через %1$d дня!</item>
+        <item quantity="one">Истекает через %1$d день!</item>
+        <item quantity="few">Истекает через %1$d дня!</item>
+        <item quantity="many">Истекает через %1$d дней!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d дня</item>
+        <item quantity="one">%1$d день</item>
+        <item quantity="few">%1$d дня</item>
+        <item quantity="many">%1$d дней</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$dч</item>
+        <item quantity="one">%1$dч</item>
+        <item quantity="few">%1$dч</item>
+        <item quantity="many">%1$dч</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d часа назад</item>
+        <item quantity="one">%1$d час назад</item>
+        <item quantity="few">%1$d часа назад</item>
+        <item quantity="many">%1$d часов назад</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$dмин</item>
+        <item quantity="one">%1$dмин</item>
+        <item quantity="few">%1$dмин</item>
+        <item quantity="many">%1$dмин</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d минуты назад</item>
+        <item quantity="one">%1$d минуту назад</item>
+        <item quantity="few">%1$d минуты назад</item>
+        <item quantity="many">%1$d минут назад</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$dсек.</item>
+        <item quantity="one">%1$dсек.</item>
+        <item quantity="few">%1$dсек.</item>
+        <item quantity="many">%1$dсек.</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d секунды</item>
+        <item quantity="one">%1$d секунда</item>
+        <item quantity="few">%1$d секунды</item>
+        <item quantity="many">%1$d секунд</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">Трансляции в Избранном!</item>
+        <item quantity="one">Трансляция в Избранном!</item>
+        <item quantity="few">Трансляции в Избранном!</item>
+        <item quantity="many">Трансляций в Избранном!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d часа назад</item>
+        <item quantity="one">%1$d час назад</item>
+        <item quantity="few">%1$d часа назад</item>
+        <item quantity="many">%1$d часов назад</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d минуты назад</item>
+        <item quantity="one">%1$d минуту назад</item>
+        <item quantity="few">%1$d минуты назад</item>
+        <item quantity="many">%1$d минут назад</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d избранных в Live</item>
+        <item quantity="one">%1$d избранный в Live</item>
+        <item quantity="few">%1$d избранных в Live</item>
+        <item quantity="many">%1$d избранных в Live</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">Фанаты</item>
+        <item quantity="one">Фaf</item>
+        <item quantity="few">Фaha</item>
+        <item quantity="many">Фанаты</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d места осталось</item>
+        <item quantity="one">%1$d место осталось</item>
+        <item quantity="few">%1$d места осталось</item>
+        <item quantity="many">%1$d мест осталось</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">Отправьте это колесо своему любимому стримеру. У вас есть всего %1$s шанса, после чего колесо исчезнет!</item>
+        <item quantity="one">Отправьте это колесо своему любимому стримеру. У вас есть всего %1$s шанс, после чего колесо исчезнет!</item>
+        <item quantity="few">Отправьте это колесо своему любимому стримеру. У вас есть всего %1$s шанса, после чего колесо исчезнет!</item>
+        <item quantity="many">Отправьте это колесо своему любимому стримеру. У вас есть всего %1$s шансов, после чего колесо исчезнет!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">Баллы</item>
+        <item quantity="one">Балл</item>
+        <item quantity="few">Баллы</item>
+        <item quantity="many">Баллы</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d бесплатных голоса на пользователя</item>
+        <item quantity="one">%1$d бесплатный голос на пользователя</item>
+        <item quantity="few">%1$d бесплатных голоса на пользователя</item>
+        <item quantity="many">%1$d бесплатных голосов на пользователя</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">Превышено допустимое количество голосов</item>
+        <item quantity="one">Превышено допустимое количество голосов</item>
+        <item quantity="few">Превышено допустимое количество голосов</item>
+        <item quantity="many">Превышено допустимое количество голосов</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d Голосов</item>
+        <item quantity="one">%1$d Голос</item>
+        <item quantity="few">%1$d Голоса</item>
+        <item quantity="many">%1$d Голосов</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">Вы уверены, что хотите удалить %1$d из вышибал?</item>
+        <item quantity="one">Вы уверены, что хотите удалить %1$d из вышибал?</item>
+        <item quantity="few">Вы уверены, что хотите удалить %1$d из вышибал?</item>
+        <item quantity="many">Вы уверены, что хотите удалить %1$d из вышибал?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">Удалить %1$d стримера из вышибал</item>
+        <item quantity="one">Удалить %1$d стримера из вышибал</item>
+        <item quantity="few">Удалить %1$d стримеров из вышибал</item>
+        <item quantity="many">Удалить %1$d стримеров из вышибал</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">Шоу могут быть запланированы за %1$d недели</item>
+        <item quantity="one">Шоу могут быть запланированы за %1$d неделю.</item>
+        <item quantity="few">Шоу могут быть запланированы за %1$d недели</item>
+        <item quantity="many">Шоу могут быть запланированы за %1$d недель</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d поклонника</item>
+        <item quantity="one">1 поклонник</item>
+        <item quantity="few">%1$d поклонника</item>
+        <item quantity="many">%1$d поклонников</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">Можно выделить сообщений: %1$d</item>
+        <item quantity="one">Можно выделить %1$d сообщение</item>
+        <item quantity="few">Можно выделить %1$d сообщения</item>
+        <item quantity="many">Можно выделить %1$d сообщений</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">Запланирована %1$d/%2$d тематическая трансляция</item>
+        <item quantity="one">Запланирована %1$d/%2$d тематическая трансляция</item>
+        <item quantity="few">Запланировано %1$d/%2$d тематических трансляции</item>
+        <item quantity="many">Запланировано %1$d/%2$d тематических трансляций</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">Бриллианта</item>
+        <item quantity="one">Бриллиант</item>
+        <item quantity="few">Бриллианта</item>
+        <item quantity="many">Бриллиантов</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">Фаната</item>
+        <item quantity="one">Фанат</item>
+        <item quantity="few">Фаната</item>
+        <item quantity="many">Фанатов</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">Победы</item>
+        <item quantity="one">Победа</item>
+        <item quantity="few">Победы</item>
+        <item quantity="many">Побед</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">Вы применили %1$s на %2$d мин.!</item>
+        <item quantity="one">Вы применили %1$s на %2$d минуту!</item>
+        <item quantity="few">Вы применили %1$s на %2$d минуты!</item>
+        <item quantity="many">Вы применили %1$s на %2$d минут!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">Вы уверены, что хотите удалить %1$d из Избранных?</item>
+        <item quantity="one">Вы уверены, что хотите удалить %1$d из Избранных?</item>
+        <item quantity="few">Вы уверены, что хотите удалить %1$d из Избранных?</item>
+        <item quantity="many">Вы уверены, что хотите удалить %1$d из Избранных?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">Отписаться от %1$d стримера</item>
+        <item quantity="one">Отписаться от %1$d стримера</item>
+        <item quantity="few">Отписаться от %1$d стримеров</item>
+        <item quantity="many">Отписаться от %1$d стримеров</item>
+    </plurals>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Extras" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lll1l11IIlllIIl1 android:title="Conversations" />
+    <blue.lllIlI1l1llI11I1 android:title="Don't Bump Chat" android:key="blue.block.bump" android:summary="If enabled, the chat list won't jump to the top when receiving new messages" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Hide Empty Conversations" android:key="remove.empty" android:summary="All conversations with no messages will be hidden" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Chat Categories" android:key="blue.category.enabled" android:summary="Split conversations into categories on the home screen, showing the unread count for each category" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Notifications" />
+    <blue.lllIlI1l1llI11I1 android:title="Keep-Alive Service" android:key="blue.keep.alive" android:summary="Keeps the app running in the background. Enable for reliable notifications." kik:pref_divider="full_bottom" />
+    <blue.I11Ill1lIl111111 android:title="Ignore Battery Optimizations" android:key="blue.keep.alive.battery" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Connection" />
+    <blue.lllIlI1l1llI11I1 android:title="Show Connecting Spinner" android:key="blue.show.connecting" android:summary="Shown on the home screen when you aren't connected to Kik, similar to the iOS version" android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Show Backoffs" android:key="blue.show.backoff" android:summary="Notifies you when you receive a backoff, causing an extended disconnection." kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Force Reconnect" android:key="force.reconnect" android:summary="Removes the connection attempt limiter.\nMay impact battery life." kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Force English Mode" android:key="blue.force.english" android:summary="Overrides the Kik server device language to be English.\nThis is required for many features to work properly if you are using another language." kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Storage Options" />
+    <blue.II11IIl11ll1Ill1 android:title="" android:key="blue.saf.manage.external.storage" android:summary="" kik:pref_divider="full_bottom" />
+    <blue.I1IlIl1l11111I11 android:title="Delete all contacts" android:key="contacts" android:summary="Deletes all users from your friends list" kik:pref_divider="full_bottom" />
+    <blue.I1IlIl1l11111I11 android:title="Delete all messages" android:key="messages" android:summary="Clears all messages without signing out" kik:pref_divider="full_bottom" />
+    <blue.I1IlIl1l11111I11 android:title="Delete all pictures/videos" android:key="media" android:summary="Clears ONLY media messages without signing out" kik:pref_divider="full_bottom" />
+    <blue.I1IlIl1l11111I11 android:title="Delete all profile pictures" android:key="pfps" android:summary="Clears cached profile pictures, causing them to refresh" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Clear Cache" android:key="blue.clear.cache" android:summary="Deletes the in app cache every time you open the app\n\nNote: This could increase data usage." kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Text Customization" />
+    <blue.lllIlI1l1llI11I1 android:title="Welcome Back Toast" android:key="blue.toast" android:summary="Greets you every time you come back to KIK-Red" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Privacy Mode" android:key="blue.privacy.mode" android:summary="Hides text message previews on the convo screen" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Fix Broken Links" android:key="blue.fix.broken.links" android:summary="All links in text messages will be clickable" kik:pref_divider="full_bottom" />
+    <blue.I1lI1l1I1l11IIlI android:title="Customize Toast" android:key="blue.toastText" android:summary="Set the welcome back toast message" android:defaultValue="Welcome To KIK-Red 💙" kik:pref_divider="full_bottom" />
+    <blue.I1lI1l1I1l11IIlI android:title="Custom Hint" android:key="custom.hint" android:summary="Change the type a message... text" android:defaultValue="Type !bot" kik:pref_divider="full_bottom" />
+    <blue.I1lI1l1I1l11IIlI android:title="Custom Typing" android:key="custom.typing" android:summary="Change the is typing... text" android:defaultValue="is typing..." kik:pref_divider="top|bottom" />
+    <blue.I1lI1l1I1l11IIlI android:title="Custom Blocked" android:key="custom.blocked" android:summary="Change the *** Blocked Message *** text" android:defaultValue="*** Blocked Message ***" kik:pref_divider="top|bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="A/B Test Overrides" />
+    <kik.red.widget.preferences.AbTestsPreference android:title="A/B Tests (Read Only)" android:key="ab_stuff" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Blur Media" android:key="blue.blur" android:summary="Blurs incoming media in all chats" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="No Pull" android:key="blue.pull" android:summary="Disables pull to search" kik:pref_divider="full_bottom" />
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

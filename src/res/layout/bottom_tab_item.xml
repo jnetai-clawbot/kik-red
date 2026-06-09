@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@android:id/icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="4.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="@style/BottomTabTextAppereance" android:gravity="center" android:layout_gravity="center_vertical" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@android:id/icon" android:layout_centerVertical="true" />
+    <TextView android:textSize="8.0sp" android:textColor="?white" android:gravity="center" android:id="@id/badge_view_1" android:background="@drawable/ic_noti_badge_blue_thin" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="-1.0dip" android:layout_marginRight="-6.0dip" android:layout_alignTop="@android:id/icon" android:layout_alignRight="@android:id/icon" android:foregroundGravity="center" />
+</RelativeLayout>

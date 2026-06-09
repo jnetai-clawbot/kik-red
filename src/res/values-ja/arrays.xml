@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>チャレンジとは、クリアすると賞品がもらえる、毎日、毎週行う課題のことです。</item>
+        <item>チャレンジを完了したら、チャレンジメニューに戻って賞品を請求してください。請求した賞品は、アイテムメニューで確認できます。</item>
+        <item>簡単なチャレンジもあれば、難しいチャレンジもあります。全部クリアして、すべての報酬をゲットしましょう！</item>
+    </string-array>
+</resources>

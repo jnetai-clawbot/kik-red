@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight" android:paddingStart="?listPreferredItemPaddingStart" android:paddingEnd="?listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/sns_list_item_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerInside" app:tint="?startIconTint" />
+    <TextView android:textAppearance="?textAppearanceSubtitle1" android:textColor="@color/sns_material_list_item_primary" android:id="@id/sns_list_item_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/sns_material_list_item_secondary" android:ellipsize="end" android:gravity="end" android:id="@id/sns_list_item_subtitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+</LinearLayout>

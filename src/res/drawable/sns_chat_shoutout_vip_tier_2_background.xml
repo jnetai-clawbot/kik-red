@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="#bf8334d6" android:endColor="#bf621fbb" android:angle="0.0" />
+    <corners android:radius="@dimen/sns_broadcast_chat_shoutout_line_radius" />
+</shape>

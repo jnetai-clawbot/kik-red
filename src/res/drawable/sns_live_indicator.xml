@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:visible="true" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="@android:integer/config_longAnimTime" android:drawable="@drawable/sns_live_indicator_on" />
+    <item android:duration="@android:integer/config_longAnimTime" android:drawable="@drawable/sns_live_indicator_off" />
+</animation-list>

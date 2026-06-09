@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/chat_item_background_radius" android:bottomLeftRadius="@dimen/chat_item_background_radius" />
+    <gradient android:startColor="#bf138359" android:endColor="@color/transparent" android:angle="0.0" android:centerColor="#33da0c09" />
+</shape>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/topbar" android:background="?appbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/back_button_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/kik_back_button" />
+        <kik.red.widget.KikTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/confirm_name_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Send" style="@style/KikTextView.Toolbar.Action" />
+    </LinearLayout>
+    <kik.red.chat.view.SearchBarViewImpl android:id="@id/floating_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Search Users / Groups" android:layout_below="@id/topbar" android:inputType="textShortMessage" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" android:layout_above="@id/bottom_divider" android:layout_below="@id/floating_search_bar" android:layout_marginStart="0.0dip" android:layout_alignParentStart="true" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@android:id/text1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Contacts Found" android:layout_centerInParent="true" />
+    <View android:id="@id/bottom_divider" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@android:id/tabs" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="14.0sp" android:id="@android:id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Options" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

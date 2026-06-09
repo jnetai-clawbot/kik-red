@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:theme="?snsGoalsWidgetThemeStyle" android:id="@id/goalsWidget" android:layout_width="wrap_content" android:layout_height="140.0dip" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/goalsWidgetContainer" android:padding="4.0dip" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?snsGoalsWidgetContainerStyle">
+        <ImageView android:id="@id/goalsWidgetIcon" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="2.0dip" app:layout_constraintEnd_toEndOf="@id/goalsWidgetProgress" app:layout_constraintStart_toStartOf="@id/goalsWidgetProgress" app:layout_constraintTop_toTopOf="parent" style="?snsGoalsWidgetIconStyle" />
+        <TextView android:id="@id/goalsWidgetGoal" android:layout_width="22.0dip" android:layout_height="18.0dip" android:layout_marginTop="2.0dip" android:maxLines="1" android:lines="1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/goalsWidgetIcon" style="?textAppearanceCaption" />
+        <ProgressBar android:id="@id/goalsWidgetProgress" android:layout_width="22.0dip" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/goalsWidgetGoal" style="?snsGoalsWidgetProgressStyle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

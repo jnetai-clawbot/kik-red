@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="zero">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="one">تقديم سريع للفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">تقديم سريع للفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">تقديم سريع للفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">تقديم سريع للفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="zero">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="one">ترجيع الفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">ترجيع الفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">ترجيع الفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">ترجيع الفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d إشعار جديد</item>
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">يرجى الاتصال بالإنترنت أو سوف ينتهي المحتوى الذي تنشره %1$d ثانية.</item>
+        <item quantity="zero">يرجى الاتصال بالإنترنت أو سوف ينتهي المحتوى الذي تنشره %1$d ثواني.</item>
+        <item quantity="one">يرجى الاتصال بالإنترنت أو سوف ينتهي المحتوى الذي تنشره %1$d ثانية.</item>
+        <item quantity="two">يرجى الاتصال بالإنترنت أو سوف ينتهي المحتوى الذي تنشره %1$d من الثواني.</item>
+        <item quantity="few">يرجى الاتصال بالإنترنت أو سوف ينتهي المحتوى الذي تنشره %1$d ثواني.</item>
+        <item quantity="many">يرجى الاتصال بالإنترنت أو سوف ينتهي المحتوى الذي تنشره %1$d ثانية.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">اشترِ {link} واستمتع بالتطبيق من دون إعلانات لمدة {days} يوم</item>
+        <item quantity="zero">اشترِ {link} واستمتع بالتطبيق من دون إعلانات لمدة {days} يوم</item>
+        <item quantity="one">اشترِ {link} واستمتع بالتطبيق من دون إعلانات لمدة يوم واحد</item>
+        <item quantity="two">اشترِ {link} واستمتع بالتطبيق من دون إعلانات لمدة يومين</item>
+        <item quantity="few">اشترِ {link} واستمتع بالتطبيق من دون إعلانات لمدة {days} أيام</item>
+        <item quantity="many">اشترِ {link} واستمتع بالتطبيق من دون إعلانات لمدة {days} يومًا</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">تم إرسال الرسالة إلى %1$d مُرسلي للهدايا!</item>
+        <item quantity="zero">تم إرسال الرسالة إلى %1$d من مُرسلي الهدايا!</item>
+        <item quantity="one">تم إرسال الرسالة إلى %1$d من مُرسلي الهدايا!</item>
+        <item quantity="two">تم إرسال الرسالة إلى %1$d من مُرسلي الهدايا!</item>
+        <item quantity="few">تم إرسال الرسالة إلى %1$d مُرسلي الهدايا!</item>
+        <item quantity="many">تم إرسال الرسالة إلى %1$d مُرسلٍ من مُرسلي الهدايا!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d حرفاً متبقي.</item>
+        <item quantity="zero">%1$d من الحروف متبقية.</item>
+        <item quantity="one">%1$d حرف متبقي.</item>
+        <item quantity="two">%1$d من الحروف متبقية.</item>
+        <item quantity="few">%1$d حروف متبقية.</item>
+        <item quantity="many">%1$d حرفاً متبقي.</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">تنتهي الصلاحية في %1$d يوم!</item>
+        <item quantity="zero">تنتهي الصلاحية في %1$d من الأيام!</item>
+        <item quantity="one">تنتهي الصلاحية في %1$d يوم!</item>
+        <item quantity="two">تنتهي الصلاحية في %1$d من الأيام!</item>
+        <item quantity="few">تنتهي الصلاحية في %1$d أيام!</item>
+        <item quantity="many">تنتهي الصلاحية في %1$d يوم!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d يوم</item>
+        <item quantity="zero">%1$d أيام</item>
+        <item quantity="one">%1$d يوم</item>
+        <item quantity="two">يومان (%1$d)</item>
+        <item quantity="few">%1$d أيام</item>
+        <item quantity="many">%1$d يوم</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d ساعة</item>
+        <item quantity="zero">%1$d ساعة</item>
+        <item quantity="one">%1$d ساعتين</item>
+        <item quantity="two">%1$d ساعات</item>
+        <item quantity="few">%1$d ساعة</item>
+        <item quantity="many">%1$d ساعة</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d ساعة</item>
+        <item quantity="zero">%1$d ساعة</item>
+        <item quantity="one">%1$d ساعة</item>
+        <item quantity="two">%1$d ساعة</item>
+        <item quantity="few">%1$d ساعة</item>
+        <item quantity="many">%1$d ساعة</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d دقيقة</item>
+        <item quantity="zero">%1$d دقيقة</item>
+        <item quantity="one">%1$d دقيقتان</item>
+        <item quantity="two">%1$d دقائق</item>
+        <item quantity="few">%1$d دقيقة</item>
+        <item quantity="many">%1$d دقيقة</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d دقائق</item>
+        <item quantity="zero">%1$d دقائق</item>
+        <item quantity="one">%1$d دقائق</item>
+        <item quantity="two">%1$d دقائق</item>
+        <item quantity="few">%1$d دقائق</item>
+        <item quantity="many">%1$d دقائق</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d ثانية</item>
+        <item quantity="zero">%1$d ثوان</item>
+        <item quantity="one">%1$d ثانية</item>
+        <item quantity="two">ثانيتان</item>
+        <item quantity="few">%1$d ثوان</item>
+        <item quantity="many">%1$d ثانية</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">المفضلة تبث الآن!</item>
+        <item quantity="zero">المفضلة تبث الآن!</item>
+        <item quantity="one">المفضلة تبث الآن!</item>
+        <item quantity="two">المفضلة تبث الآن!</item>
+        <item quantity="few">المفضلة تبث الآن!</item>
+        <item quantity="many">المفضلة تبث الآن!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d ساعة</item>
+        <item quantity="zero">%1$d ساعة</item>
+        <item quantity="one">%1$d ساعة</item>
+        <item quantity="two">%1$d ساعة</item>
+        <item quantity="few">%1$d ساعة</item>
+        <item quantity="many">%1$d ساعة</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d دقائق</item>
+        <item quantity="zero">%1$d دقائق</item>
+        <item quantity="one">%1$d دقائق</item>
+        <item quantity="two">%1$d دقائق</item>
+        <item quantity="few">%1$d دقائق</item>
+        <item quantity="many">%1$d دقائق</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d من المفضلة مباشر!</item>
+        <item quantity="zero">%1$d من المفضلة مباشر!</item>
+        <item quantity="one">%1$d من المفضلة مباشر!</item>
+        <item quantity="two">%1$d من المفضلة مباشر!</item>
+        <item quantity="few">%1$d من المفضلة مباشر!</item>
+        <item quantity="many">%1$d من المفضلة مباشر!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">معجب</item>
+        <item quantity="zero">معجب</item>
+        <item quantity="one">معجب</item>
+        <item quantity="two">معجبين</item>
+        <item quantity="few">معجبين</item>
+        <item quantity="many">معجب</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">تبقى %1$d مكان</item>
+        <item quantity="zero">تبقى %1$d من الأماكن</item>
+        <item quantity="one">تبقى %1$d مكان</item>
+        <item quantity="two">تبقى %1$d من الأماكن</item>
+        <item quantity="few">تبقى %1$d أماكن</item>
+        <item quantity="many">تبقى %1$d مكان</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">يمكن إرسال هذه العجلة المحدودة %1$s مرة فقط قبل أن تختفي! إرسال واحدة الآن إلى صاحب البث المفضل لك!</item>
+        <item quantity="zero">يمكن إرسال هذه العجلة المحدودة %1$s مرة فقط قبل أن تختفي! إرسال واحدة الآن إلى صاحب البث المفضل لك!</item>
+        <item quantity="one">يمكن إرسال هذه العجلة المحدودة مرة واحدة فقط قبل أن تختفي! إرسال واحدة الآن إلى صاحب البث المفضل لك!</item>
+        <item quantity="two">يمكن إرسال هذه العجلة المحدودة مرتين فقط قبل أن تختفي! إرسال واحدة الآن إلى صاحب البث المفضل لك!</item>
+        <item quantity="few">يمكن إرسال هذه العجلة المحدودة %1$s مرات فقط قبل أن تختفي! إرسال واحدة الآن إلى صاحب البث المفضل لك!</item>
+        <item quantity="many">يمكن إرسال هذه العجلة المحدودة %1$s مرة فقط قبل أن تختفي! إرسال واحدة الآن إلى صاحب البث المفضل لك!</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d صوت مجاني لكل مقترع</item>
+        <item quantity="zero">%1$d صوت مجاني لكل مقترع</item>
+        <item quantity="one">%1$d صوت مجاني لك مقترع</item>
+        <item quantity="two">%1$d صوتان مجانيان لكل مقترع</item>
+        <item quantity="few">%1$d أصوات مجانية لكل مقترع</item>
+        <item quantity="many">%1$d صوت مجاني لكل مقترع</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">تم تجاوز الأصوات المسموح بها</item>
+        <item quantity="zero">تم تجاوز الأصوات المسموح بها</item>
+        <item quantity="one">تم تجاوز عدد الأصوات المسموح بها</item>
+        <item quantity="two">تم تجاوز الأصوات المسموح بها</item>
+        <item quantity="few">تم تجاوز الأصوات المسموح بها</item>
+        <item quantity="many">تم تجاوز الأصوات المسموح بها</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d صوت</item>
+        <item quantity="zero">%1$d صوت</item>
+        <item quantity="one">%1$d صوت</item>
+        <item quantity="two">%1$d صوتان</item>
+        <item quantity="few">%1$d أصوات</item>
+        <item quantity="many">%1$d صوت</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">هل أنت متأكد أنك تريد إزالة %1$d من حفظ النظام؟</item>
+        <item quantity="zero">هل أنت متأكد أنك تريد إزالة %1$d من حفظ النظام؟</item>
+        <item quantity="one">هل أنت متأكد أنك تريد إزالة %1$d من حفظ النظام؟</item>
+        <item quantity="two">هل أنت متأكد أنك تريد إزالة %1$d من حفظ النظام؟</item>
+        <item quantity="few">هل أنت متأكد أنك تريد إزالة %1$d من حفظ النظام؟</item>
+        <item quantity="many">هل أنت متأكد أنك تريد إزالة %1$d من حفظ النظام؟</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">إزالة %1$d أشخاص يقومون بالبث من حفظ النظام</item>
+        <item quantity="zero">إزالة %1$d شخص يقوم بالبث من حفظ النظام</item>
+        <item quantity="one">إزالة %1$d شخصين يقومان بالبث من حفظ النظام</item>
+        <item quantity="two">إزالة %1$d أشخاص يقومون بالبث من حفظ النظام</item>
+        <item quantity="few">إزالة %1$d شخصا يقومون بالبث من حفظ النظام</item>
+        <item quantity="many">إزالة %1$d شخص يقومون بالبث من حفظ النظام</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">يمكن ترتيب موعد العروض بشكل مُسبق خلال %1$d أسبوع.</item>
+        <item quantity="zero">يمكن ترتيب موعد العروض بشكل مُسبق خلال %1$d من الأسابيع</item>
+        <item quantity="one">.يمكن ترتيب موعد العروض بشكل مُسبق خلال %1$d أسبوع</item>
+        <item quantity="two">يمكن ترتيب موعد العروض بشكل مُسبق خلال %1$d أسابيع.</item>
+        <item quantity="few">يمكن ترتيب موعد العروض بشكل مُسبق خلال %1$d أسابيع.</item>
+        <item quantity="many">يمكن ترتيب موعد العروض بشكل مُسبق خلال %1$d أسبوعاً.</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d مُرسلٍ الهدايا</item>
+        <item quantity="zero">%1$d من مُرسلي الهدايا</item>
+        <item quantity="one">1 مُرسل للهدايا</item>
+        <item quantity="two">%1$d من مُرسلي الهدايا</item>
+        <item quantity="few">%1$d مُرسلي للهدايا</item>
+        <item quantity="many">%1$d مُرسلٍ للهدايا</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">%1$d رسالة صوتية مميزة متاحة</item>
+        <item quantity="zero">%1$d رسالة صوتية مميزة متاحة</item>
+        <item quantity="one">رسالة صوتية مميزة واحدة متاحة</item>
+        <item quantity="two">رسالتان صوتيتان مميزتان متاحتان</item>
+        <item quantity="few">%1$d رسائل صوتية مميزة متاحة</item>
+        <item quantity="many">%1$d رسالة صوتية مميزة متاحة</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d عرض تم الترتيب لها</item>
+        <item quantity="zero">%1$d/%2$d من العروض تم الترتيب لها</item>
+        <item quantity="one">%1$d/%2$d عرض تم الترتيب له</item>
+        <item quantity="two">%1$d/%2$d من العروض تم الترتيب لها</item>
+        <item quantity="few">%1$d/%2$d عروض تم الترتيب لها</item>
+        <item quantity="many">%1$d/%2$d عرضاً تم الترتيب لها</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">ماسة</item>
+        <item quantity="zero">ماسة</item>
+        <item quantity="one">ماسة</item>
+        <item quantity="two">ماستين</item>
+        <item quantity="few">ماسات</item>
+        <item quantity="many">ماسة</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">معجب</item>
+        <item quantity="zero">معجب</item>
+        <item quantity="one">معجب</item>
+        <item quantity="two">معجبين</item>
+        <item quantity="few">معجبين</item>
+        <item quantity="many">معجبين</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">مرات الفوز</item>
+        <item quantity="zero">مرات الفوز</item>
+        <item quantity="one">مرات الفوز</item>
+        <item quantity="two">مرات الفوز</item>
+        <item quantity="few">مرات الفوز</item>
+        <item quantity="many">مرات الفوز</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">تم استخدام %1$s لمدة %2$d دقيقة!</item>
+        <item quantity="zero">تم استخدم %1$s لمدة %2$d دقيقة!</item>
+        <item quantity="one">تم استخدام %1$s لمدة دقيقة %2$d واحدة!</item>
+        <item quantity="two">تم استخدام %1$s لمدة دقيقتين %2$d!</item>
+        <item quantity="few">تم استخدام %1$s لمدة %2$d دقائق!</item>
+        <item quantity="many">تم استخدام %1$s لمدة %2$d دقيقة!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">هل أنت متأكد أنك تريد إزالة %1$d من المفضلة؟</item>
+        <item quantity="zero">هل أنت متأكد أنك تريد إزالة %1$d من المفضلة؟</item>
+        <item quantity="one">هل أنت متأكد أنك تريد إزالة %1$d من المفضلة؟</item>
+        <item quantity="two">هل أنت متأكد أنك تريد إزالة %1$d من المفضلة؟</item>
+        <item quantity="few">هل أنت متأكد أنك تريد إزالة %1$d من المفضلة؟</item>
+        <item quantity="many">هل أنت متأكد أنك تريد إزالة %1$d من المفضلة؟</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">إزالة %1$d أشخاص يقومون بالبث من المفضلة</item>
+        <item quantity="zero">إزالة %1$d شخص يقوم بالبث من المفضلة</item>
+        <item quantity="one">إزالة %1$d شخصين يقومان بالبث من المفضلة</item>
+        <item quantity="two">إزالة %1$d أشخاص يقومون بالبث من المفضلة</item>
+        <item quantity="few">إزالة %1$d شخصا يقومون بالبث من المفضلة</item>
+        <item quantity="many">إزالة %1$d أشخاص يقومون بالبث من المفضلة</item>
+    </plurals>
+</resources>

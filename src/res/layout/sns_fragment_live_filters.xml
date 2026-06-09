@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" style="?snsLiveFiltersContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/sns_live_filters_screen_padding_top_bottom" android:paddingBottom="@dimen/sns_live_filters_screen_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/sns_gender_stub" android:layout="@layout/sns_live_filters_looking_for" android:inflatedId="@id/sns_live_filters_looking_for" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/sns_live_filters_gender_preference" />
+        <include layout="@layout/sns_live_filters_near_my_age" />
+        <include layout="@layout/sns_live_filters_single_ethnicity" />
+        <include layout="@layout/sns_live_filters_location" />
+        <include layout="@layout/sns_live_filters_language" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/topbar" android:background="?appbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height">
+        <include layout="@layout/kik_back_button" />
+    </LinearLayout>
+    <kik.red.chat.view.SearchBarViewImpl android:id="@id/floating_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:layout_below="@id/topbar" android:inputType="textShortMessage" />
+    <include android:id="@id/nav_bar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" android:layout_below="@id/floating_search_bar" layout="@layout/navbar_underline" />
+    <kik.red.widget.TransparentListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="?white" android:layout_below="@id/nav_bar_shadow" style="@style/KikListView" />
+</RelativeLayout>

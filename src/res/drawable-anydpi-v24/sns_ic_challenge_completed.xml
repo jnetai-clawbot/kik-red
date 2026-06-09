@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dip" android:width="32.0dip" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ffffffff" android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0" android:strokeColor="#00000000" android:strokeWidth="1.0" />
+    <path android:fillColor="#00000000" android:pathData="M16,16m-15.5,0a15.5,15.5 0,1 1,31 0a15.5,15.5 0,1 1,-31 0" android:strokeColor="#ff327732" android:strokeWidth="1.0" />
+    <path android:fillColor="@drawable/$sns_ic_challenge_completed__0" android:pathData="M16,31a14.9,14.9 0,0 1,-10.607 -4.394,14.9 14.9,0 0,1 -4.394,-10.607 14.9,14.9 0,0 1,4.394 -10.606,14.9 14.9,0 0,1 10.607,-4.393 14.9,14.9 0,0 1,10.607 4.393,14.9 14.9,0 0,1 4.394,10.606 14.9,14.9 0,0 1,-4.394 10.607A14.9,14.9 0,0 1,16 31ZM7.97,13.821 L5.676,16.803 14.165,23.915 26.324,10.6091 23.571,8.0852 13.936,18.8681 7.9709,13.821h0Z" />
+</vector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.wondrous.sns.ui.adapters.NotScrollableViewPager android:id="@id/sns_streamer_photo_view_pager" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/sns_streamer_profile_photo_bottom_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sns_user_photo_gradient_bottom" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/sns_streamer_profile_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

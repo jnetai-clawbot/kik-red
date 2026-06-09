@@ -1,0 +1,34 @@
+.class public final Lcom/kik/nux/login/common/RegistrationResponse$Failure;
+.super Lcom/kik/nux/login/common/RegistrationResponse;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/compose/runtime/internal/StabilityInferred;
+    parameters = 0x0
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/kik/nux/login/common/RegistrationResponse;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Failure"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Throwable;)V
+    .locals 1
+
+    const-string v0, "error"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lcom/kik/nux/login/common/RegistrationResponse;-><init>(Lkotlin/jvm/internal/c;)V
+
+    return-void
+.end method

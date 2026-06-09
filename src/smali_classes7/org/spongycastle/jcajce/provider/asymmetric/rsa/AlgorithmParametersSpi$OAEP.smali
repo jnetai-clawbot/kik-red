@@ -1,0 +1,421 @@
+.class public Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi$OAEP;
+.super Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "OAEP"
+.end annotation
+
+
+# instance fields
+.field a:Ljavax/crypto/spec/OAEPParameterSpec;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final a(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/spec/InvalidParameterSpecException;
+        }
+    .end annotation
+
+    const-class v0, Ljavax/crypto/spec/OAEPParameterSpec;
+
+    if-ne p1, v0, :cond_0
+
+    iget-object p1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi$OAEP;->a:Ljavax/crypto/spec/OAEPParameterSpec;
+
+    if-eqz p1, :cond_0
+
+    return-object p1
+
+    :cond_0
+    new-instance p1, Ljava/security/spec/InvalidParameterSpecException;
+
+    const-string/jumbo v0, "unknown parameter spec passed to OAEP parameters object."
+
+    invoke-direct {p1, v0}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method protected final engineGetEncoded()[B
+    .locals 6
+
+    new-instance v0, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    iget-object v1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi$OAEP;->a:Ljavax/crypto/spec/OAEPParameterSpec;
+
+    invoke-virtual {v1}, Ljavax/crypto/spec/OAEPParameterSpec;->getDigestAlgorithm()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lorg/spongycastle/jcajce/provider/util/DigestFactory;->b(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    move-result-object v1
+
+    new-instance v2, Lorg/spongycastle/asn1/DERNull;
+
+    invoke-direct {v2}, Lorg/spongycastle/asn1/DERNull;-><init>()V
+
+    invoke-direct {v0, v1, v2}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;Lorg/spongycastle/asn1/ASN1Encodable;)V
+
+    iget-object v1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi$OAEP;->a:Ljavax/crypto/spec/OAEPParameterSpec;
+
+    invoke-virtual {v1}, Ljavax/crypto/spec/OAEPParameterSpec;->getMGFParameters()Ljava/security/spec/AlgorithmParameterSpec;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/security/spec/MGF1ParameterSpec;
+
+    new-instance v2, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    sget-object v3, Lorg/spongycastle/asn1/pkcs/PKCSObjectIdentifiers;->w2:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    new-instance v4, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    invoke-virtual {v1}, Ljava/security/spec/MGF1ParameterSpec;->getDigestAlgorithm()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lorg/spongycastle/jcajce/provider/util/DigestFactory;->b(Ljava/lang/String;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    move-result-object v1
+
+    new-instance v5, Lorg/spongycastle/asn1/DERNull;
+
+    invoke-direct {v5}, Lorg/spongycastle/asn1/DERNull;-><init>()V
+
+    invoke-direct {v4, v1, v5}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;Lorg/spongycastle/asn1/ASN1Encodable;)V
+
+    invoke-direct {v2, v3, v4}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;Lorg/spongycastle/asn1/ASN1Encodable;)V
+
+    iget-object v1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi$OAEP;->a:Ljavax/crypto/spec/OAEPParameterSpec;
+
+    invoke-virtual {v1}, Ljavax/crypto/spec/OAEPParameterSpec;->getPSource()Ljavax/crypto/spec/PSource;
+
+    move-result-object v1
+
+    check-cast v1, Ljavax/crypto/spec/PSource$PSpecified;
+
+    new-instance v3, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    sget-object v4, Lorg/spongycastle/asn1/pkcs/PKCSObjectIdentifiers;->x2:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    new-instance v5, Lorg/spongycastle/asn1/DEROctetString;
+
+    invoke-virtual {v1}, Ljavax/crypto/spec/PSource$PSpecified;->getValue()[B
+
+    move-result-object v1
+
+    invoke-direct {v5, v1}, Lorg/spongycastle/asn1/DEROctetString;-><init>([B)V
+
+    invoke-direct {v3, v4, v5}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;-><init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;Lorg/spongycastle/asn1/ASN1Encodable;)V
+
+    new-instance v1, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;
+
+    invoke-direct {v1, v0, v2, v3}, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;-><init>(Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;)V
+
+    :try_start_0
+    invoke-virtual {v1}, Lorg/spongycastle/asn1/ASN1Object;->b()[B
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    const-string v1, "Error encoding OAEPParameters"
+
+    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method protected final engineGetEncoded(Ljava/lang/String;)[B
+    .locals 1
+
+    if-eqz p1, :cond_1
+
+    const-string v0, "ASN.1"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    if-nez v0, :cond_3
+
+    const-string v0, "X.509"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    goto :goto_2
+
+    :cond_2
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :cond_3
+    :goto_2
+    invoke-virtual {p0}, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi$OAEP;->engineGetEncoded()[B
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method protected final engineInit(Ljava/security/spec/AlgorithmParameterSpec;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/spec/InvalidParameterSpecException;
+        }
+    .end annotation
+
+    instance-of v0, p1, Ljavax/crypto/spec/OAEPParameterSpec;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Ljavax/crypto/spec/OAEPParameterSpec;
+
+    iput-object p1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi$OAEP;->a:Ljavax/crypto/spec/OAEPParameterSpec;
+
+    return-void
+
+    :cond_0
+    new-instance p1, Ljava/security/spec/InvalidParameterSpecException;
+
+    const-string v0, "OAEPParameterSpec required to initialise an OAEP algorithm parameters object"
+
+    invoke-direct {p1, v0}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method protected final engineInit([B)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const-string v0, "Not a valid OAEP Parameter encoding."
+
+    :try_start_0
+    sget-object v1, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;->d:Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    instance-of v1, p1, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;
+
+    if-eqz v1, :cond_0
+
+    check-cast p1, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;
+
+    goto :goto_0
+
+    :cond_0
+    if-eqz p1, :cond_1
+
+    new-instance v1, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;
+
+    invoke-static {p1}, Lorg/spongycastle/asn1/ASN1Sequence;->m(Ljava/lang/Object;)Lorg/spongycastle/asn1/ASN1Sequence;
+
+    move-result-object p1
+
+    invoke-direct {v1, p1}, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;-><init>(Lorg/spongycastle/asn1/ASN1Sequence;)V
+
+    move-object p1, v1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p1, 0x0
+
+    :goto_0
+    new-instance v1, Ljavax/crypto/spec/OAEPParameterSpec;
+
+    invoke-virtual {p1}, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;->c()Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;->c()Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lorg/spongycastle/asn1/DERObjectIdentifier;->o()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;->e()Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;->c()Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lorg/spongycastle/asn1/DERObjectIdentifier;->o()Ljava/lang/String;
+
+    move-result-object v3
+
+    new-instance v4, Ljava/security/spec/MGF1ParameterSpec;
+
+    invoke-virtual {p1}, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;->e()Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;->i()Lorg/spongycastle/asn1/ASN1Encodable;
+
+    move-result-object v5
+
+    invoke-static {v5}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;->e(Ljava/lang/Object;)Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;->c()Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Lorg/spongycastle/asn1/DERObjectIdentifier;->o()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-direct {v4, v5}, Ljava/security/spec/MGF1ParameterSpec;-><init>(Ljava/lang/String;)V
+
+    new-instance v5, Ljavax/crypto/spec/PSource$PSpecified;
+
+    invoke-virtual {p1}, Lorg/spongycastle/asn1/pkcs/RSAESOAEPparams;->h()Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lorg/spongycastle/asn1/x509/AlgorithmIdentifier;->i()Lorg/spongycastle/asn1/ASN1Encodable;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/spongycastle/asn1/ASN1OctetString;->m(Ljava/lang/Object;)Lorg/spongycastle/asn1/ASN1OctetString;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lorg/spongycastle/asn1/ASN1OctetString;->o()[B
+
+    move-result-object p1
+
+    invoke-direct {v5, p1}, Ljavax/crypto/spec/PSource$PSpecified;-><init>([B)V
+
+    invoke-direct {v1, v2, v3, v4, v5}, Ljavax/crypto/spec/OAEPParameterSpec;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;Ljavax/crypto/spec/PSource;)V
+
+    iput-object v1, p0, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi$OAEP;->a:Ljavax/crypto/spec/OAEPParameterSpec;
+    :try_end_0
+    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    new-instance p1, Ljava/io/IOException;
+
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :catch_1
+    new-instance p1, Ljava/io/IOException;
+
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method protected final engineInit([BLjava/lang/String;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const-string v0, "X.509"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "ASN.1"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/io/IOException;
+
+    const-string v0, "Unknown parameter format "
+
+    invoke-static {v0, p2}, Lai/medialab/medialabauth/l;->j(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    :goto_0
+    invoke-virtual {p0, p1}, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/AlgorithmParametersSpi$OAEP;->engineInit([B)V
+
+    return-void
+.end method
+
+.method protected final engineToString()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "OAEP Parameters"
+
+    return-object v0
+.end method

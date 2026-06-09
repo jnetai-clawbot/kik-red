@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white_35a" />
+    <corners android:radius="24.0dip" />
+    <padding android:left="@dimen/sns_stream_tag_padding_horizontal" android:top="@dimen/sns_stream_tag_container_bg_vertical_padding" android:right="@dimen/sns_stream_tag_padding_horizontal" android:bottom="@dimen/sns_stream_tag_container_bg_vertical_padding" />
+</shape>

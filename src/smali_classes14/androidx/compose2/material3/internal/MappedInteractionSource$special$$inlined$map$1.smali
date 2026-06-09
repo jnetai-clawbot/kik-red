@@ -1,0 +1,85 @@
+.class public final Landroidx/compose2/material3/internal/MappedInteractionSource$special$$inlined$map$1;
+.super Ljava/lang/Object;
+.source "SafeCollector.common.kt"
+
+# interfaces
+.implements Lkotlinx2/coroutines/flow/Flow;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose2/material3/internal/MappedInteractionSource;-><init>(Landroidx/compose2/foundation/interaction/InteractionSource;J)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkotlinx2/coroutines/flow/Flow<",
+        "Landroidx/compose2/foundation/interaction/Interaction;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $this_unsafeTransform$inlined:Lkotlinx2/coroutines/flow/Flow;
+
+.field final synthetic this$0:Landroidx/compose2/material3/internal/MappedInteractionSource;
+
+
+# direct methods
+.method public constructor <init>(Lkotlinx2/coroutines/flow/Flow;Landroidx/compose2/material3/internal/MappedInteractionSource;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/compose2/material3/internal/MappedInteractionSource$special$$inlined$map$1;->$this_unsafeTransform$inlined:Lkotlinx2/coroutines/flow/Flow;
+
+    iput-object p2, p0, Landroidx/compose2/material3/internal/MappedInteractionSource$special$$inlined$map$1;->this$0:Landroidx/compose2/material3/internal/MappedInteractionSource;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public collect(Lkotlinx2/coroutines/flow/FlowCollector;Lkotlin2/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 6
+
+    move-object v0, p1
+
+    move-object v1, p2
+
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Landroidx/compose2/material3/internal/MappedInteractionSource$special$$inlined$map$1;->$this_unsafeTransform$inlined:Lkotlinx2/coroutines/flow/Flow;
+
+    new-instance v4, Landroidx/compose2/material3/internal/MappedInteractionSource$special$$inlined$map$1$2;
+
+    iget-object v5, p0, Landroidx/compose2/material3/internal/MappedInteractionSource$special$$inlined$map$1;->this$0:Landroidx/compose2/material3/internal/MappedInteractionSource;
+
+    invoke-direct {v4, v0, v5}, Landroidx/compose2/material3/internal/MappedInteractionSource$special$$inlined$map$1$2;-><init>(Lkotlinx2/coroutines/flow/FlowCollector;Landroidx/compose2/material3/internal/MappedInteractionSource;)V
+
+    check-cast v4, Lkotlinx2/coroutines/flow/FlowCollector;
+
+    invoke-interface {v3, v4, p2}, Lkotlinx2/coroutines/flow/Flow;->collect(Lkotlinx2/coroutines/flow/FlowCollector;Lkotlin2/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-static {}, Lkotlin2/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-ne v3, v4, :cond_0
+
+    return-object v3
+
+    :cond_0
+    sget-object v0, Lkotlin2/Unit;->INSTANCE:Lkotlin2/Unit;
+
+    return-object v0
+.end method

@@ -1,0 +1,131 @@
+.class final Lkotlin2/text/StringsKt__StringsKt$rangesDelimitedBy$1;
+.super Lkotlin2/jvm/internal/Lambda;
+.source "Strings.kt"
+
+# interfaces
+.implements Lkotlin2/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkotlin2/text/StringsKt__StringsKt;->rangesDelimitedBy$StringsKt__StringsKt(Ljava/lang/CharSequence;[CIZI)Lkotlin2/sequences/Sequence;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin2/jvm/internal/Lambda;",
+        "Lkotlin2/jvm/functions/Function2<",
+        "Ljava/lang/CharSequence;",
+        "Ljava/lang/Integer;",
+        "Lkotlin2/Pair<",
+        "+",
+        "Ljava/lang/Integer;",
+        "+",
+        "Ljava/lang/Integer;",
+        ">;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $delimiters:[C
+
+.field final synthetic $ignoreCase:Z
+
+
+# direct methods
+.method constructor <init>([CZ)V
+    .locals 1
+
+    iput-object p1, p0, Lkotlin2/text/StringsKt__StringsKt$rangesDelimitedBy$1;->$delimiters:[C
+
+    iput-boolean p2, p0, Lkotlin2/text/StringsKt__StringsKt$rangesDelimitedBy$1;->$ignoreCase:Z
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lkotlin2/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    move-object v0, p1
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    move-object v1, p2
+
+    check-cast v1, Ljava/lang/Number;
+
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1}, Lkotlin2/text/StringsKt__StringsKt$rangesDelimitedBy$1;->invoke(Ljava/lang/CharSequence;I)Lkotlin2/Pair;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/CharSequence;I)Lkotlin2/Pair;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/CharSequence;",
+            "I)",
+            "Lkotlin2/Pair<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    const-string v0, "$this$$receiver"
+
+    invoke-static {p1, v0}, Lkotlin2/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lkotlin2/text/StringsKt__StringsKt$rangesDelimitedBy$1;->$delimiters:[C
+
+    iget-boolean v1, p0, Lkotlin2/text/StringsKt__StringsKt$rangesDelimitedBy$1;->$ignoreCase:Z
+
+    invoke-static {p1, v0, p2, v1}, Lkotlin2/text/StringsKt;->indexOfAny(Ljava/lang/CharSequence;[CIZ)I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-gez v0, :cond_0
+
+    const/4 v2, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lkotlin2/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin2/Pair;
+
+    move-result-object v2
+
+    :goto_0
+    return-object v2
+.end method

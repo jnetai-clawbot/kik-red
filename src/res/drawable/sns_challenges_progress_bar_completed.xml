@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:left="0.5dip" android:top="0.5dip" android:right="0.5dip" android:bottom="0.5dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/sns_challenges_progress_bar_corner_radius" />
+            <solid android:color="@color/sns_challenges_progress_bar_background_color_light" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress" android:left="@dimen/sns_challenges_progress_bar_stroke_width" android:right="@dimen/sns_challenges_progress_bar_stroke_width">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/sns_challenges_progress_bar_corner_radius" />
+                <gradient android:startColor="@color/sns_challenges_progress_bar_start_color_completed" android:endColor="@color/sns_challenges_progress_bar_end_color_completed" android:angle="0.0" android:type="linear" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@id/progressBarStroke">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/sns_challenges_progress_bar_corner_radius" />
+            <stroke android:width="@dimen/sns_challenges_progress_bar_stroke_width" android:color="@color/sns_challenges_progress_bar_stroke_color_light" />
+        </shape>
+    </item>
+</layer-list>

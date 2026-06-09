@@ -1,0 +1,44 @@
+.class public final synthetic Lio/wondrous/sns/battles/start/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+
+
+# instance fields
+.field public final synthetic a:Lio/wondrous/sns/battles/start/BattlesStartDialog;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lio/wondrous/sns/battles/start/BattlesStartDialog;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/wondrous/sns/battles/start/b;->a:Lio/wondrous/sns/battles/start/BattlesStartDialog;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+    .locals 1
+
+    iget-object p1, p0, Lio/wondrous/sns/battles/start/b;->a:Lio/wondrous/sns/battles/start/BattlesStartDialog;
+
+    sget v0, Lio/wondrous/sns/battles/start/BattlesStartDialog;->o:I
+
+    const-string v0, "this$0"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Lio/wondrous/sns/battles/start/BattlesStartDialog;->J3()Lio/wondrous/sns/battles/start/BattlesStartViewModel;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Lio/wondrous/sns/battles/start/BattlesStartViewModel;->P1(Z)V
+
+    return-void
+.end method

@@ -1,0 +1,13 @@
+.class public Lcom/iabtcf/exceptions/UnsupportedVersionException;
+.super Lcom/iabtcf/exceptions/TCStringDecodeException;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/iabtcf/exceptions/TCStringDecodeException;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method

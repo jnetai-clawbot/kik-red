@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Herausforderungen sind tägliche und wöchentliche Aufgaben, für die du Preise erhalten kannst!</item>
+        <item>Absolviere die Herausforderung und kehre zum Menü „Herausforderungen“ zurück, um deinen Preis zu erhalten. Die beanspruchten Preise findest du im Menü „Artikel“.</item>
+        <item>Einige Herausforderungen sind leicht und andere sind schwer. Schließe sie alle ab, um deine Belohnungen zu maximieren!</item>
+    </string-array>
+</resources>

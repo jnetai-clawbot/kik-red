@@ -1,0 +1,94 @@
+.class public final synthetic Lio/wondrous/sns/battles/duration/e;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/functions/i;
+
+
+# static fields
+.field public static final synthetic a:Lio/wondrous/sns/battles/duration/e;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lio/wondrous/sns/battles/duration/e;
+
+    invoke-direct {v0}, Lio/wondrous/sns/battles/duration/e;-><init>()V
+
+    sput-object v0, Lio/wondrous/sns/battles/duration/e;->a:Lio/wondrous/sns/battles/duration/e;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final e(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    check-cast p2, Ljava/util/List;
+
+    check-cast p3, Ljava/lang/Integer;
+
+    check-cast p4, Ljava/lang/Integer;
+
+    const-string v0, "selectLastChosenEnabled"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "durations"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "default"
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "lastChosen"
+
+    invoke-static {p4, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    invoke-interface {p2, p4}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
+
+    move-result p1
+
+    const/4 p4, -0x1
+
+    if-eq p1, p4, :cond_0
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {p2, p3}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    :goto_0
+    return-object p1
+.end method

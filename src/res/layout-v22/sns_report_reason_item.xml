@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/sns_report_reason_btn" android:paddingTop="@dimen/grid_padding" android:paddingBottom="@dimen/grid_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/sns_report_reasons_main_padding" android:layout_marginEnd="@dimen/sns_report_reasons_main_padding" android:paddingVertical="@dimen/grid_padding" style="?snsReportReasonListItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

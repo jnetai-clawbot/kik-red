@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>¡Los retos son tareas diarias y semanales con las que podrás ganar premios!</item>
+        <item>Completa el reto y vuelve al menú Retos para reclamar tu premio. Los premios reclamados se encuentran en el menú Elementos.</item>
+        <item>Algunos retos serán fáciles y otros serán difíciles. ¡Complétalos todos para conseguir el máximo de premios!</item>
+    </string-array>
+</resources>

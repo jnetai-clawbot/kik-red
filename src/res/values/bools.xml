@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="cpv_default_anim_autostart">false</bool>
+    <bool name="cpv_default_is_indeterminate">false</bool>
+    <bool name="enable_system_alarm_service_default">true</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="sns_empty_view_can_display_image">false</bool>
+    <bool name="sns_show_contest_if_below_screen_center">false</bool>
+    <bool name="sns_show_nd_contestant_view_queue_count_label">false</bool>
+    <bool name="workmanager_test_configuration">false</bool>
+</resources>

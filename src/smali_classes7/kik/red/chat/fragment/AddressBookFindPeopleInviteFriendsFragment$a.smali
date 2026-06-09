@@ -1,0 +1,66 @@
+.class final Lkik/red/chat/fragment/AddressBookFindPeopleInviteFriendsFragment$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lic/e;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkik/red/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lic/e<",
+        "Lrm/c$a;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lkik/red/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;
+
+
+# direct methods
+.method constructor <init>(Lkik/red/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;)V
+    .locals 0
+
+    iput-object p1, p0, Lkik/red/chat/fragment/AddressBookFindPeopleInviteFriendsFragment$a;->a:Lkik/red/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
+
+    check-cast p2, Lrm/c$a;
+
+    iget-object p1, p0, Lkik/red/chat/fragment/AddressBookFindPeopleInviteFriendsFragment$a;->a:Lkik/red/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;
+
+    sget v0, Lkik/red/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->E4:I
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-instance v0, Lai/medialab/medialabanalytics/q;
+
+    const/4 v1, 0x5
+
+    invoke-direct {v0, p1, p2, v1}, Lai/medialab/medialabanalytics/q;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    invoke-virtual {p1, v0}, Lkik/red/chat/fragment/KikFragmentBase;->c4(Ljava/lang/Runnable;)V
+
+    return-void
+.end method

@@ -1,0 +1,14 @@
+.class final synthetic Lorg/bouncycastle/pqc/crypto/util/PublicKeyFactory$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/bouncycastle/pqc/crypto/util/PublicKeyFactory;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

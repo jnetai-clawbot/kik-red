@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_notifications_turn_on_all" android:title="@string/sns_favorites_menu_turn_on_notifications" />
+    <item android:id="@id/menu_notifications_turn_off_all" android:title="@string/sns_favorites_menu_turn_off_notifications" />
+</menu>

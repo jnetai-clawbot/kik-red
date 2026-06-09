@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Utmaningar är dagliga och veckovisa uppgifter som du kan slutföra och vinna priser!</item>
+        <item>Slutför utmaningen och gå tillbaka till menyn Utmaningar för att begära ditt pris. Du hittar begärda priser i menyn Artiklar.</item>
+        <item>Vissa utmaningar är enkla, medan andra är svårare. Slutför allihop för maximal belöning!</item>
+    </string-array>
+</resources>

@@ -1,0 +1,140 @@
+[
+  {
+    "reason": "child_safety",
+    "title": "Child Safety",
+    "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"],
+    "child": [
+      {
+        "reason": "under_18",
+        "title": "User may be under the age of 18",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "harm_to_minors",
+        "title": "Harm to Minors",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      }
+    ]
+  },
+  {
+    "reason": "illegal",
+    "title": "Illegal / Violent Content",
+    "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"],
+    "child": [
+      {
+        "reason": "nonconsensual",
+        "title": "Nonconsensual Private Content",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "human_exploitation",
+        "title": "Sexual or Human Exploitation",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "violent_content",
+        "title": "Violent Content and Threats",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "illegal",
+        "title": "Sale of Illegal Goods or Services",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "hateful",
+        "title": "Hateful Content",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "animal_abuse",
+        "title": "Animal Abuse",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      }
+    ]
+  },
+  {
+    "reason": "user_safety",
+    "title": "User Safety",
+    "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"],
+    "child": [
+      {
+        "reason": "suicide",
+        "title": "Suicide or Self-Harm",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "harassment",
+        "title": "Harassment and Bullying",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      }
+    ]
+  },
+  {
+    "reason": "adult_content",
+    "title": "Adult Content",
+    "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"],
+    "child": [
+      {
+        "reason": "pornography",
+        "title": "Pornography or Sexual content",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      }
+    ]
+  },
+  {
+    "reason": "deceptive",
+    "title": "Deceptive & Fraudulent Behavior",
+    "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"],
+    "child": [
+      {
+        "reason": "impersonation",
+        "title": "Impersonation",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "misinformation",
+        "title": "Misinformation",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "scam",
+        "title": "Scam or Fraud",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      },
+      {
+        "reason": "cybersecurity_violations",
+        "title": "Cybersecurity violations",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      }
+    ]
+  },
+  {
+    "reason": "intellectual_property",
+    "title": "Intellectual Property",
+    "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"],
+    "child": [
+      {
+        "reason": "copyright_and_trademark",
+        "title": "Copyright & Trademark",
+        "child": [],
+        "context": ["ONE_ON_ONE", "GROUP", "ONE_IN_GROUP"]
+      }
+    ]
+  }
+]

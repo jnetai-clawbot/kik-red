@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="2.0dip" android:paddingTop="12.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_top_gifters" app:layout_constraintBottom_toBottomOf="@id/see_all" app:layout_constraintStart_toStartOf="parent" style="?snsBroadcastEndViewerHeader" />
+    <TextView android:id="@id/see_all" android:paddingTop="@dimen/half_grid_padding" android:paddingBottom="@dimen/half_grid_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_see_all" android:paddingStart="@dimen/half_grid_padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="?snsBroadcastEndViewerHeaderSeeAll" />
+</androidx.constraintlayout.widget.ConstraintLayout>

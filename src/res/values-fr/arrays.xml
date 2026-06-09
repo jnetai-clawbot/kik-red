@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Les défis proposent des missions à finaliser tous les jours et toutes les semaines pour gagner des récompenses !</item>
+        <item>Relève le défi et reviens dans le menu Défis pour récupérer ta récompense. Une fois récupérées, les récompenses sont affichées dans le menu Articles.</item>
+        <item>"Certains défis sont faciles, d'autres moins. Relève-les tous pour obtenir plus de récompenses !"</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sns.StreamerProfile.AboutMeDescriptionStyle" parent="@style/Sns.StreamerProfile">
+        <item name="android:textDirection">rtl</item>
+    </style>
+    <style name="Sns.StreamerProfile.AboutMeSummaryStyle" parent="@style/Sns.StreamerProfile">
+        <item name="android:textDirection">rtl</item>
+    </style>
+</resources>

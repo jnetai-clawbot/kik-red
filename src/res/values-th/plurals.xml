@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">กรอไปข้างหน้า %d วินาที</item>
+        <item quantity="one">กรอไปข้างหน้า %d วินาที</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">กรอกลับ %d วินาที</item>
+        <item quantity="one">กรอกลับ %d วินาที</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">การแจ้งเตือนใหม่ %d รายการ</item>
+        <item quantity="one">การแจ้งเตือนใหม่ %d รายการ</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">โปรดเชื่อมต่อกับอินเทอร์เน็ตมิฉะนั้นสตรีมของคุณจะสิ้นสุดใน %1$d วินาที</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">ซื้อ {link} และใช้งานเชิงพาณิชย์ฟรีเป็นเวลา {days} วัน</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">ส่งข้อความไปยังผู้ให้ของขวัญ %1$d คนแล้ว!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">ขาดอีก %1$d ตัวอักษร</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">จะสิ้นสุดในอีก %1$d วัน!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d วัน</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d ชม.</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d ชั่วโมง</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d นาที</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d นาที</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$dวิ</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d วินาที</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">หลายรายการโปรดกำลังสตรีมอยู่ตอนนี้!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d ชั่วโมง</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d นาที</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">รายการโปรด %1$d รายกำลังถ่ายทอดสด!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">แฟนๆ</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">ยังว่างอีก %1$d ตำแหน่ง</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">วงล้อลิมิเต็ดนี้สามารถส่งได้ %1$s ครั้งเท่านั้นก่อนที่จะหายไป! ส่งให้สตรีมเมอร์คนโปรดของคุณตอนนี้เลย!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">คะแนน</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d โหวตฟรีต่อผู้ใช้</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">เกินโหวตที่อนุญาตแล้ว</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d โหวต</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">คุณแน่ใจหรือว่าต้องการลบ %1$d ออกจากการเป็นผู้คุม</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">ลบสตรีมเมอร์ %1$d คนออกจากการเป็นผู้คุม</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">สามารถกำหนดการแสดงล่วงหน้าได้ %1$d สัปดาห์เท่านั้น</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">ผู้ให้ของขวัญ %1$d คน</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">ตะโกนออกไปใช้ได้ %1$d ครั้ง</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">กำหนดเวลาแสดงแล้ว %1$d จาก %2$d</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">เพชร</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">แฟน ๆ</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">ชัยชนะ</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">ใช้ %1$s เป็นเวลา %2$d นาที!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">คุณแน่ใจหรือว่าต้องการลบ %1$d ออกจากคนโปรด</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">ลบสตรีมเมอร์ %1$d คนออกจากรายการโปรด</item>
+    </plurals>
+</resources>

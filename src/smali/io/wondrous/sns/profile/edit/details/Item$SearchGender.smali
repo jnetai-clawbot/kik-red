@@ -1,0 +1,191 @@
+.class public final Lio/wondrous/sns/profile/edit/details/Item$SearchGender;
+.super Lio/wondrous/sns/profile/edit/details/Item;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/wondrous/sns/profile/edit/details/Item;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "SearchGender"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0086\u0008\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u000e\u0010\u0006\u001a\n\u0018\u00010\u0004j\u0004\u0018\u0001`\u0005\u00a2\u0006\u0004\u0008\u0007\u0010\u0008\u00a8\u0006\t"
+    }
+    d2 = {
+        "Lio/wondrous/sns/profile/edit/details/Item$SearchGender;",
+        "Lio/wondrous/sns/profile/edit/details/Item;",
+        "",
+        "triggerName",
+        "Lio/wondrous/sns/data/model/SearchGender;",
+        "Lio/wondrous/sns/profile/edit/details/SnsSearchGender;",
+        "searchGender",
+        "<init>",
+        "(Ljava/lang/String;Lio/wondrous/sns/data/model/SearchGender;)V",
+        "sns-profile-edit_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+.field private final b:Lio/wondrous/sns/data/model/SearchGender;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Lio/wondrous/sns/data/model/SearchGender;)V
+    .locals 1
+
+    const-string/jumbo v0, "triggerName"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lio/wondrous/sns/profile/edit/details/Item;-><init>(Lkotlin/jvm/internal/c;)V
+
+    iput-object p1, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->a:Ljava/lang/String;
+
+    iput-object p2, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->b:Lio/wondrous/sns/data/model/SearchGender;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->a:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final b()Lio/wondrous/sns/data/model/SearchGender;
+    .locals 1
+
+    iget-object v0, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->b:Lio/wondrous/sns/data/model/SearchGender;
+
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;
+
+    iget-object v1, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->a:Ljava/lang/String;
+
+    iget-object v3, p1, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->a:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/g;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget-object v1, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->b:Lio/wondrous/sns/data/model/SearchGender;
+
+    iget-object p1, p1, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->b:Lio/wondrous/sns/data/model/SearchGender;
+
+    if-eq v1, p1, :cond_3
+
+    return v2
+
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    iget-object v0, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->a:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->b:Lio/wondrous/sns/data/model/SearchGender;
+
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
+
+    :goto_0
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "SearchGender(triggerName="
+
+    invoke-static {v0}, Lai/medialab/medialabauth/l;->n(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->a:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", searchGender="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lio/wondrous/sns/profile/edit/details/Item$SearchGender;->b:Lio/wondrous/sns/data/model/SearchGender;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

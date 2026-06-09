@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center" android:id="@id/sns_battles_vs_button" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sns_ic_battles_vs" style="?snsBattlesVsButtonStyle" />
+    <TextView android:textSize="9.0sp" android:textColor="@color/sns_invertable_white_text" android:gravity="center" android:layout_gravity="center" android:id="@id/sns_battles_badge" android:background="@drawable/sns_broadcast_guest_btn_count_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="10.0dip" android:elevation="0.0dip" />
+</merge>

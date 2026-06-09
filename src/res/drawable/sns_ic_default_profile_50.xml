@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/sns_bg_launcher_profile" />
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/sns_ic_default_profile_50_normal" />
+    </item>
+</layer-list>

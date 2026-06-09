@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:name="vector" android:height="32.0dip" android:width="32.0dip" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="animate" android:pivotX="16.0" android:pivotY="16.0" android:rotation="45.0">
+        <path android:name="path_1" android:fillColor="#ffffffff" android:pathData="M 25 16 C 25 16.237 24.938 16.47 24.819 16.675 C 24.701 16.88 24.53 17.051 24.325 17.169 C 24.12 17.288 23.887 17.35 23.65 17.35 L 17.359 17.35 L 17.359 23.65 C 17.359 24.008 17.217 24.352 16.964 24.605 C 16.711 24.858 16.367 25 16.009 25 C 15.651 25 15.307 24.858 15.054 24.605 C 14.801 24.352 14.659 24.008 14.659 23.65 L 14.659 17.35 L 8.35 17.35 C 8.065 17.35 7.787 17.26 7.556 17.092 C 7.326 16.925 7.154 16.688 7.066 16.417 C 6.978 16.146 6.978 15.854 7.066 15.583 C 7.154 15.312 7.326 15.075 7.556 14.908 C 7.787 14.74 8.065 14.65 8.35 14.65 L 14.659 14.65 L 14.659 8.35 C 14.659 7.992 14.801 7.648 15.054 7.395 C 15.307 7.142 15.651 7 16.009 7 C 16.367 7 16.711 7.142 16.964 7.395 C 17.217 7.648 17.359 7.992 17.359 8.35 L 17.359 14.65 L 23.65 14.65 C 23.887 14.65 24.12 14.712 24.325 14.831 C 24.53 14.949 24.701 15.12 24.819 15.325 C 24.938 15.53 25 15.763 25 16 Z" />
+    </group>
+</vector>

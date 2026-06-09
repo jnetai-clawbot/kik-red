@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/sns_profile_item_outline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip" android:paddingStart="12.0dip" android:paddingEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/sns_profile_edit_item_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="centerInside" android:layout_marginEnd="8.0dip" app:tint="@color/sns_edit_profile_icon_color_selector" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/material_on_surface_emphasis_medium" android:id="@id/sns_profile_edit_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="4.0dip" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/material_on_surface_emphasis_high_type" android:ellipsize="end" android:gravity="end" android:id="@id/sns_profile_edit_item_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </FrameLayout>
+    <ImageView android:id="@id/sns_profile_edit_item_arrow" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/sns_ic_arrow_right_24dp" android:scaleType="centerInside" android:layout_marginStart="4.0dip" app:tint="?snsSecondaryTint" />
+</LinearLayout>

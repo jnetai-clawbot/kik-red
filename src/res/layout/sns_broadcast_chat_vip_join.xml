@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/sns_chat_message_join_gradient" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/sns_chat_message_join_notification_top_gifter_bg_margin_top" android:layout_marginBottom="@dimen/sns_chat_message_join_notification_top_gifter_bg_margin_bottom" android:src="@drawable/sns_chat_message_vip_join_gradient" android:layout_marginStart="@dimen/chat_item_message_bg_margin_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/sns_chat_message_vip_join_image_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sns_chat_message_vip_join_image" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/chat_item_message_bg_margin_start" />
+</merge>

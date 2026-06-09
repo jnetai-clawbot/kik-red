@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:paddingTop="4.0dip" android:paddingBottom="32.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/topbar" android:background="?appbar_background" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_alignParentTop="true">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/button_settings" android:layout_alignParentLeft="true" layout="@layout/kik_back_button" />
+            <Space android:id="@id/popup_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/abm_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/img_dialog_captcha" />
+        <kik.red.widget.RobotoTextView android:textSize="15.0sp" android:textColor="?text_secondary" android:gravity="center_horizontal" android:id="@id/email_top_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="16.0dip" android:text="@string/confirm_your_email" />
+        <kik.red.chat.view.ValidateableInputView android:layout_gravity="center" android:id="@id/email_address_field" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:hint="@string/email_address" android:inputType="textEmailAddress" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/email_validate_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:text="@string/send_confirmation_email" style="@style/KikButton.Hero" />
+    </LinearLayout>
+</ScrollView>

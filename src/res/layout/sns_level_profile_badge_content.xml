@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/sns_level_profile_badge_left_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?snsLevelProfileBadgeTitleStyle" />
+        <TextView android:id="@id/sns_level_profile_badge_left_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" style="?snsLevelProfileBadgeSubTitleStyle" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:orientation="vertical" android:id="@id/sns_level_profile_badge_level" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?snsLevelProfileBadgeLevelStyle" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/sns_level_profile_badge_right_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?snsLevelProfileBadgeTitleStyle" />
+        <TextView android:id="@id/sns_level_profile_badge_right_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" style="?snsLevelProfileBadgeSubTitleStyle" />
+    </LinearLayout>
+</LinearLayout>

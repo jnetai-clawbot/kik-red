@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/layer_botw" android:drawable="@drawable/sns_chat_avatar_bg" />
+    <item android:id="@id/layer_viewer_levels" android:drawable="@drawable/sns_chat_viewer_level_background" />
+    <item android:id="@id/layer_viewer_levels_stroke" android:drawable="@drawable/sns_chat_avatar_background_stroke" />
+</layer-list>

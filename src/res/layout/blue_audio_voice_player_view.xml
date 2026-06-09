@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/blue_audio_action_frame_container" android:tag="layout/voice_player_view_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <kik.red.widget.IndependentPressImageView android:id="@id/blue_audio_play_button" android:tag="binding_1" android:visibility="gone" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue_audio_play_msg_icon" android:scaleType="centerInside" />
+        <kik.red.widget.IndependentPressImageView android:id="@id/blue_audio_pause_button" android:tag="binding_2" android:visibility="gone" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue_audio_voice_msg_bubble_copy" android:scaleType="centerInside" />
+        <blue.l1l1II1I11IllIlI android:id="@id/blue_audio_loader" android:tag="binding_3" android:background="@drawable/blue_audio_circle" android:visibility="gone" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue_audio_voice_msg_loader" android:scaleType="centerInside" />
+    </FrameLayout>
+    <blue.llI11IIlIIlll1I1 android:id="@id/blue_audio_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/blue_audio_action_frame_container" android:layout_centerVertical="true" />
+    <kik.red.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/absolute_white" android:gravity="center" android:id="@id/blue_audio_timer_text" android:tag="layout/voice_player_view_6" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</merge>

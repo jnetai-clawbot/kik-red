@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/sns_gift_menu_touch_outside" android:layout_width="fill_parent" android:layout_height="fill_parent" android:soundEffectsEnabled="false" android:importantForAccessibility="no" />
+    <RelativeLayout android:layout_gravity="bottom" android:background="?snsPurchasableMenuBackgroundColor" android:layout_width="fill_parent" android:layout_height="280.0dip">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/sns_control_accent" android:id="@id/sns_gestures_menu_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_gestures_animations" android:paddingStart="15.0dip" />
+        <io.wondrous.sns.ui.views.multistateview.SnsMultiStateView android:id="@id/sns_unlockables_gestures_multistate_view" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sns_gestures_menu_title" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" style="?snsUnlockablesGesturesMainFragmentStyle" />
+    </RelativeLayout>
+</FrameLayout>

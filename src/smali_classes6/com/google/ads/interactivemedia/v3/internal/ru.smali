@@ -1,0 +1,30 @@
+.class public abstract Lcom/google/ads/interactivemedia/v3/internal/ru;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/ads/interactivemedia/v3/internal/cx;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<MessageType:",
+        "Lcom/google/ads/interactivemedia/v3/internal/su<",
+        "TMessageType;TBuilderType;>;BuilderType:",
+        "Lcom/google/ads/interactivemedia/v3/internal/ru<",
+        "TMessageType;TBuilderType;>;>",
+        "Ljava/lang/Object;",
+        "Lcom/google/ads/interactivemedia/v3/internal/cx;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

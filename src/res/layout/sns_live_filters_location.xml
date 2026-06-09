@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/sns_live_filters_section_item_height" android:layout_marginTop="@dimen/sns_live_filters_section_margin_top" android:paddingStart="@dimen/sns_live_filters_screen_padding_left" android:paddingEnd="@dimen/sns_live_filters_screen_padding_right">
+        <TextView android:id="@id/sns_live_filters_location_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_live_filters_location" style="@style/Sns.LiveFilterSectionHeader" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/sns_live_filters_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_live_filters_section_loading_margin_left_right" android:layout_marginRight="@dimen/sns_live_filters_section_loading_margin_left_right" android:layout_alignTop="@id/sns_live_filters_location_header" android:layout_toEndOf="@id/sns_live_filters_location_header" style="?android:progressBarStyleSmall" />
+    </RelativeLayout>
+    <RadioGroup android:gravity="start" android:orientation="vertical" android:id="@id/sns_live_filters_location_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sns_live_filters_screen_padding_left" android:paddingEnd="@dimen/sns_live_filters_screen_padding_right">
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/sns_live_filters_location_country_button" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sns_live_filters_section_item_height" style="@style/Sns.LiveFilterSectionItem.RadioButton" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/sns_live_filters_location_region_button" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sns_live_filters_section_item_height" style="@style/Sns.LiveFilterSectionItem.RadioButton" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/sns_live_filters_location_anywhere_button" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/sns_live_filters_section_item_height" android:text="@string/sns_live_filters_location_anywhere" style="@style/Sns.LiveFilterSectionItem.RadioButton" />
+    </RadioGroup>
+</merge>

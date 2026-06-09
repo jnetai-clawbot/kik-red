@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/kik_blue" android:gravity="center" android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Command Name" />
+        <EditText android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="!deeznuts" android:ems="10" android:inputType="textCapSentences|textAutoCorrect|textMultiLine" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/kik_blue" android:gravity="center" android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Command Output" />
+        <EditText android:id="@android:id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="HA GOT EM" android:ems="10" android:inputType="textCapSentences|textAutoCorrect|textMultiLine" />
+        <CheckBox android:id="@android:id/checkbox" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Attach Picture" />
+    </LinearLayout>
+</ScrollView>

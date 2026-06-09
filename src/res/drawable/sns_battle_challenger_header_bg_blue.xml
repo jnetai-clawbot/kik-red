@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="30.0dip" />
+    <gradient android:startColor="@color/sns_battle_blue_start_gradient_60a" android:endColor="@color/sns_battle_blue_end_gradient_60a" android:angle="0.0" />
+    <padding android:left="@dimen/sns_grid_padding" android:top="6.0dip" android:right="16.0dip" android:bottom="5.0dip" />
+</shape>

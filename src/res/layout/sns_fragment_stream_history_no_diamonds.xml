@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@id/sns_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/sns_viewer_list_header_height" android:text="@string/sns_stream_history_diamonds" app:layout_constraintTop_toTopOf="parent" style="?snsBroadcastViewerHeaderTextStyle" />
+    <com.meetme.util.android.ui.EmptyView android:id="@id/sns_stream_no_diamonds_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:snsEmptyViewContentOverlay="?snsStreamNoDiamondsEmptyGenericStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

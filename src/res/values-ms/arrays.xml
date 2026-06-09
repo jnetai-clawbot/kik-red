@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Cabaran adalah tugasan harian dan mingguan untuk dilengkapkan yang akan memberi anda hadiah!</item>
+        <item>Lengkapkan Cabaran dan kembali ke Menu Cabaran untuk menuntut hadiah anda. Hadiah yang dituntut boleh ditemui dalam Menu Item.</item>
+        <item>Beberapa Cabaran adalah mudah dan sesetengahnya adalah sukar. Lengkapkan semuanya untuk memaksimumkan ganjaran anda!</item>
+    </string-array>
+</resources>

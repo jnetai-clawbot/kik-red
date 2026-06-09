@@ -1,0 +1,35 @@
+.class public final Landroidx/compose2/animation/core/AnimationConstants;
+.super Ljava/lang/Object;
+.source "AnimationSpec.kt"
+
+
+# static fields
+.field public static final $stable:I = 0x0
+
+.field public static final DefaultDurationMillis:I = 0x12c
+
+.field public static final INSTANCE:Landroidx/compose2/animation/core/AnimationConstants;
+
+.field public static final UnspecifiedTime:J = -0x8000000000000000L
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/compose2/animation/core/AnimationConstants;
+
+    invoke-direct {v0}, Landroidx/compose2/animation/core/AnimationConstants;-><init>()V
+
+    sput-object v0, Landroidx/compose2/animation/core/AnimationConstants;->INSTANCE:Landroidx/compose2/animation/core/AnimationConstants;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

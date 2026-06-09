@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/sns_chat_message_battler_indicator_left" android:minLevel="1" android:maxLevel="1" />
+    <item android:drawable="@drawable/sns_chat_message_battler_indicator_right" android:minLevel="2" android:maxLevel="2" />
+</level-list>

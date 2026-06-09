@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <stroke android:width="1.3999939dip" android:color="#ff858585" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/sns_ic_mute_off_gray" android:left="6.0dip" android:top="6.0dip" android:right="6.0dip" android:bottom="6.0dip" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="1">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/sns_button_color_blue" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/sns_ic_mute_on" android:left="6.0dip" android:top="6.0dip" android:right="6.0dip" android:bottom="6.0dip" />
+        </layer-list>
+    </item>
+</level-list>

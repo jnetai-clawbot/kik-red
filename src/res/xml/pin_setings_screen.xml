@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreferenceCompat app:iconSpaceReserved="false" app:key="kik.settings.pin_lock" app:title="@string/pinlock_settings_toggle" />
+    <Preference app:iconSpaceReserved="false" app:key="kik.settings.pin_lock_change" app:title="@string/pinlock_settings_change_pin" />
+    <Preference app:layout="@layout/preference_divider" app:selectable="false" app:title="divider" />
+    <ListPreference android:defaultValue="60000" app:defaultValue="60000" app:entries="@array/pin_timeout_entries" app:entryValues="@array/pin_timeout_entry_values" app:iconSpaceReserved="false" app:key="kik.settings.lock_after" app:layout="@layout/preference_shortcut_layout" app:title="@string/pinlock_settings_require_pin_actionsheet_title" />
+    <Preference app:layout="@layout/preference_divider" app:selectable="false" app:title="divider" />
+    <SwitchPreferenceCompat app:iconSpaceReserved="false" app:key="kik.settings.message_preview" app:summary="@string/notifications_message_preview_description" app:title="@string/notifications_message_preview" />
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/fragment_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@id/fragment_tabs" android:background="?appbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:animateLayoutChanges="true" app:tabBackground="?appbar_background" app:tabIconTint="@color/bottom_tab_selector" app:tabIndicatorColor="@color/transparent" app:tabIndicatorHeight="0.0dip" app:tabInlineLabel="true" app:tabTextAppearance="@style/BottomTabTextAppereance" />
+        <kik.red.chat.view.NavBarUnderlineView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" />
+    </androidx.viewpager.widget.ViewPager>
+</FrameLayout>

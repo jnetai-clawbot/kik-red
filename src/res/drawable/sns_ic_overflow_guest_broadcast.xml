@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/sns_ic_overflow_guest_add" android:maxLevel="2" />
+    <item android:drawable="@drawable/sns_ic_overflow_guest_waiting" android:maxLevel="3" />
+    <item android:drawable="@drawable/sns_ic_overflow_guest_waiting" android:maxLevel="4" />
+</level-list>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Mundar laju %d saat</item>
+        <item quantity="one">Mundar laju %d saat</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Mandir %d saat</item>
+        <item quantity="one">Mandir %d saat</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d pemberitahuan baharu</item>
+        <item quantity="one">%d pemberitahuan baharu</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">Sila bersambung ke Internet atau strim anda akan ditamatkan dalam %1$d saat.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">Beli {link} dan Nikmati Bebas Iklan selama {days} hari</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">Mesej dihantar ke %1$d pemberi!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">Baki %1$d aksara.</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">Tamat tempoh dalam %1$d hari!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d hari</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$dj</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d jam</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$dm</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d minit</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$ds</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d saat</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">Kegemaran distrim sekarang!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d jam</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d minit</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d Kegemaran Live!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">Peminat</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d tempat tinggal</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">Roda terhad ini hanya boleh dihantar sebanyak %1$s kali sebelum ia hilang! Hantar satu sekarang kepada Penstrim kegemaran anda!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">Mata</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d undi percuma setiap pengundi</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">Melebihi undian yang dibenarkan</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d Undi</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">Adakah anda pasti anda mahu mengalih keluar %1$d daripada bouncer?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">Keluarkan %1$d penstrim daripada bouncer</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">Rancangan hanya dapat dijadualkan %1$d minggu lebih awal.</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d Pemberi</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">%1$d Ucap Seru Tersedia</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d Rancangan Dijadualkan</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">Berlian</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">Peminat</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">Kemenangan</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">Menggunakan %1$s selama %2$d minit!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">Adakah anda pasti anda mahu mengalih keluar %1$d daripada kegemaran?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">Keluarkan %1$d penstrim daripada kegemaran</item>
+    </plurals>
+</resources>

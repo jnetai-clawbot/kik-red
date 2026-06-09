@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/sns_spotlight_live_feed_rank" />
+    <stroke android:width="1.0dip" android:color="@color/absolute_white" />
+    <corners android:radius="@dimen/sns_spotlight_rank_pill_corner" />
+</shape>

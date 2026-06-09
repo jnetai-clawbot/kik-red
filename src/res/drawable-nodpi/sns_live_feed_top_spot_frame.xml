@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/sns_top_spot_indicator_corner_radius" />
+            <stroke android:width="4.0dip" android:color="@color/sns_top_spot_indicator_color" />
+        </shape>
+    </item>
+    <item android:left="-19.0dip" android:top="-19.0dip" android:right="-19.0dip" android:bottom="0.0dip">
+        <shape android:shape="rectangle">
+            <stroke android:width="23.0dip" android:color="@color/sns_top_spot_indicator_color" />
+        </shape>
+    </item>
+</layer-list>

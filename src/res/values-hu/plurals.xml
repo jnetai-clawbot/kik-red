@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Előretekerés %d másodperccel</item>
+        <item quantity="one">Előretekerés %d másodperccel</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Visszatekerés %d másodperccel</item>
+        <item quantity="one">Visszatekerés %d másodperccel</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d új értesítés</item>
+        <item quantity="one">%d új értesítés</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">Kérjük, csatlakozz az internethez, ellenkező esetben a streamed %1$d másodpercen belül véget ér.</item>
+        <item quantity="one">Kérjük, csatlakozz az internethez, ellenkező esetben az streamed %1$d másodpercen belül véget ér.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">{link} vásárlásával {days} napig megszabadulhatsz a reklámoktól</item>
+        <item quantity="one">{link} vásárlásával egy napig megszabadulhatsz a reklámoktól</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">%1$d ajándékozónak elküldött üzenet</item>
+        <item quantity="one">%1$d ajándékozónak elküldött üzenet</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d karakter maradt.</item>
+        <item quantity="one">%1$d karakter maradt.</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">%1$d nap múlva lejár!</item>
+        <item quantity="one">%1$d nap múlva lejár!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d nap</item>
+        <item quantity="one">%1$d nap</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d ó</item>
+        <item quantity="one">%1$d ó</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d óra</item>
+        <item quantity="one">%1$d óra</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d m</item>
+        <item quantity="one">%1$d m</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d perc</item>
+        <item quantity="one">%1$d perc</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$d mp</item>
+        <item quantity="one">%1$d mp</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d másodperc</item>
+        <item quantity="one">%1$d másodperc</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">Kedvencek streamingelnek most!</item>
+        <item quantity="one">Kedvencek streamingelnek most!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d óra</item>
+        <item quantity="one">%1$d óra</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d perc</item>
+        <item quantity="one">%1$d perc</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d kedvenced élőzik</item>
+        <item quantity="one">%1$d kedvenced élőzik</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">Rajongók</item>
+        <item quantity="one">Rajongók</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d hely maradt</item>
+        <item quantity="one">%1$d hely maradt</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">Ez a korlátozott kerék csak %1$s alkalommal küldhető el, mielőtt eltűnik! Küldj el egyet most a kedvenc streamerednek!</item>
+        <item quantity="one">Ez a korlátozott kerék csak %1$s alkalommal küldhető el, mielőtt eltűnik! Küldj el egyet most a kedvenc streamerednek!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">Pont</item>
+        <item quantity="one">Pont</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d ingyenes szavazat szavazónként</item>
+        <item quantity="one">%1$d ingyenes szavazat szavazónként</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">Túllépted a megengedett szavazatszámot</item>
+        <item quantity="one">Túllépted a megengedett szavazatszámot</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d Szavazat</item>
+        <item quantity="one">%1$d Szavazat</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">%1$d biztosan eltávolítandó a kidobók közül?</item>
+        <item quantity="one">%1$d biztosan eltávolítandó a kidobók közül?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">%1$d közvetítő eltávolítás a kidobók közül</item>
+        <item quantity="one">%1$d közvetítő eltávolítás a kidobók közül</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">Legfeljebb %1$d hétre előre tudsz show-t ütemezni.</item>
+        <item quantity="one">Legfeljebb %1$d hétre előre tudsz show-t ütemezni.</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d ajándékozó</item>
+        <item quantity="one">1 ajándékozó</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">Még %1$d kiemelt üzenet küldhető</item>
+        <item quantity="one">Még %1$d kiemelt üzenet küldhető</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d / %2$d show ütemezve</item>
+        <item quantity="one">%1$d / %2$d show ütemezve</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">Gyémántok</item>
+        <item quantity="one">Gyémántok</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">Rajongók</item>
+        <item quantity="one">Rajongók</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">Győzelmek</item>
+        <item quantity="one">Győzelmek</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">%2$d percig használtam a következőt: %1$s</item>
+        <item quantity="one">%2$d percig használtam a következőt: %1$s</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">%1$d biztosan eltávolítandó a kedvencek közül?</item>
+        <item quantity="one">%1$d biztosan eltávolítandó a kedvencek közül?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">%1$d közvetítő eltávolítása a kedvencek közül</item>
+        <item quantity="one">%1$d közvetítő eltávolítása a kedvencek közül</item>
+    </plurals>
+</resources>

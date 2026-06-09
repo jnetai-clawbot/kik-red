@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Chat Mods" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

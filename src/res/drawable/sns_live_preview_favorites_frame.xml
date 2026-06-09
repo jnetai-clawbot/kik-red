@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/sns_live_preview_frame_stroke_width" android:color="@color/sns_live_preview_favorites_light_yellow" />
+    <corners android:topLeftRadius="@dimen/sns_next_date_preview_frame_corner_radius" android:topRightRadius="@dimen/sns_next_date_preview_frame_corner_radius" android:bottomLeftRadius="@dimen/sns_next_date_preview_frame_corner_radius" android:bottomRightRadius="@dimen/sns_next_date_preview_frame_corner_radius" />
+</shape>

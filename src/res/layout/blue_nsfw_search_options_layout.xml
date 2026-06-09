@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.IlIIII1llIIIlllI android:gravity="center" android:orientation="horizontal" android:id="@id/blue_nsfw_search_options_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginBottom="4.0dip" android:foregroundGravity="center" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.SwitchCompat android:textSize="14.0sp" android:id="@id/blue_nsfw_search_options_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KikSwitchStyle.List"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</blue.IlIIII1llIIIlllI>

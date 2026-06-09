@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/sns_poll_option_progress_corner_radius" />
+            <solid android:color="@color/sns_white_90a" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/sns_poll_option_progress_corner_radius" />
+                <solid android:color="@color/sns_polls_option_a_activated" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

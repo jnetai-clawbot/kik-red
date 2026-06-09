@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/sns_live_marquee_more_background" />
+    <item android:bottom="@dimen/sns_launcher_mask_radius">
+        <bitmap android:gravity="center" android:src="@drawable/sns_ic_marq_more" android:height="@dimen/sns_list_divider_margin" android:width="@dimen/sns_list_divider_margin" />
+    </item>
+</layer-list>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center|bottom" android:id="@id/sns_snackbar_container" android:layout_width="284.0dip" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/sns_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="26.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Sns.Snackbar.Container">
+        <TextView android:gravity="center_horizontal" android:id="@id/sns_snackbar_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_half_grid_padding" style="@style/Sns.Snackbar.Message" />
+        <TextView android:id="@id/sns_snackbar_subhead" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_half_grid_padding" style="@style/Sns.Snackbar.Message.Subhead" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <Button android:id="@id/sns_snackbar_negative_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sns.Snackbar.Button.Negative" />
+            <Button android:id="@id/sns_snackbar_positive_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Sns.Snackbar.Button.Positive" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/sns_snackbar_icon" android:layout_width="52.0dip" android:layout_height="52.0dip" app:layout_constraintBottom_toBottomOf="@id/sns_guideline" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/sns_guideline" />
+</androidx.constraintlayout.widget.ConstraintLayout>

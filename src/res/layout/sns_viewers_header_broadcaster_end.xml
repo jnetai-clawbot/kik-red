@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/sns_white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/sns_viewer_list_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center_vertical" android:id="@id/sns_header_title" android:background="@color/sns_invertable_white_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/TextAppearance.AppCompat.Title" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/sns_lbl_cancel" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sns_cancel" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/sns_green" android:gravity="end|center" android:id="@id/sns_lbl_select_all" android:visibility="invisible" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/sns_select_all" android:layout_marginStart="2.0dip" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+    <Button android:theme="@style/Sns.Widgets.ThemeOverlay.Green" android:textSize="14.0sp" android:id="@id/sns_btn_select_viewers" android:visibility="invisible" android:layout_width="140.0dip" android:layout_height="40.0dip" android:button="@color/transparent" android:text="@string/sns_broadcaster_end_send_chat" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:stateListAnimator="@null" style="@style/Sns.Button" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Le sfide sono incarichi giornalieri e settimanali da completare per ricevere dei premi!</item>
+        <item>Completa la sfida e torna al menu Sfide per richiedere il tuo premio. Potrai trovare i premi che hai riscosso nel menu Articoli.</item>
+        <item>Alcune Sfide saranno facili e altre difficili. Completale tutte per ottenere premi più ricchi!</item>
+    </string-array>
+</resources>

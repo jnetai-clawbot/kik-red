@@ -1,0 +1,89 @@
+.class final Lkik/core/xdata/t0;
+.super Lic/l;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lic/l<",
+        "Lkik/core/datatypes/h0;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lkik/core/xdata/n0$f;
+
+
+# direct methods
+.method constructor <init>(Lkik/core/xdata/n0$f;)V
+    .locals 0
+
+    iput-object p1, p0, Lkik/core/xdata/t0;->a:Lkik/core/xdata/n0$f;
+
+    invoke-direct {p0}, Lic/l;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final g(Ljava/lang/Object;)V
+    .locals 2
+
+    check-cast p1, Lkik/core/datatypes/h0;
+
+    iget-object v0, p0, Lkik/core/xdata/t0;->a:Lkik/core/xdata/n0$f;
+
+    iget-object v1, v0, Lkik/core/xdata/n0$f;->b:Lkik/core/xdata/n0;
+
+    invoke-static {v0}, Lkik/core/xdata/n0$f;->a(Lkik/core/xdata/n0$f;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0, p1}, Lkik/core/xdata/n0;->y(Lkik/core/xdata/n0;Ljava/lang/String;Lkik/core/datatypes/h0;)V
+
+    iget-object p1, p0, Lkik/core/xdata/t0;->a:Lkik/core/xdata/n0$f;
+
+    iget-object p1, p1, Lkik/core/xdata/n0$f;->b:Lkik/core/xdata/n0;
+
+    invoke-static {p1}, Lkik/core/xdata/n0;->w(Lkik/core/xdata/n0;)Ljava/util/Map;
+
+    move-result-object p1
+
+    monitor-enter p1
+
+    :try_start_0
+    iget-object v0, p0, Lkik/core/xdata/t0;->a:Lkik/core/xdata/n0$f;
+
+    iget-object v0, v0, Lkik/core/xdata/n0$f;->b:Lkik/core/xdata/n0;
+
+    invoke-static {v0}, Lkik/core/xdata/n0;->w(Lkik/core/xdata/n0;)Ljava/util/Map;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkik/core/xdata/t0;->a:Lkik/core/xdata/n0$f;
+
+    invoke-static {v1}, Lkik/core/xdata/n0$f;->a(Lkik/core/xdata/n0$f;)Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v0, Ljava/util/HashMap;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    monitor-exit p1
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method

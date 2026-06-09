@@ -1,0 +1,98 @@
+.class final Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel$goalSteps$2;
+.super Lkotlin/jvm/internal/Lambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel;-><init>(Lio/wondrous/sns/data/GoalsRepository;Lio/wondrous/sns/data/ConfigRepository;Lio/wondrous/sns/data/rx/n;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Ljava/util/List<",
+        "+",
+        "Ljava/lang/String;",
+        ">;>;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0003"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel;
+
+
+# direct methods
+.method constructor <init>(Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel;)V
+    .locals 0
+
+    iput-object p1, p0, Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel$goalSteps$2;->a:Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel$goalSteps$2;->a:Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel;
+
+    invoke-static {v0}, Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel;->A1(Lio/wondrous/sns/goals/viewmodel/GoalsStartViewModel;)Lio/wondrous/sns/data/config/GoalsConfig;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lio/wondrous/sns/data/config/GoalsConfig;->c()Lio/wondrous/sns/data/config/GoalsTargetConfig;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lio/wondrous/sns/data/config/GoalsTargetConfig;->a()Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    const-string v0, "goalsConfig"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/g;->s(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    throw v0
+.end method

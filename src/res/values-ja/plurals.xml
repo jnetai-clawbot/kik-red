@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d 秒早送り</item>
+        <item quantity="one">%d 秒早送り</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d 秒巻き戻し</item>
+        <item quantity="one">%d 秒巻き戻し</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d 件の新しい通知</item>
+        <item quantity="one">%d 件の新しい通知</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">インターネットに接続してください。接続されていないと、ストリームが%1$d秒で終了します。</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">{link}を購入して{days}日間広告なしに</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">%1$dギフターへメッセージを送信しました！</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d文字数が残っています。</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">%1$d 日後に有効期限が切れます！</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d 日</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d 時間</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d 時間</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d 分</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d 分</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$d 秒</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d 秒</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">今お気に入りのストリーミング！</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d 時間</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d 分</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">お気に入りライブ%1$d件配信中!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">ファン</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">残り%1$dです</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">この限定ホイールは%1$s回までしか送れなくなります！お気に入りのストリーマーに今すぐ送信しましょう！</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">ポイント</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">1ユーザーあたりの無料投票数：%1$d</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">可能な投票数を超過しています</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d票</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">バウンサーから%1$dを本当に削除しますか？</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">バウンサーから %1$d 人のストリーマーを削除</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">ショーは%1$d週間前からのみ予定することができます。</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$dギフター</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">%1$d回のシャウトアウトが利用可能</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d個のショーが予定されています</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">ダイヤモンド</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">ファン</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">勝利</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">%1$sを%2$d分間使用しました</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">お気に入りから%1$dを本当に削除しますか？</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">お気に入りから %1$d 人のストリーマーを削除</item>
+    </plurals>
+</resources>

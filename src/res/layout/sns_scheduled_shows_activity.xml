@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/sns_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sns_scheduled_shows_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/sns_scheduled_shows_spinner_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?snsScheduledShowsSpinnerTextStyle" />
+            <ImageView android:id="@id/sns_scheduled_shows_spinner_arrow" android:layout_width="32.0dip" android:layout_height="32.0dip" style="?snsScheduledShowsSpinnerArrowStyle" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

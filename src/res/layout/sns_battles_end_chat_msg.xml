@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginStart="@dimen/chat_item_margin_start" android:layout_marginEnd="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/sns_battles_end_chat_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/bc_ic_feed_vs" android:scaleType="centerInside" />
+    <TextView android:textAppearance="@style/TextAppearance.Medium.Bold.ChatMessage" android:textColor="#fffac28d" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="@color/sns_live_shadow" android:shadowRadius="@integer/sns_live_text_shadow_radius" android:paddingStart="@dimen/half_grid_padding" />
+</LinearLayout>

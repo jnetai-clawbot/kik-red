@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sns_search_view" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/sns_streamer_search_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?snsSearchTabsContainerStyle">
+        <CheckedTextView android:id="@id/sns_streamer_search_name" android:text="@string/sns_streamer_search_name" android:textAlignment="gravity" style="?snsSearchNameDescriptionButton" />
+        <CheckedTextView android:id="@id/sns_streamer_search_description" android:text="@string/sns_streamer_search_description" android:textAlignment="gravity" style="?snsSearchNameDescriptionButton" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sns_search_previous_results" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sns_search_previous_description_results" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/sns_fragment_live_feed" />
+</LinearLayout>

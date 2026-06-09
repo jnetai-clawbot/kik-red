@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/sns_date_night_gift_card_item_corner_radius" />
+    <solid android:color="@color/sns_date_night_empty_card_bg" />
+</shape>

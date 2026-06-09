@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/diamondViewersAndLikesContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/diamondCount" android:visibility="gone" style="?snsBroadcastDiamondPillStyle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewerViewsAndLikesLayout" android:background="@drawable/sns_diamonds_viewer_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/quarter_grid_padding" android:layout_toEndOf="@id/diamondCount">
+        <TextView android:id="@id/viewerLikesCount" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_marginEnd="3.0dip" style="?snsBroadcastLikesPillStyle" />
+        <TextView android:id="@id/viewsCount" android:focusable="false" android:visibility="gone" android:clickable="false" android:maxLines="1" style="?snsBroadcastViewersPillStyle" />
+        <TextView android:id="@id/blue_current_viewer_count" android:focusable="false" android:visibility="gone" android:clickable="false" android:maxLines="1" style="?snsBroadcastViewersOnlineNowPillStyle" />
+        <TextView android:id="@id/blue_id_streamer_device" android:focusable="false" android:visibility="gone" android:clickable="false" android:maxLines="1" style="?snsBroadcastViewersDevicePillStyle" />
+    </LinearLayout>
+    <TextView android:id="@id/spotlightRank" android:background="@drawable/sns_spotlights_rank_bg" android:focusable="false" android:visibility="gone" android:clickable="false" android:maxLines="1" android:layout_marginStart="@dimen/quarter_grid_padding" android:layout_toEndOf="@id/viewerViewsAndLikesLayout" style="?snsBroadcastSpotlightPillStyle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/blue_id_5" android:background="@drawable/sns_diamonds_viewer_bg" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/quarter_grid_padding" android:layout_below="@id/viewerViewsAndLikesLayout">
+        <TextView android:focusable="false" android:visibility="visible" android:clickable="false" android:text="0:00" android:maxLines="1" style="?snsBroadcastViewersDevicePillStyle" />
+        <SeekBar android:id="@id/blue_audio_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

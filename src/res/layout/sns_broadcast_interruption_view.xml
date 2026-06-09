@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/interruptionView" android:background="@drawable/sns_broadcast_msg_bg_banned" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+        <ProgressBar android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="true" android:layout_marginEnd="4.0dip" android:indeterminateTint="@color/sns_absolute_white" />
+        <TextView android:textColor="@color/sns_invertable_white_text" android:id="@id/interruptionViewText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_broadcast_interuption" />
+    </LinearLayout>
+</merge>

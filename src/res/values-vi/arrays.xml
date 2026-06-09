@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Thử thách là các nhiệm vụ hằng ngày và hằng tuần mà bạn cần hoàn thành để giành giải thưởng!</item>
+        <item>Hãy hoàn thành Thử thách rồi quay lại menu Thử thách để nhận thưởng. Giải thưởng đã nhận sẽ nằm trong trong menu Vật phẩm.</item>
+        <item>Có thử thách dễ dàng, có thử thách khó khăn. Hãy hoàn thành tất cả thử thách để nhận được thật nhiều phần thưởng!</item>
+    </string-array>
+</resources>

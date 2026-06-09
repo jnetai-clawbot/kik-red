@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Desafios são tarefas diárias ou semanais que, quando concluídas, rendem prêmios.</item>
+        <item>Conclua o Desafio e retorne ao Menu “Desafios” para resgatar seu prêmio. Os prêmios regatados podem ser encontrados no Menu Itens.</item>
+        <item>Os Desafios podem ser fáceis ou difíceis. Conclua todos para maximizar as recompensas!</item>
+    </string-array>
+</resources>

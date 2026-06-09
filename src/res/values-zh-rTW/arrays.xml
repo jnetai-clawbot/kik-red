@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>「挑戰」是每日和每週都會推出的任務，完成即可贏得獎品！</item>
+        <item>完成挑戰後回到「挑戰」選單，即可領取獎品。已領取的獎品可以在「物品」主選單中找到。</item>
+        <item>有些挑戰很簡單，有些則比較困難。全部完成，獲得的獎勵也會最豐富！</item>
+    </string-array>
+</resources>

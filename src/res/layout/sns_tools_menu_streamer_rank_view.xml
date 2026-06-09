@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?android:listSelector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/sns_live_tools_level_badge_bounding_box" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip" android:layout_marginStart="1.0dip" android:layout_marginEnd="11.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="end|center" android:id="@id/sns_live_tools_level_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_levels_badge_placeholder_inset" android:contentDescription="@string/sns_level_streamer_progress_activity_title" />
+    </FrameLayout>
+    <include android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/sns_live_tools_level_badge_bounding_box" app:layout_constraintTop_toTopOf="parent" layout="@layout/sns_tools_menu_item_progress" />
+    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

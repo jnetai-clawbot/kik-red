@@ -1,0 +1,2145 @@
+.class public final Landroidx/compose2/ui/util/ListUtilsKt;
+.super Ljava/lang/Object;
+.source "ListUtils.kt"
+
+
+# direct methods
+.method private static final appendElement(Ljava/lang/Appendable;Ljava/lang/Object;Lkotlin2/jvm/functions/Function1;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Appendable;",
+            "TT;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+",
+            "Ljava/lang/CharSequence;",
+            ">;)V"
+        }
+    .end annotation
+
+    if-eqz p2, :cond_0
+
+    invoke-interface {p2, p1}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    invoke-interface {p0, v0}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    goto :goto_1
+
+    :cond_0
+    if-nez p1, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    instance-of v0, p1, Ljava/lang/CharSequence;
+
+    :goto_0
+    if-eqz v0, :cond_2
+
+    move-object v0, p1
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    invoke-interface {p0, v0}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    goto :goto_1
+
+    :cond_2
+    instance-of v0, p1, Ljava/lang/Character;
+
+    if-eqz v0, :cond_3
+
+    move-object v0, p1
+
+    check-cast v0, Ljava/lang/Character;
+
+    invoke-virtual {v0}, Ljava/lang/Character;->charValue()C
+
+    move-result v0
+
+    invoke-interface {p0, v0}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
+
+    goto :goto_1
+
+    :cond_3
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    invoke-interface {p0, v0}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    :goto_1
+    return-void
+.end method
+
+.method public static final fastAll(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Z
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Boolean;",
+            ">;)Z"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    move-object v1, p0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    :goto_0
+    if-ge v3, v4, :cond_1
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    move-object v6, v5
+
+    const/4 v7, 0x0
+
+    invoke-interface {p1, v6}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/lang/Boolean;
+
+    invoke-virtual {v8}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v8
+
+    if-nez v8, :cond_0
+
+    const/4 v4, 0x0
+
+    return v4
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x1
+
+    return v1
+.end method
+
+.method public static final fastAny(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Z
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Boolean;",
+            ">;)Z"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    move-object v1, p0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    :goto_0
+    if-ge v3, v4, :cond_1
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    move-object v6, v5
+
+    const/4 v7, 0x0
+
+    invoke-interface {p1, v6}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/lang/Boolean;
+
+    invoke-virtual {v8}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    const/4 v4, 0x1
+
+    return v4
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    return v1
+.end method
+
+.method public static final fastDistinctBy(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/util/List;
+    .locals 12
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "K:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+TK;>;)",
+            "Ljava/util/List<",
+            "TT;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    new-instance v1, Ljava/util/HashSet;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/HashSet;-><init>(I)V
+
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
+
+    move-object v3, p0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v6
+
+    :goto_0
+    if-ge v5, v6, :cond_1
+
+    invoke-interface {v3, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    move-object v8, v7
+
+    const/4 v9, 0x0
+
+    invoke-interface {p1, v8}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    invoke-virtual {v1, v10}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_0
+
+    move-object v11, v2
+
+    check-cast v11, Ljava/util/Collection;
+
+    invoke-interface {v11, v8}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move-object v3, v2
+
+    check-cast v3, Ljava/util/List;
+
+    return-object v3
+.end method
+
+.method public static final fastFilter(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/util/List;
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Boolean;",
+            ">;)",
+            "Ljava/util/List<",
+            "TT;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    move-object v2, p0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    :goto_0
+    if-ge v4, v5, :cond_1
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    move-object v7, v6
+
+    const/4 v8, 0x0
+
+    invoke-interface {p1, v7}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Ljava/lang/Boolean;
+
+    invoke-virtual {v9}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v9
+
+    if-eqz v9, :cond_0
+
+    move-object v9, v1
+
+    check-cast v9, Ljava/util/Collection;
+
+    invoke-interface {v9, v7}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move-object v2, v1
+
+    check-cast v2, Ljava/util/List;
+
+    return-object v2
+.end method
+
+.method public static final fastFilterNotNull(Ljava/util/List;)Ljava/util/List;
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;)",
+            "Ljava/util/List<",
+            "TT;>;"
+        }
+    .end annotation
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    move-object v1, p0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    :goto_0
+    if-ge v3, v4, :cond_1
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    move-object v6, v5
+
+    const/4 v7, 0x0
+
+    if-eqz v6, :cond_0
+
+    move-object v8, v0
+
+    check-cast v8, Ljava/util/Collection;
+
+    invoke-interface {v8, v6}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move-object v1, v0
+
+    check-cast v1, Ljava/util/List;
+
+    return-object v1
+.end method
+
+.method public static final fastFirst(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/lang/Object;
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Boolean;",
+            ">;)TT;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    move-object v1, p0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    :goto_0
+    if-ge v3, v4, :cond_1
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    move-object v6, v5
+
+    const/4 v7, 0x0
+
+    invoke-interface {p1, v6}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/lang/Boolean;
+
+    invoke-virtual {v8}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    return-object v6
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    new-instance v1, Ljava/util/NoSuchElementException;
+
+    const-string v2, "Collection contains no element matching the predicate."
+
+    invoke-direct {v1, v2}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public static final fastFirstOrNull(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/lang/Object;
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Boolean;",
+            ">;)TT;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    move-object v1, p0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    :goto_0
+    if-ge v3, v4, :cond_1
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    move-object v6, v5
+
+    const/4 v7, 0x0
+
+    invoke-interface {p1, v6}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/lang/Boolean;
+
+    invoke-virtual {v8}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    return-object v6
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    return-object v1
+.end method
+
+.method public static final fastFlatMap(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/util/List;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+",
+            "Ljava/lang/Iterable<",
+            "+TR;>;>;)",
+            "Ljava/util/List<",
+            "TR;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    move-object v2, p0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    :goto_0
+    if-ge v4, v5, :cond_0
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    move-object v7, v6
+
+    const/4 v8, 0x0
+
+    invoke-interface {p1, v7}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Ljava/lang/Iterable;
+
+    move-object v10, v1
+
+    check-cast v10, Ljava/util/Collection;
+
+    invoke-static {v10, v9}, Lkotlin2/collections/CollectionsKt;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, v1
+
+    check-cast v2, Ljava/util/List;
+
+    return-object v2
+.end method
+
+.method public static final fastFold(Ljava/util/List;Ljava/lang/Object;Lkotlin2/jvm/functions/Function2;)Ljava/lang/Object;
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;TR;",
+            "Lkotlin2/jvm/functions/Function2<",
+            "-TR;-TT;+TR;>;)TR;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    move-object v1, p1
+
+    move-object v2, p0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    :goto_0
+    if-ge v4, v5, :cond_0
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    move-object v7, v6
+
+    const/4 v8, 0x0
+
+    invoke-interface {p2, v1, v7}, Lkotlin2/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-object v1
+.end method
+
+.method public static final fastForEach(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;",
+            "Lkotlin2/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    :goto_0
+    if-ge v1, v2, :cond_0
+
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-interface {p1, v3}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public static final fastForEachIndexed(Ljava/util/List;Lkotlin2/jvm/functions/Function2;)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function2<",
+            "-",
+            "Ljava/lang/Integer;",
+            "-TT;",
+            "Lkotlin2/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    :goto_0
+    if-ge v1, v2, :cond_0
+
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-interface {p1, v4, v3}, Lkotlin2/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public static final fastForEachReversed(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;",
+            "Lkotlin2/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    if-ltz v1, :cond_1
+
+    :cond_0
+    move v2, v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-interface {p1, v3}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    if-gez v1, :cond_0
+
+    :cond_1
+    return-void
+.end method
+
+.method private static final fastJoinTo(Ljava/util/List;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin2/jvm/functions/Function1;)Ljava/lang/Appendable;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "A::",
+            "Ljava/lang/Appendable;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;TA;",
+            "Ljava/lang/CharSequence;",
+            "Ljava/lang/CharSequence;",
+            "Ljava/lang/CharSequence;",
+            "I",
+            "Ljava/lang/CharSequence;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+",
+            "Ljava/lang/CharSequence;",
+            ">;)TA;"
+        }
+    .end annotation
+
+    invoke-interface {p1, p3}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    :goto_0
+    if-ge v1, v2, :cond_3
+
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    add-int/lit8 v0, v0, 0x1
+
+    const/4 v4, 0x1
+
+    if-le v0, v4, :cond_0
+
+    invoke-interface {p1, p2}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    :cond_0
+    if-ltz p5, :cond_2
+
+    if-gt v0, p5, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    goto :goto_2
+
+    :cond_2
+    :goto_1
+    invoke-static {p1, v3, p7}, Landroidx/compose2/ui/util/ListUtilsKt;->appendElement(Ljava/lang/Appendable;Ljava/lang/Object;Lkotlin2/jvm/functions/Function1;)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_3
+    :goto_2
+    if-ltz p5, :cond_4
+
+    if-le v0, p5, :cond_4
+
+    invoke-interface {p1, p6}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    :cond_4
+    invoke-interface {p1, p4}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    return-object p1
+.end method
+
+.method static synthetic fastJoinTo$default(Ljava/util/List;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin2/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/Appendable;
+    .locals 6
+
+    and-int/lit8 v0, p8, 0x2
+
+    if-eqz v0, :cond_0
+
+    const-string v0, ", "
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    goto :goto_0
+
+    :cond_0
+    move-object v0, p2
+
+    :goto_0
+    and-int/lit8 v1, p8, 0x4
+
+    const-string v2, ""
+
+    if-eqz v1, :cond_1
+
+    move-object v1, v2
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    goto :goto_1
+
+    :cond_1
+    move-object v1, p3
+
+    :goto_1
+    and-int/lit8 v3, p8, 0x8
+
+    if-eqz v3, :cond_2
+
+    check-cast v2, Ljava/lang/CharSequence;
+
+    goto :goto_2
+
+    :cond_2
+    move-object v2, p4
+
+    :goto_2
+    and-int/lit8 v3, p8, 0x10
+
+    if-eqz v3, :cond_3
+
+    const/4 v3, -0x1
+
+    goto :goto_3
+
+    :cond_3
+    move v3, p5
+
+    :goto_3
+    and-int/lit8 v4, p8, 0x20
+
+    if-eqz v4, :cond_4
+
+    const-string v4, "..."
+
+    check-cast v4, Ljava/lang/CharSequence;
+
+    goto :goto_4
+
+    :cond_4
+    move-object v4, p6
+
+    :goto_4
+    and-int/lit8 v5, p8, 0x40
+
+    if-eqz v5, :cond_5
+
+    const/4 v5, 0x0
+
+    goto :goto_5
+
+    :cond_5
+    move-object v5, p7
+
+    :goto_5
+    move-object p2, p0
+
+    move-object p3, p1
+
+    move-object p4, v0
+
+    move-object p5, v1
+
+    move-object p6, v2
+
+    move p7, v3
+
+    move-object p8, v4
+
+    move-object p9, v5
+
+    invoke-static/range {p2 .. p9}, Landroidx/compose2/ui/util/ListUtilsKt;->fastJoinTo(Ljava/util/List;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin2/jvm/functions/Function1;)Ljava/lang/Appendable;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static final fastJoinToString(Ljava/util/List;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin2/jvm/functions/Function1;)Ljava/lang/String;
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Ljava/lang/CharSequence;",
+            "Ljava/lang/CharSequence;",
+            "Ljava/lang/CharSequence;",
+            "I",
+            "Ljava/lang/CharSequence;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+",
+            "Ljava/lang/CharSequence;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    move-object v2, v0
+
+    check-cast v2, Ljava/lang/Appendable;
+
+    move-object v1, p0
+
+    move-object v3, p1
+
+    move-object v4, p2
+
+    move-object v5, p3
+
+    move v6, p4
+
+    move-object v7, p5
+
+    move-object v8, p6
+
+    invoke-static/range {v1 .. v8}, Landroidx/compose2/ui/util/ListUtilsKt;->fastJoinTo(Ljava/util/List;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin2/jvm/functions/Function1;)Ljava/lang/Appendable;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static synthetic fastJoinToString$default(Ljava/util/List;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin2/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/String;
+    .locals 4
+
+    and-int/lit8 p8, p7, 0x1
+
+    if-eqz p8, :cond_0
+
+    const-string p1, ", "
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    :cond_0
+    and-int/lit8 p8, p7, 0x2
+
+    const-string v0, ""
+
+    if-eqz p8, :cond_1
+
+    move-object p2, v0
+
+    check-cast p2, Ljava/lang/CharSequence;
+
+    move-object p8, p2
+
+    goto :goto_0
+
+    :cond_1
+    move-object p8, p2
+
+    :goto_0
+    and-int/lit8 p2, p7, 0x4
+
+    if-eqz p2, :cond_2
+
+    move-object p3, v0
+
+    check-cast p3, Ljava/lang/CharSequence;
+
+    move-object v0, p3
+
+    goto :goto_1
+
+    :cond_2
+    move-object v0, p3
+
+    :goto_1
+    and-int/lit8 p2, p7, 0x8
+
+    if-eqz p2, :cond_3
+
+    const/4 p4, -0x1
+
+    const/4 v1, -0x1
+
+    goto :goto_2
+
+    :cond_3
+    move v1, p4
+
+    :goto_2
+    and-int/lit8 p2, p7, 0x10
+
+    if-eqz p2, :cond_4
+
+    const-string p2, "..."
+
+    move-object p5, p2
+
+    check-cast p5, Ljava/lang/CharSequence;
+
+    move-object v2, p5
+
+    goto :goto_3
+
+    :cond_4
+    move-object v2, p5
+
+    :goto_3
+    and-int/lit8 p2, p7, 0x20
+
+    if-eqz p2, :cond_5
+
+    const/4 p6, 0x0
+
+    move-object v3, p6
+
+    goto :goto_4
+
+    :cond_5
+    move-object v3, p6
+
+    :goto_4
+    move-object p2, p0
+
+    move-object p3, p1
+
+    move-object p4, p8
+
+    move-object p5, v0
+
+    move p6, v1
+
+    move-object p7, v2
+
+    move-object p8, v3
+
+    invoke-static/range {p2 .. p8}, Landroidx/compose2/ui/util/ListUtilsKt;->fastJoinToString(Ljava/util/List;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin2/jvm/functions/Function1;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final fastLastOrNull(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/lang/Object;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Boolean;",
+            ">;)TT;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    if-ltz v1, :cond_2
+
+    :cond_0
+    move v2, v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-interface {p1, v3}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/Boolean;
+
+    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    return-object v3
+
+    :cond_1
+    if-gez v1, :cond_0
+
+    :cond_2
+    const/4 v1, 0x0
+
+    return-object v1
+.end method
+
+.method public static final fastMap(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/util/List;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+TR;>;)",
+            "Ljava/util/List<",
+            "TR;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    move-object v2, p0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    :goto_0
+    if-ge v4, v5, :cond_0
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    move-object v7, v6
+
+    const/4 v8, 0x0
+
+    move-object v9, v1
+
+    check-cast v9, Ljava/util/Collection;
+
+    invoke-interface {p1, v7}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    invoke-interface {v9, v10}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, v1
+
+    check-cast v2, Ljava/util/List;
+
+    return-object v2
+.end method
+
+.method public static final fastMapIndexed(Ljava/util/List;Lkotlin2/jvm/functions/Function2;)Ljava/util/List;
+    .locals 12
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function2<",
+            "-",
+            "Ljava/lang/Integer;",
+            "-TT;+TR;>;)",
+            "Ljava/util/List<",
+            "TR;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    move-object v2, p0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    :goto_0
+    if-ge v4, v5, :cond_0
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    move v7, v4
+
+    move-object v8, v6
+
+    const/4 v9, 0x0
+
+    move-object v10, v1
+
+    check-cast v10, Ljava/util/Collection;
+
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    invoke-interface {p1, v11, v8}, Lkotlin2/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v11
+
+    invoke-interface {v10, v11}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, v1
+
+    check-cast v2, Ljava/util/List;
+
+    return-object v2
+.end method
+
+.method public static final fastMapIndexedNotNull(Ljava/util/List;Lkotlin2/jvm/functions/Function2;)Ljava/util/List;
+    .locals 13
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function2<",
+            "-",
+            "Ljava/lang/Integer;",
+            "-TT;+TR;>;)",
+            "Ljava/util/List<",
+            "TR;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    move-object v2, p0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    :goto_0
+    if-ge v4, v5, :cond_1
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    move v7, v4
+
+    move-object v8, v6
+
+    const/4 v9, 0x0
+
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v10
+
+    invoke-interface {p1, v10, v8}, Lkotlin2/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    if-eqz v10, :cond_0
+
+    const/4 v11, 0x0
+
+    move-object v12, v1
+
+    check-cast v12, Ljava/util/Collection;
+
+    invoke-interface {v12, v10}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move-object v2, v1
+
+    check-cast v2, Ljava/util/List;
+
+    return-object v2
+.end method
+
+.method public static final fastMapNotNull(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/util/List;
+    .locals 12
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+TR;>;)",
+            "Ljava/util/List<",
+            "TR;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    move-object v2, p0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    :goto_0
+    if-ge v4, v5, :cond_1
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    move-object v7, v6
+
+    const/4 v8, 0x0
+
+    invoke-interface {p1, v7}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    if-eqz v9, :cond_0
+
+    const/4 v10, 0x0
+
+    move-object v11, v1
+
+    check-cast v11, Ljava/util/Collection;
+
+    invoke-interface {v11, v9}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move-object v2, v1
+
+    check-cast v2, Ljava/util/List;
+
+    return-object v2
+.end method
+
+.method public static final fastMapTo(Ljava/util/List;Ljava/util/Collection;Lkotlin2/jvm/functions/Function1;)Ljava/util/Collection;
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            "C::",
+            "Ljava/util/Collection<",
+            "-TR;>;>(",
+            "Ljava/util/List<",
+            "+TT;>;TC;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+TR;>;)TC;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    move-object v1, p0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    :goto_0
+    if-ge v3, v4, :cond_0
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    move-object v6, v5
+
+    const/4 v7, 0x0
+
+    invoke-interface {p2, v6}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    invoke-interface {p1, v8}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-object p1
+.end method
+
+.method public static final fastMaxBy(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/lang/Object;
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R::",
+            "Ljava/lang/Comparable<",
+            "-TR;>;>(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+TR;>;)TT;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x0
+
+    return-object v1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {p1, v1}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Comparable;
+
+    const/4 v3, 0x1
+
+    invoke-static {p0}, Lkotlin2/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    move-result v4
+
+    if-gt v3, v4, :cond_2
+
+    :goto_0
+    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-interface {p1, v5}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/Comparable;
+
+    invoke-interface {v2, v6}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
+
+    move-result v7
+
+    if-gez v7, :cond_1
+
+    move-object v1, v5
+
+    move-object v2, v6
+
+    :cond_1
+    if-eq v3, v4, :cond_2
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    return-object v1
+.end method
+
+.method public static final fastMaxOfOrNull(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/lang/Comparable;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R::",
+            "Ljava/lang/Comparable<",
+            "-TR;>;>(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+TR;>;)TR;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x0
+
+    return-object v1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {p1, v1}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Comparable;
+
+    const/4 v2, 0x1
+
+    invoke-static {p0}, Lkotlin2/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    move-result v3
+
+    if-gt v2, v3, :cond_2
+
+    :goto_0
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {p1, v4}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/Comparable;
+
+    invoke-interface {v4, v1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
+
+    move-result v5
+
+    if-lez v5, :cond_1
+
+    move-object v1, v4
+
+    :cond_1
+    if-eq v2, v3, :cond_2
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    return-object v1
+.end method
+
+.method public static final fastMinByOrNull(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)Ljava/lang/Object;
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R::",
+            "Ljava/lang/Comparable<",
+            "-TR;>;>(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;+TR;>;)TT;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x0
+
+    return-object v1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {p1, v1}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Comparable;
+
+    const/4 v3, 0x1
+
+    invoke-static {p0}, Lkotlin2/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    move-result v4
+
+    if-gt v3, v4, :cond_2
+
+    :goto_0
+    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-interface {p1, v5}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/Comparable;
+
+    invoke-interface {v2, v6}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
+
+    move-result v7
+
+    if-lez v7, :cond_1
+
+    move-object v1, v5
+
+    move-object v2, v6
+
+    :cond_1
+    if-eq v3, v4, :cond_2
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    return-object v1
+.end method
+
+.method public static final fastReduce(Ljava/util/List;Lkotlin2/jvm/functions/Function2;)Ljava/lang/Object;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<S:",
+            "Ljava/lang/Object;",
+            "T::TS;>(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function2<",
+            "-TS;-TT;+TS;>;)TS;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    invoke-static {p0}, Lkotlin2/collections/CollectionsKt;->first(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-static {p0}, Lkotlin2/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    move-result v3
+
+    if-gt v2, v3, :cond_0
+
+    :goto_0
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {p1, v1, v4}, Lkotlin2/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-eq v2, v3, :cond_0
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-object v1
+
+    :cond_1
+    new-instance v1, Ljava/lang/UnsupportedOperationException;
+
+    const-string v2, "Empty collection can\'t be reduced."
+
+    invoke-direct {v1, v2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public static final fastSumBy(Ljava/util/List;Lkotlin2/jvm/functions/Function1;)I
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Integer;",
+            ">;)I"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    move-object v2, p0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    :goto_0
+    if-ge v4, v5, :cond_0
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    move-object v7, v6
+
+    const/4 v8, 0x0
+
+    invoke-interface {p1, v7}, Lkotlin2/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Ljava/lang/Number;
+
+    invoke-virtual {v9}, Ljava/lang/Number;->intValue()I
+
+    move-result v9
+
+    add-int/2addr v1, v9
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return v1
+.end method
+
+.method public static final fastZip(Ljava/util/List;Ljava/util/List;Lkotlin2/jvm/functions/Function2;)Ljava/util/List;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            "V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Ljava/util/List<",
+            "+TR;>;",
+            "Lkotlin2/jvm/functions/Function2<",
+            "-TT;-TR;+TV;>;)",
+            "Ljava/util/List<",
+            "TV;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-static {v1, v2}, Ljava/lang/Math;->min(II)I
+
+    move-result v1
+
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_0
+
+    move-object v4, v2
+
+    check-cast v4, Ljava/util/Collection;
+
+    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    invoke-interface {p2, v5, v6}, Lkotlin2/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-interface {v4, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move-object v3, v2
+
+    check-cast v3, Ljava/util/List;
+
+    return-object v3
+.end method
+
+.method public static final fastZipWithNext(Ljava/util/List;Lkotlin2/jvm/functions/Function2;)Ljava/util/List;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;",
+            "Lkotlin2/jvm/functions/Function2<",
+            "-TT;-TT;+TR;>;)",
+            "Ljava/util/List<",
+            "TR;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-ne v1, v2, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v1, Ljava/util/List;
+
+    const/4 v2, 0x0
+
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    invoke-static {p0}, Lkotlin2/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    move-result v4
+
+    :goto_0
+    if-ge v3, v4, :cond_1
+
+    add-int/lit8 v5, v3, 0x1
+
+    invoke-interface {p0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-interface {p1, v2, v5}, Lkotlin2/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    invoke-interface {v1, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    move-object v2, v5
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return-object v1
+
+    :cond_2
+    :goto_1
+    invoke-static {}, Lkotlin2/collections/CollectionsKt;->emptyList()Ljava/util/List;
+
+    move-result-object v1
+
+    return-object v1
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topRightRadius="@dimen/sns_next_date_contestant_button_corner_radius" android:bottomRightRadius="@dimen/sns_next_date_contestant_button_corner_radius" />
+    <solid android:color="@color/sns_next_date_red_76a" />
+    <stroke android:width="1.0dip" android:color="@color/sns_next_date_contestant_button_border_color" />
+</shape>

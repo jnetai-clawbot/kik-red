@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="@dimen/sns_streamer_profile_stats_legacy_offset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sns_streamer_profile_stats_diamonds" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/sns_streamer_profile_stat_color" android:id="@id/sns_streamer_diamonds_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/sns_streamer_profile_stat_color" android:id="@id/sns_streamer_diamonds_count_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sns_streamer_profile_stats_fans" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/sns_streamer_profile_stat_color" android:id="@id/sns_streamer_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/sns_streamer_profile_stat_color" android:id="@id/sns_streamer_fans_count_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sns_streamer_profile_battle_wins" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/sns_streamer_profile_stat_color" android:id="@id/sns_streamer_battle_win_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/sns_streamer_profile_stat_color" android:id="@id/sns_streamer_wins_count_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+    </LinearLayout>
+</LinearLayout>

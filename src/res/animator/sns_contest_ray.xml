@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="2000" android:startOffset="0" android:valueFrom="0" android:valueTo="1800" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:duration="233" android:startOffset="0" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:duration="233" android:startOffset="0" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:duration="433" android:startOffset="233" android:valueFrom="1" android:valueTo="0.8" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:duration="433" android:startOffset="233" android:valueFrom="1" android:valueTo="0.8" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:duration="70" android:startOffset="0" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="alpha" />
+    <objectAnimator android:duration="1930" android:startOffset="70" android:valueFrom="1" android:valueTo="0" android:valueType="floatType" android:propertyName="alpha" />
+    <objectAnimator android:duration="2000" android:startOffset="0" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="translateX" />
+</set>

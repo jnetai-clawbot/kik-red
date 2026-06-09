@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="kik.red" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <supports-screens/>
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="image/jpeg"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+            <data android:mimeType="vnd.android.cursor.item/event"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.net.VpnService"/>
+        </intent>
+        <package android:name="com.sec.android.app.myfiles"/>
+        <package android:name="kik.red"/>
+        <package android:name="kik.red2"/>
+        <package android:name="kik.red"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.bluesmods.unbrickx"/>
+    </queries>
+    <permission android:name="kik.red.permission.CONTACT" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:description="@string/read_phone_state_annotation" android:maxSdkVersion="29" android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="kik.red.permission.CONTACT"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="kik.red.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="kik.red.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@drawable/bluekik_icon_small" android:label="@string/app_name" android:largeHeap="true" android:name="kik.red.app.chat.KikNewApplication" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:roundIcon="@drawable/bluekik_icon_small" android:supportsRtl="false" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <property android:name="REQUIRE_SECURE_ENV" android:value="1"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3660744125473442~7074683540"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTask" android:name="kik.red.ads.RewardedAdStateDialog" android:theme="@style/Theme.StandAloneDialog"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_fpxk8WuTwagFbmshrrtx3lijCvnqVRgC"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_notification_badge"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="kik.red.chat.activity.KikApiLandingActivity" android:noHistory="true" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="api.kik.com" android:scheme="kik"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="screen" android:scheme="kik"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.com" android:pathPrefix="/u/open/" android:scheme="http"/>
+                <data android:host="kik.com" android:pathPrefix="/u/open/" android:scheme="https"/>
+                <data android:host="www.kik.com" android:pathPrefix="/u/open/" android:scheme="http"/>
+                <data android:host="www.kik.com" android:pathPrefix="/u/open/" android:scheme="https"/>g </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.me" android:pathPattern=".*" android:scheme="http"/>
+                <data android:host="kik.me" android:pathPattern=".*" android:scheme="https"/>
+                <data android:host="www.kik.me" android:pathPattern=".*" android:scheme="http"/>
+                <data android:host="www.kik.me" android:pathPattern=".*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.com" android:pathPrefix="/u/" android:scheme="kik-share"/>
+                <data android:host="kik.com" android:pathPrefix="/g/" android:scheme="kik-share"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.com" android:pathPrefix="/back" android:scheme="kik-share"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.com" android:pathPrefix="/send/" android:scheme="kik-share"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="users" android:scheme="kik"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="card"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="cards"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="kik"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/app_name" android:name="kik.red.chat.activity.IntroActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:name="kik.red.chat.activity.KikCropActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:excludeFromRecents="true" android:exported="true" android:name="kik.red.chat.activity.KikPlatformLanding" android:noHistory="true" android:taskAffinity="" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="kik.platform.send"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:name="com.kik.cards.browser.PopupWindowActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="com.kik.cards.usermedia.CustomGalleryActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:name="kik.red.chat.fragment.SimpleFragmentWrapperActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:label="@string/live" android:launchMode="singleTask" android:name="com.kik.live.view.TmgActivity" android:screenOrientation="portrait" android:theme="@style/Kik.Live.Theme.ActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:label="@string/live" android:name="com.kik.live.view.KikLiveHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Kik.Live.Theme.ActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="com.kik.live.view.KikBroadcastActivity" android:screenOrientation="portrait" android:theme="@style/Kik.Live.Theme.TransparentStatus" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:label="@string/live" android:name="com.kik.live.view.IntegrationFavoriteActivity" android:screenOrientation="portrait" android:theme="@style/Kik.Live.Theme.ActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:label="@string/sns_blocked_users_activity_title" android:name="io.wondrous.sns.blockedusers.BlockedUsersActivity" android:screenOrientation="portrait" android:theme="@style/Kik.Live.Theme.SocialMediaTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:label="@string/sns_manage_bouncers_activity_title" android:name="io.wondrous.sns.bouncers.BouncersActivity" android:screenOrientation="portrait" android:theme="@style/Kik.Live.Theme.SocialMediaTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/sns_social_media" android:name="io.wondrous.sns.socialmedia.SocialMediaActivity" android:screenOrientation="portrait" android:theme="@style/Kik.Live.Theme.SocialMediaTheme"/>
+        <activity android:name="io.wondrous.sns.socialmedia.SocialMediaInputActivity" android:screenOrientation="portrait" android:theme="@style/Kik.Live.Theme.SocialMediaTheme"/>
+        <activity android:label="@string/sns_level_streamer_progress_activity_title" android:name="io.wondrous.sns.levels.progress.streamer.LevelStreamerProgressActivity" android:screenOrientation="portrait" android:theme="@style/Kik.Live.Theme.ActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:name="kik.red.chat.activity.KikWelcomeFragmentActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTask" android:name="kik.red.chat.activity.ConversationsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTask" android:name="kik.red.chat.activity.ConversationsLiveActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="kik.red.chat.activity.ChatActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="kik.red.chat.activity.MissedConversationsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:name="kik.red.chat.activity.FragmentWrapperActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="kik.red.deeplinks.PublicGroupDeepLinkActivity" android:noHistory="true" android:theme="@style/TransparentTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="gs" android:scheme="kik"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="kik.red.deeplinks.ChatInfoDeepLinkActivity" android:noHistory="true" android:theme="@style/TransparentTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="u" android:scheme="kik"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="kik.red.deeplinks.UserProfileDeepLinkActivity" android:noHistory="true" android:theme="@style/TransparentTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="settings" android:scheme="kik"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="kik.red.deeplinks.InternalDeeplinkActivity" android:noHistory="true" android:theme="@style/TransparentTheme.NoAnimation" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="kik.red.chat.activity.PinLockActivity" android:screenOrientation="portrait" android:theme="@style/BaseAppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:name="kik.red.chat.fragment.settings.KikSettingsActivity" android:theme="@style/BaseAppTheme.NoActionBar"/>
+        <service android:exported="false" android:label="Kik Executor Service" android:name="kik.red.sdkutils.concurrent.AlarmManagerExecutorService"/>
+        <service android:exported="false" android:name="kik.red.net.push.FirebaseTickleService">
+            <intent-filter android:priority="10000">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="kik.red.KikDataProvider" android:name="kik.red.KikDataProvider" android:permission="kik.red.permission.CONTACT"/>
+        <provider android:authorities="kik.red.KikFileProvider" android:name="kik.red.KikFileProvider"/>
+        <provider android:authorities="kik.red.VideoContentProvider" android:exported="false" android:name="kik.red.VideoContentProvider"/>
+        <receiver android:exported="true" android:name="kik.red.chat.service.StartupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="kik.red.chat.service.KikCommAlarmReceiver"/>
+        <receiver android:exported="true" android:name="kik.red.chat.service.CustomCampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="kik.red.AlarmReceiver"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="05f490868c9518194f9555a7d8664f006da667ac"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <provider android:authorities="kik.red.provider" android:exported="false" android:grantUriPermissions="true" android:name="kik.red.KikShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:label="@string/assembly_debug_panel" android:name="ai.medialab.medialabads2.ui.AssemblyDebugActivity" android:theme="@style/PanelTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="ai.medialab.medialabads2.interstitials.internal.ana.AnaInterstitialActivity"/>
+        <meta-data android:name="applovin.sdk.key" android:value="Dt_Ku25mTJ9dms_cqXJ68gMbz4IJnTF-KFJDHPzmi7NT-N5owOv33Ge1KyL6Qa5lqOz5oxsV3Dz2b2qWRkZV-D"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.kik.navigation.ComposeNavigationActivity" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="OtherName" android:name="com.quantcast.measurement.service.AboutQuantcastScreen"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="kik.red.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.ktx.FirebaseInAppMessagingDisplayKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.ktx.FirebaseInAppMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="kik.red.chuck.provider" android:exported="false" android:name="com.readystatesoftware.chuck.internal.data.ChuckContentProvider"/>
+        <activity android:label="@string/chuck_name" android:launchMode="singleTask" android:name="com.readystatesoftware.chuck.internal.ui.MainActivity" android:taskAffinity="com.readystatesoftware.chuck.task" android:theme="@style/Chuck.Theme"/>
+        <activity android:name="com.readystatesoftware.chuck.internal.ui.TransactionActivity" android:parentActivityName="com.readystatesoftware.chuck.internal.ui.MainActivity" android:theme="@style/Chuck.Theme"/>
+        <service android:exported="false" android:name="com.readystatesoftware.chuck.internal.support.ClearTransactionsService"/>
+        <service android:exported="false" android:name="io.wondrous.sns.push.fcm.SnsFirebaseMessagingService">
+            <intent-filter android:priority="-400">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="kik.red.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="sns.payments.google.recharge.GooglePurchaseFlowInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="sns.payments.offers.PaymentOfferComponentInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="sns.vip.SnsVipInitializer" android:value="@string/androidx_startup"/>
+            <meta-data android:name="sns.currency.host.HostCurrencyInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="io.wondrous.sns.startup.SnsLiveLocatorInitializer" android:value="@string/androidx_startup"/>
+            <meta-data android:name="sns.currency.ruby.RubyCurrencyInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="sns.payments.offers.PaymentOfferInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="io.wondrous.sns.recharge.startup.PaymentsRechargeInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="sns.currency.host.info.HostCurrencyInfoInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="sns.currency.ruby.info.RubyCurrencyInfoInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="sns.data.db.SnsDatabaseInitializer" android:value="@string/androidx_startup"/>
+            <meta-data android:name="sns.plugins.SnsPluginRegistryInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="io.wondrous.sns.overlays.OverlayServiceCoordinatorLocatorInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:label="@string/sns_purchase_currency_label" android:name="sns.payments.google.recharge.GooglePurchaseCurrencyActivity"/>
+        <activity android:launchMode="singleTask" android:name="io.wondrous.sns.StartLiveBroadcastForUserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:exported="true" android:name="io.wondrous.sns.nav.SnsCoreNavActivity" android:theme="@style/Sns.ThemeOverlay.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.red" android:scheme="sns"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/sns_live_filters_activity_title" android:name="io.wondrous.sns.live.filters.LiveFiltersActivity" android:theme="@style/Sns.LiveFiltersActivityTheme"/>
+        <activity android:label="@string/sns_live_languages_activity_title" android:name="io.wondrous.sns.live.filters.LanguagesActivity" android:theme="@style/Sns.FilterLanguagesActivityTheme"/>
+        <activity android:label="@string/sns_following" android:name="io.wondrous.sns.feed2.LiveFeedFavoritesActivity" android:theme="@style/Sns.LiveFeedFavoritesActivityTheme"/>
+        <activity android:label="@string/sns_stream_history_title" android:name="io.wondrous.sns.streamhistory.StreamHistoryActivity"/>
+        <activity android:label="@string/sns_following" android:name="io.wondrous.sns.followers.FavoritesActivity"/>
+        <activity android:label="@string/sns_steamer_levels_info_activity_title" android:launchMode="singleTop" android:name="io.wondrous.sns.levels.info.LevelsInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/sns_level_viewer_progress_activity_title" android:name="io.wondrous.sns.levels.progress.viewer.LevelViewerProgressActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/sns_recharge_title" android:name="io.wondrous.sns.payments.RechargeAccountActivity" android:theme="@style/Sns.RechargeActivityTheme"/>
+        <activity android:label="@string/sns_next_date_my_dates_title" android:name="io.wondrous.sns.nextdate.dateshistory.DatesActivity"/>
+        <activity android:name="io.wondrous.sns.contentguidelines.ContentGuidelinesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/sns_claim_code" android:name="io.wondrous.sns.claimcode.ClaimCodeActivity" android:screenOrientation="portrait" android:theme="@style/Sns.ClaimCodeActivityTheme"/>
+        <activity android:name="io.wondrous.sns.broadcast.end.extended.BroadcastEndExtendedActivity" android:theme="@style/Sns.BroadcastEndDeeplinkTheme"/>
+        <activity android:label="@string/sns_schedule_show" android:name="io.wondrous.sns.scheduledshows.create.CreateScheduledShowActivity" android:screenOrientation="portrait" android:theme="@style/Sns.CreateScheduledShowActivityTheme"/>
+        <activity android:label="@string/sns_all_shows" android:name="io.wondrous.sns.scheduledshows.list.ScheduledShowsActivity" android:screenOrientation="portrait" android:theme="@style/Sns.ScheduledShowsActivityTheme"/>
+        <activity android:label="@string/sns_profile_edit_my_details" android:name="io.wondrous.sns.livetools.details.ProfileEditMyDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:label="@string/sns_cash_reward_title" android:name="io.wondrous.sns.cashreward.CashRewardActivity"/>
+        <activity android:name="io.wondrous.sns.feed2.discover.LiveFeedDiscoverActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:name="io.wondrous.sns.LiveNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.meetme.broadcast.BroadcastVideoReceiver.ACTION_BROADCAST_INTERACTION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <provider android:authorities="kik.red.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="io.wondrous.sns.SnsFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sns_file_paths"/>
+        </provider>
+        <activity android:name="sns.payments.offers.push.PaymentOfferPushActivity" android:theme="@style/Sns.ThemeOverlay.Transparent"/>
+        <activity android:label="VerificationTermsActivity" android:name="io.wondrous.sns.verification.terms.VerificationTermsActivity"/>
+        <activity android:label="@string/sns_solicit_verification_activity_title" android:name="io.wondrous.sns.verification.liveness.LivenessFlowActivity"/>
+        <activity android:label="@string/sns_solicit_verification_activity_title" android:name="io.wondrous.sns.verification.badge.SolicitVerificationActivity"/>
+        <activity android:exported="false" android:name="sns.places.geocoder.GeocoderSearchActivity"/>
+        <activity android:autoRemoveFromRecents="true" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="io.wondrous.sns.push.tracking.SnsPushForwardingActivity" android:taskAffinity=""/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.meetme.broadcast.BroadcastService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="kik.red.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="kik.red.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="kik.red.applovininitprovider" android:exported="false" android:initOrder="101" android:name="com.applovin.sdk.AppLovinInitProvider"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenThemedActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.sdk.AppLovinWebViewActivity"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerDetailActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerWaterfallKeywordsActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.creative.MaxCreativeDebuggerActivity" android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"/>
+        <service android:exported="false" android:name="com.applovin.impl.adview.activity.FullscreenAdService" android:stopWithTask="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="kik.red.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.vungle.ads.internal.ui.VungleActivity"/>
+        <provider android:authorities="kik.red.vungle-provider" android:exported="false" android:name="com.vungle.ads.internal.util.VungleProvider"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="5.2.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.amazon.device.ads.DTBInterstitialActivity"/>
+        <activity android:name="com.amazon.device.ads.DTBAdActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.amazon.aps.ads.activity.ApsInterstitialActivity" android:theme="@style/NoWindow"/>
+        <activity android:enabled="false" android:exported="false" android:launchMode="singleInstance" android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="11003"/>
+        </service>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"/>
+        <activity android:name="blue.I1I11Il1I1lIlIlI" android:theme="@style/PerChatTheme"/>
+        <activity android:name="blue.I1lIll1IllIl1lII" android:theme="@style/PerChatTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="blue.IlIlI1ll1IIIl1I1" android:theme="@style/PerChatTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="blue.lIlI11lI1lIlllIl" android:theme="@style/MessageSenderTheme"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="blue.Il1IIIl1lllIIll1">
+            <intent-filter>
+                <action android:name="kik.red.ACTION_MESSAGE_OPEN"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:name="blue.lIIl1llIl11IlllI" android:stopWithTask="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="blue.I11Il1lI1l1l1111"/>
+        <receiver android:enabled="true" android:exported="false" android:name="blue.IlII11II11ll1lII">
+            <intent-filter>
+                <action android:name="kik.red.ReplyButton.ACTION_MESSAGE_REPLY"/>
+                <action android:name="kik.red.ReplyButton.ACTION_MESSAGE_MARK_READ"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="blue.llIIl1l1IlI1IIII">
+            <intent-filter>
+                <action android:name="kik.red.ACTION_URL_OPEN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="blue.l1l1lI11l11lI111">
+            <intent-filter>
+                <action android:name="kik.red.ACTION_SUBMIT_TOKEN"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="xiphias.utils.restart.ProcessPhoenix" android:process=":phoenix" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="kik.red.com.squareup.picasso2" android:exported="false" android:name="com.squareup.picasso2.PicassoProvider"/>
+        <provider android:authorities="kik.red.BlueKikContentProvider" android:enabled="true" android:exported="true" android:name="blue.IIlIII1Il1111111"/>
+        <provider android:authorities="kik.red.UnbrickContentProvider" android:enabled="true" android:exported="true" android:name="blue.lIIll11IlIlllll1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="xiphias.IIIl1l1l1IlI1IlI" android:screenOrientation="portrait" android:supportsPictureInPicture="false" android:theme="@style/Kik.Live.Theme.TransparentStatus" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="blue.lIIIlllll111I1II" android:noHistory="true" android:theme="@style/BlueKik.Theme.Transparent">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bluesmods.com" android:pathPrefix="/bluekik/links/" android:scheme="http"/>
+                <data android:host="www.bluesmods.com" android:pathPrefix="/bluekik/links/" android:scheme="http"/>
+                <data android:host="bluesmods.com" android:pathPrefix="/bluekik/links/" android:scheme="https"/>
+                <data android:host="www.bluesmods.com" android:pathPrefix="/bluekik/links/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="login" android:scheme="bluekik"/>
+                <data android:host="purchase" android:scheme="bluekik"/>
+                <data android:host="settings" android:scheme="bluekik"/>
+                <data android:host="open_kik_chat" android:scheme="bluekik"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

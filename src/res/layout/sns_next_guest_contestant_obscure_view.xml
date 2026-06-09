@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sns_next_guest_empty_bg" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/sns_next_date_contestant_obscure_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dip" android:src="@drawable/sns_ic_show_face" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sns_next_guest_contestant_obscure_label" android:paddingStart="@dimen/half_grid_padding" android:paddingEnd="@dimen/half_grid_padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_next_date_contestant_obscure_image" style="?snsNextGuestContestantObscureLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

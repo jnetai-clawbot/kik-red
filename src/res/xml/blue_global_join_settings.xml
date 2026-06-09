@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Global Search Settings" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lll1l11IIlllIIl1 android:title="Global Search" />
+    <blue.Illl1lllllIIlllI android:title="Enable Global Search" android:key="blue.global.search" android:summary="When enabled, your group will appear in Global Searches" kik:pref_divider="full_bottom" />
+    <blue.l1I1l11I11l1lII1 android:title="Set Featured Category" android:key="blue.global.category" android:summary="placeholder" kik:pref_divider="full_bottom" />
+    <blue.Illl1lllllIIlllI android:title="Enable Captchas" android:key="blue.global.captcha" android:summary="When enabled, users will be required to solve a captcha before they can join via Global Search" kik:pref_divider="full_bottom" />
+    <blue.Illl1lllllIIlllI android:title="Enable Owner Lock" android:key="blue.global.owner.lock" android:summary="placeholder" kik:pref_divider="full_bottom" />
+    <blue.Il1111lIIl11Il1l android:title="Global Search Action Log" android:key="blue.global.action.log" android:summary="Show the global search join logs and setting changes" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Casino Bot" />
+    <blue.Il1111lIIl11Il1l android:title="Casino Bot Action Log" android:key="blue.bot.action.log" android:summary="Show changes made to group settings in Casino Bot" kik:pref_divider="full_bottom" />
+    <blue.Il1111lIIl11Il1l android:title="Chat Event Log" android:key="blue.chat.event.log" android:summary="Show a history of group chat events\n(join, leave, invite, name change, etc)\nThis will only work while Casino Bot is in the group" kik:pref_divider="full_bottom" />
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

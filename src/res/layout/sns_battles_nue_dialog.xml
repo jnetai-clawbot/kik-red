@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/sns_battles_nue_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@id/sns_battles_nue_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?snsBattlesNueBannerImage" android:layout_alignParentTop="true" app:riv_corner_radius_top_left="2.0dip" app:riv_corner_radius_top_right="2.0dip" />
+    <TextView android:id="@id/sns_battles_nue_headline" android:paddingTop="@dimen/sns_battles_nue_title_top_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sns_half_grid_padding" android:text="@string/sns_battles_nue_headline" style="@style/Sns.Battles.Dialog.Title" />
+    <ScrollView android:id="@id/scrollView" android:paddingLeft="@dimen/sns_battles_nue_left_right_padding" android:paddingRight="@dimen/sns_battles_nue_left_right_padding" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sns_half_grid_padding">
+        <TextView android:id="@id/sns_battles_neu_message" android:paddingBottom="@dimen/sns_grid_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sns_battles_nue_text" style="@style/Sns.Battles.Dialog.Message" />
+    </ScrollView>
+    <Button android:textColor="@color/sns_invertable_white_text" android:id="@id/sns_battle_nue_okay_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sns_half_grid_padding" android:text="@string/sns_btn_ok" style="@style/Base.Widget.AppCompat.Button.Colored" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/snsLeaderboardCurrentPositionContainer" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip" app:cardCornerRadius="8.0dip" app:elevation="4.0dip" app:rippleColor="@color/transparent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <io.wondrous.sns.leaderboard.views.SnsLeaderboardSelfPositionItemView android:orientation="vertical" android:id="@id/snsLeaderboardCurrentPositionItem" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="85.0dip" app:snsLbCloseIcon="@null" app:snsLbPositionBg="@drawable/sns_leaderboard_contest_pos_bg" style="?snsLeaderboardSelfPositionItem" />
+</com.google.android.material.card.MaterialCardView>

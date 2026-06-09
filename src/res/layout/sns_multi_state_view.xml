@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@id/snsMsvContainerView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/snsMsvLoadingView" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/snsMsvRefreshView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/snsMsvContentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</ViewFlipper>

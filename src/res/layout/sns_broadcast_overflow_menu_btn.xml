@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center" android:id="@id/sns_overflow_menu_icon" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?snsOverflowButtonStyle" />
+    <View android:textColor="@color/sns_invertable_white_text" android:layout_gravity="center" android:id="@id/sns_overflow_menu_badge" android:background="@drawable/sns_broadcast_menu_btn_badge" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginBottom="@dimen/sns_half_grid_padding" android:layout_marginStart="@dimen/sns_half_grid_padding" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Chat Mods" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lll1l11IIlllIIl1 android:title="Per-Chat" />
+    <blue.lIIll11I1lI1111I android:title="Enable Per-Chat" android:key="blue.perchat" android:summary="If enabled, the per chat settings will appear and will use these settings for this chat" kik:pref_divider="full_bottom" />
+</PreferenceScreen>

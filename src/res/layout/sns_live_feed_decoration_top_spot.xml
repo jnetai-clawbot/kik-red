@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sns_top_spot_container" android:background="@drawable/sns_live_feed_item_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="23.0dip" android:text="@string/sns_top_spot_label" android:textAllCaps="true" style="?snsTopSpotIndicatorLabelStyle" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/sns_top_spot_spotlights" android:layout_width="fill_parent" android:layout_height="fill_parent" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/sns_live_feed_top_spot" />
+    <ImageView android:layout_gravity="end|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/sns_top_spot_sparkle_large" android:layout_marginEnd="25.0dip" />
+    <ImageView android:layout_gravity="end|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:src="@drawable/sns_top_spot_sparkle_small" android:layout_marginEnd="2.0dip" />
+    <ImageView android:layout_gravity="start|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="45.0dip" android:src="@drawable/sns_top_spot_sparkle_large" android:layout_marginStart="2.0dip" />
+    <ImageView android:layout_gravity="start|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:src="@drawable/sns_top_spot_sparkle_small" android:layout_marginStart="20.0dip" />
+</FrameLayout>

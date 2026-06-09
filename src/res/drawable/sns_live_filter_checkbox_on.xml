@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/sns_live_filters_checkbox_button_on_color" />
+            <size android:height="@dimen/sns_live_filters_checkbox_size" android:width="@dimen/sns_live_filters_checkbox_size" />
+            <corners android:radius="@dimen/sns_live_filters_checkbox_corner_radius" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_done_white_24dp" />
+    </item>
+</layer-list>

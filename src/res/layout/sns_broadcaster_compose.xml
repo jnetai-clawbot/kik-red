@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/sns_broadcaster_compose_bg" android:layout_width="fill_parent" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center" android:id="@id/sns_btn_send_thanks_photo" android:padding="0.0dip" android:visibility="gone" android:layout_width="@dimen/sns_broadcast_chat_send_container_width" android:layout_height="fill_parent" android:src="@drawable/sns_ic_camera" style="?snsChatSendButtonStyle" />
+    <EditText android:textSize="16.0sp" android:textColor="@color/black_80a" android:id="@id/sns_txt_thanks" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sns_broacaster_thanks_gifts_prefill" android:hint="@string/sns_broacaster_thanks_gifts_prefill" android:maxLines="3" android:maxLength="140" android:layout_weight="1.0" android:inputType="textShortMessage|textCapSentences|textAutoCorrect" android:imeOptions="actionSend" android:paddingStart="15.0dip" style="@style/Common.EditText" />
+    <ImageButton android:layout_gravity="center" android:id="@id/sns_btn_send_thanks" android:padding="0.0dip" android:visibility="visible" android:layout_width="@dimen/sns_broadcast_chat_send_container_width" android:layout_height="fill_parent" android:src="@drawable/sns_ic_action_send" style="?snsChatSendButtonStyle" />
+</LinearLayout>

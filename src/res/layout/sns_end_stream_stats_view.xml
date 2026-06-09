@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/sns_end_stream_icon" android:background="?snsStreamEndedStatsBackground" android:padding="@dimen/sns_stream_ended_stats_circle_image_padding" android:layout_width="@dimen/sns_stream_ended_stats_circle_image_size" android:layout_height="@dimen/sns_stream_ended_stats_circle_image_size" android:src="?snsStreamEndedStatsIcon" android:scaleType="centerInside" />
+        <TextView android:textAppearance="?snsStreamEndedStatsLabelTextStyle" android:id="@id/sns_end_stream_stat_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="?snsStreamEndedStatsLabelText" android:includeFontPadding="false" android:paddingStart="4.0dip" />
+    </LinearLayout>
+    <TextView android:textAppearance="?snsStreamEndedStatsCountTextStyle" android:id="@id/sns_end_stream_stat_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+</LinearLayout>

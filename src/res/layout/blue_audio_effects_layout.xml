@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/blue_audio_effect_frame_layout" android:background="@color/white" android:clickable="false" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="left" android:id="@id/blue_audio_effect_linear_layout" android:tag="EFFECT_VIEW_HOLDER" android:background="@color/expression_bar_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="53.0dip">
+        <FrameLayout android:id="@id/blue_audio_effect_baby_layout" android:tag="EFFECT" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ToggleButton android:layout_gravity="center" android:id="@id/blue_audio_effect_baby" android:tag="BABY" android:background="@drawable/blue_audio_voice_effect_baby" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:textOn="" android:textOff="" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/blue_audio_effect_robot_layout" android:tag="EFFECT" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ToggleButton android:layout_gravity="center" android:id="@id/blue_audio_effect_robot" android:tag="ROBOT" android:background="@drawable/blue_audio_voice_effect_robot" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:textOn="" android:textOff="" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/blue_audio_effect_alien_layout" android:tag="EFFECT" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ToggleButton android:layout_gravity="center" android:id="@id/blue_audio_effect_alien" android:tag="ALIEN" android:background="@drawable/blue_audio_voice_effect_alien" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:textOn="" android:textOff="" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/blue_audio_effect_evil_layout" android:tag="EFFECT" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ToggleButton android:layout_gravity="center" android:id="@id/blue_audio_effect_evil" android:tag="EVIL" android:background="@drawable/blue_audio_voice_effect_evil" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:textOn="" android:textOff="" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/blue_audio_effect_bunny_layout" android:tag="EFFECT" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ToggleButton android:layout_gravity="center" android:id="@id/blue_audio_effect_bunny" android:tag="BUNNY" android:background="@drawable/blue_audio_voice_effect_bunny" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:textOn="" android:textOff="" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/blue_audio_effect_hands_free_layout" android:tag="HANDS_FREE" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ToggleButton android:layout_gravity="center" android:id="@id/blue_audio_hands_free_pause" android:tag="PAUSE_RECORDING" android:background="@drawable/blue_audio_voice_effect_pause_two_state" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:textOn="" android:textOff="" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="right" android:id="@id/blue_audio_effect_expression_bar" android:background="@color/expression_bar_background_color" android:layout_width="53.0dip" android:layout_height="fill_parent">
+        <View android:layout_gravity="left" android:background="?gray_2" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ToggleButton android:layout_gravity="center" android:id="@id/blue_audio_effect_none" android:tag="NONE" android:background="@drawable/blue_audio_voice_effect_none" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:textOn="" android:textOff="" />
+        <ToggleButton android:layout_gravity="center" android:id="@id/blue_audio_hands_free_done" android:tag="FINISH_RECORDING" android:background="@drawable/ic_done_white_24dp" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:textOn="" android:textOff="" />
+    </FrameLayout>
+</FrameLayout>

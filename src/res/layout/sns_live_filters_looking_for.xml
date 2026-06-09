@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/sns_live_filters_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/sns_live_filters_divider_height" android:layout_marginTop="@dimen/sns_live_filters_section_margin_top" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="@dimen/sns_live_filters_spinner_height">
+        <TextView android:id="@id/sns_filter_interested_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_live_filters_interested_in" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Spinner android:id="@id/sns_filter_gender_spinner" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginEnd="@dimen/sns_live_filters_spinner_margin_right" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/sns_filter_interested_in" app:layout_constraintTop_toTopOf="parent" style="@style/Sns.LiveFilter.Spinner" />
+        <Spinner android:id="@id/sns_filter_wants_to_meet_spinner" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginEnd="@dimen/sns_live_filters_spinner_margin_right" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/sns_filter_interested_in" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Sns.LiveFilter.Spinner" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/sns_live_filters_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/sns_live_filters_divider_height" />
+</LinearLayout>

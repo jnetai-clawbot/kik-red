@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Bot Options" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lll1l11IIlllIIl1 android:title="Spam Bot Blocker" />
+    <blue.I11IlI1lIIIlII1I android:key="false" kik:pref_divider="full_bottom" />
+    <blue.lllI111lII1l1lIl android:key="false" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Auto Add" />
+    <blue.lIlIlIlIIIlIIl11 android:title="Auto Add" android:key="false" android:summary="Gets usernames of new group joiners" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Auto Reply Options" />
+    <blue.l1IlIIllI11lIIll android:title="Auto Reply" android:key="false" android:summary="Automatically replies to messages sent to you" kik:pref_divider="full_bottom" />
+    <blue.l1lII1111lIII1lI android:title="Custom Reply" android:key="false" android:summary="Customize your auto reply with triggers" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Smart Auto Reply" android:key="smart.reply" android:summary="If auto reply is enabled, this will limit the replies to 5 minutes apart" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Bot" />
+    <blue.l1I1IlI1I1llllIl android:title="How To Use" android:dialogTitle="How To Use" android:dialogMessage="To customize the bot from your own account type !bot or view the settings in Blue Mods -> Bot or the Per-Chat menu\n\nFrom another account:\n\nEnable &quot;Group Bot&quot; here in settings and say &quot;Commands&quot; in the same group from the other account." />
+    <blue.lllIlI1l1llI11I1 android:title="Group Bot" android:key="blue.rage" android:summary="Allows others to modify settings in your built-in bot, and you will respond to group commands. (not recommended)" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Bot Trigger Permission" android:key="blue.rageadmin" android:summary="If enabled, non-admins can add or delete triggers to the built in bot" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Group Moderation" />
+    <blue.lllIlI1l1llI11I1 android:title="Anti Spam / Lag Code" android:key="anti.spam.v2" android:summary="Removes people who spam, wipe the chat, or use a lag code." kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Disallow Noobs" android:key="disallow.noobs" android:summary="Removes users who join your group if their account age is under a certain amount of days" kik:pref_divider="full_bottom" />
+    <blue.lllllIIllIl1l11I android:title="Set Disallow Noobs Age Limit" android:key="noob.days" android:summary="Set the minimum requirement for account age when joining your group (in days)" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Anti Empty Picture" android:key="anti.pic.v2" android:summary="Removes new members for not having a profile picture" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Anti NSFW Picture" android:key="anti.nsfw.pic.v2" android:summary="Removes new members for using a NSFW profile picture" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Anti Long Name" android:key="anti.longname.v2" android:summary="Removes new members for having a long name" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Anti Timestamp" android:key="anti.ts.v2" android:summary="Removes members with modified timestamps in messages" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Bot Moderation Message" android:key="blue.reason" android:summary="Bot will tell the user why it removed them" android:defaultValue="true" kik:pref_divider="top|bottom" />
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

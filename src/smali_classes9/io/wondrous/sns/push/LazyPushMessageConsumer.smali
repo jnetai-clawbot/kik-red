@@ -1,0 +1,95 @@
+.class public final Lio/wondrous/sns/push/LazyPushMessageConsumer;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/wondrous/sns/push/router/SnsPushMessageConsumer;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0018\u00002\u00020\u0001B\u0017\u0012\u000e\u0010\u0003\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0002\u00a2\u0006\u0004\u0008\u0004\u0010\u0005\u00a8\u0006\u0006"
+    }
+    d2 = {
+        "Lio/wondrous/sns/push/LazyPushMessageConsumer;",
+        "Lio/wondrous/sns/push/router/SnsPushMessageConsumer;",
+        "Lkotlin/Function0;",
+        "provider",
+        "<init>",
+        "(Lkotlin/jvm/functions/Function0;)V",
+        "sns-push-data_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0<",
+            "Lio/wondrous/sns/push/router/SnsPushMessageConsumer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0<",
+            "+",
+            "Lio/wondrous/sns/push/router/SnsPushMessageConsumer;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string v0, "provider"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/wondrous/sns/push/LazyPushMessageConsumer;->a:Lkotlin/jvm/functions/Function0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lio/wondrous/sns/push/router/SnsPushMessage;)Z
+    .locals 1
+
+    iget-object v0, p0, Lio/wondrous/sns/push/LazyPushMessageConsumer;->a:Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lio/wondrous/sns/push/router/SnsPushMessageConsumer;
+
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v0, p1}, Lio/wondrous/sns/push/router/SnsPushMessageConsumer;->a(Lio/wondrous/sns/push/router/SnsPushMessage;)Z
+
+    move-result p1
+
+    :goto_0
+    return p1
+.end method

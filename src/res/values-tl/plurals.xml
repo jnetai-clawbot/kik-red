@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">I-fast forward nang %d na segundo</item>
+        <item quantity="one">I-fast forward nang %d segundo</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">I-rewind nang %d na segundo</item>
+        <item quantity="one">I-rewind nang %d segundo</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d na bagong notification</item>
+        <item quantity="one">%d bagong notification</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">Mangyaring kumonekta sa Internet o mahihinto ang iyong stream sa %1$d (na) segundo.</item>
+        <item quantity="one">Mangyaring kumonekta sa Internet o mahihinto ang iyong stream sa %1$d (na) segundo.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">Bumili ng {link} at Maging Commercial Free sa loob ng {days} (na) araw</item>
+        <item quantity="one">Bumili ng {link} at Maging Commercial Free sa loob ng isang araw</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">Ipinadala ang mensahe sa %1$d (na) nagreregalo!</item>
+        <item quantity="one">Ipinadala ang mensahe sa %1$d nagreregalo!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d (na) character ang natitira.</item>
+        <item quantity="one">%1$d (na) character ang natitira.</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">Mag-e-expire sa loob ng %1$d (na) araw!</item>
+        <item quantity="one">Mag-e-expire sa loob ng %1$d (na) araw!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d (na) araw</item>
+        <item quantity="one">%1$d (na) araw</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d (na) oras</item>
+        <item quantity="one">%1$d oras</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d (na) oras</item>
+        <item quantity="one">%1$d (na) oras</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d (na) minuto</item>
+        <item quantity="one">%1$d minuto</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d (na) minuto</item>
+        <item quantity="one">%1$d (na) minuto</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$ds</item>
+        <item quantity="one">%1$ds</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d (na) segundo</item>
+        <item quantity="one">%1$d (na) segundo</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">Mga paborito na nag-istream ngayon!</item>
+        <item quantity="one">Paborito na nag-istream ngayon!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d (na) oras</item>
+        <item quantity="one">%1$d (na) oras</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d (na) minuto</item>
+        <item quantity="one">%1$d (na) minuto</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d (na) Paborito ang Live!</item>
+        <item quantity="one">%1$d (na) Paborito ang Live!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">Mga Tagahanga</item>
+        <item quantity="one">Tagahanga</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d (na) puwesto ang natitira</item>
+        <item quantity="one">%1$d puwesto ang natitira</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">%1$s (na) beses lang maipapadala ang limitadong gulong na ito bago ito mawala! Magpadala ng isa ngayon sa paborito mong Streamer!</item>
+        <item quantity="one">%1$s beses lang maipapadala ang limitadong gulong na ito bago ito mawala! Magpadala ng isa ngayon sa paborito mong Streamer!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">Mga Puntos</item>
+        <item quantity="one">Puntos</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d libreng boto kada botante</item>
+        <item quantity="one">%1$d libreng boto kada botante</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">Lumampas sa pinapayagang mga boto</item>
+        <item quantity="one">Lumampas sa pinapayagang boto</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d Mga Boto</item>
+        <item quantity="one">%1$d Boto</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">Sigurado ka bang gusto mong alisin si %1$d mula sa mga bouncer?</item>
+        <item quantity="one">Sigurado ka bang gusto mong alisin si %1$d mula sa mga bouncer?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">Alisin ang %1$d (na) streamer mula sa mga bouncer</item>
+        <item quantity="one">Alisin ang %1$d (na) streamer mula sa mga bouncer</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">Maaari lang iiskedyul ang mga palabas nang %1$d (na) linggong mas maaga.</item>
+        <item quantity="one">Maaari lang iiskedyul ang mga palabas nang %1$d linggong mas maaga.</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d (na) Nagreregalo</item>
+        <item quantity="one">1 Nagreregalo</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">%1$d na Shout Out ang Makukuha</item>
+        <item quantity="one">%1$d na Shout Out ang Makukuha</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d (na) Palabas ang Nakaiskedyul</item>
+        <item quantity="one">%1$d/%2$d Palabas ang Nakaiskedyul</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">Diamond</item>
+        <item quantity="one">Diamond</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">Mga Tagahanga</item>
+        <item quantity="one">Mga Tagahanga</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">Mga Panalo</item>
+        <item quantity="one">Panalo</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">Gumamit ng %1$s sa loob ng %2$d minuto!</item>
+        <item quantity="one">Gumamit ng %1$s sa loob ng %2$d minuto!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">Sigurado ka bang gusto mong alisin si %1$d mula sa mga paborito?</item>
+        <item quantity="one">Sigurado ka bang gusto mong alisin si %1$d mula sa mga paborito?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">Alisin ang %1$d (na) streamer mula sa paborito</item>
+        <item quantity="one">Alisin ang %1$d (na) streamer mula sa paborito</item>
+    </plurals>
+</resources>

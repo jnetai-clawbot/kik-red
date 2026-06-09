@@ -1,0 +1,99 @@
+.class public final Landroidx/compose2/foundation/layout/Arrangement$Center$1;
+.super Ljava/lang/Object;
+.source "Arrangement.kt"
+
+# interfaces
+.implements Landroidx/compose2/foundation/layout/Arrangement$HorizontalOrVertical;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose2/foundation/layout/Arrangement;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field private final spacing:F
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 3
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    int-to-float v2, v0
+
+    invoke-static {v2}, Landroidx/compose2/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result v0
+
+    iput v0, p0, Landroidx/compose2/foundation/layout/Arrangement$Center$1;->spacing:F
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public arrange(Landroidx/compose2/ui/unit/Density;I[ILandroidx/compose2/ui/unit/LayoutDirection;[I)V
+    .locals 2
+
+    sget-object v0, Landroidx/compose2/ui/unit/LayoutDirection;->Ltr:Landroidx/compose2/ui/unit/LayoutDirection;
+
+    if-ne p4, v0, :cond_0
+
+    sget-object v0, Landroidx/compose2/foundation/layout/Arrangement;->INSTANCE:Landroidx/compose2/foundation/layout/Arrangement;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, p2, p3, p5, v1}, Landroidx/compose2/foundation/layout/Arrangement;->placeCenter$foundation_layout_release(I[I[IZ)V
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Landroidx/compose2/foundation/layout/Arrangement;->INSTANCE:Landroidx/compose2/foundation/layout/Arrangement;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, p2, p3, p5, v1}, Landroidx/compose2/foundation/layout/Arrangement;->placeCenter$foundation_layout_release(I[I[IZ)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public arrange(Landroidx/compose2/ui/unit/Density;I[I[I)V
+    .locals 2
+
+    sget-object v0, Landroidx/compose2/foundation/layout/Arrangement;->INSTANCE:Landroidx/compose2/foundation/layout/Arrangement;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, p2, p3, p4, v1}, Landroidx/compose2/foundation/layout/Arrangement;->placeCenter$foundation_layout_release(I[I[IZ)V
+
+    return-void
+.end method
+
+.method public getSpacing-D9Ej5fM()F
+    .locals 1
+
+    iget v0, p0, Landroidx/compose2/foundation/layout/Arrangement$Center$1;->spacing:F
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "Arrangement#Center"
+
+    return-object v0
+.end method

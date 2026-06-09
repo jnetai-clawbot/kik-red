@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/sns_next_date_contestant_button_corner_radius" />
+            <solid android:color="@color/sns_next_date_red_76a" />
+            <stroke android:width="1.0dip" android:color="@color/sns_next_date_contestant_button_border_color" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/sns_next_date_contestant_button_corner_radius" />
+            <solid android:color="@color/black_30a" />
+            <stroke android:width="1.0dip" android:color="@color/absolute_white" />
+        </shape>
+    </item>
+</selector>

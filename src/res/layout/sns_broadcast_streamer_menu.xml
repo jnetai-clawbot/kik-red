@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.wondrous.sns.ui.views.BattlesVsButton android:id="@id/battlesBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" />
+    <ImageButton android:id="@id/guestBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsGuestMaskButtonStyle" />
+    <ImageButton android:id="@id/magicMenu" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsFaceUnityMagicMenuButtonStyle" />
+    <ImageButton android:id="@id/cmrBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsCameraFlipStyle" />
+    <ImageButton android:id="@id/leaderboardBtn" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsLeaderboardButtonStyle" />
+    <ImageButton android:id="@id/nextDateSettingsBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsNextDateSettingsStyle" />
+    <ImageButton android:id="@id/nextDatePromptBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsNextDatePromptsStyle" />
+    <ImageButton android:id="@id/nextDateBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsNextDateButtonStyle" />
+    <ImageButton android:id="@id/pollsBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsPollsButtonStyle" />
+    <ImageButton android:id="@id/levelBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsLevelButtonStyle" />
+    <ImageButton android:id="@id/itemsBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsItemsButtonStyle" />
+    <ImageButton android:id="@id/challengesBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsChallengesButtonStyle" />
+    <ImageButton android:id="@id/favoriteBlastBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsFavoriteBlastButtonStyle" />
+    <ImageButton android:id="@id/editDescription" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsEditDescriptionButtonStyle" />
+    <ImageButton android:id="@id/editTagsBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsEditTagsMenuButtonStyle" />
+    <ImageButton android:id="@id/giftAudio" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsGiftAudioButtonStyle" />
+    <io.wondrous.sns.ui.views.SnsOverflowMenuButton android:id="@id/sns_streamer_overflow_menu" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" />
+    <ImageButton android:id="@id/muteButton" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsMuteButtonStyle" />
+    <ImageButton android:id="@id/streamerSettings" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsStreamerSettingsButtonStyle" />
+    <ImageButton android:id="@id/nextGuestBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsNextGuestButtonStyle" />
+    <ImageButton android:id="@id/nextGuestSettingsBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsNextGuestSettingsButtonStyle" />
+    <ImageButton android:id="@id/goalsBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsGoalsMenuButtonStyle" />
+    <ImageButton android:id="@id/subscriptionsBtn" android:visibility="gone" android:layout_width="@dimen/sns_streamer_bottom_menu_button_width" android:layout_height="fill_parent" style="?snsSubscriptionsMenuButtonStyle" />
+</merge>

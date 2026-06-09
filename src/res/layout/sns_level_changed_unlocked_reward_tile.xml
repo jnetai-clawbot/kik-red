@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView android:layout_gravity="center" android:orientation="vertical" android:id="@id/sns_reward_image" android:background="@drawable/sns_bg_unlocked_reward" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:layout_width="@dimen/sns_level_unlocked_reward_width" android:layout_height="@dimen/sns_level_unlocked_reward_height" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip" android:scaleType="fitCenter"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

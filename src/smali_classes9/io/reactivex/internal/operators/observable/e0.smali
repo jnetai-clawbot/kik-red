@@ -1,0 +1,95 @@
+.class public final Lio/reactivex/internal/operators/observable/e0;
+.super Lio/reactivex/internal/operators/observable/a;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lio/reactivex/internal/operators/observable/e0$a;,
+        Lio/reactivex/internal/operators/observable/e0$b;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lio/reactivex/internal/operators/observable/a<",
+        "TT;TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final b:J
+
+.field final c:Ljava/util/concurrent/TimeUnit;
+
+.field final d:Lio/reactivex/b0;
+
+
+# direct methods
+.method public constructor <init>(Lio/reactivex/y;JLjava/util/concurrent/TimeUnit;Lio/reactivex/b0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/y<",
+            "TT;>;J",
+            "Ljava/util/concurrent/TimeUnit;",
+            "Lio/reactivex/b0;",
+            ")V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/a;-><init>(Lio/reactivex/y;)V
+
+    iput-wide p2, p0, Lio/reactivex/internal/operators/observable/e0;->b:J
+
+    iput-object p4, p0, Lio/reactivex/internal/operators/observable/e0;->c:Ljava/util/concurrent/TimeUnit;
+
+    iput-object p5, p0, Lio/reactivex/internal/operators/observable/e0;->d:Lio/reactivex/b0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final subscribeActual(Lio/reactivex/a0;)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/a0<",
+            "-TT;>;)V"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/a;->a:Lio/reactivex/y;
+
+    new-instance v7, Lio/reactivex/internal/operators/observable/e0$b;
+
+    new-instance v2, Lio/reactivex/observers/h;
+
+    invoke-direct {v2, p1}, Lio/reactivex/observers/h;-><init>(Lio/reactivex/a0;)V
+
+    iget-wide v3, p0, Lio/reactivex/internal/operators/observable/e0;->b:J
+
+    iget-object v5, p0, Lio/reactivex/internal/operators/observable/e0;->c:Ljava/util/concurrent/TimeUnit;
+
+    iget-object p1, p0, Lio/reactivex/internal/operators/observable/e0;->d:Lio/reactivex/b0;
+
+    invoke-virtual {p1}, Lio/reactivex/b0;->b()Lio/reactivex/b0$c;
+
+    move-result-object v6
+
+    move-object v1, v7
+
+    invoke-direct/range {v1 .. v6}, Lio/reactivex/internal/operators/observable/e0$b;-><init>(Lio/reactivex/a0;JLjava/util/concurrent/TimeUnit;Lio/reactivex/b0$c;)V
+
+    invoke-interface {v0, v7}, Lio/reactivex/y;->subscribe(Lio/reactivex/a0;)V
+
+    return-void
+.end method

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#ff1cb3b3" android:endColor="#ff2ddddd" android:angle="0.0" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/sns_guest_vip_label_tier4" />
+</layer-list>

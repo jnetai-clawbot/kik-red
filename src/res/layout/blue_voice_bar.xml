@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/blue_voice_playback_bar" android:background="?appbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/blue_voice_playback_bar_container" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/bugme_bar_height" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <com.kik.cache.ContactImageView android:id="@id/blue_voice_playback_bar_profile_pic" android:layout_width="28.0dip" android:layout_height="28.0dip" android:contentDescription="Profile Picture" android:layout_marginEnd="12.0dip" kik:nullBackground="@drawable/img_profile_small" />
+        <ImageView android:id="@id/blue_voice_playback_bar_play_pause_icon" android:layout_width="@dimen/contact_image_size_small" android:layout_height="@dimen/contact_image_size_small" android:contentDescription="Play / Pause" android:layout_marginEnd="12.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <kik.red.widget.RobotoTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?gray_5" android:ellipsize="marquee" android:id="@id/blue_voice_playback_bar_song_author" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Song Author Name" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <kik.red.widget.RobotoTextView android:textSize="14.0sp" android:textColor="?gray_5" android:ellipsize="end" android:id="@id/blue_voice_playback_bar_song_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Song Title" android:maxLines="1" />
+        </LinearLayout>
+        <ImageView android:id="@id/blue_voice_playback_bar_more_options_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_overflow_menu" android:contentDescription="More options" android:layout_marginStart="12.0dip" />
+        <ImageView android:id="@id/blue_voice_playback_bar_close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:contentDescription="Close" android:layout_marginStart="12.0dip" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" android:layout_alignParentBottom="true" layout="@layout/navbar_underline" />
+</RelativeLayout>

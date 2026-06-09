@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="one_dp_or_px">1.0px</dimen>
+</resources>

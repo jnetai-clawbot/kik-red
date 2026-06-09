@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meetme.util.android.ui.GradientSpinnerView android:layout_gravity="center" android:layout_width="@dimen/sns_next_date_contestant_loading_size" android:layout_height="@dimen/sns_next_date_contestant_loading_size" app:end_gradient="@color/sns_absolute_white" app:start_gradient="@color/white_20a" app:thickness="@dimen/sns_next_date_contestant_loading_thickness" />
+    <ImageView android:layout_gravity="center" android:id="@id/sns_next_date_contestant_loading_image" android:layout_width="@dimen/sns_next_date_contestant_loading_image_size" android:layout_height="@dimen/sns_next_date_contestant_loading_image_size" android:src="@drawable/sns_ic_default_profile_50" />
+</FrameLayout>

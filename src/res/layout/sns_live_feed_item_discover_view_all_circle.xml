@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="fill_parent" app:cardBackgroundColor="@color/transparent" app:cardElevation="0.0dip" style="?snsFeedCardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/sns_discover_view_all_left_padding" android:paddingEnd="@dimen/sns_discover_category_feed_margin">
+        <ImageView android:id="@id/view_all_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_discover_view_all" android:scaleType="center" app:layout_constraintBottom_toTopOf="@id/view_all_label" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" app:tint="?snsLiveFeedDiscoverViewAllArrowColor" />
+        <TextView android:textAppearance="?snsLiveFeedDiscoverViewAllTextAppearance" android:textColor="?snsLiveFeedDiscoverViewAllTextColor" android:id="@id/view_all_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_view_all_discover_item" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/view_all_arrow" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

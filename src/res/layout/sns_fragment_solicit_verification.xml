@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sns_invertable_white_background" android:padding="@dimen/grid_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/solicit_verification_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/grid_padding" style="@style/Base.TextAppearance.AppCompat.Title" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/solicit_verification_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/half_grid_padding" style="@style/Base.TextAppearance.AppCompat.Title" />
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/grid_padding_2x" android:src="?snsSolicitVerificationImage" />
+    <Button android:id="@id/solicit_verification_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid_padding" android:text="@string/sns_verification_badge_verify_now" style="@style/Sns.Button.ModalDialog.Rounded.Blue" />
+</LinearLayout>

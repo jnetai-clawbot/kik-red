@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_block_gray_24dp" android:id="@id/menu_block_user" android:title="@string/sns_video_calling_block_generic" />
+    <item android:icon="@drawable/sns_ic_video_off" android:id="@id/menu_block_calls" android:visible="false" android:title="@string/sns_video_calling_block_incoming_calls" />
+    <item android:icon="@drawable/sns_ic_history_time" android:id="@id/menu_opt_out" android:title="@string/sns_video_calling_opt_out" />
+</menu>

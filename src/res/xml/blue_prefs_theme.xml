@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Theme Options" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lll1l11IIlllIIl1 android:title="Chat Background" />
+    <blue.lllIlI1l1llI11I1 android:title="Enable Custom Chat Background" android:key="blue.customBG" android:summary="Allows you to set a custom background in the chat screen" kik:pref_divider="full_bottom" />
+    <blue.ll111II11IIl1lII android:enabled="true" android:title="Change Chat Background" android:key="chat" />
+    <blue.I1I11lI11ll11IIl android:title="Blur Custom Background" android:key="chat" android:summary="Blurs the chat background, improving text legibility" />
+    <blue.lll1l11IIlllIIl1 android:title="Conversation List Background" />
+    <blue.lllIlI1l1llI11I1 android:title="Enable Conversation Background" android:key="blue.convoBG" android:summary="Allows you to set a custom background in the conversation list screen" kik:pref_divider="full_bottom" />
+    <blue.ll111II11IIl1lII android:enabled="true" android:title="Change Conversation Background" android:key="convo" />
+    <blue.I1I11lI11ll11IIl android:title="Blur Conversation Background" android:key="convo" android:summary="Blurs the conversation background, improving text legibility" />
+    <blue.lll1l11IIlllIIl1 android:title="Theme" />
+    <blue.IIlIIlIIlll1llll android:title="Restart App" android:summary="Click to restart for theme changes to take effect" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Disable Kik Chat Theme" android:key="blue.theme" android:summary="Disables all of Kik's chat theme elements" kik:pref_divider="full_bottom" />
+    <blue.llIIIIIl11l1lIl1 android:title="Override Kik Chat Theme" android:summary="Set any Kik theme on your local device\nNOTE: others cannot see the theme" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Square Pictures" android:key="blue.square" android:summary="Profile pictures will be squares" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="New Settings Icon" android:key="blue.new.settings.icon" android:summary="When enabled, the settings icon will be set to your profile picture" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Marquee Names" android:key="blue.marquee" android:summary="Chat names will scroll if they are long enough" kik:pref_divider="top|bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Rainbow Typing" android:key="rainbow.typing" android:summary="The message box text will animate" kik:pref_divider="full_bottom" />
+    <blue.IIIII11IlI1IllI1 android:title="Custom Font" android:summary="Set the font for your text messages" kik:pref_divider="full_bottom" />
+    <blue.lllllIIllIl1l11I android:title="Font Size" android:key="blue.size" android:summary="Set the size of the font for your text messages" kik:pref_divider="full_bottom" />
+    <blue.IlIl1lI1lII1I111 android:enabled="true" android:title="Download Kik Theme Backgrounds" kik:pref_divider="full_bottom">
+        <intent android:action="android.intent.action.VIEW" android:data="https://drive.google.com/open?id=1t9tfznZcYl5tPO2DgMTGGe_PRprQXDEJ" />
+    </blue.IlIl1lI1lII1I111>
+    <blue.lll1l11IIlllIIl1 android:title="Custom Colors" />
+    <blue.lllIlI1l1llI11I1 android:title="Enable Custom Message Colors" android:key="blue.bubble" android:summary="Enables message color customization" kik:pref_divider="full_bottom" />
+    <blue.lIl1111lIIlll1II android:enabled="true" android:title="Incoming Bubble Color" android:key="blue.incoming.bubble.v2" android:summary="Select the bubble color representing other people" />
+    <blue.lIl1111lIIlll1II android:enabled="true" android:title="Incoming Message Text Color" android:key="blue.incoming.text.v2" android:summary="Select the message text color representing other people" />
+    <blue.lIl1111lIIlll1II android:enabled="true" android:title="Incoming Link Text Color" android:key="blue.incoming.link.v2" android:summary="Select the color of URLs sent to you" />
+    <blue.lIl1111lIIlll1II android:enabled="true" android:title="Outgoing Bubble Color" android:key="blue.outgoing.bubble.v2" android:summary="Select your bubble color" />
+    <blue.lIl1111lIIlll1II android:enabled="true" android:title="Outgoing Message Text Color" android:key="blue.outgoing.text.v2" android:summary="Select the color of your message text" />
+    <blue.lIl1111lIIlll1II android:enabled="true" android:title="Outgoing Link Text Color" android:key="blue.outgoing.link.v2" android:summary="Select the color of your URL links" />
+    <blue.lll1l11IIlllIIl1 android:title="Custom System Colors" />
+    <blue.lllIlI1l1llI11I1 android:title="Enable Custom System Colors" android:key="blue.system.colors" android:summary="Enables system and timestamp color customization" kik:pref_divider="full_bottom" />
+    <blue.ll1lIIIIlI1lIlll android:enabled="true" android:title="Timestamp Text Color" android:key="blue.timestamp.color.v2" android:summary="Select the color of message timestamps" />
+    <blue.ll1lIIIIlI1lIlll android:enabled="true" android:title="System Text Color" android:key="blue.system.color.v2" android:summary="Select the color of text in system and status messages" />
+    <blue.ll1lIIIIlI1lIlll android:enabled="true" android:title="System Link Color" android:key="blue.system.link.color.v2" android:summary="Select the color of links in system and status messages" />
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

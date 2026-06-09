@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?snsScheduledShowsItemRootStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/sns_scheduled_shows_info" />
+    <View android:id="@id/sns_scheduled_show_item_divider" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_marginTop="@dimen/grid_padding" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_scheduled_show_item_description" style="?snsScheduledShowsItemDividerStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

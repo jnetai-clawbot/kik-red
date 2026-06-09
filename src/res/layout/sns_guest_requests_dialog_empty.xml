@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:paddingTop="@dimen/quarter_grid_padding" android:paddingBottom="@dimen/quarter_grid_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_guest_requests_no_pending" android:paddingStart="@dimen/grid_padding" android:paddingEnd="@dimen/grid_padding" style="?snsGuestRequestsNoPendingGuestsStyle" />
+</FrameLayout>

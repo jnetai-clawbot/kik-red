@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sns_loadingBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/bg_overlay" android:background="@color/black_80a" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sns_end_broadcast_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/sns_invertable_white_text" android:gravity="center_horizontal" android:id="@id/errorMsg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/half_grid_padding" android:text="@string/sns_broadcast_end_error" android:shadowColor="@color/black" android:shadowRadius="@integer/sns_live_text_shadow_radius" />
+        <LinearLayout android:orientation="vertical" android:id="@id/sns_info_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sns_broadcast_end_header" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

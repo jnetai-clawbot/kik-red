@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appbar_shadow">@color/gray_1</color>
+    <color name="challenge_color">#807a7d8e</color>
+    <color name="chat_bubble_colour_charcoal">#ffffffff</color>
+    <color name="colorAccent">#ffd3921a</color>
+    <color name="colorPrimary">#ff005673</color>
+    <color name="colorPrimaryDark">#ff004961</color>
+    <color name="drawer_bottom_color">@color/gray_1</color>
+    <color name="fab_menu_screen_overlay">#cc000000</color>
+    <color name="gray_1">@android:color/black</color>
+    <color name="gray_2">#ff7a7d8e</color>
+    <color name="gray_3">#ffa9adc1</color>
+    <color name="gray_4">#ffbec0ce</color>
+    <color name="gray_5">#ffe0e1e9</color>
+    <color name="gray_6">#fffafafa</color>
+    <color name="gray_7">#80ffffff</color>
+    <color name="invertable_black">#ffeeeeee</color>
+    <color name="kik_black">#ffffffff</color>
+    <color name="kik_white">#ff111111</color>
+    <color name="list_divider">@color/transparent</color>
+    <color name="list_divider_color">@color/transparent</color>
+    <color name="live_tab_text_color">#ff838288</color>
+    <color name="live_tab_unselected">#ff838288</color>
+    <color name="message_text_color">@color/gray_6</color>
+    <color name="overflow_color">#ff7a7d8e</color>
+    <color name="profile_pic_bg">#80ffffff</color>
+    <color name="share_text_color">#ffffffff</color>
+    <color name="smiley_overlay">#cc111d29</color>
+    <color name="text_primary">#ffffffff</color>
+    <color name="text_secondary">#bfffffff</color>
+    <color name="text_tertiary">#80ffffff</color>
+    <color name="tooltip_dynamic">#ff373a4b</color>
+    <color name="vpaas_color_background">@color/design_dark_default_color_background</color>
+</resources>

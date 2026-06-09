@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/sns_challenger_header_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:gravity="center_vertical" android:id="@id/sns_challenger_header_wins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawablePadding="2.0dip" android:drawableStart="@drawable/ic_bc_vs" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_challenger_header_name" />
+    <TextView android:gravity="center_vertical" android:id="@id/sns_challenger_header_diamonds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawableStart="@drawable/sns_ic_bc_diamond_micro" android:layout_marginStart="@dimen/sns_half_grid_padding" app:layout_constraintBottom_toBottomOf="@id/sns_challenger_header_wins" app:layout_constraintStart_toEndOf="@id/sns_challenger_header_wins" app:layout_constraintTop_toTopOf="@id/sns_challenger_header_wins" />
+</merge>

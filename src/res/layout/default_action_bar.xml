@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/topbar" android:background="?white" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kik_back_button" />
+    <TextView android:textSize="@dimen/action_bar_live_size" android:textColor="?text_primary" android:gravity="left|center" android:id="@id/action_bar_live_title" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/live" />
+</LinearLayout>

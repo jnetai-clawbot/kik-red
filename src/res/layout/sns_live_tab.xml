@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center_horizontal" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" />
+    <com.themeetgroup.widget.BadgeTextView android:id="@android:id/text2" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="18.0dip" android:layout_alignTop="@android:id/text1" android:layout_alignEnd="@android:id/text1" app:badgeStrokeColor="@color/sns_white_maybe_invert" app:badgeStrokeWidth="2.0dip" style="@style/Widget.Tmg.BadgeTextView" />
+</RelativeLayout>

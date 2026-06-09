@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashTheme" parent="@style/Theme.SplashScreen">
+        <item name="colorPrimaryDark">?status_bar_grey_v2</item>
+        <item name="snsLibraryTheme">@style/Kik.Sns.ThemeOverlay</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
+    <style name="SplashThemeWhite" parent="@style/SplashTheme">
+        <item name="android:windowBackground">@color/sns_absolute_white</item>
+        <item name="colorPrimaryDark">@color/sns_absolute_white</item>
+        <item name="windowSplashScreenBackground">@color/sns_absolute_white</item>
+        <item name="postSplashScreenTheme">@style/AppTheme.LightMode</item>
+    </style>
+    <style name="SplashThemeLight" parent="@style/SplashTheme">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="windowSplashScreenBackground">@color/white</item>
+    </style>
+    <style name="SplashThemeDark" parent="@style/SplashTheme">
+        <item name="android:windowBackground">@color/kik_white</item>
+        <item name="colorPrimaryDark">@color/kik_white</item>
+        <item name="windowSplashScreenBackground">@color/kik_white</item>
+    </style>
+</resources>

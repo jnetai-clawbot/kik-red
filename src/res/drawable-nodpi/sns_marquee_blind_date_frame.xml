@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/sns_top_spot_indicator_corner_radius" />
+            <stroke android:width="4.0dip" android:color="@color/sns_next_date_blind_date_indicator_color" />
+        </shape>
+    </item>
+    <item android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/sns_top_spot_indicator_corner_radius" android:bottomRightRadius="@dimen/sns_top_spot_indicator_corner_radius" />
+            <size android:height="@dimen/sns_next_date_grid_decoration_label_height" />
+            <solid android:color="@color/sns_next_date_blind_date_indicator_color" />
+        </shape>
+    </item>
+</layer-list>

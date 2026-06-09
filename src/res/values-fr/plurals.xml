@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Avancer de %d secondes</item>
+        <item quantity="one">Avancer de %d seconde</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Revenir en arrière de %d secondes</item>
+        <item quantity="one">Revenir en arrière de %d seconde</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nouvelles notifications</item>
+        <item quantity="one">%d nouvelle notification</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">"Ton stream se terminera si tu ne te connectes pas à Internet d'ici %1$d secondes."</item>
+        <item quantity="one">"Ton stream se terminera si tu ne te connectes pas à Internet d'ici %1$d seconde."</item>
+        <item quantity="many">"Ton stream se terminera si tu ne te connectes pas à Internet d'ici %1$d secondes."</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">Achète des {link} pour une expérience sans publicités pendant {days} jours</item>
+        <item quantity="one">"Achète des {link} pour une expérience sans publicités le temps d'une journée"</item>
+        <item quantity="many">Achète des {link} pour une expérience sans publicités pendant {days} jours</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">Message envoyé à %1$d Gifters!</item>
+        <item quantity="one">Message envoyé à %1$d Gifter!</item>
+        <item quantity="many">Message envoyé à %1$d Gifters!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d caractères restants.</item>
+        <item quantity="one">%1$d caractère restant.</item>
+        <item quantity="many">%1$d caractères restants.</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">Expire dans %1$d jours!</item>
+        <item quantity="one">Expire dans %1$d jour!</item>
+        <item quantity="many">Expire dans %1$d jours!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d jours</item>
+        <item quantity="one">%1$d jour</item>
+        <item quantity="many">%1$d jours</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$dh</item>
+        <item quantity="one">%1$d h</item>
+        <item quantity="many">%1$dh</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d heures</item>
+        <item quantity="one">%1$d heure</item>
+        <item quantity="many">%1$d heures</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$dmin</item>
+        <item quantity="one">%1$dmin</item>
+        <item quantity="many">%1$dmin</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d minutes</item>
+        <item quantity="one">%1$d minute</item>
+        <item quantity="many">%1$d minutes</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$d s</item>
+        <item quantity="one">%1$d s</item>
+        <item quantity="many">%1$d s</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d secondes</item>
+        <item quantity="one">%1$d seconde</item>
+        <item quantity="many">%1$d secondes</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">Des favoris ont lancés un stream !</item>
+        <item quantity="one">Un favori a lancé un stream !</item>
+        <item quantity="many">Des favoris ont lancés un stream !</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d heures</item>
+        <item quantity="one">%1$d heure</item>
+        <item quantity="many">%1$d heures</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d minutes</item>
+        <item quantity="one">%1$d minute</item>
+        <item quantity="many">%1$d minutes</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d Favoris en Live!</item>
+        <item quantity="one">%1$d Favori en Live!</item>
+        <item quantity="many">%1$d Favoris en Live!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">Fans</item>
+        <item quantity="one">Fan</item>
+        <item quantity="many">Fans</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d places disponibles</item>
+        <item quantity="one">%1$d place disponible</item>
+        <item quantity="many">%1$d places disponibles</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">Cette roue limitée ne peut être envoyée que %1$s fois avant de disparaître ! Envoies-en une maintenant à ton Streamer préféré !</item>
+        <item quantity="one">Cette roue limitée ne peut être envoyée que %1$s fois avant de disparaître ! Envoies-en une maintenant à ton Streamer préféré !</item>
+        <item quantity="many">Cette roue limitée ne peut être envoyée que %1$s fois avant de disparaître ! Envoies-en une maintenant à ton Streamer préféré !</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">Points</item>
+        <item quantity="one">Point</item>
+        <item quantity="many">Points</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d votes gratuits par votant</item>
+        <item quantity="one">%1$d vote gratuit par votant</item>
+        <item quantity="many">%1$d votes gratuits par votant</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">Nombre de votes autorisés dépassé</item>
+        <item quantity="one">Nombre de votes autorisés dépassé</item>
+        <item quantity="many">Nombre de votes autorisés dépassé</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d votes</item>
+        <item quantity="one">%1$d&lt;br />vote</item>
+        <item quantity="many">%1$d votes</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">Es-tu sûr(e) de vouloir supprimer %1$d de ta liste de modérateurs ?</item>
+        <item quantity="one">Es-tu sûr(e) de vouloir supprimer %1$d de ta liste de modérateurs ?</item>
+        <item quantity="many">Es-tu sûr(e) de vouloir supprimer %1$d de ta liste de modérateurs ?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">Supprimer %1$d streamers de ta liste de modérateurs</item>
+        <item quantity="one">Supprimer %1$d streamer de ta liste de modérateurs</item>
+        <item quantity="many">Supprimer %1$d streamers de ta liste de modérateurs</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">"Les streamings peuvent seulement être programmés %1$d semaines à l'avance."</item>
+        <item quantity="one">"Les streamings peuvent seulement être programmés %1$d semaine à l'avance."</item>
+        <item quantity="many">"Les streamings peuvent seulement être programmés %1$d semaines à l'avance."</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d Gifters</item>
+        <item quantity="one">1 Gifter</item>
+        <item quantity="many">%1$d Gifters</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">%1$d dédicaces disponibles</item>
+        <item quantity="one">%1$d dédicace disponible</item>
+        <item quantity="many">%1$d dédicaces disponibles</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d streams programmés</item>
+        <item quantity="one">%1$d/%2$d stream programmé</item>
+        <item quantity="many">%1$d/%2$d streams programmés</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">Diamants</item>
+        <item quantity="one">Diamant</item>
+        <item quantity="many">Diamants</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">Fans</item>
+        <item quantity="one">Fan</item>
+        <item quantity="many">Fans</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">Victoires</item>
+        <item quantity="one">Victoire</item>
+        <item quantity="many">Victoires</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">A utilisé 1 %1$s pendant %2$d minutes !</item>
+        <item quantity="one">A utilisé 1 %1$s pendant %2$d minute !</item>
+        <item quantity="many">A utilisé 1 %1$s pendant %2$d minutes !</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">Veux-tu vraiment retirer %1$d des Favoris ?</item>
+        <item quantity="one">Veux-tu vraiment retirer %1$d des Favoris ?</item>
+        <item quantity="many">Veux-tu vraiment retirer %1$d des Favoris ?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">Retirer %1$d streamers de tes Favoris</item>
+        <item quantity="one">Retirer %1$d streamer de tes Favoris</item>
+        <item quantity="many">Retirer %1$d streamers de tes Favoris</item>
+    </plurals>
+</resources>

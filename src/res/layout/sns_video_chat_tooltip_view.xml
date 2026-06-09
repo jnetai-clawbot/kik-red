@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="?snsVideoChatTooltipTheme" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?snsVideoChatTooltipContainerStyle">
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="?snsVideoChatTooltipBorderStyle" />
+        <ImageView android:layout_gravity="end" android:id="@id/sns_video_chat_tooltip_minimize_button" android:layout_width="@dimen/sns_video_chat_tooltip_dismiss_button_size" android:layout_height="@dimen/sns_video_chat_tooltip_dismiss_button_size" style="?snsVideoChatTooltipDismissButtonStyle" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_video_chat_tooltip_header_margin_top" style="?snsVideoChatTooltipHeaderStyle" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/sns_video_chat_tooltip_body_text_view" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/sns_video_chat_tooltip_body_margin_top" android:layout_weight="1.0" android:layout_marginStart="@dimen/sns_video_chat_tooltip_body_margin_left_right" android:layout_marginEnd="@dimen/sns_video_chat_tooltip_body_margin_left_right" style="?snsVideoChatTooltipBodyStyle" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/sns_video_chat_tooltip_container_padding_bottom" style="?snsVideoChatTooltipBorderStyle" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/sns_video_chat_tooltip_top_icon" android:layout_width="@dimen/sns_video_chat_tooltip_top_icon_size" android:layout_height="@dimen/sns_video_chat_tooltip_top_icon_size" android:layout_marginTop="-26.0dip" style="?snsVideoChatTooltipTopIconStyle" />
+</FrameLayout>

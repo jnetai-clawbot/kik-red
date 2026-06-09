@@ -1,0 +1,206 @@
+.class public final enum Lco/j;
+.super Ljava/lang/Enum;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/reflect/jvm/internal/impl/protobuf/h$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lco/j;",
+        ">;",
+        "Lkotlin/reflect/jvm/internal/impl/protobuf/h$a;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final synthetic $VALUES:[Lco/j;
+
+.field public static final enum DECLARATION:Lco/j;
+
+.field public static final enum DELEGATION:Lco/j;
+
+.field public static final enum FAKE_OVERRIDE:Lco/j;
+
+.field public static final enum SYNTHESIZED:Lco/j;
+
+.field private static internalValueMap:Lkotlin/reflect/jvm/internal/impl/protobuf/h$b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/reflect/jvm/internal/impl/protobuf/h$b<",
+            "Lco/j;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final value:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 9
+
+    new-instance v0, Lco/j;
+
+    const-string v1, "DECLARATION"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2, v2, v2}, Lco/j;-><init>(Ljava/lang/String;III)V
+
+    sput-object v0, Lco/j;->DECLARATION:Lco/j;
+
+    new-instance v1, Lco/j;
+
+    const-string v3, "FAKE_OVERRIDE"
+
+    const/4 v4, 0x1
+
+    invoke-direct {v1, v3, v4, v4, v4}, Lco/j;-><init>(Ljava/lang/String;III)V
+
+    sput-object v1, Lco/j;->FAKE_OVERRIDE:Lco/j;
+
+    new-instance v3, Lco/j;
+
+    const-string v5, "DELEGATION"
+
+    const/4 v6, 0x2
+
+    invoke-direct {v3, v5, v6, v6, v6}, Lco/j;-><init>(Ljava/lang/String;III)V
+
+    sput-object v3, Lco/j;->DELEGATION:Lco/j;
+
+    new-instance v5, Lco/j;
+
+    const-string v7, "SYNTHESIZED"
+
+    const/4 v8, 0x3
+
+    invoke-direct {v5, v7, v8, v8, v8}, Lco/j;-><init>(Ljava/lang/String;III)V
+
+    sput-object v5, Lco/j;->SYNTHESIZED:Lco/j;
+
+    const/4 v7, 0x4
+
+    new-array v7, v7, [Lco/j;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
+
+    sput-object v7, Lco/j;->$VALUES:[Lco/j;
+
+    new-instance v0, Lco/j$a;
+
+    invoke-direct {v0}, Lco/j$a;-><init>()V
+
+    sput-object v0, Lco/j;->internalValueMap:Lkotlin/reflect/jvm/internal/impl/protobuf/h$b;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;III)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    iput p4, p0, Lco/j;->value:I
+
+    return-void
+.end method
+
+.method public static valueOf(I)Lco/j;
+    .locals 1
+
+    if-eqz p0, :cond_3
+
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :cond_0
+    sget-object p0, Lco/j;->SYNTHESIZED:Lco/j;
+
+    return-object p0
+
+    :cond_1
+    sget-object p0, Lco/j;->DELEGATION:Lco/j;
+
+    return-object p0
+
+    :cond_2
+    sget-object p0, Lco/j;->FAKE_OVERRIDE:Lco/j;
+
+    return-object p0
+
+    :cond_3
+    sget-object p0, Lco/j;->DECLARATION:Lco/j;
+
+    return-object p0
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lco/j;
+    .locals 1
+
+    const-class v0, Lco/j;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lco/j;
+
+    return-object p0
+.end method
+
+.method public static values()[Lco/j;
+    .locals 1
+
+    sget-object v0, Lco/j;->$VALUES:[Lco/j;
+
+    invoke-virtual {v0}, [Lco/j;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lco/j;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final getNumber()I
+    .locals 1
+
+    iget v0, p0, Lco/j;->value:I
+
+    return v0
+.end method

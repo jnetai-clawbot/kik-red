@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/sns_ic_bc_viewer_overflow_open" />
+    <item android:drawable="@drawable/sns_streamer_overflow_boost" />
+</selector>

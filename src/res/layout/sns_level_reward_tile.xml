@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sns_reward_image" android:layout_width="@dimen/sns_level_reward_image_size" android:layout_height="@dimen/sns_level_reward_image_size" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@id/sns_reward_name" android:paddingLeft="@dimen/sns_half_grid_padding" android:paddingRight="@dimen/sns_half_grid_padding" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="6.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/sns_invertable_white_text" android:ellipsize="middle" android:id="@id/sns_reward_level" android:background="@drawable/sns_reward_level_background" android:paddingLeft="@dimen/sns_half_grid_padding" android:paddingTop="1.0dip" android:paddingRight="@dimen/sns_half_grid_padding" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_half_grid_padding" android:singleLine="true" android:checkable="false" />
+</LinearLayout>

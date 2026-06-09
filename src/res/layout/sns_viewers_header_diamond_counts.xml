@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.tabs.TabLayout android:id="@id/sns_tab_dmd_view" style="?snsStreamerStatsTabStyle" />
+    <ImageView android:id="@id/img_broadcast_dmd_info" android:layout_width="@dimen/sns_dmd_info_size" android:layout_height="@dimen/sns_dmd_info_size" android:src="@drawable/sns_ic_info_gray" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <View android:id="@id/sns_bottom_line" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/one_dp_or_px" android:layout_below="@id/sns_tab_dmd_view" />
+</merge>

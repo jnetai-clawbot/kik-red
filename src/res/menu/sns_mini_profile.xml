@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_block_gray_24dp" android:id="@id/menu_block" android:visible="false" android:title="@string/sns_common_block" />
+    <item android:icon="@drawable/ic_sheet_report" android:id="@id/menu_report" android:visible="false" android:title="@string/sns_common_report" />
+    <item android:icon="@drawable/ic_block_gray_24dp" android:id="@id/menu_delete_user" android:visible="false" android:title="@string/sns_mini_profile_delete_menu_title" />
+    <item android:icon="@drawable/sns_ic_star_gray_24dp" android:id="@id/menu_follow_unfollow" android:visible="true" android:title="@string/sns_broadcast_follow" />
+    <item android:icon="@drawable/sns_ic_shield_gray" android:id="@id/sns_menu_bouncer" android:visible="false" android:title="@string/sns_add_bouncer" />
+    <item android:icon="@drawable/sns_ic_profile" android:id="@id/sns_menu_host_app_profile" android:visible="false" />
+    <item android:icon="@drawable/sns_ic_stream_remove_from_stream_24dp" android:id="@id/sns_menu_remove_from_stream" android:visible="false" android:title="@string/sns_mini_profile_remove_from_stream_menu_item" />
+</menu>

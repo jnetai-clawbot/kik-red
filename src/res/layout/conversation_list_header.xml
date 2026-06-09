@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/livePromotionsContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/list_primary_text_size" android:textColor="?text_secondary" android:id="@id/marquee_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/live_now" android:layout_marginStart="8.0dip" />
+        <FrameLayout android:id="@id/marquee_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <kik.red.widget.ExploreView android:id="@id/conv_list_header_explore_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/conv_list_header_new_chats" android:visibility="gone" layout="@layout/new_chats_header" />
+    <include android:layout_width="fill_parent" android:layout_height="48.0dip" layout="@layout/blue_category_layout" />
+    <FrameLayout android:id="@id/blue_voice_drop_down_bar_container" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip">
+        <blue.ll11l1Il1Il11llI android:id="@id/blue_voice_dropdown_bar" android:visibility="gone" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/blue_migrate_app_drop_down_bar_container" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip">
+        <blue.IIIll1IlI11lll11 android:id="@id/blue_migrate_dropdown" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

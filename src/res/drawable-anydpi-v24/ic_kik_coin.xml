@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="14.0dip" android:width="14.0dip" android:viewportWidth="48.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_kik_coin__0" android:pathData="M6,23v2c0,9.389 8.059,17 18,17s18,-7.611 18,-17V23Z" />
+    <path android:fillColor="@drawable/$ic_kik_coin__1" android:pathData="M7,23a17,16.056 0,1 0,34 0a17,16.056 0,1 0,-34 0z" />
+    <path android:fillColor="#00000000" android:pathData="M7,24C7,15.133 14.611,7.944 24,7.944S41,15.133 41,24" android:strokeWidth="2.0" />
+    <path android:fillColor="@drawable/$ic_kik_coin__2" android:pathData="M24,8c8.822,0 16,6.729 16,15S32.822,38 24,38 8,31.271 8,23 15.178,8 24,8m0,-2C14.059,6 6,13.611 6,23s8.059,17 18,17 18,-7.611 18,-17S33.941,6 24,6Z" />
+    <path android:fillColor="@drawable/$ic_kik_coin__3" android:pathData="M24.663,13.958 L26.7,19.966h6.5a0.7,0.7 0,0 1,0.4 1.274l-5.233,3.649 2.014,5.949a0.7,0.7 0,0 1,-1.063 0.8L24,27.931l-5.315,3.706a0.7,0.7 0,0 1,-1.063 -0.8l2.014,-5.949L14.4,21.24a0.7,0.7 0,0 1,0.4 -1.274h6.5l2.034,-6.008A0.7,0.7 0,0 1,24.663 13.958Z" />
+</vector>

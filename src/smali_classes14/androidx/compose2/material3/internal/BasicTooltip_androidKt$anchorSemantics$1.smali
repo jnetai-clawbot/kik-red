@@ -1,0 +1,89 @@
+.class final Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1;
+.super Lkotlin2/jvm/internal/Lambda;
+.source "BasicTooltip.android.kt"
+
+# interfaces
+.implements Lkotlin2/jvm/functions/Function1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose2/material3/internal/BasicTooltip_androidKt;->anchorSemantics(Landroidx/compose2/ui/Modifier;Ljava/lang/String;ZLandroidx/compose2/material3/TooltipState;Lkotlinx2/coroutines/CoroutineScope;)Landroidx/compose2/ui/Modifier;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin2/jvm/internal/Lambda;",
+        "Lkotlin2/jvm/functions/Function1<",
+        "Landroidx/compose2/ui/semantics/SemanticsPropertyReceiver;",
+        "Lkotlin2/Unit;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $label:Ljava/lang/String;
+
+.field final synthetic $scope:Lkotlinx2/coroutines/CoroutineScope;
+
+.field final synthetic $state:Landroidx/compose2/material3/TooltipState;
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;Lkotlinx2/coroutines/CoroutineScope;Landroidx/compose2/material3/TooltipState;)V
+    .locals 1
+
+    iput-object p1, p0, Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1;->$label:Ljava/lang/String;
+
+    iput-object p2, p0, Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1;->$scope:Lkotlinx2/coroutines/CoroutineScope;
+
+    iput-object p3, p0, Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1;->$state:Landroidx/compose2/material3/TooltipState;
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lkotlin2/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    move-object v0, p1
+
+    check-cast v0, Landroidx/compose2/ui/semantics/SemanticsPropertyReceiver;
+
+    invoke-virtual {p0, v0}, Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1;->invoke(Landroidx/compose2/ui/semantics/SemanticsPropertyReceiver;)V
+
+    sget-object v0, Lkotlin2/Unit;->INSTANCE:Lkotlin2/Unit;
+
+    return-object v0
+.end method
+
+.method public final invoke(Landroidx/compose2/ui/semantics/SemanticsPropertyReceiver;)V
+    .locals 4
+
+    iget-object v0, p0, Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1;->$label:Ljava/lang/String;
+
+    new-instance v1, Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1$1;
+
+    iget-object v2, p0, Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1;->$scope:Lkotlinx2/coroutines/CoroutineScope;
+
+    iget-object v3, p0, Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1;->$state:Landroidx/compose2/material3/TooltipState;
+
+    invoke-direct {v1, v2, v3}, Landroidx/compose2/material3/internal/BasicTooltip_androidKt$anchorSemantics$1$1;-><init>(Lkotlinx2/coroutines/CoroutineScope;Landroidx/compose2/material3/TooltipState;)V
+
+    check-cast v1, Lkotlin2/jvm/functions/Function0;
+
+    invoke-static {p1, v0, v1}, Landroidx/compose2/ui/semantics/SemanticsPropertiesKt;->onLongClick(Landroidx/compose2/ui/semantics/SemanticsPropertyReceiver;Ljava/lang/String;Lkotlin2/jvm/functions/Function0;)V
+
+    return-void
+.end method

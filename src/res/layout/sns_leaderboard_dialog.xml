@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/sns_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="?homeAsUpIndicator" app:title="@string/sns_leaderboard_activity_title" style="?toolbarStyle"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

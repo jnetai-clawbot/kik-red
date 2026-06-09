@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Kik Live" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lllIlI1l1llI11I1 android:title="Disable Kik Live" android:key="blue.sns.hide.live.v2" android:summary="Disables all Live streaming features, and prevents your last seen time and country from being updated.\nDisabling Kik Live will reduce spam bot PMs." android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Profile" />
+    <blue.IlI1I1IlllI1IIIl android:title="Location Spoofer" android:summary="Change the location that's shown on your Kik Live profile" kik:pref_divider="full_bottom" />
+    <blue.lII1l11II11llIlI android:title="About Me Changer" android:summary="Change the &quot;About Me&quot; section on your Kik Live profile" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Live Streaming Quality" />
+    <blue.llIII1l111I11l1I android:title="Audio Bitrate" android:key="blue.live.audio.bitrate" android:summary="Change audio bitrate (quality) while streaming" android:dialogTitle="Select audio bitrate..." kik:pref_divider="full_bottom" />
+    <blue.II1ll1111l11l11I android:title="Audio Scenario" android:key="blue.live.audio.scenario" android:summary="Change audio scenario while streaming" android:dialogTitle="Select audio scenario..." kik:pref_divider="full_bottom" />
+    <blue.I1IllIIll1Il1I1I android:title="Video Frame Rate" android:key="blue.live.video.framerate" android:summary="Change video frame rate while streaming" android:dialogTitle="Select frame rate..." kik:pref_divider="full_bottom" />
+    <blue.Illl1l1Il1l1Il1I android:title="Video Resolution" android:key="blue.live.video.dimensions" android:summary="Change video resolution while streaming" android:dialogTitle="Select resolution..." kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Visibility" />
+    <blue.lllIlI1l1llI11I1 android:title="Invisible Mode" android:key="blue.tmg.invisible.mode" android:summary="Join streams without being detected by other users\n\nNote: the stream chat won't work while this is on" android:defaultValue="false" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Disable Live Notifications" android:key="blue.sns.hide.notifications" android:summary="Disables all Kik Live related push notifications" android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Disconnect While Streaming" android:key="blue.sns.kik.disconnect" android:summary="While streaming, you will be disconnected from Kik to prevent anyone trying to lag or crash the stream via exploits.\n\nPlease note that some of the commands will not work if you use this." kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Hide Guideline Warnings" android:key="blue.sns.hide.warning" android:summary="When opening a stream, the default guideline warnings will be hidden" android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Hide Next Date" android:key="blue.sns.hide.next.date" android:summary="Hide the NextDate tab in Live (requires restart)" android:defaultValue="false" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Show Platform Indicators" android:key="blue.tmg.device.detect" android:summary="If enabled, an icon will be shown for streamers and chatters depending on the app they are using.\nThis is subject to removal in future updates, as Kik is the only platform." android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

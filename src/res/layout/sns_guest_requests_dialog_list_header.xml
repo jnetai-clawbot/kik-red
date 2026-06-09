@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/sns_guest_requests_dialog_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid_padding" android:layout_marginBottom="@dimen/grid_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/sns_guest_requests_mute_all_btn" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?snsGuestRequestsHeaderStyle" />
+    <FrameLayout android:id="@id/sns_guest_requests_remove_all_btn" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginEnd="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:layout_gravity="center" android:clickable="false" android:layout_width="wrap_content" android:text="@string/sns_guest_requests_remove_all" app:layout_constraintTop_toTopOf="parent" style="?snsGuestRequestsRemoveAllButtonStyle" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/sns_guest_requests_mute_all_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/sns_guest_requests_remove_all_btn" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:layout_gravity="center" android:id="@id/sns_guest_requests_mute_all_text" android:clickable="false" android:layout_width="wrap_content" android:text="@string/sns_guest_requests_mute_all" style="?snsGuestRequestsMuteAllButtonStyle" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

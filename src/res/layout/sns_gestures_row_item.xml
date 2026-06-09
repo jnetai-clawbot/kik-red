@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/sns_purchasable_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sns_gestures_row_image" android:layout_width="@dimen/sns_purchasable_item_image_height" android:layout_height="@dimen/sns_purchasable_item_image_height" android:scaleType="fitCenter" />
+    <View android:background="@color/sns_invertable_white_background" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sns_gestures_row_products_rv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d saniye ileri sar</item>
+        <item quantity="one">%d saniye ileri sar</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d saniye geri sar</item>
+        <item quantity="one">%d saniye geri sar</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d yeni bildirim</item>
+        <item quantity="one">%d yeni bildirim</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">Lütfen İnternete bağlan yoksa akışın %1$d saniye içinde sona erecek.</item>
+        <item quantity="one">Lütfen İnternete bağlan yoksa akışın %1$d saniye içinde sona erecek.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">{link} Satın Al ve {days} Gün Boyunca Reklamsız Kullan</item>
+        <item quantity="one">{link} Satın Al ve Bir Gün Boyunca Reklamsız Kullan</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">Mesaj %1$d hediye verene gönderildi!</item>
+        <item quantity="one">Mesaj %1$d hediye verene gönderildi!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d karakter kaldı.</item>
+        <item quantity="one">%1$d karakter kaldı.</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">%1$d gün sonra sona erecek!</item>
+        <item quantity="one">%1$d gün sonra sona erecek!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d gün</item>
+        <item quantity="one">%1$d gün</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d sa</item>
+        <item quantity="one">%1$dsa</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d saat</item>
+        <item quantity="one">%1$d saat</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d dk</item>
+        <item quantity="one">%1$d dk</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d dakika</item>
+        <item quantity="one">%1$d dakika</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$dsn</item>
+        <item quantity="one">%1$dsn</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d saniye</item>
+        <item quantity="one">%1$d saniye</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">Favorin yayın yapıyor!</item>
+        <item quantity="one">Favorin yayın yapıyor!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d saat</item>
+        <item quantity="one">%1$d saat</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d dakika</item>
+        <item quantity="one">%1$d dakika</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d Favori Canlı Yayında!</item>
+        <item quantity="one">%1$d Favori Canlı Yayında!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">Hayran</item>
+        <item quantity="one">Hayran</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d kişilik yer kaldı</item>
+        <item quantity="one">%1$d kişilik yer kaldı</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">Bu sınırlı çark kaybolmadan önce en fazla %1$s kez gönderilebilir. En sevdiğin Yayıncı’ya hemen bir tane gönder!</item>
+        <item quantity="one">Bu sınırlı çark kaybolmadan önce en fazla %1$s kez gönderilebilir. En sevdiğin Yayıncı’ya hemen bir tane gönder!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">Puan</item>
+        <item quantity="one">Puan</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">Seçmen başına %1$d ücretsiz oy</item>
+        <item quantity="one">Seçmen başına %1$d ücretsiz oy</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">İzin verilen oy sayısı aşıldı</item>
+        <item quantity="one">İzin verilen oy sayısı aşıldı</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d Oy</item>
+        <item quantity="one">%1$d Oy</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">%1$d kullanıcısını koruma listesinden çıkarmak istediğine emin misin?</item>
+        <item quantity="one">%1$d kullanıcısını koruma listesinden çıkarmak istediğine emin misin?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">Koruma listesinden %1$d yayıncı çıkar</item>
+        <item quantity="one">Koruma listesinden %1$d yayıncı çıkar</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">Gösteriler ancak %1$d hafta önceden planlanabilir.</item>
+        <item quantity="one">Gösteriler ancak %1$d hafta önceden planlanabilir.</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d Hediye Veren</item>
+        <item quantity="one">1 Hediye Veren</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">%1$d Haykırış Var</item>
+        <item quantity="one">%1$d Haykırış Var</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d Gösteri Planlandı</item>
+        <item quantity="one">%1$d/%2$d Gösteri Planlandı</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">Elmas</item>
+        <item quantity="one">Elmas</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">Hayranlar</item>
+        <item quantity="one">Hayranlar</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">Galibiyet</item>
+        <item quantity="one">Galibiyet</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">%2$d dakika boyunca bir %1$s kullandı!</item>
+        <item quantity="one">%2$d dakika boyunca bir %1$s kullandı!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">%1$d yayıncıyı favorilerden kaldırmak istediğine emin misin?</item>
+        <item quantity="one">%1$d yayıncıyı favorilerden kaldırmak istediğine emin misin?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">Favorilerden %1$d yayıncı çıkar</item>
+        <item quantity="one">Favorilerden %1$d yayıncı çıkar</item>
+    </plurals>
+</resources>

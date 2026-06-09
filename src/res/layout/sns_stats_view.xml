@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="?snsStreamStatsBackground" android:padding="@dimen/sns_stream_stats_circle_image_padding" android:layout_width="@dimen/sns_stream_stats_circle_image_size" android:layout_height="@dimen/sns_stream_stats_circle_image_size" android:src="?snsStreamStatsIcon" android:scaleType="centerInside" android:backgroundTint="?android:colorBackground" app:backgroundTint="?android:colorBackground" />
+    <TextView android:textAppearance="?snsStreamStatsCountTextStyle" android:id="@id/sns_stat_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_half_grid_padding" />
+    <TextView android:textAppearance="?snsStreamStatsLabelTextStyle" android:textColor="?android:textColorTertiary" android:id="@id/sns_stat_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_half_grid_padding" android:text="?snsStreamStatsLabelText" />
+</LinearLayout>

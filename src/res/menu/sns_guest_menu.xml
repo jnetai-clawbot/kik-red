@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/sns_ic_star_gray_24dp" android:id="@id/menu_follow_unfollow" android:visible="true" android:title="@string/sns_broadcast_follow" />
+    <item android:icon="@drawable/sns_ic_profile" android:id="@id/menu_profile" android:visible="true" android:title="@string/sns_guest_menu_view_profile" />
+    <item android:icon="@drawable/sns_ic_monochrome_gift" android:id="@id/menu_gift" android:visible="true" android:title="@string/sns_guest_menu_send_gift" />
+    <item android:icon="@drawable/sns_ic_guest_dec_24dp" android:id="@id/menu_guest_display_small" android:title="@string/sns_guest_menu_display_small" />
+    <item android:icon="@drawable/sns_ic_guest_inc_24dp" android:id="@id/menu_guest_display_medium" android:title="@string/sns_guest_menu_display_medium" />
+    <item android:icon="@drawable/sns_ic_guest_inc_24dp" android:id="@id/menu_guest_display_large" android:title="@string/sns_guest_menu_display_large" />
+</menu>

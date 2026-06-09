@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/sns_poll_stub" android:layout="@layout/sns_poll_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.2" />
+    <ViewStub android:id="@id/sns_poll_with_timer_stub" android:layout="@layout/sns_poll_with_timer_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_item_message_bg_margin_start" android:layout_marginRight="@dimen/chat_item_message_bg_margin_start" android:layout_marginHorizontal="@dimen/chat_item_message_bg_margin_start" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/sns_poll_with_timer_top_guideline" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/sns_poll_with_timer_top_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

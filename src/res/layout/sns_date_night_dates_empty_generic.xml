@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.wondrous.sns.nextdate.datenight.DateNightEmptyView android:theme="?snsDateNightEmptyViewTheme" android:id="@id/sns_date_night_dates_empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

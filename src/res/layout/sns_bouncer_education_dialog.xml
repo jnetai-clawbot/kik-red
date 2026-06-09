@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="?snsBouncerIconImage" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/list_primary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/sns_bouncer_education_title" />
+    <TextView android:textColor="@color/list_secondary_color" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/sns_bouncer_education_message" />
+    <Button android:theme="?snsBouncerButtonTheme" android:id="@id/sns_dialog_dismiss" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sns_btn_ok" style="@style/Sns.Button" />
+</LinearLayout>

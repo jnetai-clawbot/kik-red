@@ -1,0 +1,200 @@
+.class public final synthetic Landroidx/compose2/ui/node/Owner$-CC;
+.super Ljava/lang/Object;
+.source "Owner.kt"
+
+
+# direct methods
+.method public static $default$getPlacementScope(Landroidx/compose2/ui/node/Owner;)Landroidx/compose2/ui/layout/Placeable$PlacementScope;
+    .locals 1
+
+    invoke-static {p0}, Landroidx/compose2/ui/layout/PlaceableKt;->PlacementScope(Landroidx/compose2/ui/node/Owner;)Landroidx/compose2/ui/layout/Placeable$PlacementScope;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static constructor <clinit>()V
+    .locals 1
+
+    sget-object v0, Landroidx/compose2/ui/node/Owner;->Companion:Landroidx/compose2/ui/node/Owner$Companion;
+
+    return-void
+.end method
+
+.method public static synthetic createLayer$default(Landroidx/compose2/ui/node/Owner;Lkotlin2/jvm/functions/Function2;Lkotlin2/jvm/functions/Function0;Landroidx/compose2/ui/graphics/layer/GraphicsLayer;ILjava/lang/Object;)Landroidx/compose2/ui/node/OwnedLayer;
+    .locals 0
+
+    if-nez p5, :cond_1
+
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_0
+
+    const/4 p3, 0x0
+
+    :cond_0
+    invoke-interface {p0, p1, p2, p3}, Landroidx/compose2/ui/node/Owner;->createLayer(Lkotlin2/jvm/functions/Function2;Lkotlin2/jvm/functions/Function0;Landroidx/compose2/ui/graphics/layer/GraphicsLayer;)Landroidx/compose2/ui/node/OwnedLayer;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Super calls with default arguments not supported in this target, function: createLayer"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static synthetic forceMeasureTheSubtree$default(Landroidx/compose2/ui/node/Owner;Landroidx/compose2/ui/node/LayoutNode;ZILjava/lang/Object;)V
+    .locals 0
+
+    if-nez p4, :cond_1
+
+    and-int/lit8 p3, p3, 0x2
+
+    if-eqz p3, :cond_0
+
+    const/4 p2, 0x0
+
+    :cond_0
+    invoke-interface {p0, p1, p2}, Landroidx/compose2/ui/node/Owner;->forceMeasureTheSubtree(Landroidx/compose2/ui/node/LayoutNode;Z)V
+
+    return-void
+
+    :cond_1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Super calls with default arguments not supported in this target, function: forceMeasureTheSubtree"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static synthetic getAutofill$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getAutofillTree$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic getFontLoader$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static synthetic measureAndLayout$default(Landroidx/compose2/ui/node/Owner;ZILjava/lang/Object;)V
+    .locals 0
+
+    if-nez p3, :cond_1
+
+    const/4 p3, 0x1
+
+    and-int/2addr p2, p3
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x1
+
+    :cond_0
+    invoke-interface {p0, p1}, Landroidx/compose2/ui/node/Owner;->measureAndLayout(Z)V
+
+    return-void
+
+    :cond_1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Super calls with default arguments not supported in this target, function: measureAndLayout"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static synthetic onRequestMeasure$default(Landroidx/compose2/ui/node/Owner;Landroidx/compose2/ui/node/LayoutNode;ZZZILjava/lang/Object;)V
+    .locals 1
+
+    if-nez p6, :cond_3
+
+    and-int/lit8 p6, p5, 0x2
+
+    const/4 v0, 0x0
+
+    if-eqz p6, :cond_0
+
+    const/4 p2, 0x0
+
+    :cond_0
+    and-int/lit8 p6, p5, 0x4
+
+    if-eqz p6, :cond_1
+
+    const/4 p3, 0x0
+
+    :cond_1
+    and-int/lit8 p5, p5, 0x8
+
+    if-eqz p5, :cond_2
+
+    const/4 p4, 0x1
+
+    :cond_2
+    invoke-interface {p0, p1, p2, p3, p4}, Landroidx/compose2/ui/node/Owner;->onRequestMeasure(Landroidx/compose2/ui/node/LayoutNode;ZZZ)V
+
+    return-void
+
+    :cond_3
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Super calls with default arguments not supported in this target, function: onRequestMeasure"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static synthetic onRequestRelayout$default(Landroidx/compose2/ui/node/Owner;Landroidx/compose2/ui/node/LayoutNode;ZZILjava/lang/Object;)V
+    .locals 1
+
+    if-nez p5, :cond_2
+
+    and-int/lit8 p5, p4, 0x2
+
+    const/4 v0, 0x0
+
+    if-eqz p5, :cond_0
+
+    const/4 p2, 0x0
+
+    :cond_0
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_1
+
+    const/4 p3, 0x0
+
+    :cond_1
+    invoke-interface {p0, p1, p2, p3}, Landroidx/compose2/ui/node/Owner;->onRequestRelayout(Landroidx/compose2/ui/node/LayoutNode;ZZ)V
+
+    return-void
+
+    :cond_2
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Super calls with default arguments not supported in this target, function: onRequestRelayout"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method

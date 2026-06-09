@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="50.0dip" />
+    <gradient android:startColor="@color/sns_gift_message_gradient_start" android:endColor="@color/sns_gift_message_gradient_end" android:angle="0.0" />
+    <size android:height="50.0dip" android:width="50.0dip" />
+    <padding android:top="1.0dip" android:bottom="1.0dip" />
+</shape>

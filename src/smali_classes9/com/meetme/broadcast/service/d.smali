@@ -1,0 +1,46 @@
+.class public final synthetic Lcom/meetme/broadcast/service/d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/functions/g;
+
+
+# static fields
+.field public static final synthetic a:Lcom/meetme/broadcast/service/d;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/meetme/broadcast/service/d;
+
+    invoke-direct {v0}, Lcom/meetme/broadcast/service/d;-><init>()V
+
+    sput-object v0, Lcom/meetme/broadcast/service/d;->a:Lcom/meetme/broadcast/service/d;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Lxp/c;
+
+    sget p1, Lcom/meetme/broadcast/service/StreamingViewModel;->r:I
+
+    sget-boolean p1, Lse/b;->a:Z
+
+    return-void
+.end method

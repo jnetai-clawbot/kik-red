@@ -1,0 +1,11 @@
+.class public interface abstract Lv2/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lv2/c$a;
+    }
+.end annotation

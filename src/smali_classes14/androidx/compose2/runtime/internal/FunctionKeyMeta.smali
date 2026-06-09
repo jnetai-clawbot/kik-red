@@ -1,0 +1,55 @@
+.class public interface abstract annotation Landroidx/compose2/runtime/internal/FunctionKeyMeta;
+.super Ljava/lang/Object;
+.source "FunctionKeyMeta.kt"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation runtime Landroidx/compose2/runtime/ComposeCompilerApi;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/compose2/runtime/internal/FunctionKeyMeta$Container;
+    }
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Repeatable;
+    value = Landroidx/compose2/runtime/internal/FunctionKeyMeta$Container;
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Target;
+    value = {
+        .enum Ljava/lang/annotation/ElementType;->TYPE:Ljava/lang/annotation/ElementType;
+    }
+.end annotation
+
+.annotation runtime Lkotlin2/annotation/Repeatable;
+.end annotation
+
+.annotation runtime Lkotlin2/annotation/Retention;
+    value = .enum Lkotlin2/annotation/AnnotationRetention;->RUNTIME:Lkotlin2/annotation/AnnotationRetention;
+.end annotation
+
+.annotation runtime Lkotlin2/annotation/Target;
+    allowedTargets = {
+        .enum Lkotlin2/annotation/AnnotationTarget;->CLASS:Lkotlin2/annotation/AnnotationTarget;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract endOffset()I
+.end method
+
+.method public abstract key()I
+.end method
+
+.method public abstract startOffset()I
+.end method

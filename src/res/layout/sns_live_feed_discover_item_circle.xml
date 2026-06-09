@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/sns_live_cardview_circle_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sns_live_cardview_margin_bottom" app:cardCornerRadius="@dimen/sns_live_cardview_circle_card_corner_radius" app:cardElevation="@dimen/sns_live_cardview_elevation" app:cardMaxElevation="@dimen/sns_live_cardview_max_elevation" app:cardPreventCornerOverlap="false">
+        <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="center" android:id="@id/sns_broadcast_preview" android:layout_width="@dimen/sns_feed_discover_card_circle_size" android:layout_height="@dimen/sns_feed_discover_card_circle_size" app:shapeAppearanceOverlay="@style/Sns.ShapeAppearanceOverlay.Pill" />
+        <ImageView android:id="@id/sns_item_view_top_spot_decoration" android:visibility="gone" android:layout_width="78.0dip" android:layout_height="78.0dip" android:src="@drawable/sns_spotlight_ring" />
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

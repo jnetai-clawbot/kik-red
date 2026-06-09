@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/sns_marquee_next_date_frame" android:maxLevel="@integer/sns_live_decoration_next_date_frame_level" />
+    <item android:drawable="@drawable/sns_marquee_blind_date_frame" android:maxLevel="@integer/sns_live_decoration_blind_date_frame_level" />
+    <item android:drawable="@drawable/sns_marquee_date_night_frame" android:maxLevel="@integer/sns_live_decoration_date_night_frame_level" />
+    <item android:drawable="@drawable/sns_marquee_next_guest_frame" android:maxLevel="@integer/sns_live_decoration_next_guest_frame_level" />
+</level-list>

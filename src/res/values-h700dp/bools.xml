@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="sns_empty_view_can_display_image">true</bool>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Info" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.llIIIll1l11llIlI android:title="Check For Update" android:key="blue.update.check" android:summary="" kik:pref_divider="full_bottom" />
+    <blue.IlI11111IIIIIl1I android:title="Patch Notes" android:key="patch" android:summary="See What's New!" kik:pref_divider="full_bottom" />
+    <blue.IlI11111IIIIIl1I android:title="About KIK-Red" android:key="about" android:summary="Made by jnetai.com" kik:pref_divider="full_bottom" />
+    <blue.l111III111Il1I1l android:title="Feature Request" android:summary="Have an idea for KIK-Red that you'd like to see added? Let me know here!" />
+    <blue.IlIl1lI1lII1I111 android:enabled="true" android:title="Download Update" android:key="some.key" kik:pref_divider="full_bottom">
+        <intent android:action="android.intent.action.VIEW" android:data="https://github.com/jnetai-clawbot/kik-red/releases/latest" />
+    </blue.IlIl1lI1lII1I111>
+    <blue.IlIl1lI1lII1I111 android:enabled="true" android:title="Share KIK-Red" android:key="share.app" kik:pref_divider="full_bottom" android:summary="Share this app with friends!" />
+    <blue.IlI11111IIIIIl1I android:title="Official Telegram Group" android:key="telegram" android:summary="Check here for updates on my projects!" kik:pref_divider="full_bottom" />
+    <blue.IlI11111IIIIIl1I android:title="Official YouTube Channel" android:key="yt" android:summary="Check here for new videos!" kik:pref_divider="full_bottom" />
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

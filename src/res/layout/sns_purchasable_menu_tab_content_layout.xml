@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/sns_product_menu_pager" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/sns_product_menu_indicator" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.meetme.util.android.ui.CirclePageIndicator android:id="@id/sns_product_menu_indicator" android:paddingTop="@dimen/sns_circle_page_indicator_padding" android:layout_width="0.0dip" android:layout_height="@dimen/sns_circle_page_indicator_height" app:fillColor="@android:color/white" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:pageColor="#ffcccccc" app:strokeColor="#ffcccccc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

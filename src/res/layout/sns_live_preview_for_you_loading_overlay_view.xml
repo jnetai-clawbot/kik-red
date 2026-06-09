@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sns_broadcast_loading_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/sns_loadingBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/sns_bg_overlay" android:background="@color/black_80a" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sns_topGradientBar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@drawable/gradient_black_30_0_0" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.15" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.85" />
+    </LinearLayout>
+    <View android:id="@id/sns_bottomGradient" android:background="@drawable/gradient_black_0_0_40" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/sns_loadingOverlay" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.meetme.util.android.ui.GradientSpinnerView android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_centerInParent="true" app:thickness="3.0dip" />
+        <ImageView android:id="@id/sns_profileImg" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

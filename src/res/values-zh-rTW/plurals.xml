@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">快轉 %d 秒</item>
+        <item quantity="one">快轉 %d 秒</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">倒轉 %d 秒</item>
+        <item quantity="one">倒轉 %d 秒</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d 則新通知</item>
+        <item quantity="one">%d 則新通知</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">請連線到網際網路，否則您的實況直播將在%1$d秒後結束。</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">購買 {link} 即可享零廣告體驗 {days}天</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">訊息已傳送給%1$d名送禮人！</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">剩餘%1$d個字元。</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">%1$d天後到期！</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d 天</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d 小時</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d 小時</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d 分</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d 分鐘</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$d 秒</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d 秒</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">我的最愛的實況主正在實況！</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d 小時</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d 分鐘</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d名最愛實況主在直播！</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">粉絲</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">剩餘%1$d個位置</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">這個限量轉輪只能再送%1$s次就消失了！立即向您最喜歡的實況主發送一個！</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">點數</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">每個投票者可免費投 %1$d 票</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">超過可投票數</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d票</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">您確定要將 %1$d 從保鏢清單中移除？</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">從保鏢中移除 %1$d 位實況主</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">只能提前%1$d週安排直播。</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d名送禮人</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">還有 %1$d 則特效訊息可用</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">已安排%1$d/%2$d場直播</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">鑽石</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">粉絲</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">勝利</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">使用 %1$s %2$d 分鐘！</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">確定要將 %1$d 從最愛名單移除？</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">從最愛名單中移除 %1$d 位實況主</item>
+    </plurals>
+</resources>

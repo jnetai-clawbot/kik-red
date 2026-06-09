@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/sns_bonus_divider" android:background="@drawable/sns_bonus_divider" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintBottom_toBottomOf="@id/sns_bonus_icon" app:layout_constraintTop_toTopOf="@id/sns_bonus_icon" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/sns_invertable_white_background" android:paddingTop="64.0dip" android:paddingBottom="@dimen/sns_grid_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_bonus_divider">
+        <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/sns_bonus_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffed1c24" android:id="@id/sns_bonus_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_quarter_grid_padding" />
+        <Button android:id="@id/sns_bonus_purchase_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:minWidth="200.0dip" style="@style/Sns.Button.Rounded.Green" />
+    </LinearLayout>
+    <ImageView android:id="@id/sns_bonus_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?snsBonusDialogIcon" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

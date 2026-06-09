@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Udfordringer er daglige og ugentlige opgaver, der skal udføres, som vil give dig præmier!</item>
+        <item>Gennemfør udfordringen, og vend tilbage til menuen Udfordringer for at få din præmie. Opkrævede præmier kan findes i menuen Elementer.</item>
+        <item>Nogle udfordringer vil være nemme og nogle svære. Gennemfør dem alle for at maksimere dine belønninger!</item>
+    </string-array>
+</resources>

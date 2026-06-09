@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sns_reward_advertising_view_icon" android:layout_width="@dimen/sns_reward_live_icon_height" android:layout_height="@dimen/sns_reward_live_icon_height" android:scaleType="centerInside" />
+    <TextView android:id="@id/sns_reward_advertising_view_currency_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?badgeStyle" />
+</merge>

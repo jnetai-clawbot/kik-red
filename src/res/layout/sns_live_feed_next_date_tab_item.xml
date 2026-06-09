@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/sns_live_feed_next_date_tab_final_frame_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dn_tab_final_frame" />
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/sns_live_feed_next_date_tab_animation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="false" app:lottie_fileName="date_night_tab_confetti.json" />
+</FrameLayout>

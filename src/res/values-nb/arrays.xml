@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Utfordringer er daglige og ukentlige oppgaver du må fullføre for å vinne premier!</item>
+        <item>Fullfør utfordringen og gå tilbake til utfordringsmenyen for å gjøre krav på premien din. Hentede premier er tilgjengelige i Elementmenyen.</item>
+        <item>Noen utfordringer er enkle, mens andre er vanskelige. Fullfør alle for å få så mange belønninger som mulig!</item>
+    </string-array>
+</resources>

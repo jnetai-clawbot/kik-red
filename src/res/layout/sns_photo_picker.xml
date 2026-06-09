@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sns_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/sns_photo_select_title" android:paddingLeft="@dimen/sns_gift_menu_gift_margins" android:paddingRight="@dimen/sns_gift_menu_gift_margins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:text="@string/sns_photo_select_title" android:drawablePadding="@dimen/sns_grid_padding" android:drawableStart="@drawable/sns_ic_arrow_back_black_24dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sns_photo_grid" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="oval" android:innerRadius="@dimen/sns_launcher_mask_radius">
+            <solid android:color="@color/absolute_white" />
+            <stroke android:width="1.0dip" android:color="@color/absolute_white" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval" android:innerRadius="@dimen/sns_launcher_mask_radius">
+            <solid android:color="@color/absolute_white" />
+        </shape>
+    </item>
+</selector>

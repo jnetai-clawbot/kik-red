@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/sns_levels_badge_placeholder" android:insetLeft="161.5dip" android:insetRight="38.5dip" android:insetTop="82.5dip" android:insetBottom="117.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

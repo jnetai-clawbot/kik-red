@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/sns_live_cardview_corner_radius" />
+    <stroke android:width="@dimen/sns_next_date_indicator_border_width" android:color="@color/sns_next_date_indicator_color" />
+</shape>

@@ -1,0 +1,57 @@
+.class public final Lxiphias/StaticConstants;
+.super Ljava/lang/Object;
+.source "StaticConstants.java"
+
+
+# static fields
+.field public static final FACE_UNITY_KEY:Ljava/lang/String; = "1Bl2gzasfRJZydVFY40rRGeiLqC5qo2H3RLbPDdu6WwnSZKacRvblwL304Z4AkhreI+DAzzuSGEjQnwwDGVyzUARHSGwz8N2sRQhoasmohcjJwAe8iwTMdJsFgZbvZ0UXEPXggWnq/NvEF92kDmi+39fDqho/w1n6SR3sN0zuNgyUTLEomxLK1z+99Jl/WLWamlqi3FFv3Dwy4SlfKd5nCrtappaA0ITsHC814HKfvD1D9PRsooqlZZ94Ea4SEoeoS6kmXVJ3bfrELFCxgPkxVTtpjIajxylLOUfylfe44XQZ5rQdFAtXSMKwtDUmiU8DoyKQsqrWNfMhNCUVqx/b9BoHnKFxoCekRUuGcN6IfBfU0QBgGag9HPrEzDgvuJslZRXFNBBdGJbjzitWAleMTAI0C0NQChq2OONcnmQ99P3cLxwIv2oIQm+tjKFC4FtbbVP+mRs74As/KIlo/5r7XFzgRzOAFxl31iTBTTebQW5jL9YulLqAJ+WIK1ADwaFp23x9r6Gvyz+q5HrWHP+i3y3KnYY8pqlBHWkuAzVUAA0MJKU8uzXczONZQ7Kzr++uEVEOqiDeGbm5vH9eAiE+9X/a1SEJ3ecsqYLlPJfi7U4/NVP/RKkbb7DZDNBYk6N7bmEnNUayTj0/SyF6l7XEAwQoipzog9+QAr6LzTyPHOfGO6pm3oP3Cy+zHDL1jPoAOMuSSKRw72y5Y8Vhuw/jEnRZcFpmd0IQwIhYpSm4QaQVgk+9gNc12hMo8WRjnJu5Qz01HwGuu04yZbabPbsGOBQzv0klzCHL/33uAtlGgRdueLwUMuouLdEOgaF99KOzBW0MVfpomI7TTB29uyQ+IWYKw9ZuAhKF3iRgzPlr7oEtVVxtA9xnjM40+1mwoW0yFaHNGB+gAb0fXEpf9DHDWMih8YcMzvOc4QKkvZR7sqxPvMeXEBx16fQseG1eDMsUquvFtuALo1m7TVRmpY/0KaCRJTQHpLYCCusRwEaqOZ2vE7NLimMoYXQ5Hz7GNVEy69a6W4yG9mmqwXR45kcs+0fMdoWIRgs8zzxSM5TuDjPgWlD01JrjoogCAXLCBAARk7w/mHUOM8591GUIdYceZKfy1ryzHh+KXaxuQ9XBLxaGCIhnF94wE2A0dXSmkRIpIpQsiQaelJfeYn9Vq020xCJJdAeie/36DQWDdoPgy23zb1qZ0LDyz+0+OusZ1CrlNR2LZp1yed/dZOpw2agqaKin8gnztqf8iKoVFdH13kLwLMT1luZ7Z/ulBoxUoxjgSx6wNRhOGOQkRvv8jRMrWYc8NMZ1W7NkMsHS2QZ4fowh25awmvuuIl9rkm2LOl6gvqmJCYaAobNJxixcx/MJ707CUWg1yVnp9KyjEuUDTco5qwHg89L78ChAFCMEFK0HTcnEqJrVc6INiHnkcUHTOyL/VPLiGT/xzmCbV53wSPsxSzV+3qBgC2IvGitIVtxE4JIEbMySRBo1PIeo7UF75Gfe6qq1uodFikZAiFvD217h01dMUKx+tZUT7Yh4YPOG/FufPBneHevLw1fUbi+xXtpq/GPi++Z5QwmytpA/em8Ta92Xa/m766JCzT6ZXCwZSK24JIBG9ag4SdfetLket0fd1IK63KSQTY8QLuFvrrMv0GmNHDri+i5V6MPY4h/sG+Sk8Iud56YXNfVeFm6zBgII3Fx9DN8N/y1koQ8smplZxKADwD+0zRTyKUC+thsScA/RmzYfBy4jMRA+CW/TpMb6nnHjuaRCprH5M1eqLBtTISRacxgIdz7oTLc9ZbUYkPXIXDKPs7uePjutXB31sxt/sv3xUzHYb1oFgdBFgB63K8y36F/DUPOrKgN5VPkzq6HfWNT6wjsDbgtU9hkSy1oIIawJAFMfxRudc9ImbBiBCY+jqrKMmYPd9A4Y4LVVSsAZXg4V2rnl20NPNkj7AibSbYL"
+
+.field public static final FALSE:Z = false
+
+.field public static final FIREBASE_REMOTE_CONFIG_REFRESH_INTERVAL_SECONDS:J = 0x4b0L
+
+.field public static GRPC_USER_AGENT:Ljava/lang/String; = null
+
+.field public static final INSTALLER_PACKAGE_NAME:Ljava/lang/String; = "com.android.vending"
+
+.field public static final KIK_APP_NAME:Ljava/lang/String; = "KIK-Red"
+
+.field public static final KIK_FIREBASE_SIGNATURE_HASH:Ljava/lang/String; = "F104F7CCE13668126FF70C559931BC9E2DE3030C"
+
+.field public static final KIK_PACKAGE_NAME:Ljava/lang/String; = "kik.red"
+
+.field public static final TRUE:Z = true
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const-string v0, "grpc-java-okhttp/1.57.2"
+
+    sput-object v0, Lxiphias/StaticConstants;->GRPC_USER_AGENT:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static getFaceUnityKey()[B
+    .locals 2
+
+    const-string v0, "1Bl2gzasfRJZydVFY40rRGeiLqC5qo2H3RLbPDdu6WwnSZKacRvblwL304Z4AkhreI+DAzzuSGEjQnwwDGVyzUARHSGwz8N2sRQhoasmohcjJwAe8iwTMdJsFgZbvZ0UXEPXggWnq/NvEF92kDmi+39fDqho/w1n6SR3sN0zuNgyUTLEomxLK1z+99Jl/WLWamlqi3FFv3Dwy4SlfKd5nCrtappaA0ITsHC814HKfvD1D9PRsooqlZZ94Ea4SEoeoS6kmXVJ3bfrELFCxgPkxVTtpjIajxylLOUfylfe44XQZ5rQdFAtXSMKwtDUmiU8DoyKQsqrWNfMhNCUVqx/b9BoHnKFxoCekRUuGcN6IfBfU0QBgGag9HPrEzDgvuJslZRXFNBBdGJbjzitWAleMTAI0C0NQChq2OONcnmQ99P3cLxwIv2oIQm+tjKFC4FtbbVP+mRs74As/KIlo/5r7XFzgRzOAFxl31iTBTTebQW5jL9YulLqAJ+WIK1ADwaFp23x9r6Gvyz+q5HrWHP+i3y3KnYY8pqlBHWkuAzVUAA0MJKU8uzXczONZQ7Kzr++uEVEOqiDeGbm5vH9eAiE+9X/a1SEJ3ecsqYLlPJfi7U4/NVP/RKkbb7DZDNBYk6N7bmEnNUayTj0/SyF6l7XEAwQoipzog9+QAr6LzTyPHOfGO6pm3oP3Cy+zHDL1jPoAOMuSSKRw72y5Y8Vhuw/jEnRZcFpmd0IQwIhYpSm4QaQVgk+9gNc12hMo8WRjnJu5Qz01HwGuu04yZbabPbsGOBQzv0klzCHL/33uAtlGgRdueLwUMuouLdEOgaF99KOzBW0MVfpomI7TTB29uyQ+IWYKw9ZuAhKF3iRgzPlr7oEtVVxtA9xnjM40+1mwoW0yFaHNGB+gAb0fXEpf9DHDWMih8YcMzvOc4QKkvZR7sqxPvMeXEBx16fQseG1eDMsUquvFtuALo1m7TVRmpY/0KaCRJTQHpLYCCusRwEaqOZ2vE7NLimMoYXQ5Hz7GNVEy69a6W4yG9mmqwXR45kcs+0fMdoWIRgs8zzxSM5TuDjPgWlD01JrjoogCAXLCBAARk7w/mHUOM8591GUIdYceZKfy1ryzHh+KXaxuQ9XBLxaGCIhnF94wE2A0dXSmkRIpIpQsiQaelJfeYn9Vq020xCJJdAeie/36DQWDdoPgy23zb1qZ0LDyz+0+OusZ1CrlNR2LZp1yed/dZOpw2agqaKin8gnztqf8iKoVFdH13kLwLMT1luZ7Z/ulBoxUoxjgSx6wNRhOGOQkRvv8jRMrWYc8NMZ1W7NkMsHS2QZ4fowh25awmvuuIl9rkm2LOl6gvqmJCYaAobNJxixcx/MJ707CUWg1yVnp9KyjEuUDTco5qwHg89L78ChAFCMEFK0HTcnEqJrVc6INiHnkcUHTOyL/VPLiGT/xzmCbV53wSPsxSzV+3qBgC2IvGitIVtxE4JIEbMySRBo1PIeo7UF75Gfe6qq1uodFikZAiFvD217h01dMUKx+tZUT7Yh4YPOG/FufPBneHevLw1fUbi+xXtpq/GPi++Z5QwmytpA/em8Ta92Xa/m766JCzT6ZXCwZSK24JIBG9ag4SdfetLket0fd1IK63KSQTY8QLuFvrrMv0GmNHDri+i5V6MPY4h/sG+Sk8Iud56YXNfVeFm6zBgII3Fx9DN8N/y1koQ8smplZxKADwD+0zRTyKUC+thsScA/RmzYfBy4jMRA+CW/TpMb6nnHjuaRCprH5M1eqLBtTISRacxgIdz7oTLc9ZbUYkPXIXDKPs7uePjutXB31sxt/sv3xUzHYb1oFgdBFgB63K8y36F/DUPOrKgN5VPkzq6HfWNT6wjsDbgtU9hkSy1oIIawJAFMfxRudc9ImbBiBCY+jqrKMmYPd9A4Y4LVVSsAZXg4V2rnl20NPNkj7AibSbYL"
+
+    const/16 v1, 0x8
+
+    invoke-static {v0, v1}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    move-result-object v0
+
+    return-object v0
+.end method

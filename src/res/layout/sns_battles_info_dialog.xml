@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/sns_half_grid_padding" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Medium" android:textSize="18.0sp" android:textColor="#ff444444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_grid_padding" android:text="@string/sns_battles_info_dialog_title" />
+    <TextView android:textColor="#b9444444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_grid_padding" android:layout_marginTop="@dimen/half_grid_padding" android:layout_marginRight="@dimen/sns_grid_padding" android:text="@string/sns_battles_info_dialog_message" />
+    <Button android:id="@id/sns_battle_info_okay_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_half_grid_padding" android:layout_marginTop="@dimen/half_grid_padding" android:layout_marginRight="@dimen/sns_half_grid_padding" android:text="@string/btn_ok" style="@style/Sns.Button" />
+</LinearLayout>

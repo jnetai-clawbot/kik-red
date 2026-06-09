@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/parent" android:background="@color/sns_invertable_white_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/sns_leaderboard_appbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+            <androidx.cardview.widget.CardView android:id="@id/sns_leaderboard_spinner_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_grid_padding" android:layout_marginTop="@dimen/sns_grid_padding" android:layout_marginRight="@dimen/sns_grid_padding" android:layout_marginBottom="@dimen/sns_grid_padding" android:layout_marginStart="@dimen/sns_grid_padding" android:layout_marginEnd="@dimen/sns_grid_padding" app:cardCornerRadius="10.0dip" app:cardElevation="5.0dip">
+                <Spinner android:id="@id/sns_leaderboard_type_spinner" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:popupBackground="@drawable/sns_leaderboard_dropdown_bg" android:popupElevation="5.0dip" />
+            </androidx.cardview.widget.CardView>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/sns_leaderboard_slices" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sns_grid_padding" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/sns_control_accent" android:gravity="center" android:id="@id/sns_leaderboard_weekly_reset" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="io.wondrous.sns.views.coordinator.MatchParentBoundsBehavior" />
+    <include android:id="@id/sns_leaderboard_global_empty_view" android:visibility="gone" layout="@layout/sns_leaderboard_empty_specific" />
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/grid_padding" android:layout_marginStart="@dimen/grid_padding" android:layout_marginEnd="@dimen/grid_padding" layout="@layout/sns_leaderboard_self_position_item" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

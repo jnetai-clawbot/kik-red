@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_developers"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.red.widget.preferences.DeveloperModePreference android:enabled="true" android:title="@string/title_developer_mode" android:key="kik.developer.mode" android:summary="@string/summary_developer" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Enable ANR Logging" android:key="blue.log.anr" android:summary="Sends &quot;App not responding&quot; errors to the KIK-Red developer to help improve app performance" android:defaultValue="false" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Disable Easter Eggs" android:key="blue.disable.easter.eggs" android:summary="Disables all easter eggs in the app (such as holiday themes)" android:defaultValue="false" kik:pref_divider="full_bottom" />
+    <blue.lIlI11lIl1l1Il1I android:title="Crash Test" kik:pref_divider="full_bottom" />
+</PreferenceScreen>

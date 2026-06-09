@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sns_next_date_marquee_near_me" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sns_next_date_near_me_header" android:textAllCaps="true" style="?snsFeedHeaderStyle" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/sns_next_date_marquee_list" android:paddingLeft="@dimen/sns_marquee_horizontal_padding" android:paddingRight="@dimen/sns_marquee_horizontal_padding" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:minHeight="@dimen/sns_marquee_tile_size" android:overScrollMode="never" />
+    <TextView android:id="@id/sns_next_date_marquee_hot_label" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sns_next_date_live_feed_hot_label" android:textAllCaps="true" style="?snsFeedHeaderStyle" />
+    <TextView android:id="@id/sns_date_night_marquee_nearby_label" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sns_date_night_nearby_header" style="?snsFeedHeaderDateNightStyle" />
+</LinearLayout>

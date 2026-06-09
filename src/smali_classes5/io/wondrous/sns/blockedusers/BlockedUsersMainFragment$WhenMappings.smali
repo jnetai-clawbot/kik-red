@@ -1,0 +1,160 @@
+.class public final synthetic Lio/wondrous/sns/blockedusers/BlockedUsersMainFragment$WhenMappings;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/wondrous/sns/blockedusers/BlockedUsersMainFragment;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1001
+    name = "WhenMappings"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final synthetic a:[I
+
+.field public static final synthetic b:[I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 7
+
+    invoke-static {}, Lio/wondrous/sns/blockedusers/BlockedUsersContentState;->values()[Lio/wondrous/sns/blockedusers/BlockedUsersContentState;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sget-object v1, Lio/wondrous/sns/blockedusers/BlockedUsersContentState;->LOADING:Lio/wondrous/sns/blockedusers/BlockedUsersContentState;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+
+    sget-object v1, Lio/wondrous/sns/blockedusers/BlockedUsersContentState;->NO_LOADING:Lio/wondrous/sns/blockedusers/BlockedUsersContentState;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v3, 0x2
+
+    aput v3, v0, v1
+
+    sget-object v1, Lio/wondrous/sns/blockedusers/BlockedUsersContentState;->CONTENT:Lio/wondrous/sns/blockedusers/BlockedUsersContentState;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v4, 0x3
+
+    aput v4, v0, v1
+
+    sget-object v1, Lio/wondrous/sns/blockedusers/BlockedUsersContentState;->EMPTY_DATA:Lio/wondrous/sns/blockedusers/BlockedUsersContentState;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v5, 0x4
+
+    aput v5, v0, v1
+
+    sget-object v1, Lio/wondrous/sns/blockedusers/BlockedUsersContentState;->EMPTY_SEARCH_DATA:Lio/wondrous/sns/blockedusers/BlockedUsersContentState;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v6, 0x5
+
+    aput v6, v0, v1
+
+    sget-object v1, Lio/wondrous/sns/blockedusers/BlockedUsersContentState;->ERROR:Lio/wondrous/sns/blockedusers/BlockedUsersContentState;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v6, 0x6
+
+    aput v6, v0, v1
+
+    sget-object v1, Lio/wondrous/sns/blockedusers/BlockedUsersContentState;->ERROR_NO_INTERNET:Lio/wondrous/sns/blockedusers/BlockedUsersContentState;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v6, 0x7
+
+    aput v6, v0, v1
+
+    sput-object v0, Lio/wondrous/sns/blockedusers/BlockedUsersMainFragment$WhenMappings;->a:[I
+
+    invoke-static {}, Lio/wondrous/sns/NetworkState$Status;->values()[Lio/wondrous/sns/NetworkState$Status;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sget-object v1, Lio/wondrous/sns/NetworkState$Status;->LOADING:Lio/wondrous/sns/NetworkState$Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aput v2, v0, v1
+
+    sget-object v1, Lio/wondrous/sns/NetworkState$Status;->CANCELED:Lio/wondrous/sns/NetworkState$Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aput v3, v0, v1
+
+    sget-object v1, Lio/wondrous/sns/NetworkState$Status;->SUCCESS:Lio/wondrous/sns/NetworkState$Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aput v4, v0, v1
+
+    sget-object v1, Lio/wondrous/sns/NetworkState$Status;->FAILED:Lio/wondrous/sns/NetworkState$Status;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aput v5, v0, v1
+
+    sput-object v0, Lio/wondrous/sns/blockedusers/BlockedUsersMainFragment$WhenMappings;->b:[I
+
+    return-void
+.end method

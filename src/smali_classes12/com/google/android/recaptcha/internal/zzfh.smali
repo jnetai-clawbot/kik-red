@@ -1,0 +1,21 @@
+.class final Lcom/google/android/recaptcha/internal/zzfh;
+.super Ljava/lang/Object;
+.source "com.google.android.recaptcha:recaptcha@@18.2.1"
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/google/android/recaptcha/internal/zzfg;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

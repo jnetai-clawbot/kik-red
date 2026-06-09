@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbarlayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/appbarlayout_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+            <com.meetme.util.android.ui.SnsStyledTabLayout android:id="@id/sns_next_date_tab_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sns_next_date_tabs_height" style="?snsLiveFeedNextDateTabsStyle" />
+            <io.wondrous.sns.feed2.DateTabBottomBorder android:id="@id/dateTabBottomBorder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sns_announcements_marquee" />
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/sns_live_preview" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <io.wondrous.sns.ui.widgets.SnsLiveFeedTabsViewPager android:id="@id/sns_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" app:scrollingDescendant="@android:id/list" style="?snsLiveFeedPagerStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sns_live_tabs_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="io.wondrous.sns.ui.SnsLiveTabsBehavior" style="?snsLiveFeedTabsContainerStyle">
+        <io.wondrous.sns.feed2.FeedMenuView android:id="@id/sns_feed_menu_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <io.wondrous.sns.feed2.LiveTabBottomBorder android:id="@id/liveTabLayoutBottomBorder" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/sns_feed_overlay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/sns_fab_tools_container" android:padding="@dimen/sns_fab_container_padding" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sns_fab_tools_margin_bottom" android:layout_marginStart="@dimen/sns_fab_tools_margin_left" app:layout_anchor="@id/sns_pager" app:layout_anchorGravity="start|bottom" app:layout_behavior="com.meetme.util.android.FabViewBehavior">
+        <ImageView android:id="@id/sns_fab_tools" android:layout_width="@dimen/sns_fab_size" android:layout_height="@dimen/sns_fab_size" style="@style/Sns.Fab.Tools" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/sns_fab_live_bonus_container" android:padding="@dimen/sns_fab_container_padding" android:visibility="gone" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sns_fab_live_bonus_margin_bottom" android:layout_marginStart="@dimen/sns_fab_live_bonus_margin_left" app:layout_anchor="@id/sns_pager" app:layout_anchorGravity="left|bottom" app:layout_behavior="com.meetme.util.android.FabViewBehavior">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/sns_fab_size" android:layout_height="@dimen/sns_fab_size" android:src="@drawable/sns_live_bonus_gold_fab" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/sns_fab_live_bonus_lottie" android:layout_width="@dimen/sns_fab_live_bonus_lottie_size" android:layout_height="@dimen/sns_fab_live_bonus_lottie_size" app:lottie_fileName="live_bonus_sparkles.json" app:lottie_loop="true" />
+    </FrameLayout>
+    <Button android:id="@id/sns_fab_go_live" android:layout_width="wrap_content" android:layout_height="@dimen/sns_fab_go_live_height" android:layout_marginBottom="@dimen/sns_fab_go_live_margin_bottom" android:text="@string/sns_start_broadcast" android:scaleX="0.0" android:scaleY="0.0" app:layout_anchor="@id/sns_pager" app:layout_anchorGravity="center|bottom" app:layout_behavior="com.meetme.util.android.FabViewBehavior" style="?snsFabGoLiveStyle" />
+    <ImageView android:id="@id/sns_fab_go_live_fallback" android:visibility="gone" android:layout_width="@dimen/sns_fab_go_live_with_icon_width" android:layout_height="@dimen/sns_fab_go_live_height" android:layout_marginBottom="@dimen/sns_fab_go_live_margin_bottom" android:scaleType="centerInside" android:adjustViewBounds="true" app:layout_anchor="@id/sns_pager" app:layout_anchorGravity="center|bottom" app:layout_behavior="com.meetme.util.android.FabViewBehavior" style="?snsFabGoLiveStyle" />
+    <ImageView android:id="@id/sns_fab_filters" android:layout_width="@dimen/sns_fab_size" android:layout_height="@dimen/sns_fab_size" android:layout_marginBottom="@dimen/sns_fab_margin_bottom" android:layout_marginEnd="@dimen/sns_fab_margin_left_right" app:layout_anchor="@id/sns_pager" app:layout_anchorGravity="end|bottom" app:layout_behavior="com.meetme.util.android.FabViewBehavior" style="@style/Sns.Fab.Filters" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

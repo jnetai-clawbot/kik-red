@@ -1,0 +1,239 @@
+.class final Le7/u;
+.super Le7/a0$e$e;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Le7/u$a;
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:I
+
+.field private final b:Ljava/lang/String;
+
+.field private final c:Ljava/lang/String;
+
+.field private final d:Z
+
+
+# direct methods
+.method constructor <init>(ILjava/lang/String;Ljava/lang/String;Z)V
+    .locals 0
+
+    invoke-direct {p0}, Le7/a0$e$e;-><init>()V
+
+    iput p1, p0, Le7/u;->a:I
+
+    iput-object p2, p0, Le7/u;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Le7/u;->c:Ljava/lang/String;
+
+    iput-boolean p4, p0, Le7/u;->d:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Le7/u;->c:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final c()I
+    .locals 1
+
+    iget v0, p0, Le7/u;->a:I
+
+    return v0
+.end method
+
+.method public final d()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Le7/u;->b:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final e()Z
+    .locals 1
+
+    iget-boolean v0, p0, Le7/u;->d:Z
+
+    return v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Le7/a0$e$e;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_2
+
+    check-cast p1, Le7/a0$e$e;
+
+    iget v1, p0, Le7/u;->a:I
+
+    invoke-virtual {p1}, Le7/a0$e$e;->c()I
+
+    move-result v3
+
+    if-ne v1, v3, :cond_1
+
+    iget-object v1, p0, Le7/u;->b:Ljava/lang/String;
+
+    invoke-virtual {p1}, Le7/a0$e$e;->d()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Le7/u;->c:Ljava/lang/String;
+
+    invoke-virtual {p1}, Le7/a0$e$e;->b()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    iget-boolean v1, p0, Le7/u;->d:Z
+
+    invoke-virtual {p1}, Le7/a0$e$e;->e()Z
+
+    move-result p1
+
+    if-ne v1, p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+
+    :cond_2
+    return v2
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    iget v0, p0, Le7/u;->a:I
+
+    const v1, 0xf4243
+
+    xor-int/2addr v0, v1
+
+    mul-int v0, v0, v1
+
+    iget-object v2, p0, Le7/u;->b:Ljava/lang/String;
+
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    move-result v2
+
+    xor-int/2addr v0, v2
+
+    mul-int v0, v0, v1
+
+    iget-object v2, p0, Le7/u;->c:Ljava/lang/String;
+
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    move-result v2
+
+    xor-int/2addr v0, v2
+
+    mul-int v0, v0, v1
+
+    iget-boolean v1, p0, Le7/u;->d:Z
+
+    if-eqz v1, :cond_0
+
+    const/16 v1, 0x4cf
+
+    goto :goto_0
+
+    :cond_0
+    const/16 v1, 0x4d5
+
+    :goto_0
+    xor-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "OperatingSystem{platform="
+
+    invoke-static {v0}, Lai/medialab/medialabauth/l;->n(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget v1, p0, Le7/u;->a:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", version="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Le7/u;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", buildVersion="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Le7/u;->c:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", jailbroken="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Le7/u;->d:Z
+
+    const-string/jumbo v2, "}"
+
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/a;->h(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

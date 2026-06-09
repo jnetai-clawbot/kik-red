@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/marquee_more_tile" android:foreground="?android:selectableItemBackground" style="@style/BaseCardView.Marquee"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:background="@color/sns_live_marquee_more_background" android:paddingBottom="@dimen/sns_launcher_mask_radius" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sns_live_marquee_more" android:scaleType="centerInside" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/sns_invertable_white_text" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/sns_more" android:maxLines="1" android:singleLine="true" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

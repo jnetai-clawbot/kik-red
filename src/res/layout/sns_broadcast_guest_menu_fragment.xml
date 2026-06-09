@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/guest_menu_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="@dimen/grid_padding" style="?snsBroadcastGuestMenuHeader" />
+    <io.wondrous.sns.broadcast.guest.menu.GuestMenuView android:id="@id/guest_menu_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

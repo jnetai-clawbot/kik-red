@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_chat_settings" android:key="@string/title_chat_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.red.widget.preferences.SafeSearchPreference android:enabled="true" android:title="@string/safe_search_title" android:key="kik.safesearch" android:summary="@string/safe_search_summary" kik:pref_divider="top|full_bottom" />
+    <blue.I11Il11IllII1IlI android:enabled="true" android:title="NSFW Detection Threshold" android:key="kik.safesearch" android:summary="Change the minimum NSFW score required for a detection" kik:pref_divider="top|full_bottom" />
+    <kik.red.widget.preferences.BlockListPreference android:enabled="true" android:title="@string/title_block_list" android:key="kik.open.block.list" android:summary="@string/block_list_description" kik:pref_divider="top" />
+    <kik.red.widget.preferences.EnterKeySendPreference android:enabled="true" android:title="@string/title_enter_key_send" android:key="kik.enterbutton.sends" android:summary="@string/enter_send_summary" kik:pref_divider="top" />
+    <kik.red.widget.preferences.ChatBubblesPreference android:entries="@array/chat_bubble_colors" android:title="@string/settings_bubble_color" android:key="kik.sweet.bubble.colors" android:summary="@string/change_chat_bubble_color_summary" android:entryValues="@array/chat_bubble_values" kik:pref_divider="top" />
+    <kik.red.widget.preferences.KikVideoPrefetchPreference android:entries="@array/prefetch_video_options" android:title="@string/settings_auto_download_videos" android:key="kik.chat.video.prefetch" android:entryValues="@array/prefetch_video_options" kik:pref_divider="top" />
+    <kik.red.widget.preferences.AutoplayVideoPreference android:entries="@array/autoplay_video_options" android:title="@string/settings_autoplay_videos" android:key="kik.chat.video.autoplay" android:summary="@string/settings_autoplay_videos_blurb" android:defaultValue="@string/wifi_and_cellular" android:entryValues="@array/autoplay_video_options" kik:pref_divider="top" />
+    <kik.red.widget.preferences.NewChatsPreference android:enabled="true" android:entries="@array/newchats_filter_options" android:title="@string/new_chats_title" android:key="kik.chat.newchatfilter" android:defaultValue="@string/new_chats_option_val_groups" android:entryValues="@array/newchats_filter_val_options" kik:pref_divider="top|full_bottom" />
+</PreferenceScreen>

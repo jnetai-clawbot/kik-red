@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/chuck_ic_search_white_24dp" android:id="@id/search" android:title="@string/chuck_search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="ifRoom|collapseActionView" />
+    <item android:icon="@drawable/chuck_ic_delete_white_24dp" android:id="@id/clear" android:title="@string/chuck_clear" app:showAsAction="always" />
+    <item android:id="@id/browse_sql" android:visible="false" android:title="@string/chuck_browse_sql_database" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ripple android:color="?colorControlHighlight">
+        <item>
+            <shape android:tint="?colorPrimary" android:shape="rectangle">
+                <corners android:radius="@dimen/sns_pill_button_corner_radius" />
+                <solid android:color="?colorPrimary" />
+            </shape>
+        </item>
+    </ripple>
+</inset>

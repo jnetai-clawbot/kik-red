@@ -1,0 +1,152 @@
+.class public final Lfd/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lfd/a$b;
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/GeneratedMessage$GeneratedExtension<",
+            "Lcom/google/protobuf/DescriptorProtos$FileOptions;",
+            "Lfd/a$b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final b:Lcom/google/protobuf/Descriptors$Descriptor;
+
+.field private static final c:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+.field private static d:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 7
+
+    const-class v0, Lfd/a$b;
+
+    invoke-static {}, Lfd/a$b;->f()Lfd/a$b;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/google/protobuf/GeneratedMessage;->newFileScopedGeneratedExtension(Ljava/lang/Class;Lcom/google/protobuf/Message;)Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;
+
+    move-result-object v0
+
+    sput-object v0, Lfd/a;->a:Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;
+
+    const-string v1, "\n\u0011kik_options.proto\u0012\u0003kik\u001a google/protobuf/descriptor.proto\"t\n\u0011CheckStyleOptions\u0012\u001a\n\u000bignore_path\u0018\u0001 \u0001(\u0008:\u0005false\u0012\u001d\n\u000eignore_version\u0018\u0002 \u0001(\u0008:\u0005false\u0012$\n\u0015ignore_package_prefix\u0018\u0003 \u0001(\u0008:\u0005false:J\n\ncheckstyle\u0012\u001c.google.protobuf.FileOptions\u0018\u00b5\u00a4\u0005 \u0001(\u000b2\u0016.kik.CheckStyleOptionsBd\n\u000fcom.kik.optionsZQgithub.com/kikinteractive/xiphias-model-common/generated/go/kikoptions;kikoptions"
+
+    filled-new-array {v1}, [Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Lfd/a$a;
+
+    invoke-direct {v2}, Lfd/a$a;-><init>()V
+
+    const/4 v3, 0x1
+
+    new-array v3, v3, [Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    invoke-static {}, Lcom/google/protobuf/DescriptorProtos;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    move-result-object v4
+
+    const/4 v5, 0x0
+
+    aput-object v4, v3, v5
+
+    invoke-static {v1, v3, v2}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalBuildGeneratedFileFrom([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;)V
+
+    sget-object v1, Lfd/a;->d:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    invoke-virtual {v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/protobuf/Descriptors$Descriptor;
+
+    sput-object v1, Lfd/a;->b:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    new-instance v2, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    const-string v3, "IgnorePath"
+
+    const-string v4, "IgnoreVersion"
+
+    const-string v6, "IgnorePackagePrefix"
+
+    filled-new-array {v3, v4, v6}, [Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v1, v3}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;-><init>(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
+
+    sput-object v2, Lfd/a;->c:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    sget-object v1, Lfd/a;->d:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    invoke-virtual {v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getExtensions()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/protobuf/Descriptors$FieldDescriptor;
+
+    invoke-virtual {v0, v1}, Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;->internalInit(Lcom/google/protobuf/Descriptors$FieldDescriptor;)V
+
+    invoke-static {}, Lcom/google/protobuf/DescriptorProtos;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    return-void
+.end method
+
+.method static synthetic a()Lcom/google/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    sget-object v0, Lfd/a;->b:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    return-object v0
+.end method
+
+.method static synthetic b()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .locals 1
+
+    sget-object v0, Lfd/a;->c:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    return-object v0
+.end method
+
+.method static synthetic c(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .locals 0
+
+    sput-object p0, Lfd/a;->d:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    return-object p0
+.end method
+
+.method public static d()Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .locals 1
+
+    sget-object v0, Lfd/a;->d:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    return-object v0
+.end method

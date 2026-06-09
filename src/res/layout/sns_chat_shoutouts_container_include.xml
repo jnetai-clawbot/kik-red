@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.wondrous.sns.chat.ui.views.SnsShoutoutLineView android:id="@id/sns_chat_shoutout_line1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" />
+    <io.wondrous.sns.chat.ui.views.SnsShoutoutLineView android:id="@id/sns_chat_shoutout_line2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

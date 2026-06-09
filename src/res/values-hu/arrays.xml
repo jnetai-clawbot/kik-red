@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>A kihívások olyan teljesítendő napi és heti feladatok, amelyekért nyereményt kaphatsz.</item>
+        <item>Teljesítsd a kihívást, és a nyeremény igényléséhez lépj vissza a Kihívások menübe. Az igényelt nyeremények az Elemek menüben találhatók.</item>
+        <item>Vannak könnyen és nehezen teljesíthető kihívások is. A legnagyobb jutalom elnyeréséhez teljesítsd mindet!</item>
+    </string-array>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d seconden vooruitspoelen</item>
+        <item quantity="one">%d seconde vooruitspoelen</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d seconden terugspoelen</item>
+        <item quantity="one">%d seconde terugspoelen</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nieuwe meldingen</item>
+        <item quantity="one">%d nieuwe melding</item>
+    </plurals>
+    <plurals name="sns_broadcast_interuption_streamer">
+        <item quantity="other">Maak verbinding met internet, anders wordt je stream over %1$d seconden beëindigd.</item>
+        <item quantity="one">Maak verbinding met internet, anders wordt je stream over %1$d seconde beëindigd.</item>
+    </plurals>
+    <plurals name="sns_broadcast_video_ad_footer_with_period">
+        <item quantity="other">Koop {link} en krijg {days} dagen lang geen reclame meer</item>
+        <item quantity="one">Koop {link} en krijg een dag lang geen reclame meer</item>
+    </plurals>
+    <plurals name="sns_broadcaster_end_thanks_sent">
+        <item quantity="other">Bericht verzonden naar %1$d schenkers!</item>
+        <item quantity="one">Bericht verzonden naar %1$d schenker!</item>
+    </plurals>
+    <plurals name="sns_characters_remaining">
+        <item quantity="other">%1$d resterende karakters.</item>
+        <item quantity="one">%1$d resterende karakter.</item>
+    </plurals>
+    <plurals name="sns_date_night_date_expires_in_days">
+        <item quantity="other">Verloopt binnen %1$d dagen!</item>
+        <item quantity="one">Verloopt binnen %1$d dag!</item>
+    </plurals>
+    <plurals name="sns_duration_days_full">
+        <item quantity="other">%1$d dagen</item>
+        <item quantity="one">%1$d dag</item>
+    </plurals>
+    <plurals name="sns_duration_hours">
+        <item quantity="other">%1$d u</item>
+        <item quantity="one">%1$d u</item>
+    </plurals>
+    <plurals name="sns_duration_hours_full">
+        <item quantity="other">%1$d uren</item>
+        <item quantity="one">%1$d uur</item>
+    </plurals>
+    <plurals name="sns_duration_minutes">
+        <item quantity="other">%1$d m</item>
+        <item quantity="one">%1$d m</item>
+    </plurals>
+    <plurals name="sns_duration_minutes_full">
+        <item quantity="other">%1$d minuten</item>
+        <item quantity="one">%1$d minuut</item>
+    </plurals>
+    <plurals name="sns_duration_seconds">
+        <item quantity="other">%1$d s</item>
+        <item quantity="one">%1$d s</item>
+    </plurals>
+    <plurals name="sns_duration_seconds_full">
+        <item quantity="other">%1$d seconden</item>
+        <item quantity="one">%1$d seconde</item>
+    </plurals>
+    <plurals name="sns_favorites_marquee_callout">
+        <item quantity="other">Favorieten zijn nu aan het streamen!</item>
+        <item quantity="one">Favoriet is nu aan het streamen!</item>
+    </plurals>
+    <plurals name="sns_guidelines_hours">
+        <item quantity="other">%1$d uren</item>
+        <item quantity="one">%1$d uur</item>
+    </plurals>
+    <plurals name="sns_guidelines_minutes">
+        <item quantity="other">%1$d minuten</item>
+        <item quantity="one">%1$d minuut</item>
+    </plurals>
+    <plurals name="sns_live_preview_favorites_button_text">
+        <item quantity="other">%1$d Favorieten Live!</item>
+        <item quantity="one">%1$d Favoriet Live!</item>
+    </plurals>
+    <plurals name="sns_live_tools_menu_fans_label">
+        <item quantity="other">Fans</item>
+        <item quantity="one">Fan</item>
+    </plurals>
+    <plurals name="sns_multi_guest_spots_left">
+        <item quantity="other">%1$d plaatsen beschikbaar</item>
+        <item quantity="one">%1$d plaats beschikbaar</item>
+    </plurals>
+    <plurals name="sns_mystery_wheel_limited_send_usage_description">
+        <item quantity="other">Dit gelimiteerde wiel kan maar %1$s keer worden verzonden voordat het verdwijnt! Stuur er nu één naar je favoriete streamer!</item>
+        <item quantity="one">Dit beperkte wiel kan maar %1$s keer worden verzonden voordat het verdwijnt! Stuur er nu één naar je favoriete streamer!</item>
+    </plurals>
+    <plurals name="sns_points">
+        <item quantity="other">punten</item>
+        <item quantity="one">punt</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes">
+        <item quantity="other">%1$d gratis stemmen per stemmer</item>
+        <item quantity="one">%1$d gratis stem per stemmer</item>
+    </plurals>
+    <plurals name="sns_polls_free_votes_exceeded">
+        <item quantity="other">Toegestane stemmen overschreden</item>
+        <item quantity="one">Toegestane stem overschreden</item>
+    </plurals>
+    <plurals name="sns_polls_votes">
+        <item quantity="other">%1$d Stemmen</item>
+        <item quantity="one">%1$d Stem</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_message_multiple">
+        <item quantity="other">Weet je zeker dat je %1$d wilt verwijderen als bouncers?</item>
+        <item quantity="one">Weet je zeker dat je %1$d wilt verwijderen als bouncer?</item>
+    </plurals>
+    <plurals name="sns_remove_bouncer_dialog_title">
+        <item quantity="other">Verwijder %1$d streamers uit bouncers</item>
+        <item quantity="one">Verwijder %1$d streamer uit bouncers</item>
+    </plurals>
+    <plurals name="sns_scheduled_show_advanced_scheduling_error">
+        <item quantity="other">Shows kunnen uitsluitend %1$d weken van tevoren worden gepland.</item>
+        <item quantity="one">Shows kunnen uitsluitend %1$d week van tevoren worden gepland.</item>
+    </plurals>
+    <plurals name="sns_selected_gifters_chat">
+        <item quantity="other">%1$d Schenkers</item>
+        <item quantity="one">1 Schenker</item>
+    </plurals>
+    <plurals name="sns_shoutout_send_dialog_remaining_count_label">
+        <item quantity="other">%1$d Groeten beschikbaar</item>
+        <item quantity="one">%1$d Groet beschikbaar</item>
+    </plurals>
+    <plurals name="sns_shows_scheduled">
+        <item quantity="other">%1$d/%2$d Shows Scheduled</item>
+        <item quantity="one">%1$d/%2$d Show Gepland</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_diamonds">
+        <item quantity="other">Diamanten</item>
+        <item quantity="one">Diamant</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_fans">
+        <item quantity="other">Fans</item>
+        <item quantity="one">Fan</item>
+    </plurals>
+    <plurals name="sns_streamer_profile_wins">
+        <item quantity="other">Winsten</item>
+        <item quantity="one">Winst</item>
+    </plurals>
+    <plurals name="sns_streamer_sp_boost_item_activated_message">
+        <item quantity="other">Gebruikte een %1$s gedurende %2$d minuten!</item>
+        <item quantity="one">Gebruikte een %1$s gedurende %2$d minuut!</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_message_multiple">
+        <item quantity="other">Weet je zeker dat je %1$d wil verwijderen uit favorieten?</item>
+        <item quantity="one">Weet je zeker dat je %1$d wil verwijderen uit favorieten?</item>
+    </plurals>
+    <plurals name="sns_unfollow_dialog_title">
+        <item quantity="other">Verwijder %1$d streamers uit favorieten</item>
+        <item quantity="one">Verwijder %1$d streamer uit favorieten</item>
+    </plurals>
+</resources>

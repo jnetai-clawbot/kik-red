@@ -1,0 +1,903 @@
+.class public Lcom/applovin/impl/mediation/c/b/c;
+.super Lcom/applovin/impl/mediation/c/d;
+.source "SourceFile"
+
+
+# instance fields
+.field private final awg:Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;
+
+.field private final awh:Lcom/applovin/impl/mediation/c/a$a;
+
+.field private awi:Ljava/lang/String;
+
+.field private awj:Ljava/lang/String;
+
+.field private awk:Ljava/lang/String;
+
+.field private do:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Lwp/b;Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;Lcom/applovin/mediation/MaxAdFormat;Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;Lcom/applovin/impl/sdk/n;)V
+    .locals 6
+
+    const-string v1, "TaskProcessTaboolaAd"
+
+    move-object v0, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p5
+
+    invoke-direct/range {v0 .. v5}, Lcom/applovin/impl/mediation/c/d;-><init>(Ljava/lang/String;Lwp/b;Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;Lcom/applovin/mediation/MaxAdFormat;Lcom/applovin/impl/sdk/n;)V
+
+    invoke-static {}, Lcom/applovin/impl/mediation/c/a;->za()Lcom/applovin/impl/mediation/c/a$a;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    const-string p1, ""
+
+    iput-object p1, p0, Lcom/applovin/impl/mediation/c/b/c;->do:Ljava/lang/String;
+
+    iput-object p1, p0, Lcom/applovin/impl/mediation/c/b/c;->awi:Ljava/lang/String;
+
+    iput-object p1, p0, Lcom/applovin/impl/mediation/c/b/c;->awj:Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    iput-object p1, p0, Lcom/applovin/impl/mediation/c/b/c;->awk:Ljava/lang/String;
+
+    iput-object p4, p0, Lcom/applovin/impl/mediation/c/b/c;->awg:Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;
+
+    return-void
+.end method
+
+.method private a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    instance-of v0, p1, Lwp/b;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    :cond_0
+    check-cast p1, Lwp/b;
+
+    const-string v0, "onEvent"
+
+    const-string v2, ""
+
+    invoke-static {p1, v0, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v3, "type"
+
+    invoke-static {p1, v3, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {p2}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_1
+
+    return-object v1
+
+    :cond_1
+    invoke-static {p3}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_2
+
+    invoke-virtual {p3, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_2
+
+    return-object v1
+
+    :cond_2
+    const-string p2, "value"
+
+    invoke-static {p1, p2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method private a(Lwp/b;Lwp/a;Lwp/a;)Ljava/util/List;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lwp/b;",
+            "Lwp/a;",
+            "Lwp/a;",
+            ")",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    const-string v1, "available"
+
+    const/4 v2, 0x0
+
+    invoke-static {p1, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
+
+    move-result v4
+
+    const-string v5, "Processed impression URL: "
+
+    const-string v6, "TaskProcessTaboolaAd"
+
+    if-eqz v4, :cond_1
+
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    iget-object v4, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    invoke-static {v5, v3, v4, v6}, Landroidx/compose/foundation/a;->n(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/x;Ljava/lang/String;)V
+
+    :cond_0
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_1
+    const-string v3, "visible"
+
+    invoke-static {p1, v3, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    iget-object v4, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    invoke-static {v5, p1, v4, v6}, Landroidx/compose/foundation/a;->n(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/x;Ljava/lang/String;)V
+
+    :cond_2
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_3
+    const/4 p1, 0x0
+
+    const-string v4, "pixel"
+
+    if-eqz p2, :cond_7
+
+    const/4 v7, 0x0
+
+    :goto_0
+    invoke-virtual {p2}, Lwp/a;->g()I
+
+    move-result v8
+
+    if-ge v7, v8, :cond_7
+
+    invoke-static {p2, v7, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getObjectAtIndex(Lwp/a;ILjava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    invoke-direct {p0, v8, v1, v4}, Lcom/applovin/impl/mediation/c/b/c;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v9}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_4
+
+    goto :goto_1
+
+    :cond_4
+    invoke-direct {p0, v8, v3, v4}, Lcom/applovin/impl/mediation/c/b/c;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    :goto_1
+    invoke-static {v9}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_5
+
+    goto :goto_2
+
+    :cond_5
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_6
+
+    iget-object v8, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    invoke-static {v5, v9, v8, v6}, Landroidx/compose/foundation/a;->n(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/x;Ljava/lang/String;)V
+
+    :cond_6
+    invoke-virtual {v0, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :goto_2
+    add-int/lit8 v7, v7, 0x1
+
+    goto :goto_0
+
+    :cond_7
+    if-eqz p3, :cond_a
+
+    :goto_3
+    invoke-virtual {p3}, Lwp/a;->g()I
+
+    move-result p2
+
+    if-ge p1, p2, :cond_a
+
+    invoke-static {p3, p1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getObjectAtIndex(Lwp/a;ILjava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-direct {p0, p2, v2, v4}, Lcom/applovin/impl/mediation/c/b/c;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    goto :goto_4
+
+    :cond_8
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_9
+
+    iget-object v1, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    invoke-static {v5, p2, v1, v6}, Landroidx/compose/foundation/a;->n(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/x;Ljava/lang/String;)V
+
+    :cond_9
+    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :goto_4
+    add-int/lit8 p1, p1, 0x1
+
+    goto :goto_3
+
+    :cond_a
+    return-object v0
+.end method
+
+.method private a(Lwp/b;Lwp/a;)Lwp/a;
+    .locals 7
+
+    new-instance v0, Lwp/a;
+
+    invoke-direct {v0}, Lwp/a;-><init>()V
+
+    const-string v1, "click"
+
+    const/4 v2, 0x0
+
+    invoke-static {p1, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
+
+    move-result v3
+
+    const-string v4, "Processed click tracking URL: "
+
+    const-string v5, "TaskProcessTaboolaAd"
+
+    if-eqz v3, :cond_1
+
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    iget-object v3, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    invoke-static {v4, p1, v3, v5}, Landroidx/compose/foundation/a;->n(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/x;Ljava/lang/String;)V
+
+    :cond_0
+    invoke-virtual {v0, p1}, Lwp/a;->q(Ljava/lang/Object;)Lwp/a;
+
+    :cond_1
+    if-eqz p2, :cond_4
+
+    const/4 p1, 0x0
+
+    :goto_0
+    invoke-virtual {p2}, Lwp/a;->g()I
+
+    move-result v3
+
+    if-ge p1, v3, :cond_4
+
+    invoke-static {p2, p1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getObjectAtIndex(Lwp/a;ILjava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    const-string v6, "pixel"
+
+    invoke-direct {p0, v3, v1, v6}, Lcom/applovin/impl/mediation/c/b/c;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_3
+
+    iget-object v6, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    invoke-static {v4, v3, v6, v5}, Landroidx/compose/foundation/a;->n(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/x;Ljava/lang/String;)V
+
+    :cond_3
+    invoke-virtual {v0, v3}, Lwp/a;->q(Ljava/lang/Object;)Lwp/a;
+
+    :goto_1
+    add-int/lit8 p1, p1, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    return-object v0
+.end method
+
+.method private b(Lwp/a;Lwp/a;)Ljava/util/List;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lwp/a;",
+            "Lwp/a;",
+            ")",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    const-string v1, "script"
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    if-eqz p1, :cond_1
+
+    const/4 v4, 0x0
+
+    :goto_0
+    invoke-virtual {p1}, Lwp/a;->g()I
+
+    move-result v5
+
+    if-ge v4, v5, :cond_1
+
+    invoke-static {p1, v4, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getObjectAtIndex(Lwp/a;ILjava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-direct {p0, v5, v3, v1}, Lcom/applovin/impl/mediation/c/b/c;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    invoke-static {v5}, Landroid/net/Uri;->decode(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :goto_1
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    if-eqz p2, :cond_3
+
+    :goto_2
+    invoke-virtual {p2}, Lwp/a;->g()I
+
+    move-result p1
+
+    if-ge v2, p1, :cond_3
+
+    invoke-static {p2, v2, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getObjectAtIndex(Lwp/a;ILjava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1, v3, v1}, Lcom/applovin/impl/mediation/c/b/c;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    goto :goto_3
+
+    :cond_2
+    invoke-static {p1}, Landroid/net/Uri;->decode(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :goto_3
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_2
+
+    :cond_3
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 12
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/c/d;->avK:Lwp/b;
+
+    new-instance v1, Lwp/a;
+
+    invoke-direct {v1}, Lwp/a;-><init>()V
+
+    const-string v2, "placements"
+
+    invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONArray(Lwp/b;Ljava/lang/String;Lwp/a;)Lwp/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lwp/a;->g()I
+
+    move-result v1
+
+    const-string v2, "No ads were returned from the server"
+
+    const-string v3, "TaskProcessTaboolaAd"
+
+    if-nez v1, :cond_1
+
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    invoke-virtual {v0, v3, v2}, Lcom/applovin/impl/sdk/x;->h(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/applovin/impl/mediation/c/b/c;->awg:Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;
+
+    sget-object v1, Lcom/applovin/impl/sdk/AppLovinError;->NO_FILL:Lcom/applovin/impl/sdk/AppLovinError;
+
+    invoke-interface {v0, v1}, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;->onNativeAdLoadFailed(Lcom/applovin/impl/sdk/AppLovinError;)V
+
+    return-void
+
+    :cond_1
+    new-instance v1, Lwp/b;
+
+    invoke-direct {v1}, Lwp/b;-><init>()V
+
+    const/4 v4, 0x0
+
+    invoke-static {v0, v4, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lwp/a;ILwp/b;)Lwp/b;
+
+    move-result-object v0
+
+    new-instance v1, Lwp/a;
+
+    invoke-direct {v1}, Lwp/a;-><init>()V
+
+    const-string v5, "list"
+
+    invoke-static {v0, v5, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONArray(Lwp/b;Ljava/lang/String;Lwp/a;)Lwp/a;
+
+    move-result-object v1
+
+    const-string v5, "name"
+
+    const-string v6, ""
+
+    invoke-static {v0, v5, v6}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v1}, Lwp/a;->g()I
+
+    move-result v8
+
+    if-nez v8, :cond_3
+
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    invoke-virtual {v0, v3, v2}, Lcom/applovin/impl/sdk/x;->h(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_2
+    iget-object v0, p0, Lcom/applovin/impl/mediation/c/b/c;->awg:Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;
+
+    sget-object v1, Lcom/applovin/impl/sdk/AppLovinError;->NO_FILL:Lcom/applovin/impl/sdk/AppLovinError;
+
+    invoke-interface {v0, v1}, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;->onNativeAdLoadFailed(Lcom/applovin/impl/sdk/AppLovinError;)V
+
+    return-void
+
+    :cond_3
+    new-instance v2, Lwp/b;
+
+    invoke-direct {v2}, Lwp/b;-><init>()V
+
+    invoke-static {v1, v4, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lwp/a;ILwp/b;)Lwp/b;
+
+    move-result-object v1
+
+    const-string v2, "id"
+
+    invoke-static {v1, v2, v6}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->do:Ljava/lang/String;
+
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v2
+
+    const-string v8, "..."
+
+    if-eqz v2, :cond_4
+
+    iget-object v2, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    const-string v9, "Processing Taboola ad ("
+
+    invoke-static {v9}, Lai/medialab/medialabauth/l;->n(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    iget-object v10, p0, Lcom/applovin/impl/mediation/c/b/c;->do:Ljava/lang/String;
+
+    const-string v11, ") for placement: "
+
+    invoke-static {v9, v10, v11, v7, v8}, Lai/medialab/medialabanalytics/j;->d(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v2, v3, v9}, Lcom/applovin/impl/sdk/x;->f(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_4
+    const-string v2, "type"
+
+    invoke-static {v1, v2, v6}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->awi:Ljava/lang/String;
+
+    const-string v2, "origin"
+
+    invoke-static {v1, v2, v6}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->awj:Ljava/lang/String;
+
+    const-string v2, "discloser"
+
+    const/4 v9, 0x0
+
+    invoke-static {v1, v2, v9}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->awk:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    const-string v10, "Taboola_2.0"
+
+    invoke-virtual {v2, v10}, Lcom/applovin/impl/mediation/c/a$a;->cb(Ljava/lang/String;)Lcom/applovin/impl/mediation/c/a$a;
+
+    iget-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    invoke-static {v1, v5, v6}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v2, v5}, Lcom/applovin/impl/mediation/c/a$a;->cc(Ljava/lang/String;)Lcom/applovin/impl/mediation/c/a$a;
+
+    iget-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    const-string v5, "branding"
+
+    invoke-static {v1, v5, v6}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v2, v5}, Lcom/applovin/impl/mediation/c/a$a;->cd(Ljava/lang/String;)Lcom/applovin/impl/mediation/c/a$a;
+
+    iget-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    const-string v5, "description"
+
+    invoke-static {v1, v5, v6}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v2, v5}, Lcom/applovin/impl/mediation/c/a$a;->ce(Ljava/lang/String;)Lcom/applovin/impl/mediation/c/a$a;
+
+    iget-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    const-string v5, "url"
+
+    invoke-static {v1, v5, v9}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v2, v6}, Lcom/applovin/impl/mediation/c/a$a;->cg(Ljava/lang/String;)Lcom/applovin/impl/mediation/c/a$a;
+
+    new-instance v2, Lwp/a;
+
+    invoke-direct {v2}, Lwp/a;-><init>()V
+
+    const-string v6, "thumbnail"
+
+    invoke-static {v1, v6, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONArray(Lwp/b;Ljava/lang/String;Lwp/a;)Lwp/a;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lwp/a;->g()I
+
+    move-result v6
+
+    if-lez v6, :cond_5
+
+    invoke-virtual {v2, v4}, Lwp/a;->j(I)Lwp/b;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_5
+
+    iget-object v6, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    invoke-static {v2, v5, v9}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v6, v5}, Lcom/applovin/impl/mediation/c/a$a;->cf(Ljava/lang/String;)Lcom/applovin/impl/mediation/c/a$a;
+
+    iget-object v5, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    const-string v6, "width"
+
+    invoke-static {v2, v6, v4}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getInt(Lwp/b;Ljava/lang/String;I)I
+
+    move-result v6
+
+    invoke-virtual {v5, v6}, Lcom/applovin/impl/mediation/c/a$a;->gs(I)Lcom/applovin/impl/mediation/c/a$a;
+
+    iget-object v5, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    const-string v6, "height"
+
+    invoke-static {v2, v6, v4}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getInt(Lwp/b;Ljava/lang/String;I)I
+
+    move-result v2
+
+    invoke-virtual {v5, v2}, Lcom/applovin/impl/mediation/c/a$a;->gt(I)Lcom/applovin/impl/mediation/c/a$a;
+
+    :cond_5
+    const-string v2, "beacons"
+
+    invoke-static {v1, v2, v9}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONArray(Lwp/b;Ljava/lang/String;Lwp/a;)Lwp/a;
+
+    move-result-object v1
+
+    const-string v4, "events"
+
+    invoke-static {v0, v4, v9}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lwp/b;Ljava/lang/String;Lwp/b;)Lwp/b;
+
+    move-result-object v0
+
+    iget-object v4, p0, Lcom/applovin/impl/mediation/c/d;->avK:Lwp/b;
+
+    const-string v5, "user"
+
+    invoke-static {v4, v5, v9}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lwp/b;Ljava/lang/String;Lwp/b;)Lwp/b;
+
+    move-result-object v4
+
+    invoke-static {v4, v2, v9}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONArray(Lwp/b;Ljava/lang/String;Lwp/a;)Lwp/a;
+
+    move-result-object v2
+
+    iget-object v4, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    invoke-direct {p0, v0, v1}, Lcom/applovin/impl/mediation/c/b/c;->a(Lwp/b;Lwp/a;)Lwp/a;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lcom/applovin/impl/mediation/c/a$a;->b(Lwp/a;)Lcom/applovin/impl/mediation/c/a$a;
+
+    iget-object v4, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    invoke-direct {p0, v1, v2}, Lcom/applovin/impl/mediation/c/b/c;->b(Lwp/a;Lwp/a;)Ljava/util/List;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lcom/applovin/impl/mediation/c/a$a;->D(Ljava/util/List;)Lcom/applovin/impl/mediation/c/a$a;
+
+    iget-object v4, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    invoke-direct {p0, v0, v1, v2}, Lcom/applovin/impl/mediation/c/b/c;->a(Lwp/b;Lwp/a;Lwp/a;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v0}, Lcom/applovin/impl/mediation/c/a$a;->E(Ljava/util/List;)Lcom/applovin/impl/mediation/c/a$a;
+
+    invoke-virtual {p0}, Lcom/applovin/impl/mediation/c/b/c;->zv()Lwp/b;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/applovin/impl/mediation/c/d;->o(Lwp/b;)Lwp/b;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/applovin/impl/sdk/x;->Fn()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_6
+
+    iget-object v1, p0, Lcom/applovin/impl/sdk/e/d;->logger:Lcom/applovin/impl/sdk/x;
+
+    const-string v2, "Starting render task for Taboola ad: "
+
+    invoke-static {v2, v7, v8, v1, v3}, Lai/medialab/medialabauth/k;->r(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/x;Ljava/lang/String;)V
+
+    :cond_6
+    new-instance v1, Lcom/applovin/impl/sdk/nativeAd/d;
+
+    iget-object v2, p0, Lcom/applovin/impl/mediation/c/b/c;->awg:Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;
+
+    iget-object v3, p0, Lcom/applovin/impl/mediation/c/d;->sdk:Lcom/applovin/impl/sdk/n;
+
+    invoke-direct {v1, v0, v2, v3}, Lcom/applovin/impl/sdk/nativeAd/d;-><init>(Lwp/b;Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;Lcom/applovin/impl/sdk/n;)V
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/c/d;->sdk:Lcom/applovin/impl/sdk/n;
+
+    invoke-virtual {v0}, Lcom/applovin/impl/sdk/n;->BO()Lcom/applovin/impl/sdk/e/q;
+
+    move-result-object v0
+
+    sget-object v2, Lcom/applovin/impl/sdk/e/q$b;->aUt:Lcom/applovin/impl/sdk/e/q$b;
+
+    invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/e/q;->a(Lcom/applovin/impl/sdk/e/d;Lcom/applovin/impl/sdk/e/q$b;)V
+
+    return-void
+.end method
+
+.method protected zv()Lwp/b;
+    .locals 3
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/c/b/c;->awh:Lcom/applovin/impl/mediation/c/a$a;
+
+    invoke-virtual {v0}, Lcom/applovin/impl/mediation/c/a$a;->zp()Lcom/applovin/impl/mediation/c/a;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/applovin/impl/mediation/c/d;->a(Lcom/applovin/impl/mediation/c/a;)Lwp/b;
+
+    move-result-object v0
+
+    const-string v1, "cache_prefix"
+
+    const-string v2, "taboola_"
+
+    invoke-static {v0, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v1, "type"
+
+    const-string v2, "taboola"
+
+    invoke-static {v0, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/c/b/c;->awk:Ljava/lang/String;
+
+    const-string v2, "privacy_url"
+
+    invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lwp/b;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object v0
+.end method

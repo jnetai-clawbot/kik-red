@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.wondrous.sns.ui.views.menu.SnsOverflowView android:id="@id/sns_menu_overflow_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="?snsBroadcastMenuOverflowMaxHeight" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

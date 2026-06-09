@@ -1,0 +1,52 @@
+.class public final synthetic Lp3/i;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lcom/google/android/exoplayer2/audio/a$a;
+
+.field public final synthetic b:I
+
+.field public final synthetic c:J
+
+.field public final synthetic d:J
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/google/android/exoplayer2/audio/a$a;IJJ)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lp3/i;->a:Lcom/google/android/exoplayer2/audio/a$a;
+
+    iput p2, p0, Lp3/i;->b:I
+
+    iput-wide p3, p0, Lp3/i;->c:J
+
+    iput-wide p5, p0, Lp3/i;->d:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 6
+
+    iget-object v0, p0, Lp3/i;->a:Lcom/google/android/exoplayer2/audio/a$a;
+
+    iget v1, p0, Lp3/i;->b:I
+
+    iget-wide v2, p0, Lp3/i;->c:J
+
+    iget-wide v4, p0, Lp3/i;->d:J
+
+    invoke-static/range {v0 .. v5}, Lcom/google/android/exoplayer2/audio/a$a;->i(Lcom/google/android/exoplayer2/audio/a$a;IJJ)V
+
+    return-void
+.end method

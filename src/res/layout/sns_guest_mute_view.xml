@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="?actionBarItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/sns_guest_mute_image_view" android:layout_width="@dimen/sns_multi_guest_mute_button_size" android:layout_height="@dimen/sns_multi_guest_mute_button_size" android:src="@drawable/sns_ic_mute_off" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <io.wondrous.sns.broadcast.guest.AudioVolumeIndicatorView android:layout_gravity="center" android:id="@id/sns_audio_volume_indicator" android:layout_width="@dimen/sns_multi_guest_mute_button_audio_indicator_width" android:layout_height="@dimen/sns_multi_guest_mute_button_audio_indicator_height" android:layout_marginBottom="@dimen/sns_multi_guest_mute_button_audio_indicator_margin_bottom" android:layout_marginEnd="@dimen/sns_multi_guest_mute_button_audio_indicator_margin_end" />
+</merge>

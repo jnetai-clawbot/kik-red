@@ -1,0 +1,753 @@
+.class public Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/bouncycastle/pqc/crypto/MessageEncryptor;
+
+
+# static fields
+.field public static final h:[B
+
+
+# instance fields
+.field private a:Lorg/bouncycastle/crypto/Digest;
+
+.field private b:Ljava/security/SecureRandom;
+
+.field c:Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2KeyParameters;
+
+.field private d:I
+
+.field private e:I
+
+.field private f:I
+
+.field private g:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const-string v0, "a predetermined public constant"
+
+    invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object v0
+
+    sput-object v0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->h:[B
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private c(Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;)V
+    .locals 1
+
+    invoke-virtual {p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2KeyParameters;->f()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/c;->a(Ljava/lang/String;)Lorg/bouncycastle/crypto/Digest;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    invoke-virtual {p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;->i()I
+
+    move-result v0
+
+    iput v0, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->d:I
+
+    invoke-virtual {p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;->h()I
+
+    move-result v0
+
+    iput v0, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->e:I
+
+    invoke-virtual {p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;->j()I
+
+    move-result p1
+
+    iput p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->f:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2KeyParameters;)I
+    .locals 1
+
+    instance-of v0, p1, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;
+
+    invoke-virtual {p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;->i()I
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    instance-of v0, p1, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PrivateKeyParameters;
+
+    if-eqz v0, :cond_1
+
+    check-cast p1, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PrivateKeyParameters;
+
+    invoke-virtual {p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PrivateKeyParameters;->k()I
+
+    move-result p1
+
+    return p1
+
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string/jumbo v0, "unsupported type"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public final b(ZLorg/bouncycastle/crypto/CipherParameters;)V
+    .locals 0
+
+    iput-boolean p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->g:Z
+
+    if-eqz p1, :cond_1
+
+    instance-of p1, p2, Lorg/bouncycastle/crypto/params/ParametersWithRandom;
+
+    if-eqz p1, :cond_0
+
+    check-cast p2, Lorg/bouncycastle/crypto/params/ParametersWithRandom;
+
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/params/ParametersWithRandom;->getRandom()Ljava/security/SecureRandom;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->b:Ljava/security/SecureRandom;
+
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/params/ParametersWithRandom;->getParameters()Lorg/bouncycastle/crypto/CipherParameters;
+
+    move-result-object p1
+
+    check-cast p1, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;
+
+    iput-object p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->c:Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2KeyParameters;
+
+    invoke-direct {p0, p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->c(Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {}, Lorg/bouncycastle/crypto/CryptoServicesRegistrar;->getSecureRandom()Ljava/security/SecureRandom;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->b:Ljava/security/SecureRandom;
+
+    check-cast p2, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;
+
+    iput-object p2, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->c:Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2KeyParameters;
+
+    invoke-direct {p0, p2}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->c(Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;)V
+
+    goto :goto_0
+
+    :cond_1
+    check-cast p2, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PrivateKeyParameters;
+
+    iput-object p2, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->c:Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2KeyParameters;
+
+    invoke-virtual {p2}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2KeyParameters;->f()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/c;->a(Ljava/lang/String;)Lorg/bouncycastle/crypto/Digest;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    invoke-virtual {p2}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PrivateKeyParameters;->k()I
+
+    move-result p1
+
+    iput p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->d:I
+
+    invoke-virtual {p2}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PrivateKeyParameters;->j()I
+
+    move-result p1
+
+    iput p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->e:I
+
+    invoke-virtual {p2}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PrivateKeyParameters;->n()I
+
+    move-result p1
+
+    iput p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->f:I
+
+    :goto_0
+    return-void
+.end method
+
+.method public final d([B)[B
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/bouncycastle/crypto/InvalidCipherTextException;
+        }
+    .end annotation
+
+    iget-boolean v0, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->g:Z
+
+    if-nez v0, :cond_d
+
+    iget v0, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->d:I
+
+    shr-int/lit8 v0, v0, 0x3
+
+    array-length v1, p1
+
+    if-lt v1, v0, :cond_c
+
+    iget-object v1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    invoke-interface {v1}, Lorg/bouncycastle/crypto/Digest;->getDigestSize()I
+
+    move-result v1
+
+    iget v2, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->e:I
+
+    shr-int/lit8 v2, v2, 0x3
+
+    iget v3, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->d:I
+
+    iget v4, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->f:I
+
+    invoke-static {v3, v4}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/IntegerFunctions;->a(II)Ljava/math/BigInteger;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    sub-int/2addr v3, v4
+
+    shr-int/lit8 v3, v3, 0x3
+
+    array-length v5, p1
+
+    sub-int/2addr v5, v0
+
+    const/4 v0, 0x0
+
+    if-lez v5, :cond_0
+
+    invoke-static {p1, v5}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/ByteUtils;->b([BI)[[B
+
+    move-result-object p1
+
+    aget-object v5, p1, v0
+
+    aget-object p1, p1, v4
+
+    goto :goto_0
+
+    :cond_0
+    new-array v5, v0, [B
+
+    :goto_0
+    iget v6, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->d:I
+
+    invoke-static {v6, p1}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;->c(I[B)Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;
+
+    move-result-object p1
+
+    iget-object v6, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->c:Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2KeyParameters;
+
+    check-cast v6, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PrivateKeyParameters;
+
+    invoke-static {v6, p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/b;->a(Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PrivateKeyParameters;Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;)[Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;
+
+    move-result-object p1
+
+    aget-object v6, p1, v0
+
+    invoke-virtual {v6}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;->e()[B
+
+    move-result-object v6
+
+    aget-object p1, p1, v4
+
+    array-length v7, v6
+
+    if-le v7, v2, :cond_1
+
+    sub-int/2addr v2, v0
+
+    new-array v7, v2, [B
+
+    invoke-static {v6, v0, v7, v0, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    move-object v6, v7
+
+    :cond_1
+    iget v2, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->d:I
+
+    iget v7, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->f:I
+
+    invoke-static {v2, v7, p1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/a;->a(IILorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;)[B
+
+    move-result-object p1
+
+    array-length v2, p1
+
+    if-ge v2, v3, :cond_2
+
+    new-array v2, v3, [B
+
+    array-length v7, p1
+
+    sub-int/2addr v3, v7
+
+    array-length v7, p1
+
+    invoke-static {p1, v0, v2, v3, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    move-object p1, v2
+
+    :cond_2
+    invoke-static {v5, p1}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/ByteUtils;->a([B[B)[B
+
+    move-result-object p1
+
+    invoke-static {p1, v6}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/ByteUtils;->a([B[B)[B
+
+    move-result-object p1
+
+    array-length v2, p1
+
+    sub-int/2addr v2, v1
+
+    invoke-static {p1, v1}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/ByteUtils;->b([BI)[[B
+
+    move-result-object p1
+
+    aget-object v3, p1, v0
+
+    aget-object p1, p1, v4
+
+    iget-object v5, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    invoke-interface {v5}, Lorg/bouncycastle/crypto/Digest;->getDigestSize()I
+
+    move-result v5
+
+    new-array v5, v5, [B
+
+    iget-object v6, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    array-length v7, p1
+
+    invoke-interface {v6, p1, v0, v7}, Lorg/bouncycastle/crypto/Digest;->update([BII)V
+
+    iget-object v6, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    invoke-interface {v6, v5, v0}, Lorg/bouncycastle/crypto/Digest;->doFinal([BI)I
+
+    sub-int/2addr v1, v4
+
+    :goto_1
+    if-ltz v1, :cond_3
+
+    aget-byte v6, v5, v1
+
+    aget-byte v7, v3, v1
+
+    xor-int/2addr v6, v7
+
+    int-to-byte v6, v6
+
+    aput-byte v6, v5, v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    goto :goto_1
+
+    :cond_3
+    new-instance v1, Lorg/bouncycastle/crypto/prng/DigestRandomGenerator;
+
+    new-instance v3, Lorg/bouncycastle/crypto/digests/SHA1Digest;
+
+    invoke-direct {v3}, Lorg/bouncycastle/crypto/digests/SHA1Digest;-><init>()V
+
+    invoke-direct {v1, v3}, Lorg/bouncycastle/crypto/prng/DigestRandomGenerator;-><init>(Lorg/bouncycastle/crypto/Digest;)V
+
+    invoke-virtual {v1, v5}, Lorg/bouncycastle/crypto/prng/DigestRandomGenerator;->addSeedMaterial([B)V
+
+    new-array v3, v2, [B
+
+    invoke-virtual {v1, v3}, Lorg/bouncycastle/crypto/prng/DigestRandomGenerator;->nextBytes([B)V
+
+    add-int/lit8 v1, v2, -0x1
+
+    :goto_2
+    if-ltz v1, :cond_4
+
+    aget-byte v5, v3, v1
+
+    aget-byte v6, p1, v1
+
+    xor-int/2addr v5, v6
+
+    int-to-byte v5, v5
+
+    aput-byte v5, v3, v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    goto :goto_2
+
+    :cond_4
+    sget-object p1, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->h:[B
+
+    array-length v1, p1
+
+    sub-int/2addr v2, v1
+
+    invoke-static {v3, v2}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/ByteUtils;->b([BI)[[B
+
+    move-result-object v1
+
+    aget-object v2, v1, v0
+
+    aget-object v1, v1, v4
+
+    if-nez v1, :cond_6
+
+    if-nez p1, :cond_5
+
+    goto :goto_3
+
+    :cond_5
+    const/4 v4, 0x0
+
+    :goto_3
+    move v0, v4
+
+    goto :goto_6
+
+    :cond_6
+    if-nez p1, :cond_7
+
+    goto :goto_6
+
+    :cond_7
+    array-length v3, v1
+
+    array-length v5, p1
+
+    if-eq v3, v5, :cond_8
+
+    goto :goto_6
+
+    :cond_8
+    array-length v3, v1
+
+    sub-int/2addr v3, v4
+
+    const/4 v5, 0x1
+
+    :goto_4
+    if-ltz v3, :cond_a
+
+    aget-byte v6, v1, v3
+
+    aget-byte v7, p1, v3
+
+    if-ne v6, v7, :cond_9
+
+    const/4 v6, 0x1
+
+    goto :goto_5
+
+    :cond_9
+    const/4 v6, 0x0
+
+    :goto_5
+    and-int/2addr v5, v6
+
+    add-int/lit8 v3, v3, -0x1
+
+    goto :goto_4
+
+    :cond_a
+    move v0, v5
+
+    :goto_6
+    if-eqz v0, :cond_b
+
+    return-object v2
+
+    :cond_b
+    new-instance p1, Lorg/bouncycastle/crypto/InvalidCipherTextException;
+
+    const-string v0, "Bad Padding: invalid ciphertext"
+
+    invoke-direct {p1, v0}, Lorg/bouncycastle/crypto/InvalidCipherTextException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_c
+    new-instance p1, Lorg/bouncycastle/crypto/InvalidCipherTextException;
+
+    const-string v0, "Bad Padding: Ciphertext too short."
+
+    invoke-direct {p1, v0}, Lorg/bouncycastle/crypto/InvalidCipherTextException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_d
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "cipher initialised for decryption"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public final e([B)[B
+    .locals 11
+
+    iget-boolean v0, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->g:Z
+
+    if-eqz v0, :cond_5
+
+    iget-object v0, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    invoke-interface {v0}, Lorg/bouncycastle/crypto/Digest;->getDigestSize()I
+
+    move-result v0
+
+    iget v1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->e:I
+
+    shr-int/lit8 v1, v1, 0x3
+
+    iget v2, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->d:I
+
+    iget v3, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->f:I
+
+    invoke-static {v2, v3}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/IntegerFunctions;->a(II)Ljava/math/BigInteger;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result v2
+
+    add-int/lit8 v2, v2, -0x1
+
+    shr-int/lit8 v2, v2, 0x3
+
+    add-int v3, v1, v2
+
+    sub-int/2addr v3, v0
+
+    sget-object v4, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->h:[B
+
+    array-length v5, v4
+
+    sub-int/2addr v3, v5
+
+    array-length v5, p1
+
+    if-le v5, v3, :cond_0
+
+    array-length v3, p1
+
+    :cond_0
+    array-length v5, v4
+
+    add-int/2addr v5, v3
+
+    add-int v6, v5, v0
+
+    sub-int/2addr v6, v1
+
+    sub-int/2addr v6, v2
+
+    new-array v7, v5, [B
+
+    array-length v8, p1
+
+    const/4 v9, 0x0
+
+    invoke-static {p1, v9, v7, v9, v8}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    array-length p1, v4
+
+    invoke-static {v4, v9, v7, v3, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    new-array p1, v0, [B
+
+    iget-object v3, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->b:Ljava/security/SecureRandom;
+
+    invoke-virtual {v3, p1}, Ljava/security/SecureRandom;->nextBytes([B)V
+
+    new-instance v3, Lorg/bouncycastle/crypto/prng/DigestRandomGenerator;
+
+    new-instance v4, Lorg/bouncycastle/crypto/digests/SHA1Digest;
+
+    invoke-direct {v4}, Lorg/bouncycastle/crypto/digests/SHA1Digest;-><init>()V
+
+    invoke-direct {v3, v4}, Lorg/bouncycastle/crypto/prng/DigestRandomGenerator;-><init>(Lorg/bouncycastle/crypto/Digest;)V
+
+    invoke-virtual {v3, p1}, Lorg/bouncycastle/crypto/prng/DigestRandomGenerator;->addSeedMaterial([B)V
+
+    new-array v4, v5, [B
+
+    invoke-virtual {v3, v4}, Lorg/bouncycastle/crypto/prng/DigestRandomGenerator;->nextBytes([B)V
+
+    add-int/lit8 v3, v5, -0x1
+
+    :goto_0
+    if-ltz v3, :cond_1
+
+    aget-byte v8, v4, v3
+
+    aget-byte v10, v7, v3
+
+    xor-int/2addr v8, v10
+
+    int-to-byte v8, v8
+
+    aput-byte v8, v4, v3
+
+    add-int/lit8 v3, v3, -0x1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v3, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    invoke-interface {v3}, Lorg/bouncycastle/crypto/Digest;->getDigestSize()I
+
+    move-result v3
+
+    new-array v3, v3, [B
+
+    iget-object v7, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    invoke-interface {v7, v4, v9, v5}, Lorg/bouncycastle/crypto/Digest;->update([BII)V
+
+    iget-object v5, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->a:Lorg/bouncycastle/crypto/Digest;
+
+    invoke-interface {v5, v3, v9}, Lorg/bouncycastle/crypto/Digest;->doFinal([BI)I
+
+    add-int/lit8 v0, v0, -0x1
+
+    :goto_1
+    if-ltz v0, :cond_2
+
+    aget-byte v5, v3, v0
+
+    aget-byte v7, p1, v0
+
+    xor-int/2addr v5, v7
+
+    int-to-byte v5, v5
+
+    aput-byte v5, v3, v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_1
+
+    :cond_2
+    invoke-static {v3, v4}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/ByteUtils;->a([B[B)[B
+
+    move-result-object p1
+
+    new-array v0, v9, [B
+
+    if-lez v6, :cond_3
+
+    new-array v0, v6, [B
+
+    invoke-static {p1, v9, v0, v9, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    :cond_3
+    new-array v3, v2, [B
+
+    invoke-static {p1, v6, v3, v9, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    new-array v4, v1, [B
+
+    add-int/2addr v2, v6
+
+    invoke-static {p1, v2, v4, v9, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    iget p1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->e:I
+
+    invoke-static {p1, v4}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;->c(I[B)Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;
+
+    move-result-object p1
+
+    iget v1, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->d:I
+
+    iget v2, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->f:I
+
+    invoke-static {v1, v2, v3}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/a;->b(II[B)Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceKobaraImaiCipher;->c:Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2KeyParameters;
+
+    check-cast v2, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;
+
+    invoke-static {v2, p1, v1}, Lorg/bouncycastle/pqc/legacy/crypto/mceliece/b;->b(Lorg/bouncycastle/pqc/legacy/crypto/mceliece/McElieceCCA2PublicKeyParameters;Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;)Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/GF2Vector;->e()[B
+
+    move-result-object p1
+
+    if-lez v6, :cond_4
+
+    invoke-static {v0, p1}, Lorg/bouncycastle/pqc/legacy/math/linearalgebra/ByteUtils;->a([B[B)[B
+
+    move-result-object p1
+
+    :cond_4
+    return-object p1
+
+    :cond_5
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "cipher initialised for decryption"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method

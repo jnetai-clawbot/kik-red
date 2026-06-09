@@ -1,0 +1,6 @@
+*.keystore
+*.jks
+*.apk
+original/
+apk/
+*.log

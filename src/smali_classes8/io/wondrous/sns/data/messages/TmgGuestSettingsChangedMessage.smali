@@ -1,0 +1,149 @@
+.class public final Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/wondrous/sns/data/messages/TmgGenericRealTimeMessage;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u0019\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u000c\u0010\rR\u001a\u0010\u0003\u001a\u00020\u00028\u0006X\u0087\u0004\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006R\u001a\u0010\u0008\u001a\u00020\u00078\u0016X\u0097\u0004\u00a2\u0006\u000c\n\u0004\u0008\u0008\u0010\t\u001a\u0004\u0008\n\u0010\u000b\u00a8\u0006\u000e"
+    }
+    d2 = {
+        "Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;",
+        "Lio/wondrous/sns/data/messages/TmgGenericRealTimeMessage;",
+        "Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;",
+        "settings",
+        "Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;",
+        "a",
+        "()Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;",
+        "Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;",
+        "incompatibleAction",
+        "Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;",
+        "c",
+        "()Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;",
+        "<init>",
+        "(Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;)V",
+        "sns-data-tmg_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+.field private final b:Lio/wondrous/sns/data/realtime/MessageType;
+
+.field private final incompatibleAction:Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;
+    .annotation runtime La9/b;
+        value = "incompatibleAction"
+    .end annotation
+.end field
+
+.field private final settings:Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;
+    .annotation runtime La9/b;
+        value = "settings"
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;)V
+    .locals 1
+
+    const-string v0, "settings"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "incompatibleAction"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;->settings:Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;
+
+    iput-object p2, p0, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;->incompatibleAction:Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;
+
+    const-string p1, "guest"
+
+    iput-object p1, p0, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;->a:Ljava/lang/String;
+
+    sget-object p1, Lio/wondrous/sns/data/realtime/MessageType;->GUEST_SETTINGS_CHANGED:Lio/wondrous/sns/data/realtime/MessageType;
+
+    iput-object p1, p0, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;->b:Lio/wondrous/sns/data/realtime/MessageType;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;ILkotlin/jvm/internal/c;)V
+    .locals 0
+
+    and-int/lit8 p3, p3, 0x2
+
+    if-eqz p3, :cond_0
+
+    sget-object p2, Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;->IGNORE:Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;
+
+    :cond_0
+    invoke-direct {p0, p1, p2}, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;-><init>(Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;
+    .locals 1
+
+    iget-object v0, p0, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;->settings:Lio/wondrous/sns/api/tmg/guest/TmgGuestSettings;
+
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;->a:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final c()Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;
+    .locals 1
+
+    iget-object v0, p0, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;->incompatibleAction:Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;
+
+    return-object v0
+.end method
+
+.method public final getType()Lio/wondrous/sns/data/realtime/MessageType;
+    .locals 1
+
+    iget-object v0, p0, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;->b:Lio/wondrous/sns/data/realtime/MessageType;
+
+    return-object v0
+.end method
+
+.method public final i(Ljava/lang/String;)Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;
+    .locals 1
+
+    const-string v0, "network"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/g;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lio/wondrous/sns/data/messages/TmgGuestSettingsChangedMessage;->c()Lio/wondrous/sns/data/realtime/UnsupportedFeatureAction;
+
+    move-result-object p1
+
+    return-object p1
+.end method

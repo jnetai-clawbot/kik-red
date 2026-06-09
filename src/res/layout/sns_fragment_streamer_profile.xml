@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/bottom_sheet_appbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <RelativeLayout android:id="@id/sns_streamer_profile_photo_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="@dimen/sns_streamer_profile_photo_section_height" app:layout_collapseMode="parallax">
+                <include layout="@layout/sns_streamer_profile_photos_section" />
+                <ImageView android:id="@id/sns_streamer_profile_photo_top_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sns_user_photo_gradient_top" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/sns_streamer_profile_photo_bottom_section_height" app:layout_collapseMode="pin" layout="@layout/sns_streamer_profile_photo_bottom_section" />
+            <io.wondrous.sns.ui.views.NonClickableToolbar android:theme="?snsStreamerProfileToolbarTheme" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin">
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/sns_streamer_profile_toolbar_height" android:layout_marginTop="8.0dip" layout="@layout/sns_streamer_profile_user_info_section" />
+            </io.wondrous.sns.ui.views.NonClickableToolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nested_scroll_view" android:background="@color/sns_streamer_profile_background_color" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:paddingBottom="100.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <io.wondrous.sns.streamerprofile.stats.StreamerProfileWrapperStatsView android:id="@id/sns_streamer_profile_stats" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sns_streamer_profile_stats_wrapper_offset" />
+            <include layout="@layout/sns_streamer_profile_about_me_section" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/sns_streamer_profile_social_media" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" />
+            <include layout="@layout/sns_streamer_profile_top_fans_section" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

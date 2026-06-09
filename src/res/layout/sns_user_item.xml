@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sns_viewer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?snsUserItemContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/sns_viewer_profilePhoto" android:duplicateParentState="false" style="?snsUserItemAvatarStyle" />
+        <io.wondrous.sns.ui.views.VerificationBadgeView android:layout_gravity="end|top" android:id="@id/sns_viewer_verificationBadge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/grid_padding" app:sns_badgeBackground="@color/sns_bg_list_item_badge_background" style="@style/Sns.VerificationBadge.Badge.Small" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sns_viewer_infoContainer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceListItem" android:id="@id/sns_viewer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceListItemSecondary" android:textColor="?android:textColorTertiary" android:id="@id/sns_viewer_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/sns_viewer_notification_icon" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginStart="@dimen/sns_list_padding_left_right" style="?snsUserItemNotificationIconStyle" />
+</LinearLayout>

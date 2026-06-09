@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="external_files" path="." />
+    <cache-path name="downloaded_apks" path="apk_updates/" />
+    <cache-path name="pfp_base" path="kik_profile_pic_temp/" />
+    <cache-path name="local_backup_transfers" path="backup_transfers/" />
+</paths>

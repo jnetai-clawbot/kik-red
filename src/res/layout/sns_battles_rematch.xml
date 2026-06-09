@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/sns_invertable_white_text" android:layout_gravity="center_horizontal" android:id="@id/sns_rematch_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_battles_rematch" style="bold" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/sns_rematch_accept" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_rematch_accept" android:minWidth="0.0dip" android:minHeight="0.0dip" android:paddingStart="10.0dip" android:paddingEnd="5.0dip" style="?borderlessButtonStyle" />
+        <ImageButton android:id="@id/sns_rematch_reject" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_rematch_reject" android:minWidth="0.0dip" android:minHeight="0.0dip" android:paddingStart="5.0dip" android:paddingEnd="10.0dip" style="?borderlessButtonStyle" />
+    </LinearLayout>
+</merge>

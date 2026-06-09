@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <io.wondrous.sns.leaderboard.views.SnsLeaderboardAdapterItemView android:orientation="vertical" android:id="@id/snsLeaderboardAdapterItem" android:layout_width="fill_parent" android:layout_height="72.0dip" app:snsLbPositionBg="@drawable/sns_leaderboard_contest_pos_bg" app:snsLbStarIcon="@drawable/sns_leaderboard_follow_winner_selector" app:snsLbStarIconDark="@drawable/sns_leaderboard_follow_selector" app:snsLbTrophyIcon="@drawable/sns_ic_top_gold_cup" />
+    <View android:layout_gravity="bottom" android:id="@id/snsLeaderboardItemDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

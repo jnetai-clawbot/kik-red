@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_left" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.07" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.93" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sns_bg_reward_dialog" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constrainedWidth="true" app:layout_constraintEnd_toStartOf="@id/guideline_right" app:layout_constraintStart_toEndOf="@id/guideline_left" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/list_primary_color" android:id="@id/sns_inappropriate_description_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_moderation_of_stream_description_title" />
+        <TextView android:theme="@style/Sns.Widgets.ThemeOverlay.Blue" android:textColor="@color/list_secondary_color" android:gravity="center" android:id="@id/sns_inappropriate_description_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/sns_moderation_of_stream_description_body" />
+        <Button android:id="@id/sns_inappropriate_description_dismiss" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sns_btn_ok" style="@style/Sns.Button.Blue" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

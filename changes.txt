@@ -1,0 +1,42 @@
+=== KIK-Red Modifications ===
+Build Date: 2026-06-09
+
+[PACKAGE RENAME]
+- Renamed package from kik.blue to kik.red across all smali, xml, resources
+- Updated AndroidManifest.xml package, activities, services, providers, receivers, permissions
+- Renamed all smali directory structures from kik/blue/ to kik/red/
+- Updated strings.xml: app_name = "KIK-Red", all "Blue Kik" -> "KIK-Red"
+- Updated apktool.yml apkFileName to KIK_Red
+- Updated StaticConstants.smali: KIK_APP_NAME = "KIK-Red", KIK_PACKAGE_NAME = "kik.red"
+- Bulk replaced kik.blue, kik.android, kik/blue, Blue Kik, Blue_Kik references (5123 files)
+
+[UNKICKABLE]
+- GuestContentStatus$ActiveBroadcastEnded.smali: d() method now always returns false (prevents kick detection)
+- LiveFeedViewModel.smali: A1() method - flipped if-eqz to goto to skip kick/block API calls
+- Host/bouncer kick initiation now always falls through to "not kicked" path
+- User can never be kicked from a live stream
+
+[UNLIMITED VIDEO]
+- I11111lII11Il1lI.smali: llllIl11l1lIIl11() returns 0x7fffffff (max int) instead of 0x3a980 (240s)
+- I11111lII11Il1lI.smali: Il1IlllI1ll1II11() sets maxDuration to 0x7fffffff instead of 0x3a980
+- No more 4-minute recording limit, no time restrictions whatsoever
+
+[LIKE SYSTEM]
+- LiveBroadcastActivityModel.smali: likesLimit changed from 0x1e (30) to 0x30d4 (12500)
+- LiveBroadcastActivityModel.smali: likesDelayMs changed from 0xbb8 (3000ms) to 0x64 (100ms) - near-instant batching
+- w3.smali: Removed p8(I) call in j8() method - hides like count display (overlay text hidden)
+- Like overlay status text no longer visible during likes
+
+[ABOUT SECTION]
+- blue_prefs_update.xml: About summary changed to "Made by jnetai.com"
+- preferences_blue.xml: Developer section updated to "KIK-Red - Made by jnetai.com" with feature list
+- Download Update link updated to point to GitHub releases
+- Added "Share KIK-Red" button
+
+[GITHUB ACTIONS]
+- Created .github/workflows/build.yml
+- Auto-builds on push to main/master
+- Uses apktool 2.12.0 to rebuild APK from smali
+- Signs APK with keystore from GitHub Secrets
+- Creates GitHub Release automatically
+- Zipaligns APK before release

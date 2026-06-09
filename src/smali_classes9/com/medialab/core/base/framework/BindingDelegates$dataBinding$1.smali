@@ -1,0 +1,106 @@
+.class public final Lcom/medialab/core/base/framework/BindingDelegates$dataBinding$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Landroidx/databinding/ViewDataBinding;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u0002H\u0001\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0002H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
+    }
+    d2 = {
+        "<anonymous>",
+        "T",
+        "Landroidx/databinding/ViewDataBinding;",
+        "invoke",
+        "()Landroidx/databinding/ViewDataBinding;"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+    xi = 0xb0
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "Landroid/view/LayoutInflater;",
+            "Landroidx/databinding/ViewDataBinding;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic b:Landroidx/fragment/app/FragmentActivity;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;Landroidx/fragment/app/FragmentActivity;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Landroid/view/LayoutInflater;",
+            "Landroidx/databinding/ViewDataBinding;",
+            ">;",
+            "Landroidx/fragment/app/FragmentActivity;",
+            ")V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/medialab/core/base/framework/BindingDelegates$dataBinding$1;->a:Lkotlin/jvm/functions/Function1;
+
+    iput-object p2, p0, Lcom/medialab/core/base/framework/BindingDelegates$dataBinding$1;->b:Landroidx/fragment/app/FragmentActivity;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
+
+    iget-object v0, p0, Lcom/medialab/core/base/framework/BindingDelegates$dataBinding$1;->a:Lkotlin/jvm/functions/Function1;
+
+    iget-object v1, p0, Lcom/medialab/core/base/framework/BindingDelegates$dataBinding$1;->b:Landroidx/fragment/app/FragmentActivity;
+
+    invoke-virtual {v1}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
+
+    move-result-object v1
+
+    const-string v2, "layoutInflater"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/g;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {v0, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/databinding/ViewDataBinding;
+
+    return-object v0
+.end method

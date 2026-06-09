@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/sns_streamer_profile_top_fans_root_layout" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sns_streamer_profile_top_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_top_gifters" style="@style/Sns.StreamerProfile.HeaderStyle" />
+    <TextView android:gravity="bottom" android:id="@id/sns_streamer_profile_top_fans_see_all" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_see_all" android:layout_alignBottom="@id/sns_streamer_profile_top_fans" android:layout_alignParentTop="true" android:textAllCaps="true" android:paddingStart="10.0dip" android:paddingEnd="5.0dip" android:layout_alignParentEnd="true" style="?snsStreamerProfileTopFansSeeAllStyle" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/sns_streamer_profile_top_fans" style="@style/Sns.StreamerProfile.CardViewStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:id="@id/sns_streamer_profile_top_fans_gold_layout" android:background="@drawable/sns_bg_top_fans" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/sns_streamer_profile_top_fans_gold_avatar" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginStart="16.0dip" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_gold_cup" android:layout_alignBottom="@id/sns_streamer_profile_top_fans_gold_avatar" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:layout_alignTop="@id/sns_streamer_profile_top_fans_gold_avatar" android:layout_alignBottom="@id/sns_streamer_profile_top_fans_gold_avatar" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/sns_streamer_profile_top_fans_gold_avatar">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/sns_streamer_profile_top_fans_gold_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Sns.StreamerProfile.Shadow" />
+                    <TextView android:id="@id/sns_streamer_profile_top_fans_gold_diamonds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawablePadding="2.0dip" android:drawableStart="@drawable/sns_ic_list_diamond_white" style="?snsStreamerProfileTopFansGoldStyle" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/sns_streamer_profile_top_fans_silver_layout" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/sns_streamer_profile_top_fans_silver_avatar" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_centerVertical="true" android:layout_marginStart="7.0dip" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_silver" android:layout_alignBottom="@id/sns_streamer_profile_top_fans_silver_avatar" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/sns_streamer_profile_top_fans_silver_avatar">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/sns_streamer_profile_top_fans_silver_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                        <TextView android:textStyle="bold" android:id="@id/sns_streamer_profile_top_fans_silver_diamonds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawablePadding="2.0dip" android:drawableStart="@drawable/sns_ic_diamond_teal_micro" style="?snsStreamerProfileTopFansPedestalStyle" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/sns_streamer_profile_top_fans_bronze_layout" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/sns_streamer_profile_top_fans_bronze_avatar" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_centerVertical="true" android:layout_marginStart="7.0dip" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_bronze" android:layout_alignBottom="@id/sns_streamer_profile_top_fans_bronze_avatar" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/sns_streamer_profile_top_fans_bronze_avatar">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/sns_streamer_profile_top_fans_bronze_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                        <TextView android:textStyle="bold" android:id="@id/sns_streamer_profile_top_fans_bronze_diamonds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawablePadding="2.0dip" android:drawableStart="@drawable/sns_ic_diamond_teal_micro" style="?snsStreamerProfileTopFansPedestalStyle" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

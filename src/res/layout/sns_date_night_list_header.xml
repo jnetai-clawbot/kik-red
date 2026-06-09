@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/sns_divider_default_users_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sns_dn_distanced_banner" android:scaleType="centerCrop" />
+    <FrameLayout android:theme="?snsDateNightEventTimeBannerTheme" android:id="@id/sns_date_night_event_time_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sns_date_night_event_time_banner_height" style="?snsDateNightEventBannerContainerStyle">
+        <ImageView android:layout_width="@dimen/quarter_grid_padding" android:layout_height="fill_parent" style="?snsDateNightEventBannerIndicatorStyle" />
+        <TextView android:layout_gravity="center" android:id="@id/sns_date_night_event_time_banner_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_date_night_event_time_banner_text" style="?snsDateNightEventBannerTextStyle" />
+    </FrameLayout>
+    <include android:id="@id/sns_date_night_header_extension_banner" android:visibility="gone" layout="@layout/sns_date_night_extension_banner" />
+</LinearLayout>

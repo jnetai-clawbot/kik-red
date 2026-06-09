@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sns_challenges_info_description">
+        <item>Tantangan adalah tugas harian dan mingguan yang harus diselesaikan yang akan memberimu hadiah!</item>
+        <item>Selesaikan Tantangan dan kembali ke Menu Tantangan untuk mengeklaim hadiahmu. Hadiah yang diklaim dapat ditemukan di Menu Item.</item>
+        <item>Beberapa Tantangan mudah, lainnya sulit. Selesaikan semuanya untuk memaksimalkan hadiahmu!</item>
+    </string-array>
+</resources>

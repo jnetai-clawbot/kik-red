@@ -1,0 +1,88 @@
+.class public final Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion;
+.super Ljava/lang/Object;
+.source "WindowRecomposer.android.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose2/ui/platform/WindowRecomposerFactory;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+
+# static fields
+.field static final synthetic $$INSTANCE:Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion;
+
+.field private static final LifecycleAware:Landroidx/compose2/ui/platform/WindowRecomposerFactory;
+
+
+# direct methods
+.method public static synthetic $r8$lambda$FWAPLXs0qWMqekhMr83xkKattCY(Landroid/view/View;)Landroidx/compose2/runtime/Recomposer;
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion;->LifecycleAware$lambda$0(Landroid/view/View;)Landroidx/compose2/runtime/Recomposer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion;
+
+    invoke-direct {v0}, Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion;-><init>()V
+
+    sput-object v0, Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion;->$$INSTANCE:Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion;
+
+    new-instance v0, Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0}, Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion$$ExternalSyntheticLambda0;-><init>()V
+
+    sput-object v0, Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion;->LifecycleAware:Landroidx/compose2/ui/platform/WindowRecomposerFactory;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private static final LifecycleAware$lambda$0(Landroid/view/View;)Landroidx/compose2/runtime/Recomposer;
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x3
+
+    invoke-static {p0, v0, v0, v1, v0}, Landroidx/compose2/ui/platform/WindowRecomposer_androidKt;->createLifecycleAwareWindowRecomposer$default(Landroid/view/View;Lkotlin2/coroutines/CoroutineContext;Landroidx/lifecycle/Lifecycle;ILjava/lang/Object;)Landroidx/compose2/runtime/Recomposer;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static synthetic getLifecycleAware$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getLifecycleAware()Landroidx/compose2/ui/platform/WindowRecomposerFactory;
+    .locals 1
+
+    sget-object v0, Landroidx/compose2/ui/platform/WindowRecomposerFactory$Companion;->LifecycleAware:Landroidx/compose2/ui/platform/WindowRecomposerFactory;
+
+    return-object v0
+.end method

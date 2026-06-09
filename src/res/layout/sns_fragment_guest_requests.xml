@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:behavior_hideable="true" app:layout_behavior="@string/bottom_sheet_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/sns_guest_requests_header" android:visibility="gone" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/sns_guest_requests_dialog_list_header" />
+    <include android:id="@id/sns_guest_requests_next_guest_item" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_guest_requests_header" layout="@layout/sns_guest_request_next_guest_item" />
+    <io.wondrous.sns.ui.views.multistateview.SnsMultiStateView android:id="@id/sns_guest_requests_multi_state_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_guest_requests_next_guest_item" style="?snsGuestRequestsMainFragmentStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sns_viewer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?snsGuestRequestsItemContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/sns_guest_replace_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/sns_multi_guest_replace_button" />
+    <include android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/sns_guest_replace_btn" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/sns_guest_request_user_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

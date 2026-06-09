@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="sns_show_contest_if_below_screen_center">true</bool>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/sns_live_favorites_management_container" android:background="?snsLiveFavoritesManagementContainerBackground" android:layout_width="wrap_content" android:layout_height="24.0dip" android:paddingStart="4.0dip" android:paddingEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sns_live_favorites_management_manage_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?snsLiveFavoritesManagementIconStyle" />
+    <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_manage" style="?snsLiveFavoritesManagementLabelStyle" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_privacy" android:key="@string/title_privacy"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.red.widget.preferences.BlockListPreference android:enabled="true" android:title="@string/title_block_list" android:key="kik.open.block.list" android:summary="@string/block_list_description" kik:pref_divider="none" />
+    <kik.red.widget.preferences.PinSettingsPreference android:enabled="true" android:title="@string/pinlock_settings_pane_title" android:key="kik.open.pin.settings" android:summary="@string/pinlock_settings_off" kik:pref_divider="none" />
+    <kik.red.widget.preferences.CMPPreference android:enabled="true" android:title="@string/cmp_preference_title" android:key="kik.cmp" android:summary="@string/cmp_preference_summary" kik:pref_divider="top|full_bottom" />
+</PreferenceScreen>

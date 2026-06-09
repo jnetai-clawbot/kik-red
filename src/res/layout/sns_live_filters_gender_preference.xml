@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@id/sns_live_filters_gender_preference_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid_padding" android:layout_marginStart="@dimen/grid_padding" android:layout_marginEnd="@dimen/grid_padding" style="?snsLiveFiltersGenderPreferenceRadioGroupContainerStyle">
+        <RadioGroup android:orientation="horizontal" android:id="@id/sns_live_filters_gender_preference_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/sns_live_filters_gender_preference_radio_button_women" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sns_profile_interested_in_women" android:layout_weight="1.0" style="?snsLiveFiltersGenderPreferenceRadioButtonStyle" />
+            <RadioButton android:id="@id/sns_live_filters_gender_preference_radio_button_men" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sns_profile_interested_in_men" android:layout_weight="1.0" style="?snsLiveFiltersGenderPreferenceRadioButtonStyle" />
+            <RadioButton android:id="@id/sns_live_filters_gender_preference_radio_button_all" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sns_profile_interested_in_everyone" android:layout_weight="1.0" style="?snsLiveFiltersGenderPreferenceRadioButtonStyle" />
+        </RadioGroup>
+    </androidx.cardview.widget.CardView>
+</merge>

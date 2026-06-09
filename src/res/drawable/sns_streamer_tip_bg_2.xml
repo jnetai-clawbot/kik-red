@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/sns_streamer_tips_bg_2_gradient_start_color" android:endColor="@color/sns_streamer_tips_bg_2_gradient_end_color" android:angle="225.0" />
+    <corners android:radius="@dimen/sns_streamer_tips_bg_corners_radius" />
+</shape>

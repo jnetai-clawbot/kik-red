@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/sns_live_marquee_pill_bg_color" />
+    <corners android:radius="@dimen/sns_live_marquee_pill_bg_radius" />
+    <stroke android:width="@dimen/sns_live_marquee_pill_bg_border" android:color="@color/sns_live_marquee_pill_bg_border_color" />
+</shape>

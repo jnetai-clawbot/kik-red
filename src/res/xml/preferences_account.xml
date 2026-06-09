@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_your_account_info"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.red.widget.preferences.UsernamePreference android:title="@string/title_kik_username" android:key="kik.username" kik:pref_divider="none" />
+    <kik.red.widget.preferences.KikEmailPreference android:title="@string/title_email" android:key="kik.change.email" android:inputType="textEmailAddress" kik:pref_divider="top" />
+    <kik.red.widget.preferences.NamePreference android:enabled="true" android:title="@string/title_name" android:key="kik.name" kik:pref_divider="top" />
+    <blue.l1I11I1I1IIl11Il android:enabled="true" android:title="@string/title_birthday" android:key="kik.show.birthday" kik:pref_divider="top" />
+    <kik.red.widget.preferences.PasswordPreference android:enabled="true" android:title="@string/change_password" android:key="kik.change.password" kik:pref_divider="top|full_bottom" />
+    <kik.red.widget.preferences.KikEmptyPreference android:enabled="false" />
+    <blue.lll1l11IIlllIIl1 android:title="Useful Links" kik:pref_divider="top" />
+    <blue.IlIl1lI1lII1I111 android:enabled="true" android:title="Deactivate Account (Temporary)" android:key="temporary" kik:pref_divider="top">
+        <intent android:action="android.intent.action.VIEW" android:data="https://ws2.kik.com/deactivate" />
+    </blue.IlIl1lI1lII1I111>
+    <blue.IlIl1lI1lII1I111 android:enabled="true" android:title="Deactivate Account (Permanent)" android:key="permanent" kik:pref_divider="top">
+        <intent android:action="android.intent.action.VIEW" android:data="https://ws2.kik.com/delete" />
+    </blue.IlIl1lI1lII1I111>
+    <blue.IlIl1lI1lII1I111 android:enabled="true" android:title="Contact Kik Support" android:key="contact_kik_support" kik:pref_divider="top">
+        <intent android:action="android.intent.action.VIEW" android:data="https://kikhelpcenter.zendesk.com/hc/requests/new" />
+    </blue.IlIl1lI1lII1I111>
+    <kik.red.widget.preferences.ResetKikPreference android:title="@string/title_logout" android:key="kik.reset.app" kik:pref_divider="full_top|full_bottom" />
+    <kik.red.widget.preferences.AbTestsPreference android:title="A/B Tests &amp; Feature Flags" android:key="kik.abtests" kik:pref_divider="full_bottom" />
+</PreferenceScreen>

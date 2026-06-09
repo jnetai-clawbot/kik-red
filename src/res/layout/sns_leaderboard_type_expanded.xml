@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/leaderboard_type_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <TextView android:gravity="center_vertical" android:id="@id/leaderboard_type_header" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="10.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="?snsLeaderboardDropDownHeaderStyle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/leaderboard_type_expanded_details" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="40.0dip">
+        <ImageView android:id="@id/sns_leaderboard_expanded_leaderboard_image" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sns_leaderboard_type_expanded_selected_textview" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="true" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="5.0dip" style="?snsLeaderboardDropDownItemExpandedSelectedStyle" />
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sns_leaderboard_type_expanded_text" android:padding="5.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" style="?snsLeaderboardDropDownItemExpandedStyle" />
+        <ImageView android:id="@id/sns_leaderboard_expanded_selection_image" android:layout_width="24.0dip" android:layout_height="24.0dip" style="?snsLeaderboardDropDownExpandedCheckStyle" />
+    </LinearLayout>
+</LinearLayout>

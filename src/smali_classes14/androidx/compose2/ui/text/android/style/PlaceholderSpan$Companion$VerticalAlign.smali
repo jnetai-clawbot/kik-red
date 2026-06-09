@@ -1,0 +1,25 @@
+.class public interface abstract annotation Landroidx/compose2/ui/text/android/style/PlaceholderSpan$Companion$VerticalAlign;
+.super Ljava/lang/Object;
+.source "PlaceholderSpan.android.kt"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose2/ui/text/android/style/PlaceholderSpan$Companion;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2609
+    name = "VerticalAlign"
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->SOURCE:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+.annotation runtime Lkotlin2/annotation/Retention;
+    value = .enum Lkotlin2/annotation/AnnotationRetention;->SOURCE:Lkotlin2/annotation/AnnotationRetention;
+.end annotation

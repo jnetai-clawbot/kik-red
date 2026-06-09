@@ -1,0 +1,32 @@
+.class public Lorg/spongycastle/jce/provider/BrokenJCEBlockCipher$OldPBEWithSHAAndTwofish;
+.super Lorg/spongycastle/jce/provider/BrokenJCEBlockCipher;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/spongycastle/jce/provider/BrokenJCEBlockCipher;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "OldPBEWithSHAAndTwofish"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    new-instance v0, Lorg/spongycastle/crypto/modes/CBCBlockCipher;
+
+    new-instance v1, Lorg/spongycastle/crypto/engines/TwofishEngine;
+
+    invoke-direct {v1}, Lorg/spongycastle/crypto/engines/TwofishEngine;-><init>()V
+
+    invoke-direct {v0, v1}, Lorg/spongycastle/crypto/modes/CBCBlockCipher;-><init>(Lorg/spongycastle/crypto/BlockCipher;)V
+
+    invoke-direct {p0, v0}, Lorg/spongycastle/jce/provider/BrokenJCEBlockCipher;-><init>(Lorg/spongycastle/crypto/BlockCipher;)V
+
+    return-void
+.end method

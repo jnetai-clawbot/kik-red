@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="135.0dip" android:width="26.0dip" android:viewportWidth="26.0" android:viewportHeight="135.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0,0h26v135h-26z" />
+        <path android:fillColor="@drawable/$sns_ic_lightning__0" android:pathData="M0.91,76.65 L13.05,0.03l-2.43,62.45L25.16,59.65l-12.73,75.31L15.45,73.83Z" android:fillType="evenOdd" />
+    </group>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:constantSize="true" android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="14.0dip" />
+    <solid android:color="@color/sns_top_streamer_badge_color_selected" />
+</shape>

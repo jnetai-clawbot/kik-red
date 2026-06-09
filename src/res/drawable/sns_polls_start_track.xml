@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="?colorControlNormal" />
+            <corners android:radius="@dimen/sns_polls_slider_corner_radius" />
+            <size android:height="@dimen/sns_polls_slider_track_height" />
+        </shape>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="?colorControlActivated" />
+                <corners android:radius="@dimen/sns_polls_slider_corner_radius" />
+                <size android:height="@dimen/sns_polls_slider_track_height" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/consumablesFeedbackBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visible="false" android:title="streamer_feedback" />
+    <item android:icon="?snsBroadcastMenuCameraFlipIcon" android:id="@id/cmrBtn" android:visible="false" android:title="@string/sns_broadcast_menu_camera_title" />
+    <item android:icon="?snsBroadcastMenuLeaderboardsIcon" android:id="@id/leaderboardBtn" android:visible="false" android:title="@string/sns_broadcast_menu_leaderboards_title" />
+    <item android:icon="?snsBroadcastMenuLevelIcon" android:id="@id/levelBtn" android:visible="false" android:title="@string/sns_broadcast_menu_level_title" />
+    <item android:icon="?snsBroadcastMenuItemsIcon" android:id="@id/itemsBtn" android:visible="false" android:title="@string/sns_items" />
+    <item android:icon="?snsBroadcastMenuChallengesIcon" android:id="@id/challengesBtn" android:visible="false" android:title="@string/sns_challenges" />
+    <item android:icon="?snsBroadcastMenuFavoriteBlastIcon" android:id="@id/favoriteBlastBtn" android:visible="false" android:title="@string/sns_streamer_overflow_favorite_blast" />
+    <item android:icon="?snsBroadcastMenuMuteButtonIcon" android:id="@id/muteButton" android:visible="false" android:title="@string/sns_mute_off" android:checkable="true" />
+    <item android:icon="?snsBroadcastMenuGiftAudioButtonIcon" android:id="@id/giftAudio" android:checked="true" android:visible="false" android:title="@string/sns_gift_audio_on" android:checkable="true" />
+    <item android:icon="?snsBroadcastMenuEditDescriptionButtonIcon" android:id="@id/editDescription" android:visible="false" android:title="@string/sns_streamer_overflow_edit_description" android:checkable="true" />
+    <item android:icon="?snsBroadcastMenuStreamerSettings" android:id="@id/streamerSettings" android:visible="false" android:title="@string/sns_streamer_overflow_settings" />
+    <item android:icon="?snsBroadcastMenuMagicIcon" android:id="@id/magicMenu" android:visible="false" android:title="@string/sns_streamer_overflow_effects" />
+    <item android:icon="?snsBroadcastMenuPollsIcon" android:id="@id/pollsBtn" android:visible="false" android:title="@string/sns_streamer_overflow_poll" />
+    <item android:icon="?snsBroadcastMenuGoalsIcon" android:id="@id/goalsBtn" android:visible="false" android:title="@string/sns_streamer_overflow_goals" />
+    <item android:icon="?snsBroadcastMenuNextGuestIcon" android:id="@id/nextGuestBtn" android:visible="false" android:title="@string/sns_next_guest_label" />
+    <item android:icon="?snsBroadcastMenuGuestIcon" android:id="@id/guestBtn" android:visible="false" android:title="@string/sns_guest" />
+    <item android:icon="?snsBroadcastMenuBattlesIcon" android:id="@id/battlesBtn" android:visible="false" android:title="@string/sns_battles_label" />
+    <item android:icon="?snsBroadcastMenuNextDateIcon" android:id="@id/nextDateBtn" android:visible="false" android:title="@string/sns_next_date_label" />
+    <item android:icon="?snsBroadcastMenuEditTagsIcon" android:id="@id/editTagsBtn" android:visible="false" android:title="@string/sns_streamer_overflow_edit_tags" />
+    <item android:icon="?snsBroadcastMenuSubscriptionsIcon" android:id="@id/subscriptionsBtn" android:visible="false" android:title="@string/sns_subs_subscriptions" />
+    <item android:icon="@drawable/ic_settings_blue" android:id="@id/blue_button_live" android:visible="true" android:title="Blue Mods" />
+</menu>

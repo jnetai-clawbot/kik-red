@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.wondrous.sns.views.SnsLinearLayout android:gravity="left|center" android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?snsBroadcastMenuOverflowItemMinHeight" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sns_broadcast_menu_overflow_item_action" />
+    <include layout="@layout/sns_broadcast_menu_overflow_item_text" />
+</io.wondrous.sns.views.SnsLinearLayout>

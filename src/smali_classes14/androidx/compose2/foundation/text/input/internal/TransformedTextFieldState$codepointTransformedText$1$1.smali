@@ -1,0 +1,116 @@
+.class final Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$codepointTransformedText$1$1;
+.super Lkotlin2/jvm/internal/Lambda;
+.source "TransformedTextFieldState.kt"
+
+# interfaces
+.implements Lkotlin2/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;-><init>(Landroidx/compose2/foundation/text/input/TextFieldState;Landroidx/compose2/foundation/text/input/InputTransformation;Landroidx/compose2/foundation/text/input/internal/CodepointTransformation;Landroidx/compose2/foundation/text/input/OutputTransformation;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin2/jvm/internal/Lambda;",
+        "Lkotlin2/jvm/functions/Function0<",
+        "Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$TransformedText;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $transformation:Landroidx/compose2/foundation/text/input/internal/CodepointTransformation;
+
+.field final synthetic this$0:Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;
+
+
+# direct methods
+.method constructor <init>(Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;Landroidx/compose2/foundation/text/input/internal/CodepointTransformation;)V
+    .locals 1
+
+    iput-object p1, p0, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$codepointTransformedText$1$1;->this$0:Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;
+
+    iput-object p2, p0, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$codepointTransformedText$1$1;->$transformation:Landroidx/compose2/foundation/text/input/internal/CodepointTransformation;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lkotlin2/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$TransformedText;
+    .locals 4
+
+    invoke-static {}, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;->access$getCompanion$p()Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$Companion;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$codepointTransformedText$1$1;->this$0:Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;
+
+    invoke-static {v1}, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;->access$getOutputTransformedText$p(Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;)Landroidx/compose2/runtime/State;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v1}, Landroidx/compose2/runtime/State;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$TransformedText;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$TransformedText;->getText()Landroidx/compose2/foundation/text/input/TextFieldCharSequence;
+
+    move-result-object v1
+
+    if-nez v1, :cond_1
+
+    :cond_0
+    iget-object v1, p0, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$codepointTransformedText$1$1;->this$0:Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;
+
+    invoke-static {v1}, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;->access$getTextFieldState$p(Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;)Landroidx/compose2/foundation/text/input/TextFieldState;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose2/foundation/text/input/TextFieldState;->getValue$foundation_release()Landroidx/compose2/foundation/text/input/TextFieldCharSequence;
+
+    move-result-object v1
+
+    :cond_1
+    iget-object v2, p0, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$codepointTransformedText$1$1;->$transformation:Landroidx/compose2/foundation/text/input/internal/CodepointTransformation;
+
+    iget-object v3, p0, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$codepointTransformedText$1$1;->this$0:Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;
+
+    invoke-virtual {v3}, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState;->getSelectionWedgeAffinity()Landroidx/compose2/foundation/text/input/internal/SelectionWedgeAffinity;
+
+    move-result-object v3
+
+    invoke-static {v0, v1, v2, v3}, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$Companion;->access$calculateTransformedText(Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$Companion;Landroidx/compose2/foundation/text/input/TextFieldCharSequence;Landroidx/compose2/foundation/text/input/internal/CodepointTransformation;Landroidx/compose2/foundation/text/input/internal/SelectionWedgeAffinity;)Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$TransformedText;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$codepointTransformedText$1$1;->invoke()Landroidx/compose2/foundation/text/input/internal/TransformedTextFieldState$TransformedText;
+
+    move-result-object v0
+
+    return-object v0
+.end method

@@ -1,0 +1,268 @@
+.class public Lio/perfmark/Impl;
+.super Ljava/lang/Object;
+.source "Impl.java"
+
+
+# static fields
+.field static final NO_LINK:Lio/perfmark/Link;
+
+.field private static final NO_LINK_ID:J = -0x8000000000000000L
+
+.field static final NO_TAG:Lio/perfmark/Tag;
+
+.field static final NO_TAG_ID:J = -0x8000000000000000L
+
+.field static final NO_TAG_NAME:Ljava/lang/String; = ""
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    new-instance v0, Lio/perfmark/Tag;
+
+    const-string v1, ""
+
+    const-wide/high16 v2, -0x8000000000000000L
+
+    invoke-direct {v0, v1, v2, v3}, Lio/perfmark/Tag;-><init>(Ljava/lang/String;J)V
+
+    sput-object v0, Lio/perfmark/Impl;->NO_TAG:Lio/perfmark/Tag;
+
+    new-instance v0, Lio/perfmark/Link;
+
+    invoke-direct {v0, v2, v3}, Lio/perfmark/Link;-><init>(J)V
+
+    sput-object v0, Lio/perfmark/Impl;->NO_LINK:Lio/perfmark/Link;
+
+    return-void
+.end method
+
+.method protected constructor <init>(Lio/perfmark/Tag;)V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    sget-object v0, Lio/perfmark/Impl;->NO_TAG:Lio/perfmark/Tag;
+
+    if-ne p1, v0, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance v0, Ljava/lang/AssertionError;
+
+    const-string v1, "nope"
+
+    invoke-direct {v0, v1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+
+    throw v0
+.end method
+
+.method protected static packLink(J)Lio/perfmark/Link;
+    .locals 1
+
+    new-instance v0, Lio/perfmark/Link;
+
+    invoke-direct {v0, p0, p1}, Lio/perfmark/Link;-><init>(J)V
+
+    return-object v0
+.end method
+
+.method protected static packTag(Ljava/lang/String;J)Lio/perfmark/Tag;
+    .locals 1
+    .param p0    # Ljava/lang/String;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+
+    new-instance v0, Lio/perfmark/Tag;
+
+    invoke-direct {v0, p0, p1, p2}, Lio/perfmark/Tag;-><init>(Ljava/lang/String;J)V
+
+    return-object v0
+.end method
+
+.method protected static unpackLinkId(Lio/perfmark/Link;)J
+    .locals 2
+
+    iget-wide v0, p0, Lio/perfmark/Link;->linkId:J
+
+    return-wide v0
+.end method
+
+.method protected static unpackTagId(Lio/perfmark/Tag;)J
+    .locals 2
+
+    iget-wide v0, p0, Lio/perfmark/Tag;->tagId:J
+
+    return-wide v0
+.end method
+
+.method protected static unpackTagName(Lio/perfmark/Tag;)Ljava/lang/String;
+    .locals 1
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+
+    iget-object v0, p0, Lio/perfmark/Tag;->tagName:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method protected attachTag(Lio/perfmark/Tag;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected attachTag(Ljava/lang/String;J)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected attachTag(Ljava/lang/String;JJ)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected attachTag(Ljava/lang/String;Ljava/lang/Object;Lio/perfmark/StringFunction;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/String;",
+            "TT;",
+            "Lio/perfmark/StringFunction<",
+            "-TT;>;)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method protected attachTag(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected createTag(Ljava/lang/String;J)Lio/perfmark/Tag;
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+
+    sget-object v0, Lio/perfmark/Impl;->NO_TAG:Lio/perfmark/Tag;
+
+    return-object v0
+.end method
+
+.method protected event(Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected event(Ljava/lang/String;Lio/perfmark/Tag;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected event(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected linkIn(Lio/perfmark/Link;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected linkOut()Lio/perfmark/Link;
+    .locals 1
+
+    sget-object v0, Lio/perfmark/Impl;->NO_LINK:Lio/perfmark/Link;
+
+    return-object v0
+.end method
+
+.method protected setEnabled(Z)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected setEnabled(ZZ)Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method protected startTask(Ljava/lang/Object;Lio/perfmark/StringFunction;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;",
+            "Lio/perfmark/StringFunction<",
+            "-TT;>;)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method protected startTask(Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected startTask(Ljava/lang/String;Lio/perfmark/Tag;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected startTask(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected stopTask()V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected stopTask(Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected stopTask(Ljava/lang/String;Lio/perfmark/Tag;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method protected stopTask(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method

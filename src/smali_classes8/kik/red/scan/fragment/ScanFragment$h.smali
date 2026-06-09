@@ -1,0 +1,63 @@
+.class final Lkik/red/scan/fragment/ScanFragment$h;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkik/red/scan/fragment/ScanFragment;->k5(Lcom/kik/scan/KikCode;Ljava/lang/String;Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/kik/scan/KikCode;
+
+.field final synthetic b:Lkik/red/scan/fragment/ScanFragment;
+
+
+# direct methods
+.method constructor <init>(Lkik/red/scan/fragment/ScanFragment;Lcom/kik/scan/KikCode;)V
+    .locals 0
+
+    iput-object p1, p0, Lkik/red/scan/fragment/ScanFragment$h;->b:Lkik/red/scan/fragment/ScanFragment;
+
+    iput-object p2, p0, Lkik/red/scan/fragment/ScanFragment$h;->a:Lcom/kik/scan/KikCode;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object p1, p0, Lkik/red/scan/fragment/ScanFragment$h;->b:Lkik/red/scan/fragment/ScanFragment;
+
+    sget v0, Lkik/red/scan/fragment/ScanFragment;->K4:I
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-instance v0, Lkik/red/scan/fragment/h;
+
+    invoke-direct {v0, p1}, Lkik/red/scan/fragment/h;-><init>(Lkik/red/scan/fragment/ScanFragment;)V
+
+    invoke-virtual {p1, v0}, Lkik/red/chat/fragment/KikFragmentBase;->c4(Ljava/lang/Runnable;)V
+
+    iget-object p1, p0, Lkik/red/scan/fragment/ScanFragment$h;->b:Lkik/red/scan/fragment/ScanFragment;
+
+    iget-object v0, p0, Lkik/red/scan/fragment/ScanFragment$h;->a:Lcom/kik/scan/KikCode;
+
+    invoke-static {p1, v0}, Lkik/red/scan/fragment/ScanFragment;->K4(Lkik/red/scan/fragment/ScanFragment;Lcom/kik/scan/KikCode;)V
+
+    return-void
+.end method

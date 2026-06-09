@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sns_max_count_of_viewer_buttons">2</integer>
+    <integer name="sns_show_streamer_first_gift_dialog_image_visibility">0</integer>
+</resources>

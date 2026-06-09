@@ -1,0 +1,348 @@
+.class public final Lcom/google/android/gms/ads/AdapterResponseInfo;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private final zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+.field private final zzb:Lcom/google/android/gms/ads/AdError;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Lcom/google/android/gms/ads/internal/client/zzu;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object p1, p1, Lcom/google/android/gms/ads/internal/client/zzu;->zzc:Lcom/google/android/gms/ads/internal/client/zze;
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Lcom/google/android/gms/ads/internal/client/zze;->zza()Lcom/google/android/gms/ads/AdError;
+
+    move-result-object p1
+
+    :goto_0
+    iput-object p1, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zzb:Lcom/google/android/gms/ads/AdError;
+
+    return-void
+.end method
+
+.method public static zza(Lcom/google/android/gms/ads/internal/client/zzu;)Lcom/google/android/gms/ads/AdapterResponseInfo;
+    .locals 1
+    .param p0    # Lcom/google/android/gms/ads/internal/client/zzu;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    if-eqz p0, :cond_0
+
+    new-instance v0, Lcom/google/android/gms/ads/AdapterResponseInfo;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/ads/AdapterResponseInfo;-><init>(Lcom/google/android/gms/ads/internal/client/zzu;)V
+
+    return-object v0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public getAdError()Lcom/google/android/gms/ads/AdError;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zzb:Lcom/google/android/gms/ads/AdError;
+
+    return-object v0
+.end method
+
+.method public getAdSourceId()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object v0, v0, Lcom/google/android/gms/ads/internal/client/zzu;->zzf:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getAdSourceInstanceId()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object v0, v0, Lcom/google/android/gms/ads/internal/client/zzu;->zzh:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getAdSourceInstanceName()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object v0, v0, Lcom/google/android/gms/ads/internal/client/zzu;->zzg:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getAdSourceName()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object v0, v0, Lcom/google/android/gms/ads/internal/client/zzu;->zze:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getAdapterClassName()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object v0, v0, Lcom/google/android/gms/ads/internal/client/zzu;->zza:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getCredentials()Landroid/os/Bundle;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object v0, v0, Lcom/google/android/gms/ads/internal/client/zzu;->zzd:Landroid/os/Bundle;
+
+    return-object v0
+.end method
+
+.method public getLatencyMillis()J
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-wide v0, v0, Lcom/google/android/gms/ads/internal/client/zzu;->zzb:J
+
+    return-wide v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    :try_start_0
+    invoke-virtual {p0}, Lcom/google/android/gms/ads/AdapterResponseInfo;->zzb()Lwp/b;
+
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    invoke-virtual {v0, v1}, Lwp/b;->L(I)Ljava/lang/String;
+
+    move-result-object v0
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    const-string v0, "Error forming toString output."
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public final zzb()Lwp/b;
+    .locals 6
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/json/JSONException;
+        }
+    .end annotation
+
+    new-instance v0, Lwp/b;
+
+    invoke-direct {v0}, Lwp/b;-><init>()V
+
+    iget-object v1, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object v1, v1, Lcom/google/android/gms/ads/internal/client/zzu;->zza:Ljava/lang/String;
+
+    const-string v2, "Adapter"
+
+    invoke-virtual {v0, v2, v1}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    iget-object v1, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-wide v1, v1, Lcom/google/android/gms/ads/internal/client/zzu;->zzb:J
+
+    const-string v3, "Latency"
+
+    invoke-virtual {v0, v3, v1, v2}, Lwp/b;->C(Ljava/lang/String;J)Lwp/b;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/ads/AdapterResponseInfo;->getAdSourceName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Ad Source Name"
+
+    const-string v3, "null"
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {v0, v2, v3}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0, v2, v1}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    :goto_0
+    invoke-virtual {p0}, Lcom/google/android/gms/ads/AdapterResponseInfo;->getAdSourceId()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Ad Source ID"
+
+    if-nez v1, :cond_1
+
+    invoke-virtual {v0, v2, v3}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    goto :goto_1
+
+    :cond_1
+    invoke-virtual {v0, v2, v1}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    :goto_1
+    invoke-virtual {p0}, Lcom/google/android/gms/ads/AdapterResponseInfo;->getAdSourceInstanceName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Ad Source Instance Name"
+
+    if-nez v1, :cond_2
+
+    invoke-virtual {v0, v2, v3}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    goto :goto_2
+
+    :cond_2
+    invoke-virtual {v0, v2, v1}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    :goto_2
+    invoke-virtual {p0}, Lcom/google/android/gms/ads/AdapterResponseInfo;->getAdSourceInstanceId()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Ad Source Instance ID"
+
+    if-nez v1, :cond_3
+
+    invoke-virtual {v0, v2, v3}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    goto :goto_3
+
+    :cond_3
+    invoke-virtual {v0, v2, v1}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    :goto_3
+    new-instance v1, Lwp/b;
+
+    invoke-direct {v1}, Lwp/b;-><init>()V
+
+    iget-object v2, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object v2, v2, Lcom/google/android/gms/ads/internal/client/zzu;->zzd:Landroid/os/Bundle;
+
+    invoke-virtual {v2}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_4
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    iget-object v5, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zza:Lcom/google/android/gms/ads/internal/client/zzu;
+
+    iget-object v5, v5, Lcom/google/android/gms/ads/internal/client/zzu;->zzd:Landroid/os/Bundle;
+
+    invoke-virtual {v5, v4}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-virtual {v1, v4, v5}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    goto :goto_4
+
+    :cond_4
+    const-string v2, "Credentials"
+
+    invoke-virtual {v0, v2, v1}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    iget-object v1, p0, Lcom/google/android/gms/ads/AdapterResponseInfo;->zzb:Lcom/google/android/gms/ads/AdError;
+
+    const-string v2, "Ad Error"
+
+    if-nez v1, :cond_5
+
+    invoke-virtual {v0, v2, v3}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    goto :goto_5
+
+    :cond_5
+    invoke-virtual {v1}, Lcom/google/android/gms/ads/AdError;->zzb()Lwp/b;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v2, v1}, Lwp/b;->D(Ljava/lang/String;Ljava/lang/Object;)Lwp/b;
+
+    :goto_5
+    return-object v0
+.end method

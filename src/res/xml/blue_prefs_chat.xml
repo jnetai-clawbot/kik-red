@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Chat Options" android:key=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <blue.lll1l11IIlllIIl1 android:title="Profile" />
+    <blue.lllIlI1l1llI11I1 android:title="Enable Last Seen Time" android:key="blue.last.seen" android:summary="Shows the last seen time when viewing a users profile in DMs.\nLast seen times are not constantly updated, which may cause them to be behind.\nDisabling Kik Live prevents updates to your own last seen time." android:defaultValue="false" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Chat" />
+    <blue.l1l1lI1III1I1l1I android:title="Fake Camera" android:key="false" android:summary="Send gallery media as camera" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Disable Typing" android:key="blue.typing" android:summary="Others will not see you typing" kik:pref_divider="full_bottom" />
+    <blue.lIIIIll1l111l1ll android:title="Read Receipts" android:key="false" android:summary="How others perceive messages they sent you" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Double Tap To Reply" android:key="blue.double.tap.reply" android:summary="When enabled, you can double tap incoming text messages to reply to them" android:defaultValue="true" kik:pref_divider="full_bottom" />
+    <blue.lllIlI1l1llI11I1 android:title="Colorful Receipt Icons" android:key="blue.colorful.receipts" android:summary="When enabled, receipt icons will have distinct colors like in previous updates. Requires restart.\nNote: the bright blue D is a pushed receipt (only seen for iOS) and the dark D is delivered." kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Message Badges" />
+    <blue.I1IllI1IllIIll1l android:title="Device Exposer" android:key="device.badges" android:summary="Shows what device/mod they're using next to their profile picture if it is detectable" kik:pref_divider="full_bottom" />
+    <blue.I1IllI1IllIIll1l android:title="Admin Chat Badges" android:key="admin.badges" android:summary="When enabled, admin icons will be shown on incoming messages" kik:pref_divider="full_bottom" />
+    <blue.l1I1IlI1I1llllIl android:title="Device Logos" android:summary="Shows which logo corresponds to which mod" android:dialogTitle="html" android:dialogMessage="mod_logo_explanation" kik:pref_divider="full_bottom" />
+    <blue.lll1l11IIlllIIl1 android:title="Detection" />
+    <blue.l11Ill1II1llIll1 android:title="Who's Reading" android:summary="Gives you the name of who read your message" kik:pref_divider="full_bottom" />
+    <blue.llII11I11IIIIlI1 android:title="Fake Camera Exposer" android:summary="Choose how to be notified when a fake camera message is detected\n(If off it will still say Fake Camera below their message)" kik:pref_divider="full_bottom" />
+    <blue.l11llI1IlII11lIl android:title="Start Chatting Detector" android:key="blue.friend.v2" android:summary="Choose what to do when someone adds you to their friends list\nNote: stealth mode will show a message notification in the chat that is local to your device" kik:pref_divider="full_bottom" />
+    <blue.I1lI1l1I1l11IIlI android:title="Start Chatting Reply" android:key="blue.screply" android:summary="Customize the reply when someone adds you" android:defaultValue="Hello, thanks for adding me!" kik:pref_divider="full_bottom" />
+    <blue.lI1Il1IllIlI1I1l android:key="" />
+</PreferenceScreen>

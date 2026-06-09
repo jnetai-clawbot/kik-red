@@ -1,0 +1,64 @@
+.class public final Lrk/p$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lrk/p;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+.field private final b:Ljava/lang/String;
+
+.field private final c:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lrk/p$a;->a:Ljava/lang/String;
+
+    iput-object p2, p0, Lrk/p$a;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lrk/p$a;->c:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lrk/p$a;->a:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lrk/p$a;->c:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final c()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lrk/p$a;->b:Ljava/lang/String;
+
+    return-object v0
+.end method

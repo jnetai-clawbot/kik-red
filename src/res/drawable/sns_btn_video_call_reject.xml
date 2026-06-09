@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="2.0dip" android:bottom="2.0dip">
+        <shape android:shape="oval">
+            <corners android:radius="@dimen/grid_padding" />
+            <solid android:color="#ffe04544" />
+            <size android:height="56.0dip" android:width="56.0dip" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/sns_ic_video_call_hangup" android:left="16.0dip" android:top="16.0dip" android:right="16.0dip" android:bottom="16.0dip" />
+</layer-list>
