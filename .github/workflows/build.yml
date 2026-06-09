@@ -5,6 +5,10 @@ on:
     branches: [main, master]
   workflow_dispatch:
 
+permissions:
+  contents: write
+  actions: read
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -37,7 +41,6 @@ jobs:
 
       - name: Build APK
         run: |
-          echo "aapt2: $(which aapt2 || echo not-found)"
           java -jar apktool.jar b src -o KIK-Red-unsigned.apk --frame-path $HOME/.local/share/apktool/framework
         timeout-minutes: 20
 
@@ -76,4 +79,4 @@ jobs:
           files: KIK-Red.apk
           generate_release_notes: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
