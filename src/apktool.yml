@@ -17,6 +17,7 @@ doNotCompress:
 - png
 - wav
 - webp
+- so
 - META-INF/services/io.grpc.ManagedChannelProvider
 - META-INF/services/io.grpc.NameResolverProvider
 - assets/PLACEHOLDER

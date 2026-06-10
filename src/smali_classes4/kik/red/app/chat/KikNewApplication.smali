@@ -5903,11 +5903,22 @@
 .end method
 
 .method protected final attachBaseContext(Landroid/content/Context;)V
-    .locals 0
+    .locals 3
 
+    :try_attach
     invoke-super {p0, p1}, Landroidx/multidex/MultiDexApplication;->attachBaseContext(Landroid/content/Context;)V
-
     invoke-static {p0}, Landroidx/multidex/MultiDex;->install(Landroid/content/Context;)V
+    :try_end_attach
+    .catchall {:try_attach .. :try_end_attach} :catch_attach
+    goto :skip_attach_error
+    :catch_attach
+    move-exception v0
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    :skip_attach_error
+
+    new-instance v0, Lkik/red/app/chat/KikNewApplication$CrashHandler;
+    invoke-direct {v0, p0}, Lkik/red/app/chat/KikNewApplication$CrashHandler;-><init>(Lkik/red/app/chat/KikNewApplication;)V
+    invoke-static {v0}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     return-void
 .end method
